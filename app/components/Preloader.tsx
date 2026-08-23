@@ -30,7 +30,7 @@ export default function Preloader() {
       }`}
     >
       <video
-        src="/Videos/paving_logo_animation.mp4"
+        src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/paving_logo_animation.mp4`}
         autoPlay
         muted
         playsInline
