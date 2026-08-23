@@ -44,8 +44,7 @@ const Interactive3DShowcase = dynamic(() => import('../components/Interactive3DS
 const Home = () => {
   return (
     <div>
-      <Preloader />
-      {/* <HeroScrollSequence /> */}
+      <Preloader /> 
       <PavingPathHero />
       <Product3DShowcase2 />
       <UltimateResultsPattern />

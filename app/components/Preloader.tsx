@@ -7,13 +7,6 @@ export default function Preloader() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already seen the preloader in this session
-    const hasSeen = sessionStorage.getItem('hasSeenIntro');
-    if (hasSeen) {
-      setShow(false);
-      return;
-    }
-
     // Safety fallback timer in case the video can't play or end event fails
     // Assuming the animation is around 4-6 seconds.
     const timer = setTimeout(() => {
@@ -25,7 +18,6 @@ export default function Preloader() {
 
   const handleComplete = () => {
     setFade(true);
-    sessionStorage.setItem('hasSeenIntro', 'true');
     setTimeout(() => setShow(false), 800); // Allow time for fade transition
   };
 
