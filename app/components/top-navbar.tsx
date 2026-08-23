@@ -42,21 +42,21 @@ const TopNavbar = () => {
           .animate-scroll-marquee {
             display: flex;
             white-space: nowrap;
-            animation: scroll-marquee 20s linear infinite;
+            animation: scroll-marquee 60s linear infinite;
           }
         `}</style>
         <div className="animate-scroll-marquee">
           {/* We duplicate the text twice to create a seamless infinite scroll loop */}
           <div className="flex shrink-0">
             {[...Array(10)].map((_, i) => (
-              <span key={i} className="mx-6 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2">
+              <span key={i} className="mx-6 text-[10px] font-normal uppercase tracking-widest flex items-center gap-2">
                 🚧 Site is Under Construction
               </span>
             ))}
           </div>
           <div className="flex shrink-0">
             {[...Array(10)].map((_, i) => (
-              <span key={i + 10} className="mx-6 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2">
+              <span key={i + 10} className="mx-6 text-[10px] font-normal uppercase tracking-widest flex items-center gap-2">
                 🚧 Site is Under Construction
               </span>
             ))}
