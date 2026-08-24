@@ -49,8 +49,8 @@ const Home = () => {
       <Product3DShowcase2 />
       <UltimateResultsPattern />
       <StandardsMarquee/>
-      <PavingRiserClassification />
       <SaferRoadsCTA />
+      <PavingRiserClassification />
       <InfiniteRiserShowcase />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
@@ -74,12 +74,12 @@ const Home = () => {
       {/* <RiserAnimationShowcase/> */}
       {/* <ProjectGallery /> */}
       {/* <IndustrySolutions /> */}
-      <ServicesAndSolutions />
       {/* <PipingRiserFeature /> */}
       <ContractorResources />
       {/* <InfrastructureRisers /> */}
       {/* <ProductCatalog /> */}
        <PavingProductsTable />  
+      <ServicesAndSolutions />
       <SmartInfraSection />
       <AdjustmentProducts />
       <PremiumPavingShowcase />

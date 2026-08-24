@@ -23,21 +23,27 @@ export default function Preloader() {
 
   if (!show) return null;
 
+  const videoUrl = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/paving_logo_animation.mp4`;
+
   return (
-    <div 
+    <>
+      <link rel="preload" as="video" type="video/mp4" href={videoUrl} />
+      <div 
       className={`fixed inset-0 z-[99999] bg-[#0A0A0A] flex flex-col items-center justify-center transition-opacity duration-700 ease-in-out ${
         fade ? 'opacity-0' : 'opacity-100'
       }`}
     >
       <video
-        src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/paving_logo_animation.mp4`}
+        src={videoUrl}
         autoPlay
         muted
         playsInline
+        preload="auto"
         onEnded={handleComplete}
         className="w-full max-w-2xl h-auto object-contain outline-none px-4"
       />
       {/* Optional loading bar/indicator could go here */}
     </div>
+    </>
   );
 }
