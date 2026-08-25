@@ -9,10 +9,12 @@ import {
 } from 'lucide-react';
 
 const MATERIAL_OPTIONS = [
-  "Cast / Ductile Iron",
-  "Steel",
-  "Black Coated Iron",
-  "Plastic"
+  "Cast Iron",
+  "Ductile Iron",
+  "Mild Steel",
+  "Stainless Steel",
+  "Aluminium",
+  "FRP"
 ];
 
 const DESIGN_OPTIONS = [

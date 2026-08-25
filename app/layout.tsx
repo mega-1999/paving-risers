@@ -67,6 +67,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden">
+      <head>
+        <meta name="copyright" content="www.pavingrisers.com" />
+        <meta name="document-distribution" content="Global" />
+        <meta name="language" content="EN" />
+        <meta name="copyright" content="pavingrisers" />
+        <meta name="Distribution" content="Global" />
+        <meta name="Robots" content="INDEX,FOLLOW" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "Pavingrisers",
+              "url": "https://www.pavingrisers.com/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-full relative`}
       >

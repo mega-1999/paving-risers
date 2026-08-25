@@ -30,19 +30,7 @@ export default function InfiniteRiserShowcase() {
 
                     {/* --- GRID DISPLAY --- */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-                        {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
-                        {/* <div className="lg:col-span-6">
-                            <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <Image
-                                    src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`}
-                                    alt="Round Adjustable Riser"
-                                    fill
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                    className="w-full h-full object-contain p-8"
-                                />
-                            </div>
-                        </div> */}
+ 
 
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
@@ -79,7 +67,7 @@ export default function InfiniteRiserShowcase() {
                                 </div>
                                 <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                     <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
-                                    <span>Custom Rises and Fits Available</span>
+                                    <span>Custom Heights and Fits Available</span>
                                 </div>
                             </div>
 
@@ -140,7 +128,7 @@ export default function InfiniteRiserShowcase() {
                                 </div>
                                 <div className="flex items-center gap-3 text-xs font-bold uppercase text-zinc-300">
                                     <ShieldCheck className="w-4 h-4 text-[#CC0000] shrink-0" />
-                                    <span>Custom Rises and Fits Available</span>
+                                    <span>Custom Heights and Fits Available</span>
                                 </div>
                             </div>
 

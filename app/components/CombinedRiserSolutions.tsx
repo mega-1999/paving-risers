@@ -48,7 +48,7 @@ const RISER_SECTIONS = [
     description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in expansion linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
     features: [
-      { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to bite into the base frame securely locks into the frame." },
+      { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to grip the existing frame and lock the riser securely in place." },
       { icon: "Timer", title: "Zero Cure Time", desc: "Paving crews can lay asphalt immediately after installation." }
     ],
     meta: [],
@@ -157,7 +157,7 @@ export default function ComprehensivePavingRisersMapped() {
                     {/* --- COMING SOON OVERLAY --- */}
                     {section.isComingSoon && (
                       <div className="absolute bottom-0 left-0 right-0 bg-[#CC0000] text-white text-center py-4 font-black uppercase tracking-[0.25em] text-sm shadow-[0_-10px_20px_rgba(204,0,0,0.2)] z-20">
-                        Comming Soon
+                        Coming Soon
                       </div>
                     )}
                   </div>
