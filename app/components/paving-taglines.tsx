@@ -45,7 +45,7 @@ export default function PavingPathHero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative w-full bg-[#edecec] overflow-hidden font-sans">
+    <section className="relative w-full bg-zinc-50 overflow-hidden font-sans">
       <div className="w-full pl-6 md:pl-8 lg:pl-12 grid grid-cols-1 lg:grid-cols-12 items-center">
         {/* --- LEFT COLUMN: BRAND TYPOGRAPHY & BADGES --- */}
         <div className="lg:col-span-8 py-6 lg:py-8 space-y-4 z-10">

@@ -36,7 +36,7 @@ export const PRODUCT_DATA: Product[] = [
             heights: '1" to 6" in 1/2" increments',
             coating: 'Raw / Bituminous Asphaltic Coated / Iron Finish'
         },
-        features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
+        features: ['Paving-Adjust™ Expansion system', 'No excavation required', 'Designed to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png` },
             { label: 'Coated Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/fixed_round_riser_.810.png` },
@@ -57,7 +57,7 @@ export const PRODUCT_DATA: Product[] = [
             heights: '1" to 6" in 1/2" increments',
             coating: 'Raw / Bituminous Asphaltic Coated / Iron Finish'
         },
-        features: ['Integrated Leveling Screws', 'No excavation required', 'design to meet applicable DOT requirements', 'Stackable design'],
+        features: ['Integrated Leveling Screws', 'No excavation required', 'Designed to meet applicable DOT requirements', 'Stackable design'],
         images: [
             { label: 'Screws 3', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/paving_riser_with_screws.676.png` },
             { label: 'Iron Finish', src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` },

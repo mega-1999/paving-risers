@@ -109,7 +109,7 @@ export default function SmartInfraSection() {
 
           {/* Right: Drone/Robotic Access Image */}
           <div className="lg:col-span-5 relative bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden min-h-[300px]">
-            {/* Placeholder for a cool tech image (e.g. a robotic sewer crawler or drone entering a manhole) */}
+
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0F0F0F]/40 z-10 p-6 text-center">
               <Scan className="w-12 h-12 text-[#CC0000] mb-4 opacity-70" />
               <h4 className="font-bold text-xl mb-2">Robotic Inspection Ports</h4>

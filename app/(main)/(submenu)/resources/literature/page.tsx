@@ -50,7 +50,7 @@ export default function LiteraturePage() {
           </h1>
 
           <p className="text-xl text-zinc-300 font-medium leading-relaxed max-w-2xl mx-auto">
-            Direct access to design to meet applicable DOT requirements letters, comprehensive product catalogs, installation videos, and fully rendered 3D CAD/BIM files.
+            Direct access to Designed to meet applicable DOT requirements letters, comprehensive product catalogs, installation videos, and fully rendered 3D CAD/BIM files.
           </p>
 
           <div className="pt-8 max-w-xl mx-auto relative">
@@ -184,7 +184,7 @@ export default function LiteraturePage() {
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">
                 <div>
-                  <h3 className="text-2xl font-black uppercase tracking-wide mb-3">design to meet applicable DOT requirements Letters</h3>
+                  <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Designed to meet applicable DOT requirements Letters</h3>
                   <p className="text-zinc-500 text-sm font-medium leading-relaxed">
                     Official acceptance and approval letters from state Departments of Transportation certifying our products for highway use.
                   </p>

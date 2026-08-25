@@ -240,14 +240,14 @@ export default function HeavyFooter() {
         
         <div className="animate-marquee inline-flex items-center gap-12 text-[10px] font-mono uppercase tracking-[0.3em] text-gray-600">
           <span>// HEAVY DUTY CASTINGS</span>
-          <span>// design to meet applicable DOT requirements</span>
+          <span>// Designed to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
           <span>// PAVING GRADE COMPLIANT</span>
           <span>// PAVING RISERS INFRASTRUCTURE</span>
           <span>// PRECISION ENGINEERING</span>
           <span>// HEAVY DUTY CASTINGS</span>
-          <span>// design to meet applicable DOT requirements</span>
+          <span>// Designed to meet applicable DOT requirements</span>
           <span>// 50-TON SHOCK RATED</span>
           <span>// MANUFACTURED IN USA</span>
           <span>// PAVING GRADE COMPLIANT</span>

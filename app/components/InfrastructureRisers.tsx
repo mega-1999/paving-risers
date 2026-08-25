@@ -77,7 +77,7 @@ export default function InfrastructureRisers() {
             <div className="p-6 bg-slate-50 rounded-xl space-y-3 border border-slate-100">
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500 font-medium italic text-sm">Our Pledge:</span>
-                <span className="text-slate-900 font-bold text-sm text-right italic">"Custom manufacturing available... regardless."</span>
+                <span className="text-slate-900 font-bold text-sm text-right italic">"Custom manufacturing available to meet project specifications."</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-500">Material</span>

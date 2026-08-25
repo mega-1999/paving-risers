@@ -113,7 +113,7 @@ export default function CurbInletParallaxPage() {
         <div className="w-full max-w-6xl px-6 md:px-12 flex justify-end mb-[30vh]">
           <div className="flex gap-8 items-start max-w-2xl backdrop-blur-md bg-gradient-to-l from-black/80 to-transparent p-8 border-r-4 border-white">
             <div className="text-right">
-              <h3 className="text-2xl md:text-4xl font-black uppercase tracking-widest mb-4">design to meet applicable DOT requirements</h3>
+              <h3 className="text-2xl md:text-4xl font-black uppercase tracking-widest mb-4">Designed to meet applicable DOT requirements</h3>
               <p className="text-gray-400 font-medium leading-loose">
                 Engineered to meet the stringent shock-load requirements of major highway and infrastructure projects. Exceed city inspectors' expectations with professional-grade access products built to withstand constant impact.
               </p>

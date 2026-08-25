@@ -17,7 +17,7 @@ const FEATURES = [
     {
         title: "Paving Grade Rated",
         icon: <Truck className="w-8 h-8 text-[#CC0000]" />,
-        description: "rated for for heavy-duty traffic and municipal roadway standards."
+        description: "rated for heavy-duty traffic and municipal roadway standards."
     },
     {
         title: "High Tensile Strength",

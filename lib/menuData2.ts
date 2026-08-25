@@ -637,40 +637,8 @@ export const menuData = {
     color: 'bg-green-100 text-green-900',
 
     categories: [
-
-      // 1) Square Tree Grates
-      {
-        name: "SQUARE TREE GRATES",
-        slug: "square-tree-grates",
-        image: "/assets/image15.jpg",
-        description:
-          "Heavy-duty square tree grates designed for pedestrian pathways, plazas, malls and urban landscaping projects.",
-        videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/square-tree-grates.mp4",
-        items: [
-          "Two-piece square grates",
-          "Four-piece modular grates",
-          "Bolted frame assemblies",
-          "Decorative pattern grates",
-          "Heavy load-bearing options"
-        ]
-      },
-
-      // 2) Circular Tree Grates
-      {
-        name: "CIRCULAR TREE GRATES",
-        slug: "circular-tree-grates",
-        image: "/assets/image16.jpg",
-        description:
-          "Cast iron circular tree grates providing protection while allowing healthy aeration and water flow to tree roots.",
-        videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/circular-tree-grates.mp4",
-        items: [
-          "One-piece circular grates",
-          "Segmented circular grates",
-          "Adjustable inner opening sizes",
-          "Decorative circular designs",
-          "Frame & grate assemblies"
-        ]
-      },
+
+
 
       // 3) Ductile Iron Tree Grates
       {
@@ -1595,23 +1563,7 @@ export const menuData = {
           "Custom marine propulsion components"
         ]
       },
-
-      // 2) Marine Hardware & Deck Fittings
-      {
-        name: "MARINE HARDWARE & DECK FITTINGS",
-        slug: "marine-hardware-and-deck-fittings",
-        image: "/assets/image16.jpg",
-        description:
-          "Rugged deck and hull hardware components designed to withstand harsh saline and offshore environments.",
-        videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/marine_castings/marine_castings2.mp4",
-        items: [
-          "Cleats & bollards",
-          "Fairleads & chocks",
-          "Hinges & brackets",
-          "Handrail and stanchion castings",
-          "Deck mount fittings"
-        ]
-      },
+
 
       // 3) Anodes & Corrosion Protection Castings
       {
@@ -2497,23 +2449,7 @@ export const menuData = {
           "Thruster components"
         ]
       },
-
-      // 2) Deck & Mooring Castings
-      {
-        name: "DECK & MOORING CASTINGS",
-        slug: "deck-and-mooring-castings",
-        image: "/assets/marine_castings/marine_castings1.jpeg",
-        description:
-          "Heavy-duty castings used for mooring, towing and securing vessels in ports, harbors and offshore platforms.",
-        videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/marine_castings/marine_castings2.mp4",
-        items: [
-          "Bitts & bollards",
-          "Cleats & chocks",
-          "Fairleads",
-          "Chain stoppers",
-          "Towing hook castings"
-        ]
-      },
+
 
       // 3) Rudder & Steering System Castings
       {

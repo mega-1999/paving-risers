@@ -84,7 +84,7 @@ export default function ManholeFrameCoverPage() {
             </div>
           </div>
 
-          {/* Visual Placeholder / Mockup Area */}
+
           <div className="lg:w-1/2 w-full">
             <div className="aspect-video w-full bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center relative group overflow-hidden shadow-2xl">
               <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`} alt='' width={500} height={500} />

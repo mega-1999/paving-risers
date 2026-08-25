@@ -97,7 +97,7 @@ export default function RiserProductSpecifications() {
                 Adjustable Steel Rings
               </CardTitle>
               <CardDescription className="text-slate-500 font-medium text-sm">
-                Steel rings with a expansion mechanism that locks to the frame.
+                Steel rings with an expansion mechanism that locks to the frame.
               </CardDescription>
             </CardHeader>
 

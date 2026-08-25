@@ -25,7 +25,7 @@ export default function CatchBasinSteelRisers() {
           </span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-[#0a0a0a] leading-none">
             Steel catch basin risers, <br />
-            <span className="text-[#cc2221]">made to fit.</span>
+            <span className="text-[#cc2221]">precision engineered to fit.</span>
           </h2>
           <p className="text-zinc-600 text-lg font-medium leading-relaxed max-w-none">
             Minimize intensive structural rebuilds during overlays. Our high-tensile steel riser extensions are built to fit your existing catch basin frames.
@@ -66,7 +66,7 @@ export default function CatchBasinSteelRisers() {
                   <h3 className="font-black uppercase tracking-wider text-xs text-[#0a0a0a]">Origin Quality</h3>
                 </div>
                 <p className="text-sm font-bold text-zinc-800">Proudly Made in America</p>
-                <p className="text-xs text-slate-500 leading-relaxed">Forged and assembled domestically using rated for high-tensile steel alloys matching domestic construction mandates.</p>
+                <p className="text-xs text-slate-500 leading-relaxed">Forged and assembled domestically using high-tensile steel alloys matching domestic construction mandates.</p>
               </div>
 
               {/* Feature 4 */}
@@ -76,7 +76,7 @@ export default function CatchBasinSteelRisers() {
                   <h3 className="font-black uppercase tracking-wider text-xs text-[#0a0a0a]">Depth Grading</h3>
                 </div>
                 <p className="text-sm font-bold text-zinc-800">3/4" Base with 1/4" Increments</p>
-                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin asphalt lifts and scales upward seamlessly in precise Custom rise increments available.</p>
+                <p className="text-xs text-zinc-500 leading-relaxed">Starts at a slim 3/4" rise profile for thin asphalt lifts and scales upward seamlessly in precise custom rise increments.</p>
               </div>
 
             </div>

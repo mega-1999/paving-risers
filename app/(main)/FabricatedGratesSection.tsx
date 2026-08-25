@@ -81,7 +81,7 @@ export default function FabricatedGratesSection() {
               </p>
             </div>
 
-            {/* Visual Diagram Placeholder */}
+
             <div className="relative w-full h-64 bg-white border border-zinc-800 rounded-sm my-6 overflow-hidden flex items-center justify-center p-4">
               <div className="flex flex-col items-center justify-center text-center space-y-2">
                 {/* <Grid className="w-12 h-12 text-[#CC0000] stroke-[1.5]" />

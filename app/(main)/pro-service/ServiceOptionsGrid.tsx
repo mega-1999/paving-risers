@@ -42,7 +42,7 @@ export default function ServiceOptionsGrid() {
               <div className="relative w-full h-56 mb-6 overflow-hidden bg-gray-100 rounded-sm">
                 {/* Fallback styling if image is missing */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-mono text-xs uppercase tracking-widest z-0">
-                  [Image Placeholder]
+
                 </div>
 
                 <Image

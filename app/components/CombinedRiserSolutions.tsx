@@ -84,7 +84,7 @@ const RISER_SECTIONS = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
     isComingSoon: true, // Added flag for the badge
     features: [
-      { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom sloped from 1% to Slopes available per design specs." },
+      { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom slopes available to meet project-specific design requirements." },
       { icon: "ShieldCheck", title: "Snowplow Safe", desc: "Ensures covers sit flush, preventing plow blade snags." }
     ],
     meta: [],
@@ -98,7 +98,7 @@ const ADVANTAGES = [
   { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and pave. Reduce labor costs on every single utility hole." },
   { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" riser securely for exact elevation matching." },
   { icon: "Wrench", title: "No Digging", desc: "Keep jackhammers off the jobsite. Avoid digging out the concrete base structure." },
-  { icon: "HardHat", title: "design to meet applicable DOT requirements", desc: "Materials and load ratings designed to designed to support muncipal compliance" }
+  { icon: "HardHat", title: "Designed to meet applicable DOT requirements", desc: "Materials and load ratings are engineered to support applicable municipal and DOT requirements." }
 ];
 
 
@@ -201,7 +201,7 @@ export default function ComprehensivePavingRisersMapped() {
                     <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-[#111] border-white/10' : 'bg-white border-gray-200'}`}>
                       <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
                         <span className={`font-medium italic text-sm ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>Our Pledge:</span>
-                        <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Custom manufacturing available... regardless."</span>
+                        <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Custom manufacturing available to meet project specifications."</span>
                       </div>
                       {section.meta.map((metaItem, i) => (
                         <div key={i} className="flex justify-between text-sm">
