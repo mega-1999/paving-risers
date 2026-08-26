@@ -57,7 +57,6 @@ const Home = () => {
       <StandardsMarquee/>
       <SaferRoadsCTA />
       <PavingRiserClassification />
-      <InfiniteRiserShowcase />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
       <GratesRacksAndTools />

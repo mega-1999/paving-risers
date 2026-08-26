@@ -43,6 +43,24 @@ const PRODUCT_VIDEOS = [
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser-PR.852.mp4`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
+  },
+  {
+    id: 4,
+    title: "Curb Inlet",
+    description: "Detailed visualization of the curb inlet structure.",
+    duration: "1:20",
+    type: "ANIMATION",
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1.924.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png`
+  },
+  {
+    id: 5,
+    title: "Custom Size Riser",
+    description: "Demonstration of custom fabricated configurations.",
+    duration: "0:55",
+    type: "CUSTOM_BUILD",
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1.924.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
   }
 ];
 
@@ -115,11 +133,11 @@ export default function Product3DShowcase2() {
         </div>
 
         {/* --- MAIN PLAYER AREA --- */}
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12">
 
           {/* LEFT: Main Player Aspect Screen Window */}
-          <div className="xl:col-span-8 flex flex-col h-full">
-            <div className="relative w-full flex-grow aspect-video lg:aspect-auto min-h-[400px] lg:min-h-[600px] bg-black rounded-sm border border-zinc-800 shadow-[0_0_50px_-15px_rgba(0,0,0,1)] overflow-hidden group">
+          <div className="xl:col-span-8 flex flex-col h-[400px] md:h-[500px] xl:h-[650px]">
+            <div className="relative w-full h-full bg-black rounded-sm border border-zinc-800 shadow-[0_0_50px_-15px_rgba(0,0,0,1)] overflow-hidden group">
               
               {/* Dynamic Overlay Badge */}
               <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-md border border-zinc-800/50 rounded-sm px-4 py-2 text-[10px] font-mono uppercase tracking-widest text-zinc-300 z-20 flex items-center gap-3 pointer-events-none shadow-xl">
@@ -163,7 +181,7 @@ export default function Product3DShowcase2() {
           </div>
 
           {/* RIGHT: Model Selector Sidebar Playlist */}
-          <div className="xl:col-span-4 flex flex-col h-full bg-zinc-900/40 backdrop-blur-md rounded-sm border border-zinc-800/50 p-6 shadow-xl">
+          <div className="xl:col-span-4 flex flex-col h-[450px] md:h-[500px] xl:h-[650px] bg-zinc-900/40 backdrop-blur-md rounded-sm border border-zinc-800/50 p-6 shadow-xl">
             <div className="flex items-center justify-between mb-8 border-b border-zinc-800 pb-4">
               <h4 className="text-zinc-400 font-black uppercase text-xs tracking-widest flex items-center gap-3">
                 <Layers className="w-4 h-4 text-[#CC0000]" />

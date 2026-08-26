@@ -21,6 +21,38 @@ import {
 
 const RISER_SECTIONS = [
   {
+    id: "adjustable-round",
+    theme: "light",
+    overline: "Adjustable Round Riser",
+    title: "Mechanical",
+    highlightText: "Expansion",
+    description: "Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`,
+    features: [
+      { icon: "ShieldCheck", title: "Installs without excavating the frame", desc: "Saves significant time and labor." },
+      { icon: "Layers", title: "Custom Heights Available", desc: "Precision fits for any overlay requirement." }
+    ],
+    meta: [],
+    buttonText: "Request a Quote",
+    buttonLink: "/contact/quote"
+  },
+  {
+    id: "fixed-round",
+    theme: "dark",
+    overline: "Fixed Round Riser",
+    title: "Solid Cast",
+    highlightText: "Construction",
+    description: "Engineered from a single piece of heavy-duty cast or ductile iron for maximum structural integrity. Unlike adjustable risers, this fixed solid ring has no moving parts, ensuring it will never collapse or shift under extreme localized shock loads.",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/fixed_manhole_riser_installation.mp4`,
+    features: [
+      { icon: "ShieldCheck", title: "Maximum strength", desc: "No moving parts for unparalleled durability." },
+      { icon: "Layers", title: "Custom Fits Available", desc: "Manufactured precisely to your project's specifications." }
+    ],
+    meta: [],
+    buttonText: "Request a Quote",
+    buttonLink: "/contact/quote"
+  },
+  {
     id: "standard-municipal",
     theme: "light",
     overline: "Municipal Solutions",
@@ -90,7 +122,43 @@ const RISER_SECTIONS = [
     meta: [],
     buttonText: "Request Custom Fab",
     buttonLink: "#custom"
-  }
+  },
+  // {
+  //   id: "detectable-warning",
+  //   theme: "light",
+  //   overline: "ADA Compliance",
+  //   title: "Detectable",
+  //   highlightText: "Warning Plates",
+  //   description: "Ensure full ADA compliance and pedestrian safety with our high-durability tactile warning surfaces. Designed for seamless integration into municipal curb ramps, street crossings, and transit platforms.",
+  //   image: "/images/DETACTABLE1.jpeg",
+  //   features: [
+  //     { icon: "ShieldCheck", title: "ADA Compliant", desc: "Meets federal and state tactile paving requirements." },
+  //     { icon: "Layers", title: "High Durability", desc: "Engineered to withstand heavy foot traffic and snowplows." }
+  //   ],
+  //   meta: [
+  //     { label: "Application", value: "Curb ramps and transit edges" }
+  //   ],
+  //   buttonText: "View ADA Specs",
+  //   buttonLink: "#detectable"
+  // },
+  // {
+  //   id: "gas-utility",
+  //   theme: "dark",
+  //   overline: "Utility Infrastructure",
+  //   title: "Gas Valve",
+  //   highlightText: "Risers",
+  //   description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
+  //   image: "/images/gas.jpeg",
+  //   features: [
+  //     { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
+  //     { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
+  //   ],
+  //   meta: [
+  //     { label: "Material", value: "High-Tensile Cast Iron" }
+  //   ],
+  //   buttonText: "View Gas Risers",
+  //   buttonLink: "#gas-risers"
+  // }
 ];
 
 
@@ -116,10 +184,7 @@ const renderIcon = (iconName: string, className: string) => {
     default: return <CheckCircle2 className={className} />;
   }
 };
-
-// ==========================================
-// MAIN COMPONENT
-// ==========================================
+ 
 export default function ComprehensivePavingRisersMapped() {
   return (
     <div className="w-full font-sans">
@@ -146,13 +211,24 @@ export default function ComprehensivePavingRisersMapped() {
                 {/* --- IMAGE COLUMN --- */}
                 <div className={`relative ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className={`relative z-10 aspect-square w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 bg-[#111] shadow-2xl' : 'border-gray-200 bg-white shadow-xl'}`}>
-                    <Image
-                      src={section.image}
-                      alt={section.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.15)]' : ''}`}
-                    />
+                    {section.image.endsWith('.mp4') ? (
+                      <video
+                        src={section.image}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="object-cover w-full h-full"
+                      />
+                    ) : (
+                      <Image
+                        src={section.image}
+                        alt={section.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.15)]' : ''}`}
+                      />
+                    )}
 
                     {/* --- COMING SOON OVERLAY --- */}
                     {section.isComingSoon && (
