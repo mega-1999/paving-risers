@@ -210,15 +210,17 @@ export default function ComprehensivePavingRisersMapped() {
 
                 {/* --- IMAGE COLUMN --- */}
                 <div className={`relative ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className={`relative z-10 aspect-square w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 bg-[#111] shadow-2xl' : 'border-gray-200 bg-white shadow-xl'}`}>
+                  <div className={`relative z-10 w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 shadow-2xl' : 'border-gray-200 shadow-xl'} ${section.image.endsWith('.mp4') ? 'aspect-[4/3] bg-[#CC0000]' : isDark ? 'aspect-square bg-[#111]' : 'aspect-square bg-white'}`}>
                     {section.image.endsWith('.mp4') ? (
                       <video
+                        key={section.id}
                         src={section.image}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="object-cover w-full h-full"
+                        suppressHydrationWarning
+                        className="object-cover w-full h-full pointer-events-none"
                       />
                     ) : (
                       <Image
