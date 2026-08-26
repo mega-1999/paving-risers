@@ -37,6 +37,7 @@ const OurProducts = dynamic(() => import('../components/ourProduct'))
 const PavingPathHero = dynamic(() => import('../components/paving-taglines'))
 const RoadwayHero = dynamic(() => import('../components/RoadwayHero'))
 const GlobalBrandBanner = dynamic(() => import('../components/GlobalBrandBanner'))
+const FooterVideoBanner = dynamic(() => import('../components/FooterVideoBanner'))
 
 // 3D Canvas components must be loaded dynamically to avoid SSR ProgressEvent errors and timeouts
 const Product3DShowcase = dynamic(() => import('../../components/ui/sections/Product3DShowcase'), { ssr: false })
@@ -91,6 +92,7 @@ const Home = () => {
       <section id='contact-us'>
         <ContactExtraordinary />
       </section>
+      <FooterVideoBanner />
       {/* <InteractiveProduct/> */}
 
 

@@ -61,6 +61,23 @@ export default function RoadwayHero() {
           <span className="text-[#CC0000] inline-block mb-2 md:mb-4">Product</span> <br/>
           <span className="block text-zinc-300">on Mother Earth.</span>
         </motion.h1>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          className="mt-10 flex justify-center"
+        >
+          <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-[#CC0000]/10 border border-[#CC0000]/40 backdrop-blur-sm shadow-[0_0_30px_rgba(204,0,0,0.15)]">
+            <span className="relative flex h-3 w-3 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#CC0000] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-[#CC0000]"></span>
+            </span>
+            <p className="text-sm md:text-base font-bold uppercase tracking-[0.15em] text-white">
+              Be on the road with us to identify potholes and win extravagant prizes/gifts.
+            </p>
+          </div>
+        </motion.div>
       </div>
 
       {/* Bottom fade to blend into the next section */}
