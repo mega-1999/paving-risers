@@ -53,7 +53,6 @@ const Home = () => {
       <RoadwayHero />
       <GlobalBrandBanner />
       <Product3DShowcase2 />
-      <RisersForEverySituation />
       <UltimateResultsPattern />
       <StandardsMarquee/>
       <SaferRoadsCTA />
@@ -67,6 +66,7 @@ const Home = () => {
       <Interactive3DShowcase />
       <RiserProductSpecifications />
       <CatchBasinSteelRisers />
+      <RisersForEverySituation />
       <FabricatedGratesSection />
       <RiserOrderSpecifications />
       {/* <AppleStylePavingShowcase/> */}
