@@ -123,42 +123,42 @@ const RISER_SECTIONS = [
     buttonText: "Request Custom Fab",
     buttonLink: "#custom"
   },
-  // {
-  //   id: "detectable-warning",
-  //   theme: "light",
-  //   overline: "ADA Compliance",
-  //   title: "Detectable",
-  //   highlightText: "Warning Plates",
-  //   description: "Ensure full ADA compliance and pedestrian safety with our high-durability tactile warning surfaces. Designed for seamless integration into municipal curb ramps, street crossings, and transit platforms.",
-  //   image: "/images/DETACTABLE1.jpeg",
-  //   features: [
-  //     { icon: "ShieldCheck", title: "ADA Compliant", desc: "Meets federal and state tactile paving requirements." },
-  //     { icon: "Layers", title: "High Durability", desc: "Engineered to withstand heavy foot traffic and snowplows." }
-  //   ],
-  //   meta: [
-  //     { label: "Application", value: "Curb ramps and transit edges" }
-  //   ],
-  //   buttonText: "View ADA Specs",
-  //   buttonLink: "#detectable"
-  // },
-  // {
-  //   id: "gas-utility",
-  //   theme: "dark",
-  //   overline: "Utility Infrastructure",
-  //   title: "Gas Valve",
-  //   highlightText: "Risers",
-  //   description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
-  //   image: "/images/gas.jpeg",
-  //   features: [
-  //     { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
-  //     { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
-  //   ],
-  //   meta: [
-  //     { label: "Material", value: "High-Tensile Cast Iron" }
-  //   ],
-  //   buttonText: "View Gas Risers",
-  //   buttonLink: "#gas-risers"
-  // }
+  {
+    id: "detectable-warning",
+    theme: "light",
+    overline: "ADA Compliance",
+    title: "Detectable",
+    highlightText: "Warning Plates",
+    description: "Ensure full ADA compliance and pedestrian safety with our high-durability tactile warning surfaces. Designed for seamless integration into municipal curb ramps, street crossings, and transit platforms.",
+    image: "/images/DETACTABLE1.jpeg",
+    features: [
+      { icon: "ShieldCheck", title: "ADA Compliant", desc: "Meets federal and state tactile paving requirements." },
+      { icon: "Layers", title: "High Durability", desc: "Engineered to withstand heavy foot traffic and snowplows." }
+    ],
+    meta: [
+      { label: "Application", value: "Curb ramps and transit edges" }
+    ],
+    buttonText: "View ADA Specs",
+    buttonLink: "#detectable"
+  },
+  {
+    id: "gas-utility",
+    theme: "dark",
+    overline: "Utility Infrastructure",
+    title: "Gas Valve",
+    highlightText: "Risers",
+    description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
+    image: "/images/gas.jpeg",
+    features: [
+      { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
+      { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
+    ],
+    meta: [
+      { label: "Material", value: "High-Tensile Cast Iron" }
+    ],
+    buttonText: "View Gas Risers",
+    buttonLink: "#gas-risers"
+  }
 ];
 
 
