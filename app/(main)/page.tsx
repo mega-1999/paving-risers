@@ -56,9 +56,9 @@ const Home = () => {
       <UltimateResultsPattern />
       <StandardsMarquee/>
       <SaferRoadsCTA />
-      <PavingRiserClassification />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
+      <PavingRiserClassification />
       <GratesRacksAndTools />
       <Product3DShowcase />
       <PavingRisersHeroSection />
