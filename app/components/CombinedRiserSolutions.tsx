@@ -130,7 +130,7 @@ const RISER_SECTIONS = [
     title: "Detectable",
     highlightText: "Warning Plates",
     description: "Ensure full ADA compliance and pedestrian safety with our high-durability tactile warning surfaces. Designed for seamless integration into municipal curb ramps, street crossings, and transit platforms.",
-    image: "/images/DETACTABLE1.jpeg",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/DETACTABLE1.jpeg`,
     features: [
       { icon: "ShieldCheck", title: "ADA Compliant", desc: "Meets federal and state tactile paving requirements." },
       { icon: "Layers", title: "High Durability", desc: "Engineered to withstand heavy foot traffic and snowplows." }
@@ -148,7 +148,7 @@ const RISER_SECTIONS = [
     title: "Gas Valve",
     highlightText: "Risers",
     description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
-    image: "/images/gas.jpeg",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/gas_riser_1.94.png`,
     features: [
       { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
       { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }

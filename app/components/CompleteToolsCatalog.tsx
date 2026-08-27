@@ -16,7 +16,58 @@ import { Button } from "@/components/ui/button";
 
 // --- FULL EXTRACTED TOOL DATABASE MAP WITH ASSET IMAGES ---
 const ACCESSORIES_DATA = [
+  // --- FILE REFERENCE: 9.jpg ---
+  {
+    title: "The Chook™ – Combination Chisel & Manhole Hook",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-CHK-02",
+    description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
+    spec: "Reinforced Alloy Steel Profile",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/Chisel.png`
+  },
+  {
+    title: "Manhole Cover Hook",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-MHH-01",
+    description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
+    spec: "Heat-Treated Solid Carbon Steel",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/manhole_cover_hook.png`
+  },
+  {
+    title: "Water Service Locking Valve Cover",
+    category: "Utility Locks & Pullers",
+    sku: "PR-LVC-15",
+    description: "Solid steel enclosure engineered to bolt directly over underground water service lines for security.",
+    spec: "Heavy-Gauge Fabricated Box Steel",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/VALVE_BOX_COVER_BAR.9.png`
+  },
+  {
+    title: "Sewer Plug Puller",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-SPP-23",
+    description: "Heavy-duty puller designed for the safe and efficient extraction of sewer plugs.",
+    spec: "Reinforced Steel Construction",
+    image: "/images/tools/SEWER_PLUG_PILLER.12.png"
+  },
+  {
+    title: "Valve Box Lifter",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-VBL-24",
+    description: "Specialized lifting tool designed to grip and elevate heavy valve boxes securely.",
+    spec: "High-Tensile Gripping Jaws",
+    image: "/images/tools/valve_box_liffer.11.png"
+  },
+  {
+    title: "Valve Box Tongs",
+    category: "Lifting Hooks & Keys",
+    sku: "PR-VBT-25",
+    description: "Extended reach tongs engineered for clearing debris or retrieving items from deep valve box shafts.",
+    spec: "Scissor-Action Extended Reach",
+    image: "/images/tools/valve_box_tounge.10.png"
+  },
   // --- FILE REFERENCE: 7.jpg ---
+  
+  
   {
     title: "Copper Tube Rerounder",
     category: "Utility Locks & Pullers",
@@ -31,14 +82,6 @@ const ACCESSORIES_DATA = [
     sku: "PR-CBL-14",
     description: "Heavy tamper-proof physical locking shroud designed to block unauthorized access to curb box covers.",
     spec: "High-Vis Safety Red Shroud Core",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
-  },
-  {
-    title: "Water Service Locking Valve Cover",
-    category: "Utility Locks & Pullers",
-    sku: "PR-LVC-15",
-    description: "Solid steel enclosure engineered to bolt directly over underground water service lines for security.",
-    spec: "Heavy-Gauge Fabricated Box Steel",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
   },
   {
@@ -92,14 +135,6 @@ const ACCESSORIES_DATA = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
   },
   {
-    title: "Manhole Cover Hook",
-    category: "Lifting Hooks & Keys",
-    sku: "PR-MHH-01",
-    description: "Heavy-duty forged steel T-bar hook configured for pulling standard sanitary and municipal manhole cover frames cleanly.",
-    spec: "Heat-Treated Solid Carbon Steel",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
-  },
-  {
     title: "Hydrant Meter Stand",
     category: "Specialized Kits",
     sku: "PR-HMS-21",
@@ -116,15 +151,6 @@ const ACCESSORIES_DATA = [
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
   },
 
-  // --- FILE REFERENCE: 9.jpg ---
-  {
-    title: "The Chook™ – Combination Chisel & Manhole Hook",
-    category: "Lifting Hooks & Keys",
-    sku: "PR-CHK-02",
-    description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",
-    spec: "Reinforced Alloy Steel Profile",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
-  },
   {
     title: "Pent End Wrench, Standard T Handle",
     category: "Specialized Kits",

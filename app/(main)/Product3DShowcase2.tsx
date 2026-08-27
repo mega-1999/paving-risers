@@ -50,7 +50,7 @@ const PRODUCT_VIDEOS = [
     description: "Detailed visualization of the curb inlet structure.",
     duration: "1:20",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1.924.mp4`,
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Curb_Inlet_riser/curb_inlet_riser.715.mp4`,
     thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png`
   },
   {
