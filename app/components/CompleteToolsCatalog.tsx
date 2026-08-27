@@ -47,7 +47,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-SPP-23",
     description: "Heavy-duty puller designed for the safe and efficient extraction of sewer plugs.",
     spec: "Reinforced Steel Construction",
-    image: "/images/tools/SEWER_PLUG_PILLER.12.png"
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/SEWER_PLUG_PILLER.12.png`
   },
   {
     title: "Valve Box Lifter",
@@ -55,7 +55,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-VBL-24",
     description: "Specialized lifting tool designed to grip and elevate heavy valve boxes securely.",
     spec: "High-Tensile Gripping Jaws",
-    image: "/images/tools/valve_box_liffer.11.png"
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_liffer.11.png`
   },
   {
     title: "Valve Box Tongs",
@@ -63,7 +63,7 @@ const ACCESSORIES_DATA = [
     sku: "PR-VBT-25",
     description: "Extended reach tongs engineered for clearing debris or retrieving items from deep valve box shafts.",
     spec: "Scissor-Action Extended Reach",
-    image: "/images/tools/valve_box_tounge.10.png"
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_tounge.10.png`
   },
   // --- FILE REFERENCE: 7.jpg ---
   

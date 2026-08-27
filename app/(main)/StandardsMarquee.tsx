@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const standardLogos = Array.from({ length: 13 }).map((_, i) => ({
-    src: `/images/standards/${i + 1}.png`,
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/standards/${i + 1}.png`,
     alt: `Standard ${i + 1}`
 }));
 
