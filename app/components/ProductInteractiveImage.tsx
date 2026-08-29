@@ -127,7 +127,7 @@ export default function ProductInteractiveImage() {
               <div className="space-y-3 text-xs font-bold text-slate-600 uppercase tracking-wider">
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Layers className="w-4 h-4 text-slate-400" /> Casting Core:</span>
-                  <span className="text-[#0F0F0F] text-right">Grey Iron / Ductile Iron / Mild Steel</span>
+                  <span className="text-[#0F0F0F] text-right">Black Coated / Ductile Iron / Mild Steel</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-1.5"><Ruler className="w-4 h-4 text-slate-400" /> Height Range:</span>

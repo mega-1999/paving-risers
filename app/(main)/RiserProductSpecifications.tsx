@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 // --- STRUCTURAL FEATURE DATA EXTRACTED FROM 2.png ---
 const SOLID_IRON_FEATURES = [
   { title: "Most Economical Option", desc: "Maximizes infrastructure budget layout efficiency across large municipal projects." },
-  { title: "Cast from Gray Iron", desc: "Heavy-duty structural casting optimized for heavy vehicular loads" },
+  { title: "Black Coated Finish", desc: "Heavy-duty structural casting optimized for heavy vehicular loads" },
   { title: "Machined to Fit Street Covers", desc: "Fabricated to fit precisely in the existing manhole covers." },
   { title: "Minimum Vertical Rise", desc: "Engineered clearance calculated precisely at lid thickness + 1/2\" increments." },
   { title: "Standard Sizes In Stock", desc: "Readily available and stocked in standard 2\" and 3\" elevation rises." },
@@ -65,7 +65,7 @@ export default function RiserProductSpecifications() {
                 Solid Iron Riser Rings
               </CardTitle>
               <CardDescription className="text-slate-500 font-medium text-sm">
-                Cast gray iron rings for standard road work.
+                Black coated rings for standard road work.
               </CardDescription>
             </CardHeader>
 

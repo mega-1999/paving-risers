@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button";
 const ACCESSORIES_DATA = [
   // --- FILE REFERENCE: 9.jpg ---
   {
-    title: "The Chook™ – Combination Chisel & Manhole Hook",
+    title: "Chisel & Manhole Hook",
     category: "Lifting Hooks & Keys",
     sku: "PR-CHK-02",
     description: "Dual-purpose site tool featuring an integrated pry chisel end combined with a heavy-duty ring-handled hook.",

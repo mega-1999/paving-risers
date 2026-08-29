@@ -15,7 +15,7 @@ export const menuData = {
         slug: "manhole-covers-and-frames",
         image: "/assets/image1.jpeg",
         description:
-          "Durable ductile iron an d gray iron manhole covers and frames engineered for municipal, highway, and smart-city infrastructure.",
+          "Durable ductile iron and black coated manhole covers and frames engineered for municipal, highway, and smart-city infrastructure.",
         videoUrl: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/video/manhole-covers.mp4",
         items: [
           "Circular manhole covers",

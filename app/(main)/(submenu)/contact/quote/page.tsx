@@ -185,7 +185,7 @@ export default function QuoteRequestPage() {
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-xs font-black uppercase tracking-widest text-zinc-500">Material Specification</label>
                   <select name="material" className="w-full bg-[#0A0A0A] border border-white/10 focus:border-[#CC0000] p-4 text-white font-bold outline-none transition-colors appearance-none cursor-pointer">
-                    <option>Gray Iron (Standard)</option>
+                    <option>Black Coated (Standard)</option>
                     <option>Ductile Iron (Heavy Duty)</option>
                     <option>A36 Fabricated Steel</option>
                   </select>

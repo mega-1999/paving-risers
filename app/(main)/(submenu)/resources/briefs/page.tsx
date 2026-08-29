@@ -244,9 +244,9 @@ export default function EngineeringBriefsPage() {
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">
                 <p className="text-[#CC0000] font-mono text-[10px] font-bold tracking-[0.2em] mb-2">BRIEF #415</p>
-                <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Ductile vs Gray Iron</h3>
+                <h3 className="text-2xl font-black uppercase tracking-wide mb-3">Ductile vs Black Coated</h3>
                 <p className="text-zinc-500 text-sm font-medium leading-relaxed mb-6">
-                  Tensile strength comparisons between standard gray iron and ductile iron variants under extreme loads.
+                  Tensile strength comparisons between standard black coated and ductile iron variants under extreme loads.
                 </p>
                 <a href="#" className="text-white text-xs font-black uppercase tracking-widest flex items-center group-hover:text-[#CC0000] transition-colors">
                   Read Whitepaper <ChevronRight className="w-4 h-4 ml-1" />

@@ -235,10 +235,10 @@ export const adjustment_risers = [
     },
     {
         "id": "00196094",
-        "title": "1960H 1-1/2\" Solid Round Gray Iron Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
+        "title": "1960H 1-1/2\" Solid Round Black Coated Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "23-3/4\" Diameter",
             "seatThickness": "1\"",
@@ -1103,10 +1103,10 @@ export const adjustment_risers = [
     },
     {
         "id": "00223993",
-        "title": "2239H2 Solid Round Gray Iron 2\" Adjustment Riser with Orientation Tab",
+        "title": "2239H2 Solid Round Black Coated 2\" Adjustment Riser with Orientation Tab",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "N/A",
             "seatThickness": "N/A",
@@ -2335,10 +2335,10 @@ export const adjustment_risers = [
     },
     {
         "id": "00126890",
-        "title": "1268H Solid Round Gray Iron 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
+        "title": "1268H Solid Round Black Coated 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "25-7/8\" Diameter",
             "seatThickness": "1-7/8\"",
@@ -2926,10 +2926,10 @@ export const infra_riser_adjustment_risers = [
     },
     {
         "id": "00196094",
-        "title": "1960H 1-1/2\" Solid Round Gray Iron Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
+        "title": "1960H 1-1/2\" Solid Round Black Coated Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "23-3/4\" Diameter",
             "seatThickness": "1\"",
@@ -3794,10 +3794,10 @@ export const infra_riser_adjustment_risers = [
     },
     {
         "id": "00223993",
-        "title": "2239H2 Solid Round Gray Iron 2\" Adjustment Riser with Orientation Tab",
+        "title": "2239H2 Solid Round Black Coated 2\" Adjustment Riser with Orientation Tab",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "N/A",
             "seatThickness": "N/A",
@@ -5026,10 +5026,10 @@ export const infra_riser_adjustment_risers = [
     },
     {
         "id": "00126890",
-        "title": "1268H Solid Round Gray Iron 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
+        "title": "1268H Solid Round Black Coated 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
         "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
         "attributes": {
-            "material": "Gray Iron",
+            "material": "Black Coated",
             "shape": "Round",
             "clearOpening": "25-7/8\" Diameter",
             "seatThickness": "1-7/8\"",

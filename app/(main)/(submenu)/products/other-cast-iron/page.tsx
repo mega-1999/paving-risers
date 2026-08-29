@@ -15,7 +15,7 @@ const CAST_IRON_PRODUCTS = [
   {
     title: 'Heavy Duty Trench Grates',
     category: 'Drainage Castings',
-    description: 'Gray Iron trench grates designed for heavy highway and airport tarmac load requirements.',
+    description: 'Black coated trench grates designed for heavy highway and airport tarmac load requirements.',
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1.619.png`,
   },
   {

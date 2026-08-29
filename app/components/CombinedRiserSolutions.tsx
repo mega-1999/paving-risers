@@ -27,7 +27,7 @@ const RISER_SECTIONS = [
     title: "Mechanical",
     highlightText: "Expansion",
     description: "Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_manhole_riser_installation.mp4`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/adjustable_paving_risere_with_frame.937`,
     features: [
       { icon: "ShieldCheck", title: "Installs without excavating the frame", desc: "Saves significant time and labor." },
       { icon: "Layers", title: "Custom Heights Available", desc: "Precision fits for any overlay requirement." }
@@ -65,7 +65,7 @@ const RISER_SECTIONS = [
       { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
     ],
     meta: [
-      { label: "Material", value: "Ductile/Grey Iron ASTM A48" },
+      { label: "Material", value: "Ductile/Black Coated" },
       { label: "Standard Sizes", value: "24\", 30\", and Custom Increments" }
     ],
     buttonText: "Request a Quote",

@@ -81,7 +81,7 @@ export default function InfrastructureRisers() {
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-500">Material</span>
-                <span className="text-slate-900 font-bold">Ductile/Grey Iron ASTM A48</span>
+                <span className="text-slate-900 font-bold">Ductile/Black Coated</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-500">Standard Sizes</span>
