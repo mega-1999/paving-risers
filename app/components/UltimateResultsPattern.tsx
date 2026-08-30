@@ -121,10 +121,7 @@ export default function UltimateResultsPattern() {
             viewport={{ once: true }}
             className="lg:col-span-7 w-full relative group"
           >
-            {/* Glowing Red Aura */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#CC0000] via-red-900 to-[#CC0000] rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-500 pointer-events-none" />
-            
-            <div className="relative h-[380px] sm:h-[460px] lg:h-[540px] w-full rounded-2xl overflow-hidden border-2 border-white/15 bg-black shadow-2xl">
+            <div className="relative h-[380px] sm:h-[460px] lg:h-[540px] w-full rounded-2xl overflow-hidden bg-black shadow-2xl">
               <video
                 autoPlay
                 loop
