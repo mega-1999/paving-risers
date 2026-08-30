@@ -56,12 +56,12 @@ export default function PavingRisersHeroSection() {
           {/* RIGHT PANEL: LIVE FABRICATION INDUSTRIAL LOOP FEED */}
           <div className="lg:col-span-6 w-full">
             <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-[#CC0000] shadow-xl border border-slate-200">
-              <video autoPlay loop muted playsInline 
+              <video autoPlay loop muted playsInline
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/Ayush_Design.752.mp4`}
-                
-                
-                
-                
+
+
+
+
                 preload="auto"
                 className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
                 title="Paving Risers Factory Production Footage"

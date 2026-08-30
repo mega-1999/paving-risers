@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",
   metadataBase: new URL('https://www.pavingrisers.com'),
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
-    apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
+    icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.svg`,
+    apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.svg`,
   },
   openGraph: {
     title: 'Paving Risers',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'Paving Risers',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
+        url: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.svg`,
         width: 1200,
         height: 630,
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Paving Risers',
     description: 'Heavy-duty adjustment rings and paving access solutions.',
-    images: [`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`],
+    images: [`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.svg`],
   },
   robots: {
     index: true,
