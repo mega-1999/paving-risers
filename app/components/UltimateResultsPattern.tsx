@@ -132,7 +132,7 @@ export default function UltimateResultsPattern() {
                 playsInline
                 suppressHydrationWarning
                 src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/ulitimate_risers.mp4`}
-                className="w-full h-full object-cover scale-[1.01]"
+                className="w-full h-full object-contain"
                 title="Ultimate Risers Demonstration"
               />
               {/* Overlay Live Tag */}
