@@ -12,7 +12,7 @@ export default function InfiniteRiserShowcase() {
             {/* Background Red Glow Matching the Animation */}
             <div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[140px] pointer-events-none" />
-                <div className="w-full px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
+                <div className="w-full px-10 md:px-20 space-y-12 relative z-10">
 
                     {/* --- HEADER --- */}
                     <div className=" space-y-3">
@@ -87,7 +87,7 @@ export default function InfiniteRiserShowcase() {
             </div>
             <div className='py-4'>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[140px] pointer-events-none" />
-                <div className="w-full px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
+                <div className="w-full px-10 md:px-20 space-y-12 relative z-10">
 
                     {/* --- HEADER --- */}
                     <div className=" space-y-3">

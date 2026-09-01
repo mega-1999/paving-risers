@@ -228,7 +228,7 @@ export default function OurProducts() {
 
     return (
         <div className="min-h-screen bg-white font-sans text-black">
-            <section id="products" className="py-20 w-full px-6 md:px-8 lg:px-12">
+            <section id="products" className="py-20 w-full px-10 md:px-20">
                 <div className="text-center mb-16">
                     <Badge className="bg-[#0F0F0F] text-white mb-4 px-4 py-1 text-xs uppercase tracking-widest rounded-sm">
                         Official Catalog

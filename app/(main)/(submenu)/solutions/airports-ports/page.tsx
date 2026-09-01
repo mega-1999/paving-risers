@@ -28,7 +28,7 @@ export default function AirportsPortsPage() {
         <div className="absolute w-[50vw] h-[1px] max-w-[400px] bg-gradient-to-r from-transparent via-[#CC0000] to-transparent origin-left animate-[spin_4s_linear_infinite]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
         
         {/* ========================================= */}
         {/* 1. CLASSIFIED / EXTREME HERO              */}

@@ -73,7 +73,7 @@ export default function QuoteRequestPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#020202] via-[#020202]/80 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#020202] via-transparent to-transparent" />
         
-        <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-20 max-w-[1600px] mx-auto">
+        <div className="relative z-10 w-full px-10 md:px-20 pt-20 max-w-[1600px] mx-auto">
           <div className="inline-flex items-center gap-3 px-4 py-2 border border-[#CC0000]/30 bg-[#CC0000]/10 backdrop-blur-md rounded-full mb-8">
             <Building2 className="w-4 h-4 text-[#CC0000]" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#CC0000]">Municipal Sales Desk</span>
@@ -93,7 +93,7 @@ export default function QuoteRequestPage() {
       {/* ========================================= */}
       {/* 2. MAIN QUOTING DASHBOARD                 */}
       {/* ========================================= */}
-      <div className="w-full px-6 md:px-8 lg:px-12 py-16 max-w-[1600px] mx-auto">
+      <div className="w-full px-10 md:px-20 py-16 max-w-[1600px] mx-auto">
         <div className="flex flex-col xl:flex-row gap-16 items-start">
           
           {/* LEFT: THE FORM (Interactive & Visual) */}

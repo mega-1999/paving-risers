@@ -63,7 +63,7 @@ export default function ProductInteractiveImage() {
 
   return (
     <section className="py-24 bg-white font-sans text-[#0F0F0F]">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
+      <div className="w-full px-10 md:px-20 space-y-12">
 
         {/* --- HEADER DESK --- */}
         <div className="max-w-3xl space-y-4">

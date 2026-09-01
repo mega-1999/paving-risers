@@ -50,7 +50,7 @@ export default function GratesRacksAndTools() {
 
   return (
     <section className="bg-white text-slate-900 py-8 font-sans border-b border-slate-100">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-4">
+      <div className="w-full px-10 md:px-20 space-y-4">
 
         {/* --- SECTION HEADER --- */}
         <div className="space-y-4">

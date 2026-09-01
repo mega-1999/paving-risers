@@ -19,7 +19,7 @@ export default function StandardsMarquee() {
                 {/* STRUCTURAL ENGINEERING HEADER */}
                 <div className="flex flex-col items-center text-center mb-12 px-6">
                     <h2 className="text-xl md:text-3xl font-black text-[#CC0000] uppercase tracking-tighter leading-none">
-                        Complying to <span className="text-black">Standards</span>
+                        Complying to <span className="text-black">Every Standards</span>
                     </h2>
                 </div>
 
@@ -44,14 +44,14 @@ export default function StandardsMarquee() {
                     `}</style>
 
                     {/* INFINITE LOOP RUNWAY */}
-                    <div className="flex items-center gap-16 w-max pr-16 whitespace-nowrap will-change-transform animate-marquee">
+                    <div className="flex items-center gap-2 w-max whitespace-nowrap will-change-transform animate-marquee">
                         {infiniteLogos.map((logo, i) => (
                             <div
                                 key={i}
                                 className="shrink-0 flex items-center justify-center transition-all duration-300"
                             >
                                 {/* Fixed structural wrapper keeping all logo scales unified */}
-                                <div className="relative w-36 h-12 opacity-100 transition-all duration-500 cursor-crosshair">
+                                <div className="relative w-36 h-16 opacity-100 transition-all duration-500 cursor-crosshair">
                                     <Image
                                         src={logo.src}
                                         alt={logo.alt}

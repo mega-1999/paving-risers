@@ -41,7 +41,7 @@ const ORDER_REQUIREMENTS = [
 export default function RiserOrderSpecifications() {
   return (
     <section className="bg-white py-8 border-b border-slate-100 font-sans">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
+      <div className="w-full px-10 md:px-20 space-y-12">
 
         {/* --- MAIN HEADER COMPONENT BLOCK --- */}
         <div className="max-w-3xl space-y-4">

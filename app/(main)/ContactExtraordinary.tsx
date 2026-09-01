@@ -48,7 +48,7 @@ export default function ContactExtraordinary() {
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#CC0000]/20 rounded-full blur-[120px] animate-pulse"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[150px]"></div>
 
-      <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
+      <div className="w-full px-10 md:px-20 relative z-10">
 
         {/* --- HEADER --- */}
         <div className="text-center mb-16">

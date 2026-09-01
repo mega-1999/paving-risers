@@ -38,7 +38,7 @@ export default function LiteraturePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(204,0,0,0.2)_0%,transparent_80%)]" />
 
-        <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 text-center max-w-5xl mx-auto space-y-8 mt-24">
+        <div className="relative z-10 w-full px-10 md:px-20 text-center max-w-5xl mx-auto space-y-8 mt-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/20 bg-black/50 backdrop-blur-md rounded-full">
             <BookOpen className="w-4 h-4 text-[#CC0000]" />
             <span className="text-xs font-black uppercase tracking-[0.2em]">The Technical Vault</span>
@@ -64,7 +64,7 @@ export default function LiteraturePage() {
         </div>
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-16">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-16">
 
         {/* ========================================= */}
         {/* 2. FEATURED VIDEO DOCUMENTARIES           */}

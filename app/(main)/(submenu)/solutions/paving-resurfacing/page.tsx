@@ -25,7 +25,7 @@ export default function PavingResurfacingPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
 
         {/* --- HERO SECTION --- */}
         <div className="max-w-6xl mb-32">

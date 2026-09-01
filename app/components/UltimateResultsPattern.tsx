@@ -29,7 +29,7 @@ export default function UltimateResultsPattern() {
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-red-900 rounded-full mix-blend-screen filter blur-[200px] opacity-30 z-0 pointer-events-none" />
 
       {/* ─── FOREGROUND CONTENT: 2-COLUMN SPLIT ─── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-10 px-10 md:px-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* LEFT COLUMN: TYPOGRAPHY, FEATURES & CTA */}

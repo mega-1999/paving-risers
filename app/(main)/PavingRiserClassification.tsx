@@ -5,7 +5,7 @@ import {
   Layers, 
   Layers3, 
   Target,
-  ChevronRight
+  ArrowRight
 } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
@@ -36,157 +36,225 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2
+      staggerChildren: 0.15
     }
   }
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 30 },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
   }
 };
 
 export default function PavingRiserClassification() {
   return (
-    <section className="relative bg-[#0a0a0a] text-white py-24 border-t border-b border-white/5 overflow-hidden font-sans">
+    <section className="relative bg-slate-50 text-slate-900 py-24 border-t border-b border-slate-200 overflow-hidden font-sans">
       
-      {/* Premium Dark Grid Background */}
-      <div className="absolute inset-0 z-0 opacity-[0.1] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
-      
-      {/* Background Red Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#CC0000]/10 rounded-full blur-[150px] pointer-events-none z-0"></div>
+      {/* Precision Technical Grid Background */}
+      <div 
+        className="absolute inset-0 z-0 opacity-40 pointer-events-none" 
+        style={{ 
+          backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
+          backgroundSize: '40px 40px' 
+        }}
+      ></div>
 
-      <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
+      <div className="w-full px-10 md:px-20 relative z-10">
         
         {/* --- SECTION HEADER --- */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto text-center space-y-6 mb-20"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto text-center space-y-4 mb-16"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#CC0000]/10 border border-[#CC0000]/20 rounded-full text-xs font-black uppercase tracking-[0.25em] text-[#CC0000] shadow-[0_0_20px_rgba(204,0,0,0.2)]">
-            <Layers className="w-4 h-4" /> Product Range
-          </span>
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-white leading-tight">
-            The types of risers <br />
-            <span className="text-[#CC0000]">we make.</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#CC0000]/10 border border-[#CC0000]/30 text-[11px] font-mono font-bold uppercase tracking-[0.25em] text-[#CC0000]">
+            <Layers className="w-3.5 h-3.5" /> WORLD OF RISERS
+          </div>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-slate-900 leading-tight">
+            Types of Risers <span className="text-[#CC0000]">We Manufacture.</span>
           </h2>
-          <p className="text-zinc-400 text-lg md:text-xl font-medium max-w-2xl mx-auto">
-            Every job site demands a specific installation blueprint. We manufacture custom solutions grouped by material and mechanical design.
+          <p className="text-slate-600 text-sm md:text-base font-medium max-w-2xl mx-auto leading-relaxed">
+            Every job site demands a specific structural blueprint. Custom solutions categorized by material composition, mechanical design, and application.
           </p>
         </motion.div>
 
-        {/* --- THREE-COLUMN PREMIUM CLASSIFICATION --- */}
+        {/* --- THREE-COLUMN RECTANGULAR WHITE & RED MATRIX --- */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8"
         >
           
-          {/* BRANCH 1: BY MATERIAL */}
-          <motion.div variants={cardVariants} className="relative group rounded-2xl bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-2xl p-8 md:p-10 hover:border-[#CC0000]/50 hover:bg-zinc-900/60 transition-all duration-500 flex flex-col h-full overflow-hidden">
-            {/* Top red accent line */}
-            <div className="absolute top-0 left-0 w-0 h-1 bg-[#CC0000] group-hover:w-full transition-all duration-700 ease-out shadow-[0_0_15px_#CC0000]"></div>
-            
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#CC0000] group-hover:scale-110 group-hover:bg-[#CC0000] group-hover:text-white group-hover:border-[#CC0000] group-hover:shadow-[0_0_20px_rgba(204,0,0,0.4)] transition-all duration-500">
-                <Layers3 className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500 block mb-1">
-                  Composition Matrix
-                </span>
-                <h3 className="text-xl font-black uppercase tracking-tight text-white">
-                  By Material
-                </h3>
-              </div>
-            </div>
+          {/* CARD 1: BY MATERIAL (WHITE CARD) */}
+          <motion.div 
+            variants={cardVariants} 
+            className="relative group bg-white border-2 border-slate-200 p-8 hover:border-[#CC0000] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            {/* Top Red Accent Indicator Line */}
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]"></div>
 
-            <div className="flex-grow flex flex-col justify-center">
-              <ul className="space-y-4">
+            <div>
+              {/* Header Info */}
+              <div className="flex items-center justify-between border-b border-slate-100 pb-6 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-slate-100 border border-slate-200 flex items-center justify-center text-[#CC0000] group-hover:bg-[#CC0000] group-hover:text-white transition-colors">
+                    <Layers3 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    {/* <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400 block">
+                      MATRIX 01
+                    </span> */}
+                    <h3 className="text-lg font-black uppercase tracking-tight text-slate-900">
+                      By Material
+                    </h3>
+                  </div>
+                </div>
+                <span className="text-xs font-mono font-bold text-[#CC0000] bg-[#CC0000]/10 px-2.5 py-1 border border-[#CC0000]/20">
+                  {MATERIAL_OPTIONS.length} TYPES
+                </span>
+              </div>
+
+              {/* Items List */}
+              <ul className="space-y-3">
                 {MATERIAL_OPTIONS.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4 group/item cursor-default">
-                    <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover/item:bg-[#CC0000] group-hover/item:border-[#CC0000] group-hover/item:shadow-[0_0_10px_rgba(204,0,0,0.6)] transition-all duration-300">
-                      <ChevronRight className="w-3 h-3 text-zinc-600 group-hover/item:text-white group-hover/item:translate-x-[1px] transition-all duration-300" />
+                  <li 
+                    key={idx} 
+                    className="flex items-center justify-between p-3 bg-slate-50 border border-slate-200/60 group/item hover:border-[#CC0000] hover:bg-white transition-all cursor-default"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-[#CC0000]" />
+                      <span className="text-sm font-bold text-slate-800 group-hover/item:text-[#CC0000] transition-colors">
+                        {item}
+                      </span>
                     </div>
-                    <span className="text-lg font-bold text-zinc-400 group-hover/item:text-white group-hover/item:translate-x-1 transition-all duration-300">{item}</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:text-[#CC0000] group-hover/item:translate-x-1 transition-all" />
                   </li>
                 ))}
               </ul>
             </div>
+
+            {/* Footer Spec note */}
+            <div className="mt-8 pt-4 border-t border-slate-100 flex justify-between items-center text-[11px] font-mono text-slate-500">
+              <span>SPECIFICATION</span>
+              <span className="text-slate-900 font-bold">Custom Heavy Duty</span>
+            </div>
           </motion.div>
 
-          {/* BRANCH 2: BY DESIGN (Elevated Center Card) */}
-          <motion.div variants={cardVariants} className="relative group rounded-2xl bg-[#0F0F0F]/80 backdrop-blur-xl border border-white/10 shadow-2xl p-8 md:p-10 hover:border-[#CC0000]/50 hover:bg-[#111111] transition-all duration-500 flex flex-col h-full overflow-hidden md:-translate-y-8 z-10">
-            {/* Top red accent line */}
-            <div className="absolute top-0 left-0 w-0 h-1 bg-[#CC0000] group-hover:w-full transition-all duration-700 ease-out shadow-[0_0_15px_#CC0000]"></div>
-            
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 rounded-xl bg-[#CC0000]/10 border border-[#CC0000]/30 flex items-center justify-center text-[#CC0000] group-hover:scale-110 group-hover:bg-[#CC0000] group-hover:text-white group-hover:shadow-[0_0_20px_rgba(204,0,0,0.4)] transition-all duration-500">
-                <Layers className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#CC0000] block mb-1">
-                  Mechanical Framework
-                </span>
-                <h3 className="text-xl font-black uppercase tracking-tight text-white">
-                  By Design
-                </h3>
-              </div>
-            </div>
+          {/* CARD 2: BY DESIGN (VIBRANT RED CARD - FEATURED) */}
+          <motion.div 
+            variants={cardVariants} 
+            className="relative group bg-[#CC0000] text-white p-8 border-2 border-[#CC0000] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            {/* Top Dark Accent Line */}
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-slate-900"></div>
 
-            <div className="flex-grow flex flex-col justify-center">
-              <ul className="space-y-4">
+            <div>
+              {/* Header Info */}
+              <div className="flex items-center justify-between border-b border-white/20 pb-6 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-white text-[#CC0000] flex items-center justify-center font-bold">
+                    <Layers className="w-5 h-5" />
+                  </div>
+                  <div>
+                    {/* <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-white/80 block">
+                      MATRIX 02 ★ FEATURED
+                    </span> */}
+                    <h3 className="text-lg font-black uppercase tracking-tight text-white">
+                      By Design
+                    </h3>
+                  </div>
+                </div>
+                <span className="text-xs font-mono font-bold text-slate-900 bg-white px-2.5 py-1">
+                  {DESIGN_OPTIONS.length} TYPES
+                </span>
+              </div>
+
+              {/* Items List */}
+              <ul className="space-y-3">
                 {DESIGN_OPTIONS.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4 group/item cursor-default">
-                    <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover/item:bg-[#CC0000] group-hover/item:border-[#CC0000] group-hover/item:shadow-[0_0_10px_rgba(204,0,0,0.6)] transition-all duration-300">
-                      <ChevronRight className="w-3 h-3 text-zinc-600 group-hover/item:text-white group-hover/item:translate-x-[1px] transition-all duration-300" />
+                  <li 
+                    key={idx} 
+                    className="flex items-center justify-between p-3.5 bg-white/10 border border-white/20 group/item hover:bg-white hover:text-slate-900 transition-all cursor-default"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-white group-hover/item:bg-[#CC0000]" />
+                      <span className="text-sm font-bold text-white group-hover/item:text-slate-900 transition-colors">
+                        {item}
+                      </span>
                     </div>
-                    <span className="text-lg font-bold text-zinc-400 group-hover/item:text-white group-hover/item:translate-x-1 transition-all duration-300">{item}</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-white/70 group-hover/item:text-[#CC0000] group-hover/item:translate-x-1 transition-all" />
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Footer Spec note */}
+            <div className="mt-8 pt-4 border-t border-white/20 flex justify-between items-center text-[11px] font-mono text-white/80">
+              <span>HEIGHT RANGE</span>
+              <span className="text-white font-bold">1/4" to 6" Rises</span>
             </div>
           </motion.div>
 
-          {/* BRANCH 3: BY APPLICATION */}
-          <motion.div variants={cardVariants} className="relative group rounded-2xl bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-2xl p-8 md:p-10 hover:border-[#CC0000]/50 hover:bg-zinc-900/60 transition-all duration-500 flex flex-col h-full overflow-hidden">
-            {/* Top red accent line */}
-            <div className="absolute top-0 left-0 w-0 h-1 bg-[#CC0000] group-hover:w-full transition-all duration-700 ease-out shadow-[0_0_15px_#CC0000]"></div>
-            
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#CC0000] group-hover:scale-110 group-hover:bg-[#CC0000] group-hover:text-white group-hover:border-[#CC0000] group-hover:shadow-[0_0_20px_rgba(204,0,0,0.4)] transition-all duration-500">
-                <Target className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500 block mb-1">
-                  Utility Type
-                </span>
-                <h3 className="text-xl font-black uppercase tracking-tight text-white">
-                  Application
-                </h3>
-              </div>
-            </div>
+          {/* CARD 3: BY APPLICATION (WHITE CARD) */}
+          <motion.div 
+            variants={cardVariants} 
+            className="relative group bg-white border-2 border-slate-200 p-8 hover:border-[#CC0000] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            {/* Top Red Accent Indicator Line */}
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]"></div>
 
-            <div className="flex-grow flex flex-col justify-center">
-              <ul className="space-y-4">
+            <div>
+              {/* Header Info */}
+              <div className="flex items-center justify-between border-b border-slate-100 pb-6 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-slate-100 border border-slate-200 flex items-center justify-center text-[#CC0000] group-hover:bg-[#CC0000] group-hover:text-white transition-colors">
+                    <Target className="w-5 h-5" />
+                  </div>
+                  <div>
+                    {/* <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400 block">
+                      MATRIX 03
+                    </span> */}
+                    <h3 className="text-lg font-black uppercase tracking-tight text-slate-900">
+                      Application
+                    </h3>
+                  </div>
+                </div>
+                <span className="text-xs font-mono font-bold text-[#CC0000] bg-[#CC0000]/10 px-2.5 py-1 border border-[#CC0000]/20">
+                  {APPLICATION_OPTIONS.length} TYPES
+                </span>
+              </div>
+
+              {/* Items List */}
+              <ul className="space-y-3">
                 {APPLICATION_OPTIONS.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4 group/item cursor-default">
-                    <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover/item:bg-[#CC0000] group-hover/item:border-[#CC0000] group-hover/item:shadow-[0_0_10px_rgba(204,0,0,0.6)] transition-all duration-300">
-                      <ChevronRight className="w-3 h-3 text-zinc-600 group-hover/item:text-white group-hover/item:translate-x-[1px] transition-all duration-300" />
+                  <li 
+                    key={idx} 
+                    className="flex items-center justify-between p-3 bg-slate-50 border border-slate-200/60 group/item hover:border-[#CC0000] hover:bg-white transition-all cursor-default"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-[#CC0000]" />
+                      <span className="text-sm font-bold text-slate-800 group-hover/item:text-[#CC0000] transition-colors">
+                        {item}
+                      </span>
                     </div>
-                    <span className="text-lg font-bold text-zinc-400 group-hover/item:text-white group-hover/item:translate-x-1 transition-all duration-300">{item}</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:text-[#CC0000] group-hover/item:translate-x-1 transition-all" />
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Footer Spec note */}
+            <div className="mt-8 pt-4 border-t border-slate-100 flex justify-between items-center text-[11px] font-mono text-slate-500">
+              <span>DUTY RATING</span>
+              <span className="text-slate-900 font-bold">Highway & Municipal</span>
             </div>
           </motion.div>
 

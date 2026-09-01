@@ -41,7 +41,7 @@ const ACCESSORY_PRODUCTS = [
 export default function ToolsAndAccessoriesCatalog() {
   return (
     <section className="bg-slate-50 py-8 border-b border-slate-200 font-sans">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-16">
+      <div className="w-full px-10 md:px-20 space-y-16">
 
         {/* --- SECTION INTRO HEADER --- */}
         <div className="max-w-3xl space-y-4">

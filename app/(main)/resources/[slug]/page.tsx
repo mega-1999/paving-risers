@@ -67,7 +67,7 @@ export default function ResourceDetailPage({ params }: PageProps) {
       
       {/* --- BREADCRUMB HEADER --- */}
       <div className="bg-white border-b border-gray-200 py-4">
-        <div className="w-full px-6 md:px-8 lg:px-12">
+        <div className="w-full px-10 md:px-20">
           <button 
             onClick={() => router.back()} // Utilizing the router to go back
             className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#C92027] transition-colors"

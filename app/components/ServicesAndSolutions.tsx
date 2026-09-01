@@ -39,7 +39,7 @@ export default function ServicesAndSolutions() {
       {/* Premium Light Grid Background */}
       <div className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000000 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
       
-      <div className="w-full px-6 md:px-8 lg:px-12 relative z-10 ">
+      <div className="w-full px-10 md:px-20 relative z-10 ">
         
         {/* --- HEADER --- */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-6">

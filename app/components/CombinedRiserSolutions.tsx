@@ -205,7 +205,7 @@ export default function ComprehensivePavingRisersMapped() {
             {/* Dynamic Red Glow */}
             <div className={`absolute top-[10%] ${isImageLeft ? 'left-[-10%]' : 'right-[-10%]'} w-[600px] h-[600px] bg-[#CC0000]/${isDark ? '20' : '10'} rounded-full blur-[120px] pointer-events-none z-0`}></div>
 
-            <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
+            <div className="w-full px-10 md:px-20 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 {/* --- IMAGE COLUMN --- */}
@@ -309,7 +309,7 @@ export default function ComprehensivePavingRisersMapped() {
 
       {/* --- ADVANTAGES SECTION --- */}
       <section className="py-20 relative bg-[#CC0000] text-white overflow-hidden">
-        <div className="w-full px-6 md:px-8 lg:px-12 mx-auto relative z-10">
+        <div className="w-full px-10 md:px-20 mx-auto relative z-10">
 
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>

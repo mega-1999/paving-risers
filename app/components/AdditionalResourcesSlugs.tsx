@@ -66,7 +66,7 @@ const RESOURCES = [
 export default function AdditionalResourcesSlugs() {
   return (
     <section className="bg-white w-full  font-sans border-t border-gray-100">
-      <div className="px-6 md:px-8 lg:px-12 py-12">
+      <div className="px-10 md:px-20 py-12">
 
         {/* --- HEADER --- */}
         <h2 className="text-3xl md:text-4xl font-black text-[#CC0000] uppercase tracking-tight mb-8">

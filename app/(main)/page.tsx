@@ -53,12 +53,12 @@ const Home = () => {
       <RoadwayHero />
       <GlobalBrandBanner />
       <Product3DShowcase2 />
+      <PavingRiserClassification />
       <UltimateResultsPattern />
       <StandardsMarquee/>
       <SaferRoadsCTA />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
-      <PavingRiserClassification />
       <GratesRacksAndTools />
       <Product3DShowcase />
       <PavingRisersHeroSection />

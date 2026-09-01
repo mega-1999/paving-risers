@@ -104,7 +104,7 @@ const ProductCatalog = ({ params }: { params: Promise<{ slug: string }> }) => {
 
   return (
     <section className="bg-white min-h-screen py-16 font-sans text-black border-t border-gray-200">
-      <div className="w-full px-6 md:px-8 lg:px-12">
+      <div className="w-full px-10 md:px-20">
 
         {/* PAGE HEADER */}
         <div className="mb-12 border-b-4 border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-4 mt-8">

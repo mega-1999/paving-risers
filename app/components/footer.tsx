@@ -100,7 +100,7 @@ export default function HeavyFooter() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_top_right,rgba(204,0,0,0.05)_0%,transparent_60%)] pointer-events-none" />
 
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-20 relative z-10">
+      <div className="w-full px-10 md:px-20 space-y-20 relative z-10">
         
         {/* --- TOP BRAND HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-12 border-b border-[#222]">
@@ -257,7 +257,7 @@ export default function HeavyFooter() {
       </div>
 
       {/* --- BOTTOM LEGAL --- */}
-      <div className="w-full px-6 md:px-8 lg:px-12 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-[10px] font-mono uppercase tracking-widest gap-4">
+      <div className="w-full px-10 md:px-20 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-[10px] font-mono uppercase tracking-widest gap-4">
         <p>&copy; {new Date().getFullYear()} Paving Risers. All Rights Reserved.</p>
         <div className="flex gap-8">
           <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

@@ -31,7 +31,7 @@ const TopNavbar = () => {
   const [selectedCountry, setSelectedCountry] = useState(countryOptions[0])
   return (
     <div className='w-full relative z-50'>
-      
+
       {/* --- ALERTS MARQUEE BANNER --- */}
       <div className="bg-[#CC0000] text-white w-full py-1.5 overflow-hidden flex whitespace-nowrap">
         <style>{`
@@ -65,11 +65,11 @@ const TopNavbar = () => {
       </div>
 
       <nav className="bg-neutral-800 text-neutral-200 w-full shadow-md">
-        <div className="w-full px-4 md:px-8 lg:px-12">
+        <div className="w-full px-10 md:px-20">
           <div className="flex justify-between items-center h-10 gap-4">
 
             {/* --- Left Menu Items (Scrollable on Mobile) --- */}
-            <div className="flex-1 flex space-x-4 lg:space-x-6 items-center overflow-x-auto hide-scrollbar whitespace-nowrap">
+            <div className="flex space-x-4 lg:space-x-6 items-center overflow-x-auto hide-scrollbar whitespace-nowrap">
               {topMenuItems.map((item) => (
                 <Link
                   className='text-[10px] md:text-xs font-semibold hover:text-[#CC0000] transition-colors tracking-wide'
@@ -79,6 +79,22 @@ const TopNavbar = () => {
                   {item.label}
                 </Link>
               ))}
+            </div>
+
+            {/* --- Middle Certification Buttons (White bg, Hover Red) --- */}
+            <div className="hidden sm:flex items-center gap-2 mx-auto">
+              <Link
+                href="#"
+                className="bg-white text-black font-black hover:bg-[#CC0000] hover:text-white text-[10px] uppercase tracking-wider px-3 py-1 transition-all duration-300 shadow-sm"
+              >
+                USA Certification
+              </Link>
+              <Link
+                href="#"
+                className="bg-white text-black font-black hover:bg-[#CC0000] hover:text-white text-[10px] uppercase tracking-wider px-3 py-1 transition-all duration-300 shadow-sm"
+              >
+                SGS Certification
+              </Link>
             </div>
 
             {/* --- Right Side Icons & Dropdowns --- */}

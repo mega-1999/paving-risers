@@ -32,7 +32,7 @@ export default function UtilityProductsPage() {
         </h1>
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-32">
         
         {/* --- MAGAZINE HEADER --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-24">

@@ -73,7 +73,7 @@ export default function DShapeRisersPage() {
   return (
     <div className="min-h-screen bg-white font-sans text-black">
 
-      <div className="w-full px-6 md:px-8 lg:px-12 py-12">
+      <div className="w-full px-10 md:px-20 py-12">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 

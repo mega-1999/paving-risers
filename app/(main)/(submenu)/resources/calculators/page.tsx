@@ -32,7 +32,7 @@ export default function CalculatorsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(204,0,0,0.15)_0%,transparent_60%)]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
         
         {/* ========================================= */}
         {/* 1. HERO SECTION                           */}

@@ -270,7 +270,7 @@ export default function CompleteToolsCatalog() {
 
   return (
     <section className="bg-slate-50 py-8 border-b border-slate-200 font-sans">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-12">
+      <div className="w-full px-10 md:px-20 space-y-12">
 
         {/* --- MAIN CATALOG INTRO HEADER --- */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-slate-200">

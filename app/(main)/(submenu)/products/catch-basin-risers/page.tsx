@@ -50,7 +50,7 @@ export default function CatchBasinRisersPage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#CC0000]/10 rounded-full blur-[120px] mix-blend-screen" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24">
         
         {/* --- HERO SECTION --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh]">

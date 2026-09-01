@@ -16,7 +16,7 @@ const FEATURE_BADGES = [
   { icon: <Cog className="w-4 h-4 text-[#CC0000]" />, title: "RAPID", subtitle: "INSTALLATION" },
   { icon: <Construction className="w-4 h-4 text-[#CC0000]" />, title: "BUILT FOR", subtitle: "PERFORMANCE" },
 ];
-const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICAIONS", "AIR PORTS", "SEA PORTS", "ICONIC PROJECTS", "SUPER STRUCTURES"];
+const words = ["HARSH CONDITIONS", "ROUGH TERRAINS", "SPECIAL APPLICATIONS", "AIRPORTS", "SEAPORTS", "ICONIC PROJECTS", "SUPER STRUCTURES"];
 
 export default function PavingPathHero() {
   const [mounted, setMounted] = useState(false);
@@ -46,7 +46,7 @@ export default function PavingPathHero() {
 
   return (
     <section className="relative w-full bg-zinc-50 overflow-hidden font-sans">
-      <div className="w-full pl-6 md:pl-8 lg:pl-12 grid grid-cols-1 lg:grid-cols-12 items-center">
+      <div className="w-full pl-10 md:pl-20 grid grid-cols-1 lg:grid-cols-12 items-center">
         {/* --- LEFT COLUMN: BRAND TYPOGRAPHY & BADGES --- */}
         <div className="lg:col-span-8 py-6 lg:py-8 space-y-4 z-10">
 

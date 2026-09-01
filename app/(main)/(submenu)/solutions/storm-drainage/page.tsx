@@ -43,7 +43,7 @@ export default function StormDrainagePage() {
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,rgba(204,0,0,0.08)_0%,transparent_70%)] blur-[120px]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
 
         {/* ========================================= */}
         {/* 1. HYDRO HERO SECTION                     */}

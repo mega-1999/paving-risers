@@ -33,7 +33,7 @@ export default function FabricatedSteelPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-transparent to-[#050505]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
         
         {/* --- ARCHITECTURAL HEADER --- */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 mb-12">

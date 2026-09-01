@@ -35,7 +35,7 @@ export default function EngineeringBriefsPage() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
 
-        <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-32 flex-1 flex flex-col justify-center">
+        <div className="relative z-10 w-full px-10 md:px-20 pt-32 flex-1 flex flex-col justify-center">
           <div className="inline-flex items-center gap-3 px-4 py-2 border border-white/20 bg-white/5 backdrop-blur-md rounded-full w-max mb-8">
             <FileText className="w-4 h-4 text-[#CC0000]" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">R&D Department</span>
@@ -51,7 +51,7 @@ export default function EngineeringBriefsPage() {
           </p>
         </div>
 
-        <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pb-16 flex justify-end">
+        <div className="relative z-10 w-full px-10 md:px-20 pb-16 flex justify-end">
           <div className="flex flex-col items-center gap-4 animate-bounce">
             <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-500">Scroll to Explore</span>
             <ArrowDownCircle className="w-8 h-8 text-[#CC0000]" />
@@ -59,7 +59,7 @@ export default function EngineeringBriefsPage() {
         </div>
       </div>
 
-      <div className="w-full px-6 md:px-8 lg:px-12 mt-32">
+      <div className="w-full px-10 md:px-20 mt-32">
         {/* ========================================= */}
         {/* BRIEF 01: SOLID RING MECHANICS            */}
         {/* ========================================= */}

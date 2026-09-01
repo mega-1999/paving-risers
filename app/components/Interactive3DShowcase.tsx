@@ -371,7 +371,7 @@ export default function Interactive3DShowcase() {
         <section className="bg-black text-white py-8 font-sans overflow-hidden relative">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 pointer-events-none" />
 
-            <div className="  px-6 md:px-8 lg:px-12 space-y-12 relative z-10">
+            <div className="  px-10 md:px-20 space-y-12 relative z-10">
 
                 {/* ── SECTION HEADER ── */}
                 <div className="max-w-3xl space-y-4">

@@ -200,7 +200,7 @@ export default function RedesignedSolutionsSection() {
 
   return (
     <section className="bg-slate-50 py-20 font-sans border-b border-slate-200">
-      <div className="w-full px-6 md:px-8 lg:px-12 space-y-10">
+      <div className="w-full px-10 md:px-20 space-y-10">
 
         {/* --- HEADER WITH TOP TAGLINE --- */}
         <div className="  space-y-3">

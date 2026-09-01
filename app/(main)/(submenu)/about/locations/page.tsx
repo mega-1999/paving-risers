@@ -28,7 +28,7 @@ export default function FoundryLocationsPage() {
         {/* Grid Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-        <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 max-w-6xl mt-20">
+        <div className="relative z-10 w-full px-10 md:px-20 max-w-6xl mt-20">
           <div className="inline-flex items-center gap-3 px-4 py-2 border border-white/20 bg-black/50 backdrop-blur-md rounded-full mb-8">
             <Factory className="w-4 h-4 text-[#CC0000]" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">National Infrastructure</span>
@@ -48,7 +48,7 @@ export default function FoundryLocationsPage() {
       {/* ========================================= */}
       {/* 2. LOCATIONS SPLIT VIEW                   */}
       {/* ========================================= */}
-      <div className="w-full px-6 md:px-8 lg:px-12 mt-32 max-w-[1600px] mx-auto">
+      <div className="w-full px-10 md:px-20 mt-32 max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           
           {/* NEW YORK HQ */}
@@ -186,7 +186,7 @@ export default function FoundryLocationsPage() {
       {/* ========================================= */}
       {/* 3. LOGISTICS INFOBAR                      */}
       {/* ========================================= */}
-      <div className="w-full px-6 md:px-8 lg:px-12 mt-32 max-w-[1600px] mx-auto">
+      <div className="w-full px-10 md:px-20 mt-32 max-w-[1600px] mx-auto">
         <div className="bg-[#111] border border-white/10 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
           
           <div className="p-12 flex flex-col items-center text-center group hover:bg-[#0A0A0A] transition-colors cursor-pointer">

@@ -110,7 +110,7 @@ const Navbar = () => {
 
     return (
         <header className="bg-white border-b-[4px] border-[#CC0000] sticky top-0 z-50 shadow-sm font-sans">
-            <div className="w-full px-6 md:px-8 lg:px-12 py-3 flex justify-between items-center">
+            <div className="w-full px-10 md:px-20 py-3 flex justify-between items-center">
 
                 {/* --- LOGO --- */}
                 <Link href={'/'} className="shrink-0">
@@ -206,22 +206,6 @@ const Navbar = () => {
 
                 {/* --- CTA BUTTON --- */}
                 <div className="hidden sm:flex items-center gap-2">
-                    <div className="relative group/cert h-10">
-                        <Button className="bg-[#0F0F0F] hover:bg-[#CC0000] text-white font-black rounded-none px-4 h-full cursor-pointer uppercase tracking-[0.15em] text-[10px] transition-all duration-300 border-b-2 border-transparent active:scale-95 flex items-center gap-1.5">
-                            Req. Certification
-                            <ChevronDown className="w-3 h-3 transition-transform duration-300 group-hover/cert:rotate-180" />
-                        </Button>
-                        <div className="absolute right-0 top-full pt-1 opacity-0 invisible group-hover/cert:opacity-100 group-hover/cert:visible transition-all duration-300 z-[60]">
-                            <div className="w-52 bg-white border-t-[3px] border-[#CC0000] shadow-2xl ring-1 ring-black/5 flex flex-col">
-                                <Link href="#" className="px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-black hover:bg-[#0F0F0F] hover:text-white border-b border-gray-100 transition-colors">
-                                    USA Certification
-                                </Link>
-                                <Link href="#" className="px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-black hover:bg-[#0F0F0F] hover:text-white transition-colors">
-                                    SGS Certification
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
                     <Link href={'#contact'}>
                         <Button className="bg-[#CC0000] hover:bg-[#0F0F0F] text-white font-black rounded-none px-4 h-10 cursor-pointer uppercase tracking-[0.15em] text-[11px] transition-all duration-300 border-b-2 border-transparent active:scale-95">
                             Download Catalog

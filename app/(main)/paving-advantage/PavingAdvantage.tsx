@@ -37,7 +37,7 @@ export default function PavingAdvantage() {
       {/* Background Engineering Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none" />
 
-      <div className="w-full px-6 md:px-8 lg:px-12 relative z-10">
+      <div className="w-full px-10 md:px-20 relative z-10">
         
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16 border-b border-[#333] pb-12">

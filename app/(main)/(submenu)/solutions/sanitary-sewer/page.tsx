@@ -22,7 +22,7 @@ export default function SanitarySewerPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(204,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,0,0,0.1)_1px,transparent_1px)] bg-[size:20px_20px]" />
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-8 lg:px-12 pt-24 lg:pt-32">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-24 lg:pt-32">
         
         {/* --- DASHBOARD HERO --- */}
         <div className="border border-white/10 bg-[#0A0A0A] p-8 md:p-16 mb-24 relative overflow-hidden group">
