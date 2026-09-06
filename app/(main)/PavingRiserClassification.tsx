@@ -155,7 +155,7 @@ export default function PavingRiserClassification() {
             </div>
           </motion.div>
 
-          {/* CARD 2: BY DESIGN (VIBRANT RED CARD - FEATURED) */}
+          {/* CARD 2: BY DESIGN (VIBRANT RED CARD) */}
           <motion.div 
             variants={cardVariants} 
             className="relative group bg-[#CC0000] text-white p-6 xl:p-8 border-2 border-[#CC0000] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
@@ -181,20 +181,20 @@ export default function PavingRiserClassification() {
                 </span>
               </div>
 
-              {/* Items List */}
+              {/* Items List - Box White */}
               <ul className="space-y-2.5">
                 {DESIGN_OPTIONS.map((item, idx) => (
                   <li 
                     key={idx} 
-                    className="flex items-center justify-between p-2.5 xl:p-3.5 bg-white/10 border border-white/20 group/item hover:bg-white hover:text-slate-900 transition-all cursor-default"
+                    className="flex items-center justify-between p-2.5 xl:p-3 bg-white text-slate-900 border border-white/80 shadow-sm group/item hover:bg-slate-900 hover:text-white transition-all cursor-default"
                   >
                     <div className="flex items-center gap-2.5">
-                      <div className="w-1.5 h-1.5 bg-white group-hover/item:bg-[#CC0000]" />
-                      <span className="text-xs xl:text-sm font-bold text-white group-hover/item:text-slate-900 transition-colors">
+                      <div className="w-1.5 h-1.5 bg-[#CC0000] group-hover/item:bg-white" />
+                      <span className="text-xs xl:text-sm font-bold text-slate-900 group-hover/item:text-white transition-colors">
                         {item}
                       </span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-white/70 group-hover/item:text-[#CC0000] group-hover/item:translate-x-1 transition-all" />
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:text-white group-hover/item:translate-x-1 transition-all" />
                   </li>
                 ))}
               </ul>
@@ -259,55 +259,55 @@ export default function PavingRiserClassification() {
             </div>
           </motion.div>
 
-          {/* CARD 4: BY COATING (WHITE CARD) */}
+          {/* CARD 4: BY COATING (VIBRANT RED CARD - BOX WHITE) */}
           <motion.div 
             variants={cardVariants} 
-            className="relative group bg-white border-2 border-slate-200 p-6 xl:p-8 hover:border-[#CC0000] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full"
+            className="relative group bg-[#CC0000] text-white p-6 xl:p-8 border-2 border-[#CC0000] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
           >
-            {/* Top Red Accent Indicator Line */}
-            <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]"></div>
+            {/* Top Dark Accent Line */}
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-slate-900"></div>
 
             <div>
               {/* Header Info */}
-              <div className="flex items-center justify-between border-b border-slate-100 pb-6 mb-6">
+              <div className="flex items-center justify-between border-b border-white/20 pb-6 mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-100 border border-slate-200 flex items-center justify-center text-[#CC0000] group-hover:bg-[#CC0000] group-hover:text-white transition-colors">
+                  <div className="w-10 h-10 bg-white text-[#CC0000] flex items-center justify-center font-bold">
                     <Paintbrush className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-base xl:text-lg font-black uppercase tracking-tight text-slate-900">
+                    <h3 className="text-base xl:text-lg font-black uppercase tracking-tight text-white">
                       By Coating
                     </h3>
                   </div>
                 </div>
-                <span className="text-xs font-mono font-bold text-[#CC0000] bg-[#CC0000]/10 px-2.5 py-1 border border-[#CC0000]/20">
+                <span className="text-xs font-mono font-bold text-slate-900 bg-white px-2.5 py-1">
                   {COATING_OPTIONS.length} TYPES
                 </span>
               </div>
 
-              {/* Items List */}
+              {/* Items List - Box White */}
               <ul className="space-y-2.5">
                 {COATING_OPTIONS.map((item, idx) => (
                   <li 
                     key={idx} 
-                    className="flex items-center justify-between p-2.5 xl:p-3 bg-slate-50 border border-slate-200/60 group/item hover:border-[#CC0000] hover:bg-white transition-all cursor-default"
+                    className="flex items-center justify-between p-2.5 xl:p-3 bg-white text-slate-900 border border-white/80 shadow-sm group/item hover:bg-slate-900 hover:text-white transition-all cursor-default"
                   >
                     <div className="flex items-center gap-2.5">
-                      <div className="w-1.5 h-1.5 bg-[#CC0000]" />
-                      <span className="text-xs xl:text-sm font-bold text-slate-800 group-hover/item:text-[#CC0000] transition-colors">
+                      <div className="w-1.5 h-1.5 bg-[#CC0000] group-hover/item:bg-white" />
+                      <span className="text-xs xl:text-sm font-bold text-slate-900 group-hover/item:text-white transition-colors">
                         {item}
                       </span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:text-[#CC0000] group-hover/item:translate-x-1 transition-all" />
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:text-white group-hover/item:translate-x-1 transition-all" />
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Footer Spec note */}
-            <div className="mt-8 pt-4 border-t border-slate-100 flex justify-between items-center text-[11px] font-mono text-slate-500">
+            <div className="mt-8 pt-4 border-t border-white/20 flex justify-between items-center text-[11px] font-mono text-white/80">
               <span>FINISH TYPE</span>
-              <span className="text-slate-900 font-bold">Corrosion Protected</span>
+              <span className="text-white font-bold">Corrosion Protected</span>
             </div>
           </motion.div>
 
