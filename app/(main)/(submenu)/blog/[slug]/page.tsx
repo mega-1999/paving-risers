@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32 pt-36 relative">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-8 pt-16 relative">
       
       {/* Technical Blueprint Grid Background */}
       <div 

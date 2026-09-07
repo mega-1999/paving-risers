@@ -41,8 +41,8 @@ export const blogs: BlogPost[] = [
       ## The Structural Advantage of Mild Steel
       While cast iron has historically been the standard for drainage infrastructure, fabricated mild steel is rapidly taking over. Why? Mild steel offers superior tensile strength and flexibility under extreme load stresses.
       
-      ### AASHTO H-20 / HS-20 Compliance
-      Our steel catch basins are engineered to exceed strict AASHTO load ratings. Because fabricated steel can be precision-welded, we can custom-build sizes that traditional cast iron foundries simply cannot mass-produce.
+      ### Heavy Duty Highway Load Rating
+      Our steel catch basins are engineered to withstand extreme wheel loads. Because fabricated steel can be precision-welded, we can custom-build sizes that traditional cast iron foundries simply cannot mass-produce.
 
       Whether you need an oversized curb inlet or a multi-grate system, fabricated mild steel is the modern solution for resilient roadways.
     `,
@@ -90,5 +90,47 @@ export const blogs: BlogPost[] = [
     author: "Materials Engineering",
     image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`,
     category: "Materials"
+  },
+  {
+    id: "5",
+    slug: "custom-paving-riser-fabrication-standards",
+    title: "Custom Paving Riser Fabrication: Meeting Exact Jobsite Specs",
+    excerpt: "Learn how tailored riser dimensions, non-standard clear openings, and heavy-duty load ratings solve complex municipal paving challenges.",
+    content: `
+      ## Precision Fabrication for Non-Standard Utility Frames
+      No two municipal paving projects are identical. Utility frames installed decades ago often feature non-standard clear openings, irregular diameters, and offset seats. Standard off-the-shelf risers fail to deliver an exact fit in these environments.
+      
+      ### Custom Engineering Workflow
+      - **Exact Measurements**: Custom fabricated to fit any diameter from 14" up to 60"+ clear openings.
+      - **Heavy Load Resistance**: Heavy-duty structural steel and ductile iron configurations engineered for high-impact traffic.
+      - **Tailored Rises**: Precision height increments starting at 1/4" up to 6" for smooth asphalt transitions.
+
+      When standard utility castings don't match your jobsite specifications, custom paving riser fabrication ensures a zero-rocking, permanent installation.
+    `,
+    date: "May 30, 2026",
+    author: "Manufacturing R&D",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`,
+    category: "Custom Engineering"
+  },
+  {
+    id: "6",
+    slug: "eliminating-manhole-rattle-and-asphalt-cracking",
+    title: "Eliminating Manhole Rattle & Premature Asphalt Cracking",
+    excerpt: "How proper riser seating and mechanical expansion prevent utility frame movement, road noise, and surrounding asphalt failure.",
+    content: `
+      ## The Root Cause of Utility Frame Rattle
+      Loose utility covers and rattling manhole frames are more than a public noise nuisance—they are an early indicator of structural asphalt failure. When heavy truck traffic strikes an unseated frame, dynamic impact energy radiates outwards into the surrounding pavement, causing radial cracking and pothole formation.
+      
+      ### Mechanical Locking Solutions
+      - **Solid Seat Engagement**: Heavy-duty riser seating transfers wheel loads directly into the main utility structure rather than the top asphalt lift.
+      - **Vibration Dampening**: Mechanical expansion bolts prevent lateral shifting under high-speed traffic.
+      - **Waterproofing Fit**: Eliminates water infiltration beneath the paving grade, preventing freeze-thaw subbase erosion.
+
+      Investing in properly seated paving risers extends pavement life cycles by up to 40% while keeping municipal roads quiet and smooth.
+    `,
+    date: "May 14, 2026",
+    author: "Quality Assurance",
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png`,
+    category: "Maintenance"
   }
 ];
