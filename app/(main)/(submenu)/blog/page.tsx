@@ -42,7 +42,7 @@ export default function BlogListingPage() {
       </div>
 
       {/* ─── BLOG GRID (BLACK CARDS ON FULL WHITE BG) ─── */}
-      <div className="relative z-10 w-full px-10 md:px-20 pt-16 mx-auto">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogs.map((blog, index) => (
             <motion.article 
