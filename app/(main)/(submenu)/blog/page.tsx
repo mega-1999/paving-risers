@@ -21,7 +21,7 @@ export default function BlogListingPage() {
       ></div>
 
       {/* ─── HERO SECTION ─── */}
-      <div className="relative z-10 w-full pt-44 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden border-b border-slate-200">
+      <div className="relative z-10 w-full pt-12 pb-12 px-10 md:px-20 flex flex-col items-center justify-center overflow-hidden border-b border-slate-200">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function BlogListingPage() {
       </div>
 
       {/* ─── BLOG GRID (BLACK CARDS ON FULL WHITE BG) ─── */}
-      <div className="relative z-10 w-full px-10 md:px-20 pt-16 max-w-7xl mx-auto">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-16 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogs.map((blog, index) => (
             <motion.article 

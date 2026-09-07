@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
         }}
       ></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
+      <div className="relative z-10 w-full px-10 md:px-20 max-w-4xl mx-auto">
         
         {/* ─── BREADCRUMB & BACK NAV ─── */}
         <div className="mb-8">
