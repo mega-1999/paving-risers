@@ -56,8 +56,8 @@ export default function BlogListingPage() {
               {/* Top Accent Indicator Line */}
               <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000] z-20"></div>
 
-              {/* Image Container */}
-              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-black/90 border-b border-white/10 flex items-center justify-center p-8">
+              {/* Image Container (White background so dark/black coated images stand out) */}
+              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-white border-b border-slate-200 flex items-center justify-center p-8">
                 <Image 
                   src={blog.image} 
                   alt={blog.title}

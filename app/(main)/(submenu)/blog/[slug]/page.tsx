@@ -93,8 +93,8 @@ export default async function BlogPostPage({ params }: { params: any }) {
             </div>
           </header>
 
-          {/* ─── HERO IMAGE CONTAINER (BLACK CARD) ─── */}
-          <div className="relative w-full h-[40vh] md:h-[50vh] bg-[#0F0F0F] border-2 border-[#0F0F0F] shadow-xl overflow-hidden mb-12 flex items-center justify-center p-8">
+          {/* ─── HERO IMAGE CONTAINER (WHITE BG FOR CLEAR VISIBILITY OF BLACK COATED IMAGES) ─── */}
+          <div className="relative w-full h-[40vh] md:h-[50vh] bg-white border-2 border-slate-200 shadow-xl overflow-hidden mb-12 flex items-center justify-center p-8">
             <Image 
               src={blog.image} 
               alt={blog.title}
