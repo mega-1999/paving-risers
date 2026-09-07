@@ -99,6 +99,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
               src={blog.image} 
               alt={blog.title}
               fill
+              unoptimized
               sizes="100vw"
               className="object-contain p-6"
             />

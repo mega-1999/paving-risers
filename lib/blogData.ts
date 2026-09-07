@@ -88,7 +88,7 @@ export const blogs: BlogPost[] = [
     `,
     date: "June 19, 2026",
     author: "Materials Engineering",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png`,
+    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`,
     category: "Materials"
   }
 ];
