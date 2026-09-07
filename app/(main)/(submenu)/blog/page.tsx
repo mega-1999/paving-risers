@@ -9,90 +9,99 @@ import { blogs } from '@/lib/blogData';
 
 export default function BlogListingPage() {
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-[#CC0000] selection:text-white pb-32">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32">
       
+      {/* Precision Technical Grid Background */}
+      <div 
+        className="absolute inset-0 z-0 opacity-40 pointer-events-none" 
+        style={{ 
+          backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
+          backgroundSize: '40px 40px' 
+        }}
+      ></div>
+
       {/* ─── HERO SECTION ─── */}
-      <div className="relative w-full pt-48 pb-24 px-6 flex flex-col items-center justify-center overflow-hidden border-b border-zinc-900">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(204,0,0,0.15)_0%,transparent_70%)] pointer-events-none" />
-        
+      <div className="relative z-10 w-full pt-44 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden border-b border-slate-200">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-4xl"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 border border-zinc-800 rounded-sm">
-            <Rss className="w-4 h-4 text-[#CC0000]" />
-            <span className="text-xs font-black uppercase tracking-[0.2em] text-zinc-400">Industry Insights</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#0F0F0F] text-white text-[11px] font-mono font-bold uppercase tracking-[0.25em] border-l-4 border-[#CC0000]">
+            <Rss className="w-3.5 h-3.5 text-[#CC0000]" />
+            <span>Industry Insights</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-slate-900 leading-none">
             Paving <span className="text-[#CC0000]">Intelligence</span>
           </h1>
-          <p className="text-lg md:text-xl text-zinc-400 max-w-2xl">
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
             Deep dives into infrastructure, verified installation methods, and the engineering behind modern road solutions.
           </p>
         </motion.div>
       </div>
 
       {/* ─── BLOG GRID ─── */}
-      <div className="px-10 pt-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+      <div className="relative z-10 w-full px-10 md:px-20 pt-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogs.map((blog, index) => (
             <motion.article 
               key={blog.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative flex flex-col bg-[#0a0a0a] border border-zinc-900 rounded-sm overflow-hidden hover:border-zinc-700 transition-colors duration-500"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group relative flex flex-col bg-white border-2 border-slate-200 shadow-sm hover:border-[#CC0000] hover:shadow-xl transition-all duration-300 overflow-hidden h-full"
             >
+              {/* Top Accent Line */}
+              <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000] z-20"></div>
+
               {/* Image Container */}
-              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-zinc-950 flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
+              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-slate-100 border-b border-slate-200 flex items-center justify-center p-8">
                 <Image 
                   src={blog.image} 
                   alt={blog.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain p-8 group-hover:scale-105 transition-transform duration-700 opacity-80"
+                  className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
                 />
                 
                 {/* Category Badge */}
-                <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-[#CC0000] text-white text-xs font-black uppercase tracking-widest rounded-sm">
+                <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-[#CC0000] text-white text-xs font-mono font-bold uppercase tracking-widest">
                   {blog.category}
                 </div>
               </Link>
 
               {/* Content Container */}
               <div className="flex flex-col flex-1 p-8">
-                <div className="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-zinc-500 mb-6">
+                <div className="flex items-center gap-6 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 mb-4">
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-[#CC0000]" />
+                    <Calendar className="w-3.5 h-3.5 text-[#CC0000]" />
                     {blog.date}
                   </div>
                   <div className="flex items-center gap-2">
-                    <User className="w-4 h-4 text-[#CC0000]" />
+                    <User className="w-3.5 h-3.5 text-[#CC0000]" />
                     {blog.author}
                   </div>
                 </div>
 
-                <Link href={`/blog/${blog.slug}`} className="group-hover:text-[#CC0000] transition-colors duration-300">
-                  <h2 className="text-3xl font-black uppercase tracking-tight text-white mb-4 line-clamp-2">
+                <Link href={`/blog/${blog.slug}`} className="group/title">
+                  <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 group-hover/title:text-[#CC0000] transition-colors mb-4 line-clamp-2">
                     {blog.title}
                   </h2>
                 </Link>
 
-                <p className="text-zinc-400 leading-relaxed mb-8 line-clamp-3">
+                <p className="text-slate-600 text-sm font-medium leading-relaxed mb-8 line-clamp-3">
                   {blog.excerpt}
                 </p>
 
-                <div className="mt-auto pt-6 border-t border-zinc-900">
+                <div className="mt-auto pt-6 border-t border-slate-100 flex justify-between items-center">
                   <Link 
                     href={`/blog/${blog.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-white hover:text-[#CC0000] transition-colors group/link"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#0F0F0F] hover:bg-[#CC0000] text-white text-xs font-mono font-bold uppercase tracking-widest transition-colors duration-300 group/link"
                   >
                     Read Article 
-                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
