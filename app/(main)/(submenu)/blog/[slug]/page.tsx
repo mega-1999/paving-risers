@@ -27,26 +27,26 @@ export default async function BlogPostPage({ params }: { params: any }) {
         const trimmed = line.trim();
         if (!trimmed) return '<br/>';
         if (trimmed.startsWith('###')) return `<h3 class="text-xl md:text-2xl font-black uppercase tracking-tight text-[#CC0000] mt-8 mb-4">${trimmed.replace('###', '').trim()}</h3>`;
-        if (trimmed.startsWith('##')) return `<h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-3">${trimmed.replace('##', '').trim()}</h2>`;
+        if (trimmed.startsWith('##')) return `<h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mt-10 mb-6 border-b border-white/10 pb-3">${trimmed.replace('##', '').trim()}</h2>`;
         if (trimmed.startsWith('-')) {
           let liContent = trimmed.replace('-', '').trim();
           liContent = liContent.replace(/\*\*(.*?)\*\*/g, '<strong class="text-[#CC0000]">$1</strong>');
-          return `<li class="ml-6 mb-3 text-slate-700 font-medium relative list-disc marker:text-[#CC0000]">${liContent}</li>`;
+          return `<li class="ml-6 mb-3 text-slate-300 font-medium relative list-disc marker:text-[#CC0000]">${liContent}</li>`;
         }
         
         let pContent = trimmed;
-        pContent = pContent.replace(/\*\*(.*?)\*\*/g, '<strong class="text-slate-900 font-bold">$1</strong>');
-        return `<p class="text-base md:text-lg text-slate-600 font-medium leading-relaxed mb-6">${pContent}</p>`;
+        pContent = pContent.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-bold">$1</strong>');
+        return `<p class="text-base md:text-lg text-slate-300 font-medium leading-relaxed mb-6">${pContent}</p>`;
       })
       .join('');
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32 pt-36 relative">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32 pt-36 relative">
       
       {/* Technical Blueprint Grid Background */}
       <div 
-        className="absolute inset-0 z-0 opacity-40 pointer-events-none" 
+        className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
         style={{ 
           backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
           backgroundSize: '40px 40px' 
@@ -59,16 +59,16 @@ export default async function BlogPostPage({ params }: { params: any }) {
         <div className="mb-8">
           <Link 
             href="/blog" 
-            className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 hover:text-[#CC0000] transition-colors group px-3 py-1.5 bg-white border border-slate-200 shadow-sm"
+            className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-white bg-[#0F0F0F] hover:bg-[#CC0000] transition-colors group px-4 py-2 border border-[#0F0F0F]"
           >
             <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
             Back to Insights
           </Link>
         </div>
 
-        {/* ─── HERO HEADER ─── */}
+        {/* ─── HERO HEADER (BLACK CARD) ─── */}
         <article>
-          <header className="mb-12 bg-white border-2 border-slate-200 p-8 md:p-12 shadow-sm relative">
+          <header className="mb-12 bg-[#0F0F0F] text-white border-2 border-[#0F0F0F] p-8 md:p-12 shadow-xl relative">
             <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]"></div>
             
             <div className="flex items-center gap-2 mb-6">
@@ -77,11 +77,11 @@ export default async function BlogPostPage({ params }: { params: any }) {
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-slate-900 mb-8 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white mb-8 leading-tight">
               {blog.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-6 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 border-t border-slate-100 pt-6">
+            <div className="flex flex-wrap items-center gap-6 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 border-t border-white/10 pt-6">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-[#CC0000]" />
                 {blog.date}
@@ -93,8 +93,8 @@ export default async function BlogPostPage({ params }: { params: any }) {
             </div>
           </header>
 
-          {/* ─── HERO IMAGE ─── */}
-          <div className="relative w-full h-[40vh] md:h-[50vh] bg-white border-2 border-slate-200 shadow-sm overflow-hidden mb-12 flex items-center justify-center p-8">
+          {/* ─── HERO IMAGE CONTAINER (BLACK CARD) ─── */}
+          <div className="relative w-full h-[40vh] md:h-[50vh] bg-[#0F0F0F] border-2 border-[#0F0F0F] shadow-xl overflow-hidden mb-12 flex items-center justify-center p-8">
             <Image 
               src={blog.image} 
               alt={blog.title}
@@ -104,25 +104,25 @@ export default async function BlogPostPage({ params }: { params: any }) {
             />
           </div>
 
-          {/* ─── CONTENT ─── */}
-          <div className="bg-white border-2 border-slate-200 p-8 md:p-12 shadow-sm mb-12">
+          {/* ─── CONTENT CONTAINER (BLACK CARD) ─── */}
+          <div className="bg-[#0F0F0F] text-white border-2 border-[#0F0F0F] p-8 md:p-12 shadow-xl mb-12">
             <div 
-              className="prose prose-slate max-w-none"
+              className="prose prose-invert max-w-none"
               dangerouslySetInnerHTML={{ __html: parseContent(blog.content) }}
             />
           </div>
 
           {/* ─── FOOTER CTA ─── */}
-          <div className="p-8 md:p-12 bg-[#0F0F0F] text-white border-l-4 border-[#CC0000] shadow-xl text-center">
+          <div className="p-8 md:p-12 bg-[#CC0000] text-white shadow-xl text-center">
             <h3 className="text-2xl md:text-4xl font-black uppercase tracking-tight text-white mb-4">
-              Ready to Upgrade Your <span className="text-[#CC0000]">Infrastructure?</span>
+              Ready to Upgrade Your <span className="bg-white text-[#CC0000] px-2 py-0.5 inline-block">Infrastructure?</span>
             </h3>
-            <p className="text-slate-300 max-w-xl mx-auto mb-8 font-medium text-sm md:text-base leading-relaxed">
+            <p className="text-white/90 max-w-xl mx-auto mb-8 font-medium text-sm md:text-base leading-relaxed">
               Connect with our engineering team today to discuss how our verified paving solutions can save your next project time and money.
             </p>
             <Link 
               href="/contact/quote"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#CC0000] hover:bg-white hover:text-slate-900 text-white text-xs font-mono font-bold uppercase tracking-widest transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#0F0F0F] hover:bg-white hover:text-slate-900 text-white text-xs font-mono font-bold uppercase tracking-widest transition-all duration-300"
             >
               Get Certified Specs <ChevronRight className="w-4 h-4" />
             </Link>

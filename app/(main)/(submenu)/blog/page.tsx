@@ -9,11 +9,11 @@ import { blogs } from '@/lib/blogData';
 
 export default function BlogListingPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32">
       
       {/* Precision Technical Grid Background */}
       <div 
-        className="absolute inset-0 z-0 opacity-40 pointer-events-none" 
+        className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
         style={{ 
           backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
           backgroundSize: '40px 40px' 
@@ -35,13 +35,13 @@ export default function BlogListingPage() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-slate-900 leading-none">
             Paving <span className="text-[#CC0000]">Intelligence</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
+          <p className="text-slate-600 text-base md:text-lg max-w-2xl font-medium leading-relaxed">
             Deep dives into infrastructure, verified installation methods, and the engineering behind modern road solutions.
           </p>
         </motion.div>
       </div>
 
-      {/* ─── BLOG GRID ─── */}
+      {/* ─── BLOG GRID (BLACK CARDS ON FULL WHITE BG) ─── */}
       <div className="relative z-10 w-full px-10 md:px-20 pt-16 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogs.map((blog, index) => (
@@ -51,13 +51,13 @@ export default function BlogListingPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative flex flex-col bg-white border-2 border-slate-200 shadow-sm hover:border-[#CC0000] hover:shadow-xl transition-all duration-300 overflow-hidden h-full"
+              className="group relative flex flex-col bg-[#0F0F0F] text-white border-2 border-[#0F0F0F] shadow-xl hover:border-[#CC0000] transition-all duration-300 overflow-hidden h-full"
             >
-              {/* Top Accent Line */}
+              {/* Top Accent Indicator Line */}
               <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000] z-20"></div>
 
               {/* Image Container */}
-              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-slate-100 border-b border-slate-200 flex items-center justify-center p-8">
+              <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-black/90 border-b border-white/10 flex items-center justify-center p-8">
                 <Image 
                   src={blog.image} 
                   alt={blog.title}
@@ -74,7 +74,7 @@ export default function BlogListingPage() {
 
               {/* Content Container */}
               <div className="flex flex-col flex-1 p-8">
-                <div className="flex items-center gap-6 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 mb-4">
+                <div className="flex items-center gap-6 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-3.5 h-3.5 text-[#CC0000]" />
                     {blog.date}
@@ -86,19 +86,19 @@ export default function BlogListingPage() {
                 </div>
 
                 <Link href={`/blog/${blog.slug}`} className="group/title">
-                  <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 group-hover/title:text-[#CC0000] transition-colors mb-4 line-clamp-2">
+                  <h2 className="text-2xl font-black uppercase tracking-tight text-white group-hover/title:text-[#CC0000] transition-colors mb-4 line-clamp-2">
                     {blog.title}
                   </h2>
                 </Link>
 
-                <p className="text-slate-600 text-sm font-medium leading-relaxed mb-8 line-clamp-3">
+                <p className="text-slate-300 text-sm font-medium leading-relaxed mb-8 line-clamp-3">
                   {blog.excerpt}
                 </p>
 
-                <div className="mt-auto pt-6 border-t border-slate-100 flex justify-between items-center">
+                <div className="mt-auto pt-6 border-t border-white/10 flex justify-between items-center">
                   <Link 
                     href={`/blog/${blog.slug}`}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#0F0F0F] hover:bg-[#CC0000] text-white text-xs font-mono font-bold uppercase tracking-widest transition-colors duration-300 group/link"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#CC0000] hover:bg-white hover:text-slate-900 text-white text-xs font-mono font-bold uppercase tracking-widest transition-colors duration-300 group/link"
                   >
                     Read Article 
                     <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
