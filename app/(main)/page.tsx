@@ -6,6 +6,7 @@ import AdjustmentProducts from '@/components/ui/sections/AdjustmentProducts'
 import SmartInfraSection from '../components/SmartInfraSection'
 import ServicesAndSolutions from '../components/ServicesAndSolutions'
 import ContractorResources from '../components/ContractorResources'
+import PavingRisersAppShowcase from '../components/PavingRisersAppShowcase'
 import AdditionalResourcesSlugs from '../components/AdditionalResourcesSlugs'
 import ContactExtraordinary from './ContactExtraordinary'
 import CombinedRiserSolutions from '../components/CombinedRiserSolutions'
@@ -89,6 +90,7 @@ const Home = () => {
       <SmartInfraSection />
       <AdjustmentProducts />
       <PremiumPavingShowcase />
+      <PavingRisersAppShowcase />
       <AdditionalResourcesSlugs />
       <section id='contact-us'>
         <ContactExtraordinary />
