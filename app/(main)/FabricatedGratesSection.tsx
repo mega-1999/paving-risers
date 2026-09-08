@@ -44,7 +44,7 @@ const FABRICATION_SPECS = [
 export default function FabricatedGratesSection() {
   return (
     <section className="bg-white py-4 border-b border-slate-100 font-sans">
-      <div className="w-full px-4 sm:px-6 lg:px-10 space-y-12">
+      <div className="w-full px-10 md:px-20 space-y-12">
 
         {/* --- SECTION HEADER --- */}
         <div className="space-y-4">

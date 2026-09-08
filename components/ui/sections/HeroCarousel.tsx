@@ -116,7 +116,7 @@ export default function HeroCarousel() {
             ))}
 
             {/* --- CONTENT LAYER --- */}
-            <div className="absolute inset-0 z-20 p-6 md:p-8 lg:p-12 flex flex-col justify-center h-full">
+            <div className="absolute inset-0 z-20 w-full px-10 md:px-20 flex flex-col justify-center h-full">
                 <div className="max-w-3xl space-y-6 md:space-y-8 pl-4 md:pl-0 border-l-4 border-[#CC0000] md:border-l-0">
 
                     {/* Dynamic Text Content */}

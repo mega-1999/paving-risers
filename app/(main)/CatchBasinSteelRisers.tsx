@@ -16,7 +16,7 @@ export default function CatchBasinSteelRisers() {
   return (
     <section className="bg-white py-12 border-b border-gray-100 font-sans w-full">
       {/* Absolute strict fluid full width padding */}
-      <div className="w-full px-4 sm:px-6 lg:px-10 space-y-12">
+      <div className="w-full px-10 md:px-20 space-y-12">
 
         {/* --- MAIN SECTION INTRO HEADER --- */}
         <div className="w-full space-y-3">
