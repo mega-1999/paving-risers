@@ -7,32 +7,32 @@ const RESOURCES = [
     id: 'safety',
     title: 'Safety & DOT Compliance',
     description: 'Learn best practices for minimizing jobsite risks and ensuring your adjustment risers meet local DOT load ratings.',
-    imageSrc: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
     href: '#safety'
   },
   {
     id: 'installation',
     title: 'Installation Guides',
     description: 'Get step-by-step tips from the foundry on setting, sealing, and expanding heavy-duty cast iron frames.',
-    imageSrc: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
     href: '#installation'
   },
   {
     id: 'case-studies',
     title: 'Case Studies',
     description: 'See how our direct-to-site delivery helped municipal road crews overcome tight resurfacing deadlines.',
-    imageSrc: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?w=800&q=80',
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
     href: '#case-studies'
   }
 ];
 
 export default function ContractorResources() {
   return (
-    <section className="bg-gray-50  font-sans ">
-      <div className="p-6 md:p-8 lg:p-12">
+    <section className="bg-gray-50  font-sans py-12">
+      <div className="w-full px-10 md:px-20 space-y-6">
 
         {/* --- HEADER --- */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <h2 className="text-2xl md:text-3xl font-light text-gray-900 tracking-wide">
             Contractor Resource Center
           </h2>
@@ -54,13 +54,14 @@ export default function ContractorResources() {
             >
 
               {/* Image Section (Left side) */}
-              <div className="relative w-2/5 shrink-0 overflow-hidden bg-gray-200">
+              <div className="relative w-2/5 shrink-0 overflow-hidden bg-white border-r border-gray-100 p-2">
                 <Image
                   src={card.imageSrc}
                   alt={card.title}
                   fill
+                  unoptimized
                   sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
