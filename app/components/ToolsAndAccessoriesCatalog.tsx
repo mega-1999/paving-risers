@@ -8,7 +8,10 @@ import {
   ShieldCheck,
   Hammer,
   Layers,
-  Construction
+  Construction,
+  Triangle,
+  FlaskConical,
+  Disc
 } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -35,6 +38,27 @@ const ACCESSORY_PRODUCTS = [
     description: "Drop-in extension rings designed to elevate standard 5-1/4\" water and gas valve boxes seamlessly during asphalt overlays.",
     spec: "1\" to 6\" Height Increments Available",
     icon: <Layers className="w-6 h-6 text-[#CC0000]" />
+  },
+  {
+    title: "Riser Alignment Wedges",
+    sku: "WG-RA-PL",
+    description: "Tapered polymer shims used to level and plumb riser stacks on uneven casting seats, ensuring flush contact with the finished pavement surface.",
+    spec: "1/8\" to 1\" Taper • UV-Stabilized HDPE",
+    icon: <Triangle className="w-6 h-6 text-[#CC0000]" />
+  },
+  {
+    title: "Frame Setting Compound",
+    sku: "SC-FS-50",
+    description: "High-strength, rapid-set bedding mortar formulated for securing manhole frames and catch basin tops to the final grade with zero shrinkage.",
+    spec: "50 lb Pail • 6,000 PSI 28-Day Strength",
+    icon: <FlaskConical className="w-6 h-6 text-[#CC0000]" />
+  },
+  {
+    title: "Adjustment Ring Sealant",
+    sku: "SL-BR-25",
+    description: "Self-adhering butyl rubber gasket tape applied between stacked riser rings to create a watertight, flexible seal that prevents infiltration and exfiltration.",
+    spec: "1\" × 25' Roll • ASTM C990 Compliant",
+    icon: <Disc className="w-6 h-6 text-[#CC0000]" />
   }
 ];
 

@@ -52,7 +52,7 @@ const Home = () => {
       <Preloader />
       <PavingPathHero />
       <RoadwayHero />
-      <GlobalBrandBanner />
+<PavingRisersAppShowcase />
       <Product3DShowcase2 />
       <PavingRiserClassification />
       <UltimateResultsPattern />
@@ -73,6 +73,7 @@ const Home = () => {
       <ToolsAndAccessoriesCatalog />
       <CompleteToolsCatalog />
       <HeroCarousel />
+      <GlobalBrandBanner />
       <PavingRisersCatalog />
       <RedesignedSolutionsSection />
       <section className='our-product' id='our-product'>
@@ -90,7 +91,6 @@ const Home = () => {
       <SmartInfraSection />
       <AdjustmentProducts />
       <PremiumPavingShowcase />
-      <PavingRisersAppShowcase />
       <AdditionalResourcesSlugs />
       <section id='contact-us'>
         <ContactExtraordinary />

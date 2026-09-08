@@ -37,7 +37,7 @@ export const PRODUCT_CATEGORIES = [
 export default function AdjustmentProducts() {
   return (
     <section className="py-16 bg-white font-sans">
-      <div className="p-6 md:p-8 lg:p-12">
+      <div className="w-full px-10 md:px-20 ">
 
         {/* Section Header */}
         <h2 className="text-3xl font-black text-slate-800 uppercase tracking-tight mb-8">

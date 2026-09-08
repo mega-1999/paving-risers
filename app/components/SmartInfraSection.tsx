@@ -49,7 +49,7 @@ export default function SmartInfraSection() {
         style={{ backgroundImage: 'radial-gradient(#CC0000 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
 
-      <div className="p-6 md:p-8 lg:p-12 relative z-10">
+      <div className="w-full px-10 md:px-20 relative z-10">
 
         {/* --- SECTION HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">

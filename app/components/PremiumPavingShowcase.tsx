@@ -65,7 +65,7 @@ export default function PremiumPavingShowcase() {
   const currentProduct = SHOWCASE_PRODUCTS[activeIndex];
 
   return (
-    <section className="bg-[#0F0F0F] text-white py-28 px-6 sm:px-8 lg:px-12 font-sans relative overflow-hidden">
+    <section className="bg-[#0F0F0F] text-white py-28 w-full px-10 md:px-20 font-sans relative overflow-hidden">
       {/* Structural Subtle Grid Pattern Mask using strict brand colors */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A1A1A_1px,transparent_1px),linear-gradient(to_bottom,#1A1A1A_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-40 pointer-events-none" />
       
