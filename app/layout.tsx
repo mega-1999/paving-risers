@@ -17,18 +17,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Paving Risers",
+    default: "Paving Risers for Grates in NY | Paving Risers",
     template: "%s | Paving Risers",
   },
-  description: "Heavy-duty adjustment rings, catch basin frames, and paving access solutions for municipal and commercial infrastructure.",
+  description: "Paving Risers for Grates in NY offer durable, precision-engineered risers for manholes, catch basins and grates, built for safe, reliable roadwork.",
   metadataBase: new URL('https://www.pavingrisers.com'),
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
     apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/favicon.png`,
   },
   openGraph: {
-    title: 'Paving Risers',
-    description: 'Professional Grade Infrastructure Solutions',
+    title: 'Paving Risers for Grates in NY',
+    description: 'Paving Risers for Grates in NY offer durable, precision-engineered risers for manholes, catch basins and grates, built for safe, reliable roadwork.',
     url: 'https://www.pavingrisers.com',
     siteName: 'Paving Risers',
     images: [
