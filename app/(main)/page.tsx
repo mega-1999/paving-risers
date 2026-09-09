@@ -31,6 +31,8 @@ import SaferRoadsCTA from '../components/SaferRoadsCTA'
 import UltimateResultsPattern from '../components/UltimateResultsPattern'
 import StandardsMarquee from './StandardsMarquee';
 import Preloader from '../components/Preloader';
+import ProductLineMarquee from '../components/ProductLineMarquee';
+import StopSignDivider from '../components/StopSignDivider';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -52,11 +54,13 @@ const Home = () => {
       <Preloader />
       <PavingPathHero />
       <RoadwayHero />
-<PavingRisersAppShowcase />
-      <Product3DShowcase2 />
+      <PavingRisersAppShowcase />
+      <StopSignDivider />
       <PavingRiserClassification />
+      <Product3DShowcase2 />
+      <ProductLineMarquee />
       <UltimateResultsPattern />
-      <StandardsMarquee/>
+      <StandardsMarquee />
       <SaferRoadsCTA />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
@@ -86,7 +90,7 @@ const Home = () => {
       <ContractorResources />
       {/* <InfrastructureRisers /> */}
       {/* <ProductCatalog /> */}
-       <PavingProductsTable />  
+      <PavingProductsTable />
       <ServicesAndSolutions />
       <SmartInfraSection />
       <AdjustmentProducts />

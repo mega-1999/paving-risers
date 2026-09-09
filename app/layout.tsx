@@ -71,6 +71,7 @@ export default function RootLayout({
         <meta name="copyright" content="www.pavingrisers.com" />
         <meta name="document-distribution" content="Global" />
         <meta name="language" content="EN" />
+        <meta name="copyright" content="www.pavingrisers.com" />
         <meta name="copyright" content="pavingrisers" />
         <meta name="Distribution" content="Global" />
         <meta name="Robots" content="INDEX,FOLLOW" />
@@ -80,7 +81,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "WebSite",
-              "name": "Pavingrisers",
+              "name": "pavingrisers",
               "url": "https://www.pavingrisers.com/",
               "potentialAction": {
                 "@type": "SearchAction",
