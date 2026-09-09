@@ -75,6 +75,7 @@ export default function RootLayout({
         <meta name="copyright" content="pavingrisers" />
         <meta name="Distribution" content="Global" />
         <meta name="Robots" content="INDEX,FOLLOW" />
+        <meta name="keywords" content="paving risers for grates in NY, paving risers Alabama, paving risers Alaska, paving risers Arizona, paving risers Arkansas, paving risers California, paving risers Colorado, paving risers Connecticut, paving risers Delaware, paving risers Florida, paving risers Georgia, paving risers Hawaii, paving risers Idaho, paving risers Illinois, paving risers Indiana, paving risers Iowa, paving risers Kansas, paving risers Kentucky, paving risers Louisiana, paving risers Maine, paving risers Maryland, paving risers Massachusetts, paving risers Michigan, paving risers Minnesota, paving risers Mississippi, paving risers Missouri, paving risers Montana, paving risers Nebraska, paving risers Nevada, paving risers New Hampshire, paving risers New Jersey, paving risers New Mexico, paving risers New York, paving risers North Carolina, paving risers North Dakota, paving risers Ohio, paving risers Oklahoma, paving risers Oregon, paving risers Pennsylvania, paving risers Rhode Island, paving risers South Carolina, paving risers South Dakota, paving risers Tennessee, paving risers Texas, paving risers Utah, paving risers Vermont, paving risers Virginia, paving risers Washington, paving risers West Virginia, paving risers Wisconsin, paving risers Wyoming, paving risers Ontario, paving risers Quebec, paving risers British Columbia, paving risers Alberta, paving risers Manitoba, paving risers Saskatchewan, paving risers Nova Scotia, paving risers New Brunswick, paving risers Newfoundland and Labrador, paving risers Prince Edward Island, paving risers Northwest Territories, paving risers Yukon, paving risers Nunavut, cast iron risers for manholes, extension rings for manhole covers, valve box risers, curb box extensions, risers for curb inlets, adjustable manhole risers, expandable manhole risers, paving risers for NYC, paving risers for Boston, paving risers for DOT, best paving risers, ultimate paving risers, risers for cleanouts, risers for catch basins, risers for gas test, risers for valve boxes, risers for curb boxes, risers for nyc manholes, risers for nyc catch basins, riser rings, riser rings for manholes, riser rings for catch basins, adjustable riser rings, expandable riser rings, adjustable paving risers, paving risers for manholes, paving risers for manhole covers, paving risers for curb inlets" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -89,6 +90,18 @@ export default function RootLayout({
                 "query-input": "required name=search_term_string"
               }
             })
+          }}
+        />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC2WWN2W20" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YC2WWN2W20');
+            `
           }}
         />
       </head>

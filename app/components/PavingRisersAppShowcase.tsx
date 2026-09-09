@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Smartphone, Sparkles, ShieldCheck, Ruler, Truck, ArrowRight, Clock } from 'lucide-react';
+import { Smartphone, ShieldCheck, Ruler, Truck, Clock } from 'lucide-react';
 
 export default function PavingRisersAppShowcase() {
   return (
@@ -141,7 +141,6 @@ export default function PavingRisersAppShowcase() {
                     <div className="text-sm font-black tracking-tight text-white">App Store</div>
                   </div>
                 </div>
-                {/* Coming Soon Overlay Tag */}
                 <div className="absolute -top-3 -right-2 px-2 py-0.5 bg-[#CC0000] text-white text-[9px] font-mono font-black uppercase tracking-widest shadow-md">
                   Coming Soon
                 </div>
@@ -158,7 +157,6 @@ export default function PavingRisersAppShowcase() {
                     <div className="text-sm font-black tracking-tight text-white">Google Play</div>
                   </div>
                 </div>
-                {/* Coming Soon Overlay Tag */}
                 <div className="absolute -top-3 -right-2 px-2 py-0.5 bg-[#CC0000] text-white text-[9px] font-mono font-black uppercase tracking-widest shadow-md">
                   Coming Soon
                 </div>
@@ -168,7 +166,7 @@ export default function PavingRisersAppShowcase() {
 
           </motion.div>
 
-          {/* RIGHT: MOCKUP GRAPHIC / APP PREVIEW CARD */}
+          {/* RIGHT: VIDEO */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -176,75 +174,24 @@ export default function PavingRisersAppShowcase() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-6 flex justify-center"
           >
-            <div className="relative w-full max-w-md bg-[#0F0F0F] border-4 border-[#0F0F0F] p-6 text-white shadow-2xl overflow-hidden">
-              
-              {/* Top Bar */}
-              <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-[#CC0000] rounded-full" />
-                  <span className="text-xs font-mono font-black uppercase tracking-widest text-white">
-                    PAVING RISERS APP
-                  </span>
-                </div>
-                <span className="px-2.5 py-1 bg-[#CC0000] text-white text-[10px] font-mono font-black uppercase tracking-widest">
-                  COMING SOON
-                </span>
-              </div>
-
-              {/* Phone Display Screen Area */}
-              <div className="relative bg-white text-slate-900 border-2 border-slate-200 p-6 flex flex-col items-center text-center space-y-6 shadow-inner">
-                
-                {/* Big Coming Soon Banner */}
-                <div className="w-full py-2 bg-[#CC0000] text-white text-xs font-mono font-black uppercase tracking-[0.2em] shadow-md">
-                  ★ OFFICIAL APP LAUNCHING SOON ★
-                </div>
-
-                {/* App Logo Vector Icon */}
-                <div className="w-20 h-20 bg-[#0F0F0F] text-white border-2 border-[#CC0000] flex items-center justify-center shadow-lg my-2">
-                  <Smartphone className="w-10 h-10 text-[#CC0000]" />
-                </div>
-
-                <div className="space-y-1">
-                  <h4 className="text-xl font-black uppercase tracking-tight text-slate-900">
-                    Paving Risers AR
-                  </h4>
-                  <p className="text-xs font-mono font-bold text-[#CC0000] uppercase tracking-wider">
-                    v1.0 Mobile Field Suite
-                  </p>
-                </div>
-
-                {/* Mockup Interface Items */}
-                <div className="w-full space-y-2 pt-2 text-left">
-                  <div className="p-2.5 bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-mono font-bold">
-                    <span>AR LID MEASURE:</span>
-                    <span className="text-[#CC0000]">24.5" CLEAR OPENING</span>
-                  </div>
-                  <div className="p-2.5 bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-mono font-bold">
-                    <span>MATCHED RISER:</span>
-                    <span className="text-slate-900">HEAVY DUTY 2" RISE</span>
-                  </div>
-                  <div className="p-2.5 bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-mono font-bold">
-                    <span>LOAD RATING:</span>
-                    <span className="text-[#CC0000]">HIGHWAY & MUNICIPAL</span>
-                  </div>
-                </div>
-
-                {/* Coming Soon Lock Button */}
-                <div className="w-full pt-4">
-                  <div className="w-full py-3 bg-[#0F0F0F] text-white text-xs font-mono font-black uppercase tracking-widest flex items-center justify-center gap-2">
-                    <Sparkles className="w-4 h-4 text-[#CC0000]" />
-                    COMING SOON TO STORES
-                  </div>
-                </div>
-
-              </div>
-
-              {/* Bottom Spec Footer */}
-              <div className="mt-6 pt-4 border-t border-white/20 flex justify-between items-center text-[10px] font-mono text-white/80">
-                <span>COMPATIBILITY</span>
-                <span className="text-white font-bold">iOS 16+ & Android 12+</span>
-              </div>
-
+            <div className="w-full max-w-lg overflow-hidden">
+              <video
+                ref={(el) => {
+                  if (el) {
+                    el.play().catch(() => {});
+                    el.onended = () => {
+                      el.currentTime = 0;
+                      el.play().catch(() => {});
+                    };
+                  }
+                }}
+                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/android_ios.mp4`}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full"
+              />
             </div>
           </motion.div>
 
