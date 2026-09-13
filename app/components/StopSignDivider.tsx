@@ -2,11 +2,112 @@
 
 import React from 'react';
 
+// Premium MUTCD Standard Octagon Highway Stop Sign SVG
+const RealisticStopSign = ({ className = "w-16 h-20 md:w-20 md:h-24" }: { className?: string }) => (
+  <svg
+    viewBox="0 0 120 145"
+    className={`${className} transition-transform duration-300 group-hover:scale-105 filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]`}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      {/* High-intensity prismatic retroreflective red gradient */}
+      <linearGradient id="stopRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#E60000" />
+        <stop offset="50%" stopColor="#C40000" />
+        <stop offset="100%" stopColor="#990000" />
+      </linearGradient>
+
+      {/* Sheen reflection overlay */}
+      <linearGradient id="signSheen" x1="20%" y1="0%" x2="80%" y2="100%">
+        <stop offset="0%" stopColor="#ffffff" stopOpacity="0.28" />
+        <stop offset="45%" stopColor="#ffffff" stopOpacity="0.08" />
+        <stop offset="50%" stopColor="#ffffff" stopOpacity="0" />
+        <stop offset="100%" stopColor="#000000" stopOpacity="0.25" />
+      </linearGradient>
+
+      {/* Galvanized Steel Post Gradient */}
+      <linearGradient id="galvanizedPost" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="#5B6570" />
+        <stop offset="25%" stopColor="#9AA2AB" />
+        <stop offset="50%" stopColor="#DDE2E7" />
+        <stop offset="75%" stopColor="#8A939E" />
+        <stop offset="100%" stopColor="#4A535C" />
+      </linearGradient>
+
+      {/* Outer Sign Drop Shadow */}
+      <filter id="plateShadow" x="-10%" y="-10%" width="125%" height="125%">
+        <feDropShadow dx="0" dy="3" stdDeviation="2.5" floodColor="#000000" floodOpacity="0.7" />
+      </filter>
+    </defs>
+
+    {/* Galvanized Perforated Steel Square Post */}
+    <g>
+      <rect x="55.5" y="86" width="9" height="56" fill="url(#galvanizedPost)" rx="1.5" />
+      {/* Perforation holes in the post */}
+      <circle cx="60" cy="96" r="1.4" fill="#1C2127" opacity="0.9" />
+      <circle cx="60" cy="106" r="1.4" fill="#1C2127" opacity="0.9" />
+      <circle cx="60" cy="116" r="1.4" fill="#1C2127" opacity="0.9" />
+      <circle cx="60" cy="126" r="1.4" fill="#1C2127" opacity="0.9" />
+      <circle cx="60" cy="136" r="1.4" fill="#1C2127" opacity="0.9" />
+    </g>
+
+    {/* Sign Plate Group with shadow */}
+    <g filter="url(#plateShadow)">
+      {/* Aluminum backing edge */}
+      <polygon
+        points="42.6,8 77.4,8 102,32.6 102,67.4 77.4,92 42.6,92 18,67.4 18,32.6"
+        fill="#CBD5E1"
+      />
+
+      {/* Red Prismatic Sheeting Field */}
+      <polygon
+        points="43,9 77,9 101,33 101,67 77,91 43,91 19,67 19,33"
+        fill="url(#stopRedGrad)"
+      />
+
+      {/* Authentic MUTCD Inset White Border */}
+      <polygon
+        points="43.8,12 76.2,12 98,33.8 98,66.2 76.2,88 43.8,88 22,66.2 22,33.8"
+        fill="none"
+        stroke="#FFFFFF"
+        strokeWidth="2.8"
+        strokeLinejoin="miter"
+      />
+
+      {/* Glass Sheen overlay */}
+      <polygon
+        points="43,9 77,9 101,33 101,67 77,91 43,91 19,67 19,33"
+        fill="url(#signSheen)"
+      />
+
+      {/* Bold Highway Gothic "STOP" Text */}
+      <text
+        x="60"
+        y="58"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fill="#FFFFFF"
+        style={{
+          fontFamily: 'Impact, "Arial Black", -apple-system, sans-serif',
+          fontWeight: 900,
+          fontSize: '23px',
+          letterSpacing: '0.8px',
+        }}
+      >
+        STOP
+      </text>
+
+      {/* Mounting Hex Bolts */}
+      <circle cx="60" cy="22" r="1.7" fill="#E2E8F0" stroke="#334155" strokeWidth="0.6" />
+      <circle cx="60" cy="78" r="1.7" fill="#E2E8F0" stroke="#334155" strokeWidth="0.6" />
+    </g>
+  </svg>
+);
+
 export default function StopSignDivider() {
   return (
-    <section className="relative bg-[#0F0F0F] py-12 overflow-hidden select-none">
-
-      {/* Road line animation */}
+    <section className="relative bg-[#0a0a0a] border-y border-white/10 py-10 overflow-hidden select-none">
+      {/* Continuous animated road lines keyframes */}
       <style>{`
         @keyframes road-lines-left {
           0% { transform: translateX(0); }
@@ -16,90 +117,80 @@ export default function StopSignDivider() {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
-        .road-left { animation: road-lines-left 12s linear infinite; }
-        .road-right { animation: road-lines-right 12s linear infinite; }
+        .road-left { animation: road-lines-left 14s linear infinite; }
+        .road-right { animation: road-lines-right 14s linear infinite; }
       `}</style>
-      
-      {/* Asphalt texture */}
-      <div 
-        className="absolute inset-0 opacity-30 pointer-events-none"
+
+      {/* Subtle asphalt road texture */}
+      <div
+        className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `radial-gradient(#ffffff 0.75px, transparent 0.75px)`,
+          backgroundSize: '16px 16px',
         }}
       />
 
-      <div className="w-full px-10 md:px-20 relative z-10">
-        <div className="flex items-center justify-center gap-6 md:gap-10">
-          
-          {/* Left road line — animated */}
-          <div className="hidden sm:flex items-center flex-1 overflow-hidden">
+      {/* Subtle ambient highway glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[100px] bg-red-600/10 blur-[90px] pointer-events-none" />
+
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div className="flex items-center justify-between gap-4 md:gap-8">
+          {/* Left road line — animated highway dashes */}
+          <div className="hidden sm:flex items-center flex-1 overflow-hidden mask-fade-left">
             <div className="flex gap-4 w-max road-left">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`l-${i}`} className="w-10 h-[3px] bg-yellow-400/70 shrink-0" />
+              {Array.from({ length: 28 }).map((_, i) => (
+                <div
+                  key={`l-${i}`}
+                  className="w-12 h-[3.5px] rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 opacity-80 shrink-0 shadow-[0_0_8px_rgba(251,191,36,0.4)]"
+                />
               ))}
             </div>
           </div>
 
-          {/* Stop Sign 1 */}
-          <div className="shrink-0 group">
-            <svg viewBox="0 0 120 140" className="w-16 h-20 md:w-20 md:h-24 drop-shadow-lg">
-              {/* Post */}
-              <rect x="55" y="95" width="10" height="45" fill="#666" rx="2" />
-              {/* Octagon stop sign */}
-              <polygon 
-                points="60,5 85,15 95,40 95,65 85,90 60,100 35,90 25,65 25,40 35,15"
-                fill="#CC0000"
-                stroke="#fff"
-                strokeWidth="4"
-              />
-              <text x="60" y="62" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="22" letterSpacing="1">
-                STOP
-              </text>
-            </svg>
+          {/* Left Realistic Stop Sign */}
+          <div className="shrink-0 group cursor-default">
+            <RealisticStopSign className="w-16 h-20 sm:w-20 sm:h-24 md:w-24 md:h-28" />
           </div>
 
-          {/* Center content */}
-          <div className="text-center shrink-0 space-y-1">
-            <p className="text-[10px] md:text-xs font-mono font-bold uppercase tracking-[0.3em] text-yellow-400/80">
-              U.S. Road Infrastructure
-            </p>
-            <p className="text-xs md:text-sm font-black uppercase tracking-tight text-white/90">
-              Built for American Roads
-            </p>
-            <div className="flex items-center justify-center gap-3 pt-1">
-              <span className="w-2 h-2 bg-[#CC0000] rounded-full animate-pulse" />
-              <span className="text-[9px] font-mono text-white/50 uppercase tracking-widest">FHWA • MUTCD • DOT Compliant</span>
-              <span className="w-2 h-2 bg-[#CC0000] rounded-full animate-pulse" />
+          {/* Center Industrial Highway Badge */}
+          <div className="text-center shrink-0 px-3 md:px-6 py-2 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-sm shadow-2xl">
+            <div className="inline-flex items-center gap-2 mb-1">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+              <p className="text-[10px] md:text-xs font-mono font-bold uppercase tracking-[0.25em] text-yellow-400">
+                U.S. Road Infrastructure
+              </p>
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+            </div>
+
+            <h3 className="text-sm md:text-lg font-black uppercase tracking-wider text-white">
+              Engineered For American Roadways
+            </h3>
+
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 pt-1 text-[9px] md:text-[10px] font-mono text-white/60 tracking-wider">
+              <span className="bg-white/5 px-2 py-0.5 rounded border border-white/10">HEAVY TRAFFIC</span>
+              <span className="text-white/30">•</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded border border-white/10">MUTCD SPEC</span>
+              <span className="text-white/30">•</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded border border-white/10">DOT COMPLIANT</span>
             </div>
           </div>
 
-          {/* Stop Sign 2 */}
-          <div className="shrink-0 group">
-            <svg viewBox="0 0 120 140" className="w-16 h-20 md:w-20 md:h-24 drop-shadow-lg">
-              {/* Post */}
-              <rect x="55" y="95" width="10" height="45" fill="#666" rx="2" />
-              {/* Octagon stop sign */}
-              <polygon 
-                points="60,5 85,15 95,40 95,65 85,90 60,100 35,90 25,65 25,40 35,15"
-                fill="#CC0000"
-                stroke="#fff"
-                strokeWidth="4"
-              />
-              <text x="60" y="62" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="22" letterSpacing="1">
-                STOP
-              </text>
-            </svg>
+          {/* Right Realistic Stop Sign */}
+          <div className="shrink-0 group cursor-default">
+            <RealisticStopSign className="w-16 h-20 sm:w-20 sm:h-24 md:w-24 md:h-28" />
           </div>
 
-          {/* Right road line — animated */}
+          {/* Right road line — animated highway dashes */}
           <div className="hidden sm:flex items-center flex-1 overflow-hidden">
             <div className="flex gap-4 w-max road-right">
-              {Array.from({ length: 30 }).map((_, i) => (
-                <div key={`r-${i}`} className="w-10 h-[3px] bg-yellow-400/70 shrink-0" />
+              {Array.from({ length: 28 }).map((_, i) => (
+                <div
+                  key={`r-${i}`}
+                  className="w-12 h-[3.5px] rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 opacity-80 shrink-0 shadow-[0_0_8px_rgba(251,191,36,0.4)]"
+                />
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>

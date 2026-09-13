@@ -19,7 +19,7 @@ export default function StandardsMarquee() {
                 {/* STRUCTURAL ENGINEERING HEADER */}
                 <div className="flex flex-col items-center text-center mb-12 px-6">
                     <h2 className="text-xl md:text-3xl font-black text-[#CC0000] uppercase tracking-tighter leading-none">
-                        Complying to <span className="text-black">Every Standards</span>
+                        Complying to <span className="text-black">Every Standard</span>
                     </h2>
                 </div>
 
