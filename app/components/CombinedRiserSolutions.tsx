@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -84,7 +84,17 @@ const DETECTABLE_VARIANTS = [
 
 function DetectablePlatesSlider() {
   const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const current = DETECTABLE_VARIANTS[activeIdx];
+
+  // Auto-sliding loop (pauses on hover)
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % DETECTABLE_VARIANTS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const handlePrev = () => {
     setActiveIdx((prev) => (prev - 1 + DETECTABLE_VARIANTS.length) % DETECTABLE_VARIANTS.length);
@@ -95,7 +105,11 @@ function DetectablePlatesSlider() {
   };
 
   return (
-    <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between">
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       
       {/* Top Header Bar */}
       <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
@@ -105,9 +119,21 @@ function DetectablePlatesSlider() {
             {current.title}
           </span>
         </div>
-        <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2.5 py-0.5 rounded border border-gray-300">
-          {activeIdx + 1} / {DETECTABLE_VARIANTS.length}
-        </span>
+        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            {DETECTABLE_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2 py-0.5 rounded border border-gray-300">
+            {activeIdx + 1} / {DETECTABLE_VARIANTS.length}
+          </span>
+        </div>
       </div>
 
       {/* Main Visual Display Stage */}
@@ -197,6 +223,183 @@ function DetectablePlatesSlider() {
     </div>
   );
 }
+
+const TRASH_RACK_VARIANTS = [
+  {
+    id: 'trash-rack-1',
+    title: 'Galvanized Bar Matrix Debris Screen',
+    spec: 'ASTM Welded Steel Matrix',
+    description: 'Heavy-gauge welded steel bar matrix engineered to intercept branches, debris, and solid obstructions at culvert and outflow mouths.',
+    image: `/images/trash_racks/trash_rack_type_1.png`,
+    badge: 'Type 1 Matrix'
+  },
+  {
+    id: 'trash-rack-2',
+    title: 'Culvert Headwall Intake Barrier',
+    spec: 'Stormwater Headwall Protection',
+    description: 'Heavy structural steel barrier installed on stormwater culvert headwalls to prevent pipe clogging and reduce upstream flooding.',
+    image: `/images/trash_racks/trash_racks1.jpg`,
+    badge: 'Headwall Barrier'
+  },
+  {
+    id: 'trash-rack-3',
+    title: 'Sloped Spillway Debris Rack',
+    spec: 'Self-Cleaning Slope Angle',
+    description: 'Precision angled debris matrix designed for high-velocity water channels and retention pond spillways to prevent debris buildup.',
+    image: `/images/trash_racks/trash_racks2.jpg`,
+    badge: 'Sloped Spillway'
+  },
+  {
+    id: 'trash-rack-4',
+    title: 'Retention Basin Outflow Barrier',
+    spec: 'Detention Pond Flood Control',
+    description: 'Industrial-grade welded steel debris barrier engineered for municipal retention ponds and flood control reservoir outflow channels.',
+    image: `/images/trash_racks/trash_racks3.jpg`,
+    badge: 'Basin Outflow'
+  }
+];
+
+function TrashRacksSlider() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const current = TRASH_RACK_VARIANTS[activeIdx];
+
+  // Auto-sliding loop (pauses on hover)
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % TRASH_RACK_VARIANTS.length);
+    }, 3800);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const handlePrev = () => {
+    setActiveIdx((prev) => (prev - 1 + TRASH_RACK_VARIANTS.length) % TRASH_RACK_VARIANTS.length);
+  };
+
+  const handleNext = () => {
+    setActiveIdx((prev) => (prev + 1) % TRASH_RACK_VARIANTS.length);
+  };
+
+  return (
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Top Header Bar */}
+      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+            {current.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {/* Active indicator bars */}
+          <div className="flex items-center gap-1">
+            {TRASH_RACK_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-5 bg-[#CC0000]' : 'w-1.5 bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2.5 py-0.5 rounded border border-gray-300">
+            {activeIdx + 1} / {TRASH_RACK_VARIANTS.length}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Visual Display Stage */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+        <Image
+          key={current.id}
+          src={current.image}
+          alt={current.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain p-6 sm:p-8 transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {/* Floating Spec Badge */}
+        <div className="absolute top-4 left-4 z-20">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+            {current.badge}
+          </span>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Previous trash rack"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Next trash rack"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Bottom Industrial Thumbnail Selector */}
+      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+            Trash Racks & Debris Barriers
+          </span>
+          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+            {current.spec}
+          </span>
+        </div>
+
+        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        <div className="grid grid-cols-4 gap-2">
+          {TRASH_RACK_VARIANTS.map((variant, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={variant.id}
+                onClick={() => setActiveIdx(idx)}
+                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
+                  isActive
+                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
+                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                }`}
+              >
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
+                  <Image
+                    src={variant.image}
+                    alt={variant.title}
+                    fill
+                    sizes="120px"
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
+                  isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                }`}>
+                  {variant.badge}
+                </span>
+                {isActive && (
+                  <div className="w-full h-[2px] bg-[#CC0000] mt-1 rounded-full" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 const RISER_SECTIONS = [
   {
@@ -377,25 +580,25 @@ const RISER_SECTIONS = [
     buttonText: "View Gas Risers",
     buttonLink: "#gas-risers"
   },
-  // {
-  //   id: "trash-racks",
-  //   theme: "light",
-  //   overline: "Environmental & Drainage",
-  //   title: "Trash Racks &",
-  //   highlightText: "Debris Barriers",
-  //   description: "Heavy-gauge steel trash racks engineered to protect culverts, retention basins, and stormwater intake pipes from floating debris and blockages.",
-  //   image: `/images/trash_racks/trash_rack_type_1.png`,
-  //   features: [
-  //     { icon: "Grid", title: "Debris Protection", desc: "Prevents large logs, rocks, and urban debris from clogging outflow pipes." },
-  //     { icon: "ShieldCheck", title: "Corrosion Resistant", desc: "Heavy galvanized and coated steel for prolonged water immersion." }
-  //   ],
-  //   meta: [
-  //     { label: "Applications", value: "Culvert inlets, retention ponds, stormwater spillways" },
-  //     { label: "Profiles", value: "Flat, sloped, and custom welded bar matrices" }
-  //   ],
-  //   buttonText: "View Trash Racks",
-  //   buttonLink: "/products"
-  // },
+  {
+    id: "trash-racks",
+    theme: "light",
+    overline: "Environmental & Drainage",
+    title: "Trash Racks &",
+    highlightText: "Debris Barriers",
+    description: "Heavy-gauge steel trash racks engineered to protect culverts, retention basins, and stormwater intake pipes from floating debris and blockages.",
+    isCustomSlider: true,
+    features: [
+      { icon: "Grid", title: "Debris Protection", desc: "Prevents large logs, rocks, and urban debris from clogging outflow pipes." },
+      { icon: "ShieldCheck", title: "Corrosion Resistant", desc: "Heavy galvanized and coated steel for prolonged water immersion." }
+    ],
+    meta: [
+      { label: "Applications", value: "Culvert inlets, retention ponds, stormwater spillways" },
+      { label: "Profiles", value: "Flat, sloped, and custom welded bar matrices" }
+    ],
+    buttonText: "View Trash Racks",
+    buttonLink: "/products"
+  },
   // {
   //   id: "tools-accessories",
   //   theme: "dark",
@@ -466,7 +669,11 @@ export default function ComprehensivePavingRisersMapped() {
                 {/* --- IMAGE / SLIDER COLUMN --- */}
                 <div className={`relative ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
                   {section.isCustomSlider ? (
-                    <DetectablePlatesSlider />
+                    section.id === 'trash-racks' ? (
+                      <TrashRacksSlider />
+                    ) : (
+                      <DetectablePlatesSlider />
+                    )
                   ) : (
                     <div className={`relative z-10 w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 shadow-2xl' : 'border-gray-200 shadow-xl'} ${section.image?.endsWith('.mp4') ? 'aspect-[4/3] bg-[#CC0000]' : isDark ? 'aspect-square bg-[#111]' : 'aspect-square bg-white'}`}>
                       {section.image?.endsWith('.mp4') ? (
