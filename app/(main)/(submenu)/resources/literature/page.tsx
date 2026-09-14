@@ -156,7 +156,7 @@ export default function LiteraturePage() {
             {/* Document Card 1 */}
             <div className="bg-[#111] border border-white/5 group hover:border-[#CC0000] transition-all duration-500 flex flex-col h-[500px]">
               <div className="relative h-64 bg-[#0A0A0A] overflow-hidden flex items-center justify-center border-b border-white/5">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png`} alt="Master Catalog" fill className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
+                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png`} alt="Master Catalog" fill className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
                 <BookOpen className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">

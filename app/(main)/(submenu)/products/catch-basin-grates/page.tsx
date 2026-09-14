@@ -23,7 +23,7 @@ const SECTIONS = [
     subtitle: 'Maximum Inflow Profile',
     description: 'Designed with optimized bar spacing to prevent debris clogging while allowing maximum stormwater inflow. Keep the streets clear and prevent dangerous hydroplaning conditions on critical roadways.',
     icon: Waves,
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`,
+    media: `/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`,
     isVideo: false,
   },
   {

@@ -242,9 +242,9 @@ export default function QuoteRequestPage() {
               <div className="absolute inset-0 flex items-center justify-center z-10 p-8">
                 <Image 
                   src={
-                    selectedProduct === 'catch-basin' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` : 
-                    selectedProduct === 'valve-box' ? `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/valve_box_riser_4in.jpeg` : 
-                    `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png`
+                    selectedProduct === 'catch-basin' ? `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` : 
+                    selectedProduct === 'valve-box' ? `/images/valve_box_riser/valve_box_riser_4in.jpeg` : 
+                    `/images/manhole_riser/round_manhole_riser_iron_finish.png`
                   }
                   alt="Product Rendering" 
                   fill

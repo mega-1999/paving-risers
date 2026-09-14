@@ -16,25 +16,25 @@ const CAST_IRON_PRODUCTS = [
     title: 'Heavy Duty Trench Grates',
     category: 'Drainage Castings',
     description: 'Black coated trench grates designed for heavy highway and airport tarmac load requirements.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
+    image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
   },
   {
     title: 'Round Extension Rings',
     category: 'Utility Adjustments',
     description: 'Solid cast rings to elevate existing manhole covers without requiring a full frame replacement.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png`,
+    image: `/images/manhole_riser/round_manhole_riser_iron_finish.png`,
   },
   {
     title: 'Square Vault Covers',
     category: 'Telecom & Electrical',
     description: 'Ductile iron square covers built to withstand constant impact in high-traffic urban environments.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`,
+    image: `/images/catch_basin_riser/square_catch_basin_riser_iron.png`,
   },
   {
     title: 'D-Shape Inlet Frames',
     category: 'Curb Inlets',
     description: 'Custom molded D-shape frames that match existing curb lines precision for seamless water flow.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_iron.png`,
+    image: `/images/custom_riser/d_shape_riser_iron.png`,
   }
 ];
 

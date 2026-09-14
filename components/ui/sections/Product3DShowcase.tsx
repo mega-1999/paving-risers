@@ -30,7 +30,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`
+    thumbnail: `/images/manhole_riser/adjustable_manhole_riser_coated.png`
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`
+    thumbnail: `/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
     type: "ROUND_LOW_SCREW",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/fixed_round_manhole_riser_coated.png`
+    thumbnail: `/images/manhole_riser/fixed_round_manhole_riser_coated.png`
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`
+    thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_coated.png`
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`
+    thumbnail: `/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
     type: "CURB_INLET",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_heavy_iron.png`
+    thumbnail: `/images/curb_inlet_riser/curb_inlet_riser_heavy_iron.png`
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
     glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png`
+    thumbnail: `/images/custom_riser/d_shape_riser_steel.png`
   }
 ];
 

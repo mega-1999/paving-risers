@@ -221,7 +221,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 1 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`/images/custom_riser/d_shape_riser_steel.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">
@@ -239,7 +239,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 2 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`/images/catch_basin_riser/square_catch_basin_riser_coated.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">
@@ -257,7 +257,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 3 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/valve_box_riser_5in.jpeg`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`/images/valve_box_riser/valve_box_riser_5in.jpeg`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">

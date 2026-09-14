@@ -6,9 +6,9 @@ import { Target, Settings, ShieldCheck, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`, desc: 'Industrial standard for general municipal applications.' },
-  { name: 'Black Coated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`, desc: 'Resists corrosion from road salt and extreme weather.' },
-  { name: 'Iron Foundry', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`, desc: 'Heavy-duty foundry cast finish for ultimate durability.' },
+  { name: 'Raw Finish', image: `/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`, desc: 'Industrial standard for general municipal applications.' },
+  { name: 'Black Coated', image: `/images/manhole_riser/adjustable_manhole_riser_coated.png`, desc: 'Resists corrosion from road salt and extreme weather.' },
+  { name: 'Iron Foundry', image: `/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`, desc: 'Heavy-duty foundry cast finish for ultimate durability.' },
 ];
 
 export default function AdjustableRiserPage() {
@@ -78,7 +78,7 @@ export default function AdjustableRiserPage() {
                style={{ transform: `scale(${1 + (scrollProgress * 0.15)})` }}>
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`}
+              src={`/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`}
               alt="Adjustable Riser Blueprint"
               fill
               className="object-contain filter drop-shadow-[0_0_60px_rgba(204,0,0,0.2)]"

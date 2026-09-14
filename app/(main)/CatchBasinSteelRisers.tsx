@@ -85,7 +85,7 @@ export default function CatchBasinSteelRisers() {
           {/* RIGHT: SCHEMATIC VIEWPORT (5 Columns Wide) */}
           <div className="lg:col-span-5 relative  h-full bg-gray-50 border border-gray-200 rounded-xs overflow-hidden p-6 flex items-center justify-center group shadow-sm hover:border-[#cc2221] transition-colors duration-300 w-full">
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`}
+              src={`/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`}
               alt="Catch Basin Riser Schematic Layout"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

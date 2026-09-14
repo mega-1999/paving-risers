@@ -111,7 +111,7 @@ export default function SanitarySewerPage() {
         <div className="bg-[#CC0000] p-12 lg:p-24 relative overflow-hidden">
           <div className="absolute -right-32 -bottom-32 opacity-50">
             <Image 
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} 
+              src={`/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} 
               alt="Background Riser" 
               width={800} 
               height={800} 

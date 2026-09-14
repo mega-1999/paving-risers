@@ -41,5 +41,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# ignore public directory as requested
-/public/
+# Large assets served from R2 - don't commit to git
+/public/videos/
+/public/glbs/
+/public/catalog/
+
+# Local scratch and tooling scripts
+/scratch/

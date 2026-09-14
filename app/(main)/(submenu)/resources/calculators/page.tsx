@@ -197,7 +197,7 @@ export default function CalculatorsPage() {
             
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-white/20 transition-colors cursor-pointer relative overflow-hidden flex flex-col h-full min-h-[300px]">
               <div className="absolute right-0 top-0 w-64 h-64 opacity-10 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700 pointer-events-none">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png`} alt="Hydraulic Flow" fill className="object-cover" />
+                <Image src={`/images/custom_riser/d_shape_riser_steel.png`} alt="Hydraulic Flow" fill className="object-cover" />
               </div>
               <div className="p-10 relative z-10 flex-1 flex flex-col justify-between">
                 <div>
@@ -215,7 +215,7 @@ export default function CalculatorsPage() {
 
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-white/20 transition-colors cursor-pointer relative overflow-hidden flex flex-col h-full min-h-[300px]">
               <div className="absolute right-0 top-0 w-64 h-64 opacity-10 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700 pointer-events-none">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`} alt="Epoxy Estimator" fill className="object-cover" />
+                <Image src={`/images/manhole_riser/adjustable_manhole_riser_coated.png`} alt="Epoxy Estimator" fill className="object-cover" />
               </div>
               <div className="p-10 relative z-10 flex-1 flex flex-col justify-between">
                 <div>

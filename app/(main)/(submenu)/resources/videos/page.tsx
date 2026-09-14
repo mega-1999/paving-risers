@@ -82,7 +82,7 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 2: Static Image */}
           <div className="col-span-1 row-span-1 relative group overflow-hidden bg-[#111] border-[0.5px] border-white/10">
-            <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`} alt="Riser" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+            <Image src={`/images/catch_basin_riser/square_catch_basin_riser_iron.png`} alt="Riser" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
             <div className="absolute top-4 left-4 text-[10px] font-mono font-bold text-white bg-black/50 px-2 py-1">FRAME: RECTANGLE</div>
           </div>
 
@@ -99,7 +99,7 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 4: Static Image */}
           <div className="col-span-1 row-span-1 relative group overflow-hidden bg-[#111] border-[0.5px] border-white/10">
-            <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`} alt="Ductile Iron" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+            <Image src={`/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`} alt="Ductile Iron" fill className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
             <div className="absolute top-4 left-4 text-[10px] font-mono font-bold text-white bg-black/50 px-2 py-1">MATERIAL: DUCTILE IRON</div>
           </div>
 
@@ -121,7 +121,7 @@ export default function AvantGardeVideosPage() {
       {/* ========================================= */}
       <div className="w-full relative py-32 border-t border-white/10">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`} alt="Background Texture" fill className="object-cover blur-sm" />
+          <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`} alt="Background Texture" fill className="object-cover blur-sm" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#020202] via-[#020202]/80 to-[#020202]" />
 

@@ -24,7 +24,7 @@ const PRODUCT_VIDEOS = [
     duration: "0:45",
     type: "360_ROTATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png`
+    thumbnail: `/images/manhole_riser/round_manhole_riser_iron_finish.png`
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const PRODUCT_VIDEOS = [
     duration: "1:10",
     type: "EXPLODED_VIEW",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_animation.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`
+    thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const PRODUCT_VIDEOS = [
     duration: "2:00",
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/valve_box_riser/full_valve_box_riser_design_3.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/valve_box_riser_1_5in.jpeg`
+    thumbnail: `/images/valve_box_riser/valve_box_riser_1_5in.jpeg`
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const PRODUCT_VIDEOS = [
     duration: "1:20",
     type: "ANIMATION",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_riser_anim_3.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_coated_2.png`
+    thumbnail: `/images/curb_inlet_riser/curb_inlet_riser_coated_2.png`
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const PRODUCT_VIDEOS = [
     duration: "0:55",
     type: "CUSTOM_BUILD",
     src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.924.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`
+    thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   }
 ];
 

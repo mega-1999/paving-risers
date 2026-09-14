@@ -18,11 +18,11 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
-  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png` },
-  { name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png` },
-  { name: 'Ductile Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png` },
-  { name: 'Steel Fabricated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` },
+  { name: 'Raw Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
+  { name: 'Coated Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_coated.png` },
+  { name: 'Cast Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png` },
+  { name: 'Ductile Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png` },
+  { name: 'Steel Fabricated', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` },
 ];
 
 export default function CatchBasinRisersPage() {

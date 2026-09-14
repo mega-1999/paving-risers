@@ -40,7 +40,7 @@ const CATEGORIES = [
       { label: 'Mounting Style', value: 'Bolt-On / Hinged / Vault Seat' },
       { label: 'Design Standard', value: 'DOT Municipal Inlet Standard' }
     ],
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/trash_rack_type_1.png`
+    image: `/images/trash_racks/trash_rack_type_1.png`
   }
 ];
 

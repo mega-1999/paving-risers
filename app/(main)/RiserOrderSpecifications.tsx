@@ -117,7 +117,7 @@ export default function RiserOrderSpecifications() {
             */}
             <div className="relative w-full h-64 bg-white border border-gray-200 rounded-sm mt-6 mb-6 overflow-hidden flex items-center justify-center p-4 shadow-inner">
               <Image
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_3d.png`}
+                src={`/images/custom_riser/d_shape_riser_3d.png`}
                 alt="4.png Ordering Data Visual Guide Component Reference"
                 fill
                 className="object-contain transition-transform duration-500 group-hover:scale-102"

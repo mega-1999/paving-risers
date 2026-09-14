@@ -124,7 +124,7 @@ export default function SubmitSpecificationsPage() {
             {/* Visual Callout Card */}
             <div className="w-full bg-black border border-white/10 overflow-hidden group">
               <div className="relative aspect-video">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-4 left-4 flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#CC0000]" />

@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/branding/favicon.png`,
-    apple: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/branding/favicon.png`,
+    icon: `/images/branding/favicon.png`,
+    apple: `/images/branding/favicon.png`,
   },
   openGraph: {
     title: 'Paving Risers for Grates in NY',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: 'Paving Risers',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/branding/favicon.png`,
+        url: `/images/branding/favicon.png`,
         width: 1200,
         height: 630,
       },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Paving Risers',
     description: 'Heavy-duty adjustment rings and paving access solutions.',
-    images: [`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/branding/favicon.png`],
+    images: [`/images/branding/favicon.png`],
   },
   robots: {
     index: true,

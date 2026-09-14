@@ -13,7 +13,7 @@ const TOOLS = [
     title: 'Manhole Hook',
     desc: 'Forged steel hook designed to lift and maneuver heavy cast iron covers safely without pinching.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/manhole_cover_hook.png`, 
+    image: `/images/tools/manhole_cover_hook.png`, 
   },
   {
     id: '02',
@@ -21,7 +21,7 @@ const TOOLS = [
     title: 'Adjustment Wrench',
     desc: 'High-torque wrench specifically calibrated for expanding the Mechanical Expansions on our adjustable risers.',
     icon: Wrench,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/chisel_tool.png`,
+    image: `/images/tools/chisel_tool.png`,
   },
   {
     id: '03',
@@ -29,7 +29,7 @@ const TOOLS = [
     title: 'Magnetic Lifter',
     desc: 'Industrial magnetic lifting tool to easily lower and align heavy cast iron risers into place before paving.',
     icon: Hammer,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_lifter.png`,
+    image: `/images/tools/valve_box_lifter.png`,
   },
   {
     id: '04',
@@ -37,7 +37,7 @@ const TOOLS = [
     title: 'Alignment Bar',
     desc: 'Solid steel pry bar for making micro-adjustments to the seating of risers in older, irregular frames.',
     icon: ShieldAlert,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_cover_bar.png`,
+    image: `/images/tools/valve_box_cover_bar.png`,
   },
   {
     id: '05',
@@ -45,7 +45,7 @@ const TOOLS = [
     title: 'Extraction Hook',
     desc: 'Specialized dual-hook puller designed to safely extract heavy drainage grates without damaging the surrounding frame.',
     icon: Anchor,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_tongue.png`,
+    image: `/images/tools/valve_box_tongue.png`,
   },
   {
     id: '06',
@@ -53,7 +53,7 @@ const TOOLS = [
     title: 'Alignment Pins',
     desc: 'Heavy-duty steel guide pins used to precisely align multi-part manhole covers and risers during final assembly.',
     icon: Wrench,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/sewer_plug_puller.png`,
+    image: `/images/tools/sewer_plug_puller.png`,
   },
   {
     id: '07',
@@ -61,7 +61,7 @@ const TOOLS = [
     title: 'Cover Tongs',
     desc: 'Heavy-duty lifting tongs to provide a secure grip on flat manhole covers and solid grates during extraction.',
     icon: ShieldAlert,
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/chisel_tool.png`,
+    image: `/images/tools/chisel_tool.png`,
   }
 ];
 

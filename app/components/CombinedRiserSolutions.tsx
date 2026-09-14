@@ -29,7 +29,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Standard Truncated Dome Matrix',
     spec: 'ADA Compliant Surface',
     description: 'Engineered raised truncated dome pattern for pedestrian wayfinding and municipal intersection compliance.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_plate_pattern_1.png`,
+    image: `/images/detectable_plates/detectable_plate_pattern_1.png`,
     badge: 'Pattern A'
   },
   {
@@ -37,7 +37,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Precision Inline Tactile Profile',
     spec: 'Directional Guidance',
     description: 'Uniform geometric tactile pattern engineered for municipal curb ramps, transitions, and public walkways.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_plate_pattern_2.png`,
+    image: `/images/detectable_plates/detectable_plate_pattern_2.png`,
     badge: 'Pattern B'
   },
   {
@@ -45,7 +45,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Cast Iron Tactile Plate',
     spec: 'Heavy Transit Zone',
     description: 'High-strength cast iron tactile warning surface designed for high-density pedestrian traffic and long service life.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_plate_pattern_3.png`,
+    image: `/images/detectable_plates/detectable_plate_pattern_3.png`,
     badge: 'Cast Iron'
   },
   {
@@ -53,7 +53,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Heavy-Duty Dome Matrix Plate',
     spec: 'High-Impact Durability',
     description: 'Ductile iron truncated dome matrix engineered to withstand heavy localized loading and snowplow impacts.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_plate_pattern_4.png`,
+    image: `/images/detectable_plates/detectable_plate_pattern_4.png`,
     badge: 'Ductile Iron'
   },
   {
@@ -61,7 +61,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Cast-In-Place Embedded Plate',
     spec: 'Wet Concrete Embedment',
     description: 'Integral anchor lugs secure the plate permanently into fresh concrete during municipal sidewalk pours.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_warning_plate_1.jpeg`,
+    image: `/images/detectable_plates/detectable_warning_plate_1.jpeg`,
     badge: 'Cast-In-Place'
   },
   {
@@ -69,7 +69,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Surface-Applied Retrofit Plate',
     spec: 'Existing Concrete Overlay',
     description: 'Engineered for direct mechanical anchoring into existing municipal concrete ramps and street intersections.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_warning_plate_2.jpeg`,
+    image: `/images/detectable_plates/detectable_warning_plate_2.jpeg`,
     badge: 'Retrofit'
   },
   {
@@ -77,7 +77,7 @@ const DETECTABLE_VARIANTS = [
     title: 'Municipal Field Installation',
     spec: 'Jobsite Embedment',
     description: 'Cured municipal corner ramp installation showcasing seamless transition, heavy-gauge fit, and long-term durability.',
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/detectable_plates/detectable_plate_field_installation.jpg`,
+    image: `/images/detectable_plates/detectable_plate_field_installation.jpg`,
     badge: 'Field Install'
   }
 ];
@@ -238,7 +238,7 @@ const RISER_SECTIONS = [
     title: "Cast Iron",
     highlightText: "Paving Risers",
     description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/fixed_round_manhole_riser_coated.png`,
+    image: `/images/manhole_riser/fixed_round_manhole_riser_coated.png`,
     features: [
       { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for heavy commercial roadway traffic loads." },
       { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
@@ -257,7 +257,7 @@ const RISER_SECTIONS = [
     title: "Paving-Adjust™",
     highlightText: "Expandable Risers",
     description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in expansion linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`,
+    image: `/images/manhole_riser/adjustable_manhole_riser_coated.png`,
     features: [
       { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to grip the existing frame and lock the riser securely in place." },
       { icon: "Timer", title: "Zero Cure Time", desc: "Paving crews can lay asphalt immediately after installation." }
@@ -273,7 +273,7 @@ const RISER_SECTIONS = [
     title: "Catch Basin &",
     highlightText: "Curb Inlets",
     description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers designed specifically to raise storm grates and curb inlets to final grade.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
+    image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
     features: [
       { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
       { icon: "ShieldCheck", title: "Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
@@ -292,7 +292,7 @@ const RISER_SECTIONS = [
   //   title: "Two Grate",
   //   highlightText: "Combo Risers",
   //   description: "Engineered for dual-grate catch basins and high-volume stormwater intake structures. Pre-fabricated to elevate multi-grate assemblies seamlessly while matching exact finished pavement elevations.",
-  //   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
+  //   image: `/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
   //   features: [
   //     { icon: "Grid", title: "Dual Grate Integration", desc: "Houses two side-by-side grates in a unified rigid frame." },
   //     { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered to withstand direct vehicle traffic without deflection." }
@@ -311,7 +311,7 @@ const RISER_SECTIONS = [
   //   title: "Fabricated",
   //   highlightText: "Steel Risers",
   //   description: "Heavy-duty welded structural steel risers custom fabricated to fit non-standard municipal frames, extra deep overlays, and specialized roadway geometry.",
-  //   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
+  //   image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
   //   features: [
   //     { icon: "Layers", title: "Custom Dimensions", desc: "Manufactured to exact blueprints and field specifications." },
   //     { icon: "ShieldCheck", title: "High-Strength Welds", desc: "Precision welded for extreme durability and heavy load absorption." }
@@ -330,7 +330,7 @@ const RISER_SECTIONS = [
     title: "Sloped &",
     highlightText: "Tapered Risers",
     description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
+    image: `/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
     isComingSoon: true,
     features: [
       { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom slopes available to meet project-specific design requirements." },
@@ -366,7 +366,7 @@ const RISER_SECTIONS = [
     title: "Gas Valve",
     highlightText: "Risers",
     description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/gas_valve_box_riser_2.png`,
+    image: `/images/valve_box_riser/gas_valve_box_riser_2.png`,
     features: [
       { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
       { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
@@ -384,7 +384,7 @@ const RISER_SECTIONS = [
   //   title: "Trash Racks &",
   //   highlightText: "Debris Barriers",
   //   description: "Heavy-gauge steel trash racks engineered to protect culverts, retention basins, and stormwater intake pipes from floating debris and blockages.",
-  //   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/trash_rack_type_1.png`,
+  //   image: `/images/trash_racks/trash_rack_type_1.png`,
   //   features: [
   //     { icon: "Grid", title: "Debris Protection", desc: "Prevents large logs, rocks, and urban debris from clogging outflow pipes." },
   //     { icon: "ShieldCheck", title: "Corrosion Resistant", desc: "Heavy galvanized and coated steel for prolonged water immersion." }
@@ -403,7 +403,7 @@ const RISER_SECTIONS = [
   //   title: "Lid Lifters &",
   //   highlightText: "Paving Tools",
   //   description: "Industrial-grade field tools engineered for safety and efficiency. Includes heavy-duty valve box lifters, manhole cover hooks, and specialized installation equipment.",
-  //   image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/tools/valve_box_lifter.png`,
+  //   image: `/images/tools/valve_box_lifter.png`,
   //   features: [
   //     { icon: "Wrench", title: "Jobsite Ergonomics", desc: "Reduces back strain and accelerates daily paving production." },
   //     { icon: "HardHat", title: "Safety Engineered", desc: "Drop-forged steel tools rated for heavy municipal castings." }
