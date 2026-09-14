@@ -14,9 +14,9 @@ import {
 import { Button } from '@/components/ui/button';
 
 const FINISHES = [
-  { name: 'Standard Raw', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png` },
-  { name: 'Coated Black', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png` },
-  { name: 'Solid Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png` },
+  { name: 'Standard Raw', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
+  { name: 'Coated Black', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png` },
+  { name: 'Solid Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
 ];
 
 export default function UtilityProductsPage() {

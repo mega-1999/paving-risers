@@ -87,7 +87,7 @@ export default function ManholeFrameCoverPage() {
 
           <div className="lg:w-1/2 w-full">
             <div className="aspect-video w-full bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center relative group overflow-hidden shadow-2xl">
-              <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`} alt='' width={500} height={500} />
+              <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`} alt='' width={500} height={500} />
               <div className="absolute inset-0 border-2 border-[#CC0000]/0 group-hover:border-[#CC0000]/30 transition-colors duration-700 m-4"></div>
  
             </div>

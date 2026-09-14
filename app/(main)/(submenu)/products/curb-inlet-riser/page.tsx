@@ -6,10 +6,10 @@ import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const FINISHES = [
-  { id: '01', name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Iron.623.png` },
-  { id: '02', name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Raw_Finish.624.png` },
-  { id: '03', name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_3_iron.628.png` },
-  { id: '04', name: 'Heavy-Duty Coated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png` },
+  { id: '01', name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_iron.png` },
+  { id: '02', name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_iron.png` },
+  { id: '03', name: 'Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_iron_offset.png` },
+  { id: '04', name: 'Heavy-Duty Coated', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_coated_2.png` },
 ];
 
 export default function CurbInletParallaxPage() {

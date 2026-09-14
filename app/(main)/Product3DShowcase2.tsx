@@ -23,8 +23,8 @@ const PRODUCT_VIDEOS = [
     description: "Full rotation showing the variable height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Manhole_riser/fixed_manhole_riser_installation.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png`
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png`
   },
   {
     id: 2,
@@ -32,8 +32,8 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Catch-basin-riser-ayush.914.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_animation.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   },
   {
     id: 3,
@@ -41,8 +41,8 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/full_valve_design_with_riser_PR.953.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/1.5.354.jpg.jpeg`
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/valve_box_riser/full_valve_box_riser_design_3.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/valve_box_riser_1_5in.jpeg`
   },
   {
     id: 4,
@@ -50,8 +50,8 @@ const PRODUCT_VIDEOS = [
     description: "Detailed visualization of the curb inlet structure.",
     duration: "1:20",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Curb_Inlet_riser/curb_inlet_riser.952.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_4_coated_Finish.815.png`
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_riser_anim_3.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_coated_2.png`
   },
   {
     id: 5,
@@ -59,8 +59,8 @@ const PRODUCT_VIDEOS = [
     description: "Demonstration of custom fabricated configurations.",
     duration: "0:55",
     type: "CUSTOM_BUILD",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/1.924.mp4`,
-    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`
+    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.924.mp4`,
+    thumbnail: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   }
 ];
 

@@ -127,7 +127,7 @@ export default function PavingResurfacingPage() {
               </div>
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-full flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`}
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`}
                   alt="Manhole Riser Solution"
                   fill
                   className="object-contain p-4"
@@ -150,7 +150,7 @@ export default function PavingResurfacingPage() {
               </div>
               <div className="w-full md:w-64 h-64 relative bg-black/50 border border-white/5 rounded-sm flex items-center justify-center p-8 shrink-0 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_50px_rgba(204,0,0,0.1)] group-hover:shadow-[0_0_50px_rgba(204,0,0,0.3)]">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`}
+                  src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`}
                   alt="Catch Basin Riser Solution"
                   fill
                   className="object-contain p-4"

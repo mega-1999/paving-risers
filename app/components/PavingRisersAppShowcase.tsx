@@ -185,7 +185,7 @@ export default function PavingRisersAppShowcase() {
                     };
                   }
                 }}
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/android_ios.mp4`}
+                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/app_showcase/android_ios.mp4`}
                 autoPlay
                 loop
                 muted

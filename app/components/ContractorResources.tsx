@@ -7,21 +7,21 @@ const RESOURCES = [
     id: 'safety',
     title: 'Safety & DOT Compliance',
     description: 'Learn best practices for minimizing jobsite risks and ensuring your adjustment risers meet local DOT load ratings.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
     href: '#safety'
   },
   {
     id: 'installation',
     title: 'Installation Guides',
     description: 'Get step-by-step tips from the foundry on setting, sealing, and expanding heavy-duty cast iron frames.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`,
     href: '#installation'
   },
   {
     id: 'case-studies',
     title: 'Case Studies',
     description: 'See how our direct-to-site delivery helped municipal road crews overcome tight resurfacing deadlines.',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`,
     href: '#case-studies'
   }
 ];

@@ -17,7 +17,7 @@ const HERO_SLIDES = [
             "Fixed and adjustable paving risers designed for accurate elevation control of manholes and catch basins. Built for long-term roadway performance.",
         cta: "View Products",
         link: "/products/paving-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/Rectangle_Paving_Riser_2_Iron.623.png`
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/curb_inlet_riser/curb_inlet_riser_iron.png`
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const HERO_SLIDES = [
             "Durable riser systems engineered to withstand repeated traffic loads, snowplows, and extreme weather without settlement or movement.",
         cta: "Explore Manhole Risers",
         link: "/products/manhole-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png` // Close-up of manhole riser installation
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png` // Close-up of manhole riser installation
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const HERO_SLIDES = [
             "Risers and frames designed for catch basins to maintain surface alignment and structural integrity in municipal drainage systems.",
         cta: "View Applications",
         link: "/products/catch-basin-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`  
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`  
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ const HERO_SLIDES = [
             "Paving risers engineered to resist snowplow strikes and freeze–thaw cycles, maintaining grade accuracy and surface safety year after year.",
         cta: "See Performance",
         link: "/products/snowplow-resistant-risers",
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` // Winter roadway with manhole riser
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png` // Winter roadway with manhole riser
     }
 ];
 

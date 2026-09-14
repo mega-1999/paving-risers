@@ -38,7 +38,7 @@ export default function SubmitSpecificationsPage() {
              
             className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
           >
-            <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Curb_Inlet_riser/Curb_inlet.mp4`} type="video/mp4" />
+            <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_overview.mp4`} type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent lg:hidden" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] to-transparent hidden lg:block w-1/3" />
@@ -69,7 +69,7 @@ export default function SubmitSpecificationsPage() {
 
               {/* Background Ghost Video */}
               <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity">
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/paving_riser_solid_ring_utilisation_animation.685.mp4`} type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_riser_solid_ring_utilisation_animation.685.mp4`} type="video/mp4" />
               </video>
 
               <div className="relative z-10 flex flex-col items-center text-center p-8">
@@ -124,7 +124,7 @@ export default function SubmitSpecificationsPage() {
             {/* Visual Callout Card */}
             <div className="w-full bg-black border border-white/10 overflow-hidden group">
               <div className="relative aspect-video">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/Catch basin riser ayush.717.jpg.jpeg`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-4 left-4 flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
@@ -181,7 +181,7 @@ export default function SubmitSpecificationsPage() {
           onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-70 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
         >
-          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Curb_Inlet_riser/curb_inlet_riser.715.mp4`} type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4`} type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-black/40">
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-4 shadow-black drop-shadow-2xl">

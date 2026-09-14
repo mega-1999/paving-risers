@@ -24,7 +24,7 @@ export default function TrashRacksSnapPage() {
         {/* Hero Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`}
+            src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/trash_rack_type_1.png`}
             alt="Trash Racks Background"
             fill
             className="object-cover opacity-30 mix-blend-luminosity grayscale scale-110 group-hover:scale-100 transition-transform duration-[2000ms] ease-out"
@@ -72,7 +72,7 @@ export default function TrashRacksSnapPage() {
             <div className="absolute inset-8 border border-white/5" />
             
             <Image
-              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`}
+              src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/trash_rack_type_1.png`}
               alt="Trash Racks Blueprint"
               fill
               className="object-contain p-12 filter drop-shadow-[0_30px_60px_rgba(0,0,0,0.9)]"

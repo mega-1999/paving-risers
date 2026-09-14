@@ -30,7 +30,7 @@ export default function EngineeringBriefsPage() {
           
           className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen scale-105"
         >
-          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Two_Grate_Riser_Animation.mp4`} type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`} type="video/mp4" />
         </video>
         
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
@@ -73,7 +73,7 @@ export default function EngineeringBriefsPage() {
                 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.751.mp4`} type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.751.mp4`} type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-8">
@@ -147,7 +147,7 @@ export default function EngineeringBriefsPage() {
                 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/paving_riser_solid_ring_utilisation_animation.686.mp4`} type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4`} type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-l from-black/80 to-transparent pointer-events-none" />
               <div className="absolute top-8 right-8 text-right">
@@ -171,7 +171,7 @@ export default function EngineeringBriefsPage() {
                 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/Videos/1.711.mp4`} type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.711.mp4`} type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-0 w-full text-center">
@@ -221,7 +221,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 1 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">
@@ -239,7 +239,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 2 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">
@@ -257,7 +257,7 @@ export default function EngineeringBriefsPage() {
             {/* Archive Item 3 */}
             <div className="bg-[#0A0A0A] border border-white/5 group hover:border-[#CC0000] transition-colors relative overflow-hidden flex flex-col h-[450px]">
               <div className="relative h-64 w-full">
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Valve_box_riser/5.358.jpg.jpeg`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/valve_box_riser/valve_box_riser_5in.jpeg`} alt="Engineering Spec" fill className="object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-end -mt-16 relative z-10">

@@ -88,7 +88,7 @@ export default function FabricatedGratesSection() {
                 <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest font-bold">
                   Fabricated Steel Drainage Grate Assembly
                 </span> */}
-                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/frame_and_cover.png`} alt='Fabricated Grates' height={'1200'} width={'1200'} />
+                <Image src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/manhole_frame_and_cover.png`} alt='Fabricated Grates' height={'1200'} width={'1200'} />
               </div>
             </div>
 

@@ -24,7 +24,7 @@ const RESOURCES = [
         id: 'history',
         title: 'Company History',
         description: 'A legacy built on heavy iron. Discover how our foundry operations have evolved to meet modern DOT and highway standards over the decades.',
-        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/D_shape_Riser_Raw_Finish.602.png`,
+        imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/paving/d_shape_riser_iron.png`,
         linkText: 'ACCESS ARCHIVE',
         href: '#history'
     },

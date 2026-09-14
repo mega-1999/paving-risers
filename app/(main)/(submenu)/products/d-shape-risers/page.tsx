@@ -17,18 +17,18 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'D-Shape Riser', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_riser.812.png` },
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_Raw_Finish.602.png` },
-  { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Rise__with_Iron.635.png` },
-  { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png` },
-  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png` }
+  { name: 'D-Shape Riser', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_paving_riser.png` },
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_iron.png` },
+  { name: 'With Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_iron.png` },
+  { name: 'With Cast Iron', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_cast_iron.png` },
+  { name: 'With Steel', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png` }
 ];
 
 const D_SHAPE_DATA = {
   title: 'D-Shape Curb Risers',
   headline: 'Specialized Geometry for Perimeter Curb Inlets.',
   description: 'The D-Shape Riser is a precision-engineered solution for curb-back manholes and drainage structures. Designed with one flat side to sit flush against the concrete curb head, these risers allow for seamless asphalt resurfacing around complex perimeter geometries without obstructing the gutter line.',
-  image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
+  image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_cast_iron.png`,
   specs: [
     { label: 'Material', value: 'Material: See product specification' },
     { label: 'Profile Type', value: 'Single Flat-Back "D" Geometry' },

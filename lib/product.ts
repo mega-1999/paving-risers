@@ -180,7 +180,7 @@ export const adjustment_risers = [
     {
         "id": "M7240020156A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -194,7 +194,7 @@ export const adjustment_risers = [
     {
         "id": "M1225008204R",
         "title": "Solid Square Steel Adjustment Riser 22-1/2\" Diameter 3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -208,7 +208,7 @@ export const adjustment_risers = [
     {
         "id": "V1098813205B",
         "title": "Solid Rectangle Steel Adjustment Riser 9-7/8\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangle",
@@ -222,7 +222,7 @@ export const adjustment_risers = [
     {
         "id": "M5260015152A",
         "title": "Expandable Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -236,7 +236,7 @@ export const adjustment_risers = [
     {
         "id": "00196094",
         "title": "1960H 1-1/2\" Solid Round Black Coated Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -250,7 +250,7 @@ export const adjustment_risers = [
     {
         "id": "655-039030",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 36-1/2\" Length 2-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -264,7 +264,7 @@ export const adjustment_risers = [
     {
         "id": "85008026",
         "title": "8500 2-1/2\" RISER W/SET SCREWS",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -278,7 +278,7 @@ export const adjustment_risers = [
     {
         "id": "V7073825158B",
         "title": "70H Solid Round Steel Adjustment Riser 7-3/8\" Diameter 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -292,7 +292,7 @@ export const adjustment_risers = [
     {
         "id": "V7073825308B",
         "title": "70H Solid Round Steel Adjustment Riser 7-3/8\" Diameter 2-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -306,7 +306,7 @@ export const adjustment_risers = [
     {
         "id": "M7380015104A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -320,7 +320,7 @@ export const adjustment_risers = [
     {
         "id": "M5258819155A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -334,7 +334,7 @@ export const adjustment_risers = [
     {
         "id": "M2240014304A",
         "title": "Expandable Round Steel Adjustment Riser 24\" Diameter 1-3/8\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -348,7 +348,7 @@ export const adjustment_risers = [
     {
         "id": "M5236316152A",
         "title": "Expandable Round Steel Adjustment Riser 23-5/8\" Diameter 1-5/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -362,7 +362,7 @@ export const adjustment_risers = [
     {
         "id": "M1232513253A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -376,7 +376,7 @@ export const adjustment_risers = [
     {
         "id": "M7240020206A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -390,7 +390,7 @@ export const adjustment_risers = [
     {
         "id": "00542594",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/4\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -404,7 +404,7 @@ export const adjustment_risers = [
     {
         "id": "M1240016404A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-5/8\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -418,7 +418,7 @@ export const adjustment_risers = [
     {
         "id": "M7380020154A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -432,7 +432,7 @@ export const adjustment_risers = [
     {
         "id": "00756594",
         "title": "7565H Solid Rectangular 3 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/8\" Length 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -446,7 +446,7 @@ export const adjustment_risers = [
     {
         "id": "M7257520138A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -474,7 +474,7 @@ export const adjustment_risers = [
     {
         "id": "M5217514154A",
         "title": "Expandable Round Steel Adjustment Riser 21-3/4\" Diameter 1-3/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -488,7 +488,7 @@ export const adjustment_risers = [
     {
         "id": "D72103202515",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 32\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -502,7 +502,7 @@ export const adjustment_risers = [
     {
         "id": "D2363361015A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-5/8\" Width x 33-5/8\" Length 1\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -516,7 +516,7 @@ export const adjustment_risers = [
     {
         "id": "00296593",
         "title": "2965H Solid Round Steel Adjustment Riser 8\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -530,7 +530,7 @@ export const adjustment_risers = [
     {
         "id": "M1320015604A",
         "title": "Solid Round Steel Adjustment Riser 32\" Diameter 1-1/2\" Seat Thickness 6\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -544,7 +544,7 @@ export const adjustment_risers = [
     {
         "id": "655-109015PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-1/2\" Width x 36-3/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -558,7 +558,7 @@ export const adjustment_risers = [
     {
         "id": "M5355018154A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 1-3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -572,7 +572,7 @@ export const adjustment_risers = [
     {
         "id": "M5355018084A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 1-3/4\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -586,7 +586,7 @@ export const adjustment_risers = [
     {
         "id": "M2357511403A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -600,7 +600,7 @@ export const adjustment_risers = [
     {
         "id": "D71553202020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 15-1/2\" Width x 32\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -614,7 +614,7 @@ export const adjustment_risers = [
     {
         "id": "D72703202520",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 27\" Width x 32\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -628,7 +628,7 @@ export const adjustment_risers = [
     {
         "id": "M1237518304A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-3/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -642,7 +642,7 @@ export const adjustment_risers = [
     {
         "id": "M7360015104A",
         "title": "Solid Round Steel Adjustment Riser 36\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -656,7 +656,7 @@ export const adjustment_risers = [
     {
         "id": "M1380015289A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -670,7 +670,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513235R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -684,7 +684,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513185R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -698,7 +698,7 @@ export const adjustment_risers = [
     {
         "id": "M1316310206A",
         "title": "Solid Round Steel Adjustment Riser 31-5/8\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -712,7 +712,7 @@ export const adjustment_risers = [
     {
         "id": "M1341315234A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -726,7 +726,7 @@ export const adjustment_risers = [
     {
         "id": "M7341315084A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -740,7 +740,7 @@ export const adjustment_risers = [
     {
         "id": "M1260015704A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 7\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -754,7 +754,7 @@ export const adjustment_risers = [
     {
         "id": "M1232510152A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -768,7 +768,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518454A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 4-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -782,7 +782,7 @@ export const adjustment_risers = [
     {
         "id": "M2262515182A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -796,7 +796,7 @@ export const adjustment_risers = [
     {
         "id": "M2257515202A",
         "title": "Expandable Round Steel Adjustment Riser 25-3/4\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -810,7 +810,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513305R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -824,7 +824,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513155R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -838,7 +838,7 @@ export const adjustment_risers = [
     {
         "id": "M1250010252A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -852,7 +852,7 @@ export const adjustment_risers = [
     {
         "id": "M7237513135R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -866,7 +866,7 @@ export const adjustment_risers = [
     {
         "id": "M1227520235A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -880,7 +880,7 @@ export const adjustment_risers = [
     {
         "id": "M7260011133A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -894,7 +894,7 @@ export const adjustment_risers = [
     {
         "id": "C11162881820",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 11-5/8\" Width x 28-3/4\" Length 1-3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -908,7 +908,7 @@ export const adjustment_risers = [
     {
         "id": "M1250010302A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -922,7 +922,7 @@ export const adjustment_risers = [
     {
         "id": "M1132508252B",
         "title": "Solid Round Steel Adjustment Riser 13-1/4\" Diameter 3/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -936,7 +936,7 @@ export const adjustment_risers = [
     {
         "id": "00837191",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 7-3/4\" Width x 7-3/4\" Length 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -950,7 +950,7 @@ export const adjustment_risers = [
     {
         "id": "M2230013204A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -964,7 +964,7 @@ export const adjustment_risers = [
     {
         "id": "M1251313153A",
         "title": "Solid Round Steel Adjustment Riser 25-1/8\" Diameter 1-1/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -978,7 +978,7 @@ export const adjustment_risers = [
     {
         "id": "M7374415084A",
         "title": "Solid Round Steel Adjustment Riser 37-7/16\" Diameter 1-1/2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -992,7 +992,7 @@ export const adjustment_risers = [
     {
         "id": "V111251C334B",
         "title": "Solid Round Steel Adjustment Riser 11-1/4\" Diameter 1-5/16\" Seat Thickness 3-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1006,7 +1006,7 @@ export const adjustment_risers = [
     {
         "id": "00223980",
         "title": "Expandable Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1020,7 +1020,7 @@ export const adjustment_risers = [
     {
         "id": "00223990",
         "title": "Solid Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1034,7 +1034,7 @@ export const adjustment_risers = [
     {
         "id": "M1227515604A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 1-1/2\" Seat Thickness 6\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1048,7 +1048,7 @@ export const adjustment_risers = [
     {
         "id": "M1280010154A",
         "title": "Solid Round Steel Adjustment Riser 28\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1062,7 +1062,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F40A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1076,7 +1076,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F30A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1090,7 +1090,7 @@ export const adjustment_risers = [
     {
         "id": "D236236CA22A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 23-5/8\" Width x 23-5/8\" Length 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -1104,7 +1104,7 @@ export const adjustment_risers = [
     {
         "id": "00223993",
         "title": "2239H2 Solid Round Black Coated 2\" Adjustment Riser with Orientation Tab",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -1118,7 +1118,7 @@ export const adjustment_risers = [
     {
         "id": "M1215010303R",
         "title": "Solid Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1132,7 +1132,7 @@ export const adjustment_risers = [
     {
         "id": "M1238810282A",
         "title": "Solid Round Steel Adjustment Riser 23-7/8\" Diameter 1\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1146,7 +1146,7 @@ export const adjustment_risers = [
     {
         "id": "M7260015104R",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1160,7 +1160,7 @@ export const adjustment_risers = [
     {
         "id": "655-119015PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26\" Width x 47-1/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1174,7 +1174,7 @@ export const adjustment_risers = [
     {
         "id": "PAHGRR99",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 31-3/4\" Width x 60\" Length 5\" Seat Thickness 6\" Rise, Black Coated, PennDOT Spec",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1188,7 +1188,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F100A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 10\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1202,7 +1202,7 @@ export const adjustment_risers = [
     {
         "id": "0057509015",
         "title": "5750H Solid Square 4 Sided Steel Adjustment Riser 38\" Width x 38\" Length 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -1216,7 +1216,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F33A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1230,7 +1230,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F48A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 4-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1244,7 +1244,7 @@ export const adjustment_risers = [
     {
         "id": "00714094",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 24-9/16\" Width x 27-1/2\" Length 4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1258,7 +1258,7 @@ export const adjustment_risers = [
     {
         "id": "M725001A102A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1-1/16\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1272,7 +1272,7 @@ export const adjustment_risers = [
     {
         "id": "M1232513283A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1286,7 +1286,7 @@ export const adjustment_risers = [
     {
         "id": "00223981",
         "title": "Expandable Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1300,7 +1300,7 @@ export const adjustment_risers = [
     {
         "id": "D72183132020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21-3/4\" Width x 31-1/4\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1314,7 +1314,7 @@ export const adjustment_risers = [
     {
         "id": "M7095020106B",
         "title": "Solid Round Steel Adjustment Riser 9-1/2\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1328,7 +1328,7 @@ export const adjustment_risers = [
     {
         "id": "00837192",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 7-3/4\" Width x 7-3/4\" Length 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -1342,7 +1342,7 @@ export const adjustment_risers = [
     {
         "id": "M1215010203R",
         "title": "Solid Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1356,7 +1356,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F08A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1370,7 +1370,7 @@ export const adjustment_risers = [
     {
         "id": "M7095020156B",
         "title": "Solid Round Steel Adjustment Riser 9-1/2\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1384,7 +1384,7 @@ export const adjustment_risers = [
     {
         "id": "M1237510204R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1398,7 +1398,7 @@ export const adjustment_risers = [
     {
         "id": "M1232511254A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/8\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1412,7 +1412,7 @@ export const adjustment_risers = [
     {
         "id": "V1120010203B",
         "title": "3697H Solid Round Steel Adjustment Riser 12\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1426,7 +1426,7 @@ export const adjustment_risers = [
     {
         "id": "M1240015208A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1440,7 +1440,7 @@ export const adjustment_risers = [
     {
         "id": "M7360015154A",
         "title": "Solid Round Steel Adjustment Riser 36\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1454,7 +1454,7 @@ export const adjustment_risers = [
     {
         "id": "D24036020204A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 24\" Width x 36\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1468,7 +1468,7 @@ export const adjustment_risers = [
     {
         "id": "M7227520085A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1482,7 +1482,7 @@ export const adjustment_risers = [
     {
         "id": "D12014010204A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 12\" Width x 14\" Length 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1496,7 +1496,7 @@ export const adjustment_risers = [
     {
         "id": "M1232510132A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1510,7 +1510,7 @@ export const adjustment_risers = [
     {
         "id": "M7237513133A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1524,7 +1524,7 @@ export const adjustment_risers = [
     {
         "id": "M7240020206D",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1538,7 +1538,7 @@ export const adjustment_risers = [
     {
         "id": "M1260011203A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1552,7 +1552,7 @@ export const adjustment_risers = [
     {
         "id": "M7380015159A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1566,7 +1566,7 @@ export const adjustment_risers = [
     {
         "id": "M2257515182A",
         "title": "Expandable Round Steel Adjustment Riser 25-3/4\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1580,7 +1580,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518504A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 5\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1594,7 +1594,7 @@ export const adjustment_risers = [
     {
         "id": "M1257520238A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1608,7 +1608,7 @@ export const adjustment_risers = [
     {
         "id": "M7227520105A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1622,7 +1622,7 @@ export const adjustment_risers = [
     {
         "id": "M7240020106A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1636,7 +1636,7 @@ export const adjustment_risers = [
     {
         "id": "41482395",
         "title": "ADJ RG 24.25T 24.00B 1THK,3-6RISE SPECIAL",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "N/A",
             "shape": "Round",
@@ -1650,7 +1650,7 @@ export const adjustment_risers = [
     {
         "id": "655-109020PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-1/2\" Width x 36-3/4\" Length 3-1/2\" Seat Thickness 2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1664,7 +1664,7 @@ export const adjustment_risers = [
     {
         "id": "M1232510182A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1678,7 +1678,7 @@ export const adjustment_risers = [
     {
         "id": "00756590",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/8\" Length 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1692,7 +1692,7 @@ export const adjustment_risers = [
     {
         "id": "M5357511133A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1706,7 +1706,7 @@ export const adjustment_risers = [
     {
         "id": "D3183181515A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 31-3/4\" Width x 31-3/4\" Length 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -1720,7 +1720,7 @@ export const adjustment_risers = [
     {
         "id": "M5262515152A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1734,7 +1734,7 @@ export const adjustment_risers = [
     {
         "id": "655-119015PCG",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26\" Width x 46-3/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Galvanized",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1748,7 +1748,7 @@ export const adjustment_risers = [
     {
         "id": "M1227520403A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1762,7 +1762,7 @@ export const adjustment_risers = [
     {
         "id": "M1230015504A",
         "title": "Solid Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 5\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1776,7 +1776,7 @@ export const adjustment_risers = [
     {
         "id": "M5355020154A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1790,7 +1790,7 @@ export const adjustment_risers = [
     {
         "id": "M2215010150A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1804,7 +1804,7 @@ export const adjustment_risers = [
     {
         "id": "00701091",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 16-1/16\" Width x 23\" Length 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1818,7 +1818,7 @@ export const adjustment_risers = [
     {
         "id": "M2230015304A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1832,7 +1832,7 @@ export const adjustment_risers = [
     {
         "id": "M5215010100A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1846,7 +1846,7 @@ export const adjustment_risers = [
     {
         "id": "M1262511153A",
         "title": "Solid Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1860,7 +1860,7 @@ export const adjustment_risers = [
     {
         "id": "M2215010200A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1874,7 +1874,7 @@ export const adjustment_risers = [
     {
         "id": "M5230018152A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1888,7 +1888,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513205R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1902,7 +1902,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513255R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1916,7 +1916,7 @@ export const adjustment_risers = [
     {
         "id": "M1260015204R",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1930,7 +1930,7 @@ export const adjustment_risers = [
     {
         "id": "M5320015153A",
         "title": "Expandable Round Steel Adjustment Riser 32\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1944,7 +1944,7 @@ export const adjustment_risers = [
     {
         "id": "D2982982090R",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 29-3/4\" Width x 29-3/4\" Length 2\" Seat Thickness 9\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -1958,7 +1958,7 @@ export const adjustment_risers = [
     {
         "id": "655-059010",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -1972,7 +1972,7 @@ export const adjustment_risers = [
     {
         "id": "M1260011153A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -1986,7 +1986,7 @@ export const adjustment_risers = [
     {
         "id": "M7232510102A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2000,7 +2000,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513283A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2014,7 +2014,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513203A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2028,7 +2028,7 @@ export const adjustment_risers = [
     {
         "id": "M729321I106A",
         "title": "Solid Round Steel Adjustment Riser 29-5/16\" Diameter 1-15/16\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2042,7 +2042,7 @@ export const adjustment_risers = [
     {
         "id": "M1262511203A",
         "title": "Solid Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2056,7 +2056,7 @@ export const adjustment_risers = [
     {
         "id": "655-059015",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2070,7 +2070,7 @@ export const adjustment_risers = [
     {
         "id": "M5244420109A",
         "title": "Expandable Round Steel Adjustment Riser 24-7/16\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2084,7 +2084,7 @@ export const adjustment_risers = [
     {
         "id": "M2357511253A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2098,7 +2098,7 @@ export const adjustment_risers = [
     {
         "id": "M7260011103A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2112,7 +2112,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518304A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2126,7 +2126,7 @@ export const adjustment_risers = [
     {
         "id": "655-139010",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 27-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2140,7 +2140,7 @@ export const adjustment_risers = [
     {
         "id": "M2230015284A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2154,7 +2154,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518554A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 5-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2168,7 +2168,7 @@ export const adjustment_risers = [
     {
         "id": "655-069020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 25-3/16\" Width x 26-1/2\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2182,7 +2182,7 @@ export const adjustment_risers = [
     {
         "id": "M1240014356A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-3/8\" Seat Thickness 3-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2196,7 +2196,7 @@ export const adjustment_risers = [
     {
         "id": "M5258819205A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2210,7 +2210,7 @@ export const adjustment_risers = [
     {
         "id": "M7257520188A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2224,7 +2224,7 @@ export const adjustment_risers = [
     {
         "id": "655-169020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2238,7 +2238,7 @@ export const adjustment_risers = [
     {
         "id": "M1417505230A",
         "title": "Solid Round Steel Adjustment Riser 41-3/4\" Diameter 1/2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2252,7 +2252,7 @@ export const adjustment_risers = [
     {
         "id": "M1185005802R",
         "title": "Solid Round Steel Adjustment Riser 18-1/2\" Diameter 9/16\" Seat Thickness 8\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2266,7 +2266,7 @@ export const adjustment_risers = [
     {
         "id": "D2657432515A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26-1/2\" Width x 74-1/4\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated, PennDOT Spec",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2280,7 +2280,7 @@ export const adjustment_risers = [
     {
         "id": "M5258819105A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2294,7 +2294,7 @@ export const adjustment_risers = [
     {
         "id": "M2255015184F",
         "title": "Expandable Round Steel Adjustment Riser 25-1/2\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2308,7 +2308,7 @@ export const adjustment_risers = [
     {
         "id": "C1563482030A",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 15-5/8\" Width x 34-3/4\" Length 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2322,7 +2322,7 @@ export const adjustment_risers = [
     {
         "id": "M2262515302A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2336,7 +2336,7 @@ export const adjustment_risers = [
     {
         "id": "00126890",
         "title": "1268H Solid Round Black Coated 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -2350,7 +2350,7 @@ export const adjustment_risers = [
     {
         "id": "655-169025",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2364,7 +2364,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513303A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2378,7 +2378,7 @@ export const adjustment_risers = [
     {
         "id": "655-169015",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2392,7 +2392,7 @@ export const adjustment_risers = [
     {
         "id": "M1232510402A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2406,7 +2406,7 @@ export const adjustment_risers = [
     {
         "id": "M1170008204A",
         "title": "Solid Round Steel Adjustment Riser 17\" Diameter 3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2420,7 +2420,7 @@ export const adjustment_risers = [
     {
         "id": "M1200010204A",
         "title": "Solid Round Steel Adjustment Riser 20\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2434,7 +2434,7 @@ export const adjustment_risers = [
     {
         "id": "V1092510204B",
         "title": "Solid Round Steel Adjustment Riser 9-1/4\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2448,7 +2448,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513253A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2462,7 +2462,7 @@ export const adjustment_risers = [
     {
         "id": "M1257520258A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2476,7 +2476,7 @@ export const adjustment_risers = [
     {
         "id": "M7341315134A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2490,7 +2490,7 @@ export const adjustment_risers = [
     {
         "id": "M7227520135A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2504,7 +2504,7 @@ export const adjustment_risers = [
     {
         "id": "M1442515904A",
         "title": "Solid Round Steel Adjustment Riser 44-1/4\" Diameter 1-1/2\" Seat Thickness 9\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2518,7 +2518,7 @@ export const adjustment_risers = [
     {
         "id": "M1341315254A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2532,7 +2532,7 @@ export const adjustment_risers = [
     {
         "id": "M2240015208A",
         "title": "Expandable Round Steel Adjustment Riser 24\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2546,7 +2546,7 @@ export const adjustment_risers = [
     {
         "id": "M7227520205A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2560,7 +2560,7 @@ export const adjustment_risers = [
     {
         "id": "M5262515102A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2574,7 +2574,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513285R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2588,7 +2588,7 @@ export const adjustment_risers = [
     {
         "id": "M7227520185A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2602,7 +2602,7 @@ export const adjustment_risers = [
     {
         "id": "M1380015259A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2616,7 +2616,7 @@ export const adjustment_risers = [
     {
         "id": "C1563482010A",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 15-5/8\" Width x 34-3/4\" Length 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2630,7 +2630,7 @@ export const adjustment_risers = [
     {
         "id": "M7237513083A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2644,7 +2644,7 @@ export const adjustment_risers = [
     {
         "id": "M1257520308A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2658,7 +2658,7 @@ export const adjustment_risers = [
     {
         "id": "M1341315304A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2672,7 +2672,7 @@ export const adjustment_risers = [
     {
         "id": "D3753751515A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 37-1/2\" Width x 37-1/2\" Length 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -2686,7 +2686,7 @@ export const adjustment_risers = [
     {
         "id": "D126026015L4A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 26\" Width x 26\" Length 1-1/2\" Seat Thickness 12\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -2700,7 +2700,7 @@ export const adjustment_risers = [
     {
         "id": "M1252515404A",
         "title": "Solid Round Steel Adjustment Riser 25-1/4\" Diameter 1-1/2\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2714,7 +2714,7 @@ export const adjustment_risers = [
     {
         "id": "M7380015155A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2728,7 +2728,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518354A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 3-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2742,7 +2742,7 @@ export const adjustment_risers = [
     {
         "id": "M7256309103A",
         "title": "Solid Round Steel Adjustment Riser 25-5/8\" Diameter 7/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2756,7 +2756,7 @@ export const adjustment_risers = [
     {
         "id": "M1237513233A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2770,7 +2770,7 @@ export const adjustment_risers = [
     {
         "id": "M1242518654A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 6-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2784,7 +2784,7 @@ export const adjustment_risers = [
     {
         "id": "M5374415104A",
         "title": "Expandable Round Steel Adjustment Riser 37-7/16\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2798,7 +2798,7 @@ export const adjustment_risers = [
     {
         "id": "M1211308154A",
         "title": "Solid Round Steel Adjustment Riser 21-1/8\" Diameter 3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2812,7 +2812,7 @@ export const adjustment_risers = [
     {
         "id": "M1227520305A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2826,7 +2826,7 @@ export const adjustment_risers = [
     {
         "id": "M2265010154A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/2\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2840,7 +2840,7 @@ export const adjustment_risers = [
     {
         "id": "D2102882F20A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2854,7 +2854,7 @@ export const adjustment_risers = [
     {
         "id": "M1238810232A",
         "title": "Solid Round Steel Adjustment Riser 23-7/8\" Diameter 1\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2871,7 +2871,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7240020156A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2885,7 +2885,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1225008204R",
         "title": "Solid Square Steel Adjustment Riser 22-1/2\" Diameter 3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -2899,7 +2899,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V1098813205B",
         "title": "Solid Rectangle Steel Adjustment Riser 9-7/8\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangle",
@@ -2913,7 +2913,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5260015152A",
         "title": "Expandable Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2927,7 +2927,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00196094",
         "title": "1960H 1-1/2\" Solid Round Black Coated Adjustment Riser use with Special 1960 Cover 23-3/4\" Diameter x 1\" Seat (00196050 / 51)",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -2941,7 +2941,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-039030",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 36-1/2\" Length 2-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -2955,7 +2955,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "85008026",
         "title": "8500 2-1/2\" RISER W/SET SCREWS",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2969,7 +2969,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V7073825158B",
         "title": "70H Solid Round Steel Adjustment Riser 7-3/8\" Diameter 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2983,7 +2983,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V7073825308B",
         "title": "70H Solid Round Steel Adjustment Riser 7-3/8\" Diameter 2-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -2997,7 +2997,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7380015104A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3011,7 +3011,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5258819155A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3025,7 +3025,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2240014304A",
         "title": "Expandable Round Steel Adjustment Riser 24\" Diameter 1-3/8\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3039,7 +3039,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5236316152A",
         "title": "Expandable Round Steel Adjustment Riser 23-5/8\" Diameter 1-5/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3053,7 +3053,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232513253A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3067,7 +3067,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7240020206A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3081,7 +3081,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00542594",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/4\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3095,7 +3095,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1240016404A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-5/8\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3109,7 +3109,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7380020154A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3123,7 +3123,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00756594",
         "title": "7565H Solid Rectangular 3 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/8\" Length 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3137,7 +3137,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7257520138A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3151,7 +3151,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1341315284A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3165,7 +3165,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5217514154A",
         "title": "Expandable Round Steel Adjustment Riser 21-3/4\" Diameter 1-3/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3179,7 +3179,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D72103202515",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 32\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3193,7 +3193,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2363361015A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-5/8\" Width x 33-5/8\" Length 1\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3207,7 +3207,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00296593",
         "title": "2965H Solid Round Steel Adjustment Riser 8\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3221,7 +3221,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1320015604A",
         "title": "Solid Round Steel Adjustment Riser 32\" Diameter 1-1/2\" Seat Thickness 6\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3235,7 +3235,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-109015PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-1/2\" Width x 36-3/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3249,7 +3249,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5355018154A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 1-3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3263,7 +3263,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5355018084A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 1-3/4\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3277,7 +3277,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2357511403A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3291,7 +3291,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D71553202020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 15-1/2\" Width x 32\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3305,7 +3305,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D72703202520",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 27\" Width x 32\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3319,7 +3319,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237518304A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-3/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3333,7 +3333,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7360015104A",
         "title": "Solid Round Steel Adjustment Riser 36\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3347,7 +3347,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1380015289A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3361,7 +3361,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513235R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3375,7 +3375,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513185R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3389,7 +3389,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1316310206A",
         "title": "Solid Round Steel Adjustment Riser 31-5/8\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3403,7 +3403,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1341315234A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3417,7 +3417,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7341315084A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3431,7 +3431,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1260015704A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 7\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3445,7 +3445,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232510152A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3459,7 +3459,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518454A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 4-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3473,7 +3473,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2262515182A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3487,7 +3487,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2257515202A",
         "title": "Expandable Round Steel Adjustment Riser 25-3/4\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3501,7 +3501,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513305R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3515,7 +3515,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513155R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3529,7 +3529,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1250010252A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3543,7 +3543,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7237513135R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3557,7 +3557,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1227520235A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3571,7 +3571,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7260011133A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3585,7 +3585,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "C11162881820",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 11-5/8\" Width x 28-3/4\" Length 1-3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3599,7 +3599,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1250010302A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3613,7 +3613,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1132508252B",
         "title": "Solid Round Steel Adjustment Riser 13-1/4\" Diameter 3/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3627,7 +3627,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00837191",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 7-3/4\" Width x 7-3/4\" Length 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -3641,7 +3641,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2230013204A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3655,7 +3655,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1251313153A",
         "title": "Solid Round Steel Adjustment Riser 25-1/8\" Diameter 1-1/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3669,7 +3669,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7374415084A",
         "title": "Solid Round Steel Adjustment Riser 37-7/16\" Diameter 1-1/2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3683,7 +3683,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V111251C334B",
         "title": "Solid Round Steel Adjustment Riser 11-1/4\" Diameter 1-5/16\" Seat Thickness 3-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3697,7 +3697,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00223980",
         "title": "Expandable Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3711,7 +3711,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00223990",
         "title": "Solid Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3725,7 +3725,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1227515604A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 1-1/2\" Seat Thickness 6\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3739,7 +3739,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1280010154A",
         "title": "Solid Round Steel Adjustment Riser 28\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3753,7 +3753,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F40A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3767,7 +3767,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F30A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3781,7 +3781,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D236236CA22A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 23-5/8\" Width x 23-5/8\" Length 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -3795,7 +3795,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00223993",
         "title": "2239H2 Solid Round Black Coated 2\" Adjustment Riser with Orientation Tab",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -3809,7 +3809,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1215010303R",
         "title": "Solid Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3823,7 +3823,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1238810282A",
         "title": "Solid Round Steel Adjustment Riser 23-7/8\" Diameter 1\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3837,7 +3837,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7260015104R",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3851,7 +3851,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-119015PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26\" Width x 47-1/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3865,7 +3865,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "PAHGRR99",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 31-3/4\" Width x 60\" Length 5\" Seat Thickness 6\" Rise, Black Coated, PennDOT Spec",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3879,7 +3879,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F100A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 10\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3893,7 +3893,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "0057509015",
         "title": "5750H Solid Square 4 Sided Steel Adjustment Riser 38\" Width x 38\" Length 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -3907,7 +3907,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F33A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3921,7 +3921,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F48A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 4-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3935,7 +3935,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00714094",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 24-9/16\" Width x 27-1/2\" Length 4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -3949,7 +3949,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M725001A102A",
         "title": "Solid Round Steel Adjustment Riser 25\" Diameter 1-1/16\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3963,7 +3963,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232513283A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3977,7 +3977,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00223981",
         "title": "Expandable Round Steel Adjustment Riser 22-1/8\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -3991,7 +3991,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D72183132020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21-3/4\" Width x 31-1/4\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4005,7 +4005,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7095020106B",
         "title": "Solid Round Steel Adjustment Riser 9-1/2\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4019,7 +4019,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00837192",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 7-3/4\" Width x 7-3/4\" Length 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -4033,7 +4033,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1215010203R",
         "title": "Solid Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4047,7 +4047,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F08A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4061,7 +4061,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7095020156B",
         "title": "Solid Round Steel Adjustment Riser 9-1/2\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4075,7 +4075,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237510204R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4089,7 +4089,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232511254A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1-1/8\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4103,7 +4103,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V1120010203B",
         "title": "3697H Solid Round Steel Adjustment Riser 12\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4117,7 +4117,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1240015208A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4131,7 +4131,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7360015154A",
         "title": "Solid Round Steel Adjustment Riser 36\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4145,7 +4145,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D24036020204A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 24\" Width x 36\" Length 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4159,7 +4159,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7227520085A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4173,7 +4173,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D12014010204A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 12\" Width x 14\" Length 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4187,7 +4187,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232510132A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4201,7 +4201,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7237513133A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4215,7 +4215,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7240020206D",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4229,7 +4229,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1260011203A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4243,7 +4243,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7380015159A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4257,7 +4257,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2257515182A",
         "title": "Expandable Round Steel Adjustment Riser 25-3/4\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4271,7 +4271,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518504A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 5\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4285,7 +4285,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1257520238A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4299,7 +4299,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7227520105A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4313,7 +4313,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7240020106A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4327,7 +4327,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "41482395",
         "title": "ADJ RG 24.25T 24.00B 1THK,3-6RISE SPECIAL",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "N/A",
             "shape": "Round",
@@ -4341,7 +4341,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-109020PC",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 23-1/2\" Width x 36-3/4\" Length 3-1/2\" Seat Thickness 2\" Rise, Black E-Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4355,7 +4355,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232510182A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4369,7 +4369,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00756590",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 22-1/2\" Width x 45-1/8\" Length 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4383,7 +4383,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5357511133A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4397,7 +4397,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D3183181515A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 31-3/4\" Width x 31-3/4\" Length 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -4411,7 +4411,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5262515152A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4425,7 +4425,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-119015PCG",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26\" Width x 46-3/4\" Length 3-1/2\" Seat Thickness 1-1/2\" Rise, Galvanized",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4439,7 +4439,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1227520403A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4453,7 +4453,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1230015504A",
         "title": "Solid Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 5\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4467,7 +4467,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5355020154A",
         "title": "Expandable Round Steel Adjustment Riser 35-1/2\" Diameter 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4481,7 +4481,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2215010150A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4495,7 +4495,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00701091",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 16-1/16\" Width x 23\" Length 2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4509,7 +4509,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2230015304A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4523,7 +4523,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5215010100A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4537,7 +4537,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1262511153A",
         "title": "Solid Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4551,7 +4551,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2215010200A",
         "title": "Expandable Round Steel Adjustment Riser 21-1/2\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4565,7 +4565,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5230018152A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4579,7 +4579,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513205R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4593,7 +4593,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513255R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4607,7 +4607,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1260015204R",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4621,7 +4621,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5320015153A",
         "title": "Expandable Round Steel Adjustment Riser 32\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4635,7 +4635,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2982982090R",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 29-3/4\" Width x 29-3/4\" Length 2\" Seat Thickness 9\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -4649,7 +4649,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-059010",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4663,7 +4663,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1260011153A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4677,7 +4677,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7232510102A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4691,7 +4691,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513283A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4705,7 +4705,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513203A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4719,7 +4719,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M729321I106A",
         "title": "Solid Round Steel Adjustment Riser 29-5/16\" Diameter 1-15/16\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4733,7 +4733,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1262511203A",
         "title": "Solid Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4747,7 +4747,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-059015",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 22-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4761,7 +4761,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5244420109A",
         "title": "Expandable Round Steel Adjustment Riser 24-7/16\" Diameter 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4775,7 +4775,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2357511253A",
         "title": "Expandable Round Steel Adjustment Riser 35-3/4\" Diameter 1-1/8\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4789,7 +4789,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7260011103A",
         "title": "Solid Round Steel Adjustment Riser 26\" Diameter 1-1/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4803,7 +4803,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518304A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4817,7 +4817,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-139010",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 27-11/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4831,7 +4831,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2230015284A",
         "title": "Expandable Round Steel Adjustment Riser 23\" Diameter 1-1/2\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4845,7 +4845,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518554A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 5-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4859,7 +4859,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-069020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 25-3/16\" Width x 26-1/2\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4873,7 +4873,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1240014356A",
         "title": "Solid Round Steel Adjustment Riser 24\" Diameter 1-3/8\" Seat Thickness 3-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4887,7 +4887,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5258819205A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4901,7 +4901,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7257520188A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4915,7 +4915,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-169020",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4929,7 +4929,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1417505230A",
         "title": "Solid Round Steel Adjustment Riser 41-3/4\" Diameter 1/2\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4943,7 +4943,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1185005802R",
         "title": "Solid Round Steel Adjustment Riser 18-1/2\" Diameter 9/16\" Seat Thickness 8\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4957,7 +4957,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2657432515A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 26-1/2\" Width x 74-1/4\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated, PennDOT Spec",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -4971,7 +4971,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5258819105A",
         "title": "Expandable Round Steel Adjustment Riser 25-7/8\" Diameter 1-7/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4985,7 +4985,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2255015184F",
         "title": "Expandable Round Steel Adjustment Riser 25-1/2\" Diameter 1-1/2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -4999,7 +4999,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "C1563482030A",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 15-5/8\" Width x 34-3/4\" Length 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -5013,7 +5013,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2262515302A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5027,7 +5027,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "00126890",
         "title": "1268H Solid Round Black Coated 1\" Adjustment Riser for Cover 25-7/8\" Diameter x 1-7/8\" Seat Thickness",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Black Coated",
             "shape": "Round",
@@ -5041,7 +5041,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-169025",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -5055,7 +5055,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513303A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5069,7 +5069,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "655-169015",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 30-3/16\" Width x 46-1/2\" Length 2-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -5083,7 +5083,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1232510402A",
         "title": "Solid Round Steel Adjustment Riser 23-1/4\" Diameter 1\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5097,7 +5097,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1170008204A",
         "title": "Solid Round Steel Adjustment Riser 17\" Diameter 3/4\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5111,7 +5111,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1200010204A",
         "title": "Solid Round Steel Adjustment Riser 20\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5125,7 +5125,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "V1092510204B",
         "title": "Solid Round Steel Adjustment Riser 9-1/4\" Diameter 1\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5139,7 +5139,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513253A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5153,7 +5153,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1257520258A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5167,7 +5167,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7341315134A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5181,7 +5181,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7227520135A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5195,7 +5195,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1442515904A",
         "title": "Solid Round Steel Adjustment Riser 44-1/4\" Diameter 1-1/2\" Seat Thickness 9\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5209,7 +5209,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1341315254A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5223,7 +5223,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2240015208A",
         "title": "Expandable Round Steel Adjustment Riser 24\" Diameter 1-1/2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5237,7 +5237,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7227520205A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5251,7 +5251,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5262515102A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/4\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5265,7 +5265,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513285R",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5279,7 +5279,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7227520185A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 1-3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5293,7 +5293,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1380015259A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 2-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5307,7 +5307,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "C1563482010A",
         "title": "Solid Rectangular 3 Sided Steel Adjustment Riser 15-5/8\" Width x 34-3/4\" Length 2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -5321,7 +5321,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7237513083A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 3/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5335,7 +5335,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1257520308A",
         "title": "Solid Round Steel Adjustment Riser 25-3/4\" Diameter 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5349,7 +5349,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1341315304A",
         "title": "Solid Round Steel Adjustment Riser 34-1/8\" Diameter 1-1/2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5363,7 +5363,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D3753751515A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 37-1/2\" Width x 37-1/2\" Length 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -5377,7 +5377,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D126026015L4A",
         "title": "Solid Square 4 Sided Steel Adjustment Riser 26\" Width x 26\" Length 1-1/2\" Seat Thickness 12\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Square",
@@ -5391,7 +5391,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1252515404A",
         "title": "Solid Round Steel Adjustment Riser 25-1/4\" Diameter 1-1/2\" Seat Thickness 4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5405,7 +5405,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7380015155A",
         "title": "Solid Round Steel Adjustment Riser 38\" Diameter 1-1/2\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5419,7 +5419,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518354A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 3-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5433,7 +5433,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M7256309103A",
         "title": "Solid Round Steel Adjustment Riser 25-5/8\" Diameter 7/8\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5447,7 +5447,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1237513233A",
         "title": "Solid Round Steel Adjustment Riser 23-3/4\" Diameter 1-1/4\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5461,7 +5461,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1242518654A",
         "title": "Solid Round Steel Adjustment Riser 24-1/4\" Diameter 1-3/4\" Seat Thickness 6-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5475,7 +5475,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M5374415104A",
         "title": "Expandable Round Steel Adjustment Riser 37-7/16\" Diameter 1-1/2\" Seat Thickness 1\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5489,7 +5489,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1211308154A",
         "title": "Solid Round Steel Adjustment Riser 21-1/8\" Diameter 3/4\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5503,7 +5503,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1227520305A",
         "title": "Solid Round Steel Adjustment Riser 22-3/4\" Diameter 2\" Seat Thickness 3\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5517,7 +5517,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M2265010154A",
         "title": "Expandable Round Steel Adjustment Riser 26-1/2\" Diameter 1\" Seat Thickness 1-1/2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",
@@ -5531,7 +5531,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "D2102882F20A",
         "title": "Solid Rectangular 4 Sided Steel Adjustment Riser 21\" Width x 28-3/4\" Length 2-9/16\" Seat Thickness 2\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Rectangular",
@@ -5545,7 +5545,7 @@ export const infra_riser_adjustment_risers = [
     {
         "id": "M1238810232A",
         "title": "Solid Round Steel Adjustment Riser 23-7/8\" Diameter 1\" Seat Thickness 2-1/4\" Rise, Black Coated",
-        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+        "image": `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
         "attributes": {
             "material": "Steel",
             "shape": "Round",

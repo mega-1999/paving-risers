@@ -15,10 +15,10 @@ import {
 import { Button } from '@/components/ui/button';
 
 const STEEL_PRODUCTS = [
-  { id: 'custom-round', name: 'Custom Round', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_Raw_Finish.613.png`, spec: '1/4" to 3/4" Rolled Steel' },
-  { id: 'custom-square', name: 'Custom Square', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_Raw_Finish.610.png`, spec: 'A36 Carbon Steel Plate' },
-  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_Steel.634.png`, spec: 'Welded Angle Iron' },
-  { id: 'heavy-duty', name: 'Heavy Duty Rectangle', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_Raw_Finish.606.png`, spec: 'Structural Channel' },
+  { id: 'custom-round', name: 'Custom Round', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png`, spec: '1/4" to 3/4" Rolled Steel' },
+  { id: 'custom-square', name: 'Custom Square', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`, spec: 'A36 Carbon Steel Plate' },
+  { id: 'd-shape', name: 'D-Shape / Catch Basin', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_steel.png`, spec: 'Welded Angle Iron' },
+  { id: 'heavy-duty', name: 'Heavy Duty Rectangle', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png`, spec: 'Structural Channel' },
 ];
 
 export default function FabricatedSteelPage() {

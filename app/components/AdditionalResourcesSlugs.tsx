@@ -10,56 +10,56 @@ const RESOURCES = [
     title: 'Paving-Adjust™ White Paper',
     slug: 'Paving-Adjust-white-paper', // Used for routing
     type: 'document', // Determines the icon used
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_riser.811.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser.png`, // Replace with product photo
   },
   {
     id: 'res-2',
     title: 'Installation Guidelines',
     slug: 'installation-guidelines',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Rise__with_Iron.635.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_iron.png`, // Replace with product photo
   },
   {
     id: 'res-3',
     title: 'Adjustment Riser Brochure',
     slug: 'adjustment-riser-brochure',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png`, // Replace with product photo
   },
   {
     id: 'res-4',
     title: 'Manhole Riser Video',
     slug: 'manhole-riser-video',
     type: 'video',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`, // Replace with product photo
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`, // Replace with product photo
   },
   {
     id: 'res-5',
     title: 'Load Test Reports',
     slug: 'load-test-reports',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Riser_with_cast_iron.637.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`,
   },
   {
     id: 'res-6',
     title: 'Custom Fabrication Guide',
     slug: 'custom-fabrication-guide',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Custom_Riser/D_shape_Riser_with_cast_iron.636.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/custom_riser/d_shape_riser_cast_iron.png`,
   },
   {
     id: 'res-7',
     title: 'INFRA-RISER Specs',
     slug: 'infra-riser-specs',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/tr1.21.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/trash_racks/trash_rack_type_1.png`,
   },
   {
     id: 'res-8',
     title: 'Case Study: Highway Paving',
     slug: 'case-study-highway-paving',
     type: 'document',
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Sqaure_Riser_iron.609.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_iron.png`,
   }
 ];
 

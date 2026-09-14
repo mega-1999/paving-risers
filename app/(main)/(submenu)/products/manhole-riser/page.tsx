@@ -16,12 +16,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_Raw_Finish.613.png` },
-  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/fixed_round_riser_.810.png` },
-  { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_iron_Finish.614.png` },
-  { name: 'With Screw (Raw)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_Raw_Finish.617.png` },
-  { name: 'With Screw (Coated)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_coated_finish.808.png` },
-  { name: 'With Screw (Iron)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png` }
+  { name: 'Raw Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png` },
+  { name: 'Coated Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/fixed_round_manhole_riser_coated.png` },
+  { name: 'Iron Finish', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_iron_finish.png` },
+  { name: 'With Screw (Raw)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png` },
+  { name: 'With Screw (Coated)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_coated.png` },
+  { name: 'With Screw (Iron)', image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png` }
 ];
 
 const MANHOLE_RISER_DATA = {

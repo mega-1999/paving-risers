@@ -14,7 +14,7 @@ const SECTIONS = [
     description: 'Engineered for extreme shock loads. Our heavy-duty fabricated steel grates are designed for high-traffic industrial zones, airports, and major highway intersections where standard cast iron would fail.',
     icon: ShieldAlert,
     // Using a video for the first highly dynamic section
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/Two_Grate_Riser_Animation.mp4`,
+    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`,
     isVideo: true,
   },
   {
@@ -23,7 +23,7 @@ const SECTIONS = [
     subtitle: 'Maximum Inflow Profile',
     description: 'Designed with optimized bar spacing to prevent debris clogging while allowing maximum stormwater inflow. Keep the streets clear and prevent dangerous hydroplaning conditions on critical roadways.',
     icon: Waves,
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_4_coated_Finish.813.png`,
+    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`,
     isVideo: false,
   },
   {
@@ -32,7 +32,7 @@ const SECTIONS = [
     subtitle: 'Built to any blueprint',
     description: 'Non-standard dimensions? Sloped curbs? No problem. Our domestic fabrication facilities can weld any configuration of catch basin grate to match your specific municipal blueprints exactly.',
     icon: Wrench,
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/catch_basin_animation/1.719.mp4`,
+    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.719.mp4`,
     isVideo: true,
   }
 ];

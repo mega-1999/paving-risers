@@ -21,7 +21,7 @@ import {
 const DRAINAGE_DATA = {
   title: 'Storm',
   subtitle: 'Drainage Systems',
-  heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Square_riser_coated_finish.807.png`,
+  heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/square_catch_basin_riser_coated.png`,
   description: 'Precision-engineered for high-velocity runoff. Our drainage risers ensure optimal hydraulic capacity while maintaining a flush street-level profile.',
   overview: 'Effective stormwater management requires more than just an opening in the ground. It requires a precision seated frame that can handle the sheer force of road runoff during heavy precipitation events. Paving Risers provides 3-sided and 4-sided catch basin solutions that prevent bypass and ensure every gallon of water enters the municipal system as intended.',
   stats: [

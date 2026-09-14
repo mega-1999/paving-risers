@@ -9,28 +9,28 @@ export const PRODUCT_CATEGORIES = [
     title: "Adjustment Risers",
     slug: "adjustment-risers",
     description: "Adjust any manhole or catch basin to final grade with steel or cast iron riser rings.",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
   },
   {
     id: 2,
     title: "INFRA-RISER® Adjustment Risers",
     slug: "infra-riser-adjustment-risers",
     description: "Prolong structure life with the INFRA-RISER® rubber composite adjustment riser",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Round_Riser_with_screw_iron_Finish.615.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`,
   },
   {
     id: 3,
     title: "Rectangular Catch Basin Risers",
     slug: "catch-basin-risers",
     description: "Heavy-duty steel fabricated risers designed specifically to raise storm grates and curb inlets to final grade.",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/Rectangle_Paving_Riser_1_Right.622.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
   },
   {
     id: 4,
     title: "Sloped & Tapered Rings",
     slug: "sloped-tapered-rings",
     description: "Custom-tapered rings to accommodate road crown or grade changes for a precision flush fit.",
-    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/Manhole_riser/Adjustbale_riser_low_screw_coated_finish.809.png`,
+    imageSrc: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
   }
 ];
 

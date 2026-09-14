@@ -37,7 +37,7 @@ export default function Preloader() {
 
   if (!show) return null;
 
-  const videoUrl = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/Videos/paving_logo_animation.mp4`;
+  const videoUrl = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_logo_animation.mp4`;
 
   return (
     <>
