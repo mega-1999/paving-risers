@@ -20,7 +20,9 @@ import {
   ChevronLeft,
   ChevronRight,
   Sparkles,
-  Eye
+  Eye,
+  Film,
+  PlayCircle
 } from 'lucide-react';
 
 const DETECTABLE_VARIANTS = [
@@ -106,16 +108,15 @@ function DetectablePlatesSlider() {
 
   return (
     <div
-      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      className="relative w-full rounded-2xl overflow-hidden border border-black/10 shadow-2xl bg-white flex flex-col justify-between"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      
       {/* Top Header Bar */}
-      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+      <div className="bg-zinc-950 px-5 py-3.5 border-b border-white/10 flex items-center justify-between z-20 text-white">
         <div className="flex items-center gap-2.5">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
-          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+          <span className="w-2.5 h-2.5 rounded-full bg-white animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-white">
             {current.title}
           </span>
         </div>
@@ -125,19 +126,19 @@ function DetectablePlatesSlider() {
               <span
                 key={i}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
+                  i === activeIdx ? 'w-4 bg-white' : 'w-1 bg-zinc-600'
                 }`}
               />
             ))}
           </div>
-          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2 py-0.5 rounded border border-gray-300">
+          <span className="text-[10px] font-mono bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded border border-white/10">
             {activeIdx + 1} / {DETECTABLE_VARIANTS.length}
           </span>
         </div>
       </div>
 
       {/* Main Visual Display Stage */}
-      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-100 to-zinc-200/90 flex items-center justify-center overflow-hidden group">
         <Image
           key={current.id}
           src={current.image}
@@ -149,7 +150,7 @@ function DetectablePlatesSlider() {
 
         {/* Floating Spec Badge */}
         <div className="absolute top-4 left-4 z-20">
-          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-black text-white px-3 py-1 rounded shadow-md border border-white/10">
             {current.badge}
           </span>
         </div>
@@ -157,14 +158,14 @@ function DetectablePlatesSlider() {
         {/* Navigation Arrows */}
         <button
           onClick={handlePrev}
-          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
           aria-label="Previous plate"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
           aria-label="Next plate"
         >
           <ChevronRight className="w-5 h-5" />
@@ -172,18 +173,18 @@ function DetectablePlatesSlider() {
       </div>
 
       {/* Bottom Industrial Thumbnail Selector */}
-      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+      <div className="bg-zinc-950 p-4 border-t border-white/10 space-y-2.5 z-20 text-white">
         <div className="flex items-center justify-between">
-          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+          <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-white" />
             Detectable Warning Plates Gallery
           </span>
-          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+          <span className="text-[10px] font-mono text-zinc-300 font-bold">
             {current.spec}
           </span>
         </div>
 
-        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        {/* Unified Monochrome Thumbnail Cards */}
         <div className="grid grid-cols-4 sm:grid-cols-7 gap-2">
           {DETECTABLE_VARIANTS.map((variant, idx) => {
             const isActive = idx === activeIdx;
@@ -193,11 +194,11 @@ function DetectablePlatesSlider() {
                 onClick={() => setActiveIdx(idx)}
                 className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
                   isActive
-                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
-                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                    ? 'bg-zinc-900 border-white shadow-[0_0_12px_rgba(255,255,255,0.25)] ring-1 ring-white'
+                    : 'bg-zinc-900/60 border-white/10 hover:border-white/30 hover:bg-zinc-800'
                 }`}
               >
-                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-800 border border-white/10">
                   <Image
                     src={variant.image}
                     alt={variant.title}
@@ -207,19 +208,18 @@ function DetectablePlatesSlider() {
                   />
                 </div>
                 <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
-                  isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  isActive ? 'text-white' : 'text-zinc-400'
                 }`}>
                   {variant.badge}
                 </span>
                 {isActive && (
-                  <div className="w-full h-[2px] bg-[#CC0000] mt-1 rounded-full" />
+                  <div className="w-full h-[2px] bg-white mt-1 rounded-full" />
                 )}
               </button>
             );
           })}
         </div>
       </div>
-
     </div>
   );
 }
@@ -283,15 +283,15 @@ function TrashRacksSlider() {
 
   return (
     <div
-      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      className="relative w-full rounded-2xl overflow-hidden border border-black/10 shadow-2xl bg-white flex flex-col justify-between"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Top Header Bar */}
-      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+      <div className="bg-zinc-950 px-5 py-3.5 border-b border-white/10 flex items-center justify-between z-20 text-white">
         <div className="flex items-center gap-2.5">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
-          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+          <span className="w-2.5 h-2.5 rounded-full bg-white animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-white">
             {current.title}
           </span>
         </div>
@@ -302,19 +302,19 @@ function TrashRacksSlider() {
               <span
                 key={i}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIdx ? 'w-5 bg-[#CC0000]' : 'w-1.5 bg-gray-300'
+                  i === activeIdx ? 'w-5 bg-white' : 'w-1.5 bg-zinc-600'
                 }`}
               />
             ))}
           </div>
-          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2.5 py-0.5 rounded border border-gray-300">
+          <span className="text-[10px] font-mono bg-zinc-800 text-zinc-300 font-bold px-2.5 py-0.5 rounded border border-white/10">
             {activeIdx + 1} / {TRASH_RACK_VARIANTS.length}
           </span>
         </div>
       </div>
 
       {/* Main Visual Display Stage */}
-      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-100 to-zinc-200/90 flex items-center justify-center overflow-hidden group">
         <Image
           key={current.id}
           src={current.image}
@@ -326,7 +326,7 @@ function TrashRacksSlider() {
 
         {/* Floating Spec Badge */}
         <div className="absolute top-4 left-4 z-20">
-          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-black text-white px-3 py-1 rounded shadow-md border border-white/10">
             {current.badge}
           </span>
         </div>
@@ -334,14 +334,14 @@ function TrashRacksSlider() {
         {/* Navigation Arrows */}
         <button
           onClick={handlePrev}
-          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
           aria-label="Previous trash rack"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
           aria-label="Next trash rack"
         >
           <ChevronRight className="w-5 h-5" />
@@ -349,18 +349,18 @@ function TrashRacksSlider() {
       </div>
 
       {/* Bottom Industrial Thumbnail Selector */}
-      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+      <div className="bg-zinc-950 p-4 border-t border-white/10 space-y-2.5 z-20 text-white">
         <div className="flex items-center justify-between">
-          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+          <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-white" />
             Trash Racks & Debris Barriers
           </span>
-          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+          <span className="text-[10px] font-mono text-zinc-300 font-bold">
             {current.spec}
           </span>
         </div>
 
-        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        {/* Unified Monochrome Thumbnail Cards */}
         <div className="grid grid-cols-4 gap-2">
           {TRASH_RACK_VARIANTS.map((variant, idx) => {
             const isActive = idx === activeIdx;
@@ -370,11 +370,11 @@ function TrashRacksSlider() {
                 onClick={() => setActiveIdx(idx)}
                 className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
                   isActive
-                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
-                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                    ? 'bg-zinc-900 border-white shadow-[0_0_12px_rgba(255,255,255,0.25)] ring-1 ring-white'
+                    : 'bg-zinc-900/60 border-white/10 hover:border-white/30 hover:bg-zinc-800'
                 }`}
               >
-                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-800 border border-white/10">
                   <Image
                     src={variant.image}
                     alt={variant.title}
@@ -384,12 +384,12 @@ function TrashRacksSlider() {
                   />
                 </div>
                 <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
-                  isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  isActive ? 'text-white' : 'text-zinc-400'
                 }`}>
                   {variant.badge}
                 </span>
                 {isActive && (
-                  <div className="w-full h-[2px] bg-[#CC0000] mt-1 rounded-full" />
+                  <div className="w-full h-[2px] bg-white mt-1 rounded-full" />
                 )}
               </button>
             );
@@ -400,232 +400,434 @@ function TrashRacksSlider() {
   );
 }
 
+const TOOLS_VARIANTS = [
+  {
+    id: 'tool-lifter',
+    title: 'Heavy-Duty Valve Box Lifter',
+    spec: 'Ergonomic Drop-Forged Steel',
+    description: 'Designed for safe, one-person lifting of jammed municipal valve box covers and heavy curb box lids.',
+    image: `/images/tools/valve_box_lifter.png`,
+    badge: 'Valve Lifter'
+  },
+  {
+    id: 'tool-cover-bar',
+    title: 'Drop-Forged Valve Cover Bar',
+    spec: 'Heavy Leverage Removal Tool',
+    description: 'Extended leverage bar engineered to break surface seal on paved-over and frozen utility access lids.',
+    image: `/images/tools/valve_box_cover_bar.png`,
+    badge: 'Cover Bar'
+  },
+  {
+    id: 'tool-manhole-hook',
+    title: 'Industrial Manhole Cover Hook',
+    spec: 'Hardened Alloy Steel',
+    description: 'Hardened forged point hook for fast, ergonomic lifting of standard 24" to 36" municipal manhole covers.',
+    image: `/images/tools/manhole_cover_hook.png`,
+    badge: 'Manhole Hook'
+  },
+  {
+    id: 'tool-plug-puller',
+    title: 'Heavy Sewer Plug Puller',
+    spec: 'Pipe Plug Removal Rig',
+    description: 'Specially engineered mechanical gripping tool for rapid extraction of deep sanitary sewer test plugs.',
+    image: `/images/tools/sewer_plug_puller.png`,
+    badge: 'Plug Puller'
+  }
+];
 
-const RISER_SECTIONS = [
+function ToolsCatalogSlider() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const current = TOOLS_VARIANTS[activeIdx];
+
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % TOOLS_VARIANTS.length);
+    }, 3800);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const handlePrev = () => {
+    setActiveIdx((prev) => (prev - 1 + TOOLS_VARIANTS.length) % TOOLS_VARIANTS.length);
+  };
+
+  const handleNext = () => {
+    setActiveIdx((prev) => (prev + 1) % TOOLS_VARIANTS.length);
+  };
+
+  return (
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-black/10 shadow-2xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Top Header Bar */}
+      <div className="bg-zinc-950 px-5 py-3.5 border-b border-white/10 flex items-center justify-between z-20 text-white">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-white animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-white">
+            {current.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            {TOOLS_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-5 bg-white' : 'w-1.5 bg-zinc-600'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-800 text-zinc-300 font-bold px-2.5 py-0.5 rounded border border-white/10">
+            {activeIdx + 1} / {TOOLS_VARIANTS.length}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Visual Display Stage */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-100 to-zinc-200/90 flex items-center justify-center overflow-hidden group">
+        <Image
+          key={current.id}
+          src={current.image}
+          alt={current.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain p-6 sm:p-8 transition-transform duration-500 group-hover:scale-105"
+        />
+
+        <div className="absolute top-4 left-4 z-20">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-black text-white px-3 py-1 rounded shadow-md border border-white/10">
+            {current.badge}
+          </span>
+        </div>
+
+        <button
+          onClick={handlePrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
+          aria-label="Previous tool"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/85 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-white/20"
+          aria-label="Next tool"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Bottom Industrial Thumbnail Selector */}
+      <div className="bg-zinc-950 p-4 border-t border-white/10 space-y-2.5 z-20 text-white">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-white" />
+            Field Installation Tools & Equipment
+          </span>
+          <span className="text-[10px] font-mono text-zinc-300 font-bold">
+            {current.spec}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-4 gap-2">
+          {TOOLS_VARIANTS.map((variant, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={variant.id}
+                onClick={() => setActiveIdx(idx)}
+                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
+                  isActive
+                    ? 'bg-zinc-900 border-white shadow-[0_0_12px_rgba(255,255,255,0.25)] ring-1 ring-white'
+                    : 'bg-zinc-900/60 border-white/10 hover:border-white/30 hover:bg-zinc-800'
+                }`}
+              >
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-800 border border-white/10">
+                  <Image
+                    src={variant.image}
+                    alt={variant.title}
+                    fill
+                    sizes="120px"
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
+                  isActive ? 'text-white' : 'text-zinc-400'
+                }`}>
+                  {variant.badge}
+                </span>
+                {isActive && (
+                  <div className="w-full h-[2px] bg-white mt-1 rounded-full" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+interface RiserSectionItem {
+  id: string;
+  theme: 'dark' | 'light';
+  overline: string;
+  title: string;
+  highlightText: string;
+  description: string;
+  video?: string;
+  image?: string;
+  isCustomSlider?: boolean;
+  sliderType?: 'detectable' | 'trash-racks' | 'tools';
+  isComingSoon?: boolean;
+  features: { icon: string; title: string; desc: string }[];
+  meta: { label: string; value: string }[];
+  buttonText: string;
+  buttonLink: string;
+}
+
+const RISER_SECTIONS: RiserSectionItem[] = [
   {
     id: "adjustable-round",
-    theme: "light",
-    overline: "Adjustable Round Riser",
+    theme: "dark",
+    overline: "Mechanical Expansion Riser",
     title: "Mechanical",
     highlightText: "Expansion",
     description: "Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4`,
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4`,
     features: [
-      { icon: "ShieldCheck", title: "Installs without excavating the frame", desc: "Saves significant time and labor." },
-      { icon: "Layers", title: "Custom Heights Available", desc: "Precision fits for any overlay requirement." }
+      { icon: "ShieldCheck", title: "Installs Without Excavating Frame", desc: "Saves significant field labor and road downtime." },
+      { icon: "Layers", title: "Custom Heights Available", desc: "Precision fits for any overlay requirement from 3/4\" up." }
     ],
-    meta: [],
+    meta: [
+      { label: "Operation", value: "Mechanical Expansion Linkage" },
+      { label: "Material Standard", value: "ASTM A48 Class 35B Gray Iron" }
+    ],
     buttonText: "Request a Quote",
     buttonLink: "/contact/quote"
   },
   {
     id: "fixed-round",
-    theme: "dark",
-    overline: "Fixed Round Riser",
+    theme: "light",
+    overline: "Solid Cast Riser Ring",
     title: "Solid Cast",
     highlightText: "Construction",
     description: "Engineered from a single piece of heavy-duty cast or ductile iron for maximum structural integrity. Unlike adjustable risers, this fixed solid ring has no moving parts, ensuring it will never collapse or shift under extreme localized shock loads.",
-    image: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
     features: [
-      { icon: "ShieldCheck", title: "Maximum strength", desc: "No moving parts for unparalleled durability." },
+      { icon: "ShieldCheck", title: "Maximum Structural Strength", desc: "Solid monolithic ring with zero moving parts." },
       { icon: "Layers", title: "Custom Fits Available", desc: "Manufactured precisely to your project's specifications." }
     ],
-    meta: [],
+    meta: [
+      { label: "Construction", value: "Single-Piece Solid Casting" },
+      { label: "Load Rating", value: "AASHTO M306 / H-20 & HS-25" }
+    ],
     buttonText: "Request a Quote",
     buttonLink: "/contact/quote"
   },
   {
     id: "standard-municipal",
-    theme: "light",
-    overline: "Municipal Solutions",
+    theme: "dark",
+    overline: "Municipal Overlay Solutions",
     title: "Cast Iron",
     highlightText: "Paving Risers",
     description: "Maintain seamless urban traffic flow. Our heavy-duty solid risers allow for precise manhole elevation adjustment during road overlays, eliminating the need to dig up and rebuild the entire structure.",
-    image: `/images/manhole_riser/fixed_round_manhole_riser_coated.png`,
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_riser_with_frame_anim_2.mp4`,
     features: [
-      { icon: "ShieldCheck", title: "Load Bearing", desc: "Rated for heavy commercial roadway traffic loads." },
-      { icon: "Truck", title: "Bulk Ready", desc: "Supplying municipal scale projects." }
+      { icon: "ShieldCheck", title: "Heavy Load Bearing", desc: "Rated for continuous heavy commercial roadway traffic." },
+      { icon: "Truck", title: "Municipal Bulk Ready", desc: "Rapid supply for large metropolitan paving contracts." }
     ],
     meta: [
-      { label: "Material", value: "Ductile/Black Coated" },
-      { label: "Standard Sizes", value: "24\", 30\", and Custom Increments" }
+      { label: "Material", value: "Ductile / Black Bituminous Coated" },
+      { label: "Standard Sizes", value: "24\", 27\", 30\", 36\" & Custom" }
     ],
-    buttonText: "Request a Quote",
-    buttonLink: "#specs"
+    buttonText: "View Municipal Specs",
+    buttonLink: "/contact/specifications"
   },
   {
     id: "expandable-risers",
-    theme: "dark",
-    overline: "Next-Gen Adjustment",
+    theme: "light",
+    overline: "Next-Gen Pavement Adjustment",
     title: "Paving-Adjust™",
     highlightText: "Expandable Risers",
     description: "Ditch the mortar bed. Our expandable mechanical risers feature a built-in expansion linkage that locks directly into the existing manhole frame. Twist to expand, lock it in, and pave right over it.",
-    image: `/images/manhole_riser/adjustable_manhole_riser_coated.png`,
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/adjustable_manhole_riser_steel.mp4`,
     features: [
-      { icon: "Settings", title: "Mechanical Lock", desc: "Expands outward to grip the existing frame and lock the riser securely in place." },
-      { icon: "Timer", title: "Zero Cure Time", desc: "Paving crews can lay asphalt immediately after installation." }
+      { icon: "Settings", title: "Mechanical Expansion Lock", desc: "Expands outward to grip the existing frame securely." },
+      { icon: "Timer", title: "Zero Concrete Cure Time", desc: "Paving crews can lay hot asphalt immediately after locking." }
     ],
-    meta: [],
+    meta: [
+      { label: "Mechanism", value: "Internal High-Torque Turnbuckle" },
+      { label: "Excavation Saved", value: "100% Zero Road Digging" }
+    ],
     buttonText: "View Expandable Specs",
-    buttonLink: "#expandable"
+    buttonLink: "/products/adjustable-riser"
   },
   {
     id: "drainage-catch-basins",
-    theme: "light",
-    overline: "Drainage Infrastructure",
+    theme: "dark",
+    overline: "Storm Drainage Infrastructure",
     title: "Catch Basin &",
-    highlightText: "Curb Inlets",
+    highlightText: "Drainage Risers",
     description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers designed specifically to raise storm grates and curb inlets to final grade.",
-    image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_animation.mp4`,
     features: [
-      { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
-      { icon: "ShieldCheck", title: "Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
+      { icon: "Grid", title: "4-Sided & 3-Sided Geometry", desc: "Fully enclosed or D-shape profiles for curb abutments." },
+      { icon: "ShieldCheck", title: "High-Strength Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
     ],
     meta: [
       { label: "Configurations", value: "Square, Rectangular, U-Shape" },
-      { label: "Compatibility", value: "Matches DOT curb profiles" }
+      { label: "Compatibility", value: "Matches DOT curb and gutter profiles" }
     ],
     buttonText: "Explore Drainage Risers",
-    buttonLink: "#drainage"
+    buttonLink: "/products/catch-basin-risers"
   },
-  // {
-  //   id: "two-grate-combo",
-  //   theme: "dark",
-  //   overline: "Storm Drainage Solutions",
-  //   title: "Two Grate",
-  //   highlightText: "Combo Risers",
-  //   description: "Engineered for dual-grate catch basins and high-volume stormwater intake structures. Pre-fabricated to elevate multi-grate assemblies seamlessly while matching exact finished pavement elevations.",
-  //   image: `/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
-  //   features: [
-  //     { icon: "Grid", title: "Dual Grate Integration", desc: "Houses two side-by-side grates in a unified rigid frame." },
-  //     { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered to withstand direct vehicle traffic without deflection." }
-  //   ],
-  //   meta: [
-  //     { label: "Configurations", value: "Standard & Custom Dual Openings" },
-  //     { label: "Material", value: "Fabricated Structural Steel / Cast Iron" }
-  //   ],
-  //   buttonText: "View Combo Risers",
-  //   buttonLink: "/products"
-  // },
-  // {
-  //   id: "fabricated-steel",
-  //   theme: "light",
-  //   overline: "Heavy Infrastructure",
-  //   title: "Fabricated",
-  //   highlightText: "Steel Risers",
-  //   description: "Heavy-duty welded structural steel risers custom fabricated to fit non-standard municipal frames, extra deep overlays, and specialized roadway geometry.",
-  //   image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
-  //   features: [
-  //     { icon: "Layers", title: "Custom Dimensions", desc: "Manufactured to exact blueprints and field specifications." },
-  //     { icon: "ShieldCheck", title: "High-Strength Welds", desc: "Precision welded for extreme durability and heavy load absorption." }
-  //   ],
-  //   meta: [
-  //     { label: "Steel Grade", value: "Structural A36 / Galvanized Options" },
-  //     { label: "Lead Time", value: "Rapid custom fabrication available" }
-  //   ],
-  //   buttonText: "Request Custom Steel",
-  //   buttonLink: "/contact/specifications"
-  // },
   {
-    id: "sloped-tapered",
-    theme: "dark",
-    overline: "Road Crowning Solutions",
-    title: "Sloped &",
-    highlightText: "Tapered Risers",
-    description: "Roads are rarely precision flat. When resurfacing requires accommodating road crown or grade changes, standard flat risers cause manhole covers to sit unevenly. Our custom-tapered rings ensure a precision flush fit.",
-    image: `/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`,
-    isComingSoon: true,
+    id: "curb-inlet-risers",
+    theme: "light",
+    overline: "Roadside Inflow Management",
+    title: "Curb Inlet",
+    highlightText: "Steel Risers",
+    description: "Precision engineered curb inlet extensions designed for roadway drainage gutters and concrete headwalls. Eliminates the cost of chipping out and repouring concrete curb openings.",
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_overview.mp4`,
     features: [
-      { icon: "MoveDiagonal", title: "Precision Angles", desc: "Custom slopes available to meet project-specific design requirements." },
-      { icon: "ShieldCheck", title: "Snowplow Safe", desc: "Ensures covers sit flush, preventing plow blade snags." }
+      { icon: "MoveDiagonal", title: "Seamless Gutter Fit", desc: "Maintains optimal curb inflow velocity without water pooling." },
+      { icon: "ShieldCheck", title: "Hot-Dip Galvanized or Coated", desc: "Engineered for maximum corrosion defense in stormwater runoff." }
     ],
-    meta: [],
-    buttonText: "Request Custom Fab",
-    buttonLink: "#custom"
+    meta: [
+      { label: "Application", value: "Curb headwalls & roadside gutters" },
+      { label: "Material", value: "Heavy-Gauge Welded Steel / Cast Iron" }
+    ],
+    buttonText: "View Curb Inlet Specs",
+    buttonLink: "/products/curb-inlet-riser"
+  },
+  {
+    id: "two-grate-combo",
+    theme: "dark",
+    overline: "High-Volume Intake Structures",
+    title: "Two Grate",
+    highlightText: "Combo Risers",
+    description: "Engineered for dual-grate catch basins and high-volume stormwater intake structures. Pre-fabricated to elevate multi-grate assemblies seamlessly while matching exact finished pavement elevations.",
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`,
+    features: [
+      { icon: "Grid", title: "Dual Grate Integration", desc: "Houses two side-by-side grates in a rigid unified frame." },
+      { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered to withstand direct heavy vehicle traffic." }
+    ],
+    meta: [
+      { label: "Configurations", value: "Standard & Custom Dual Openings" },
+      { label: "Material", value: "Fabricated Structural Steel / Cast Iron" }
+    ],
+    buttonText: "View Combo Risers",
+    buttonLink: "/products"
+  },
+  {
+    id: "custom-d-shape",
+    theme: "light",
+    overline: "Specialty Roadway Geometry",
+    title: "D-Shape &",
+    highlightText: "Custom Risers",
+    description: "When utility vaults border curb lines, median barriers, or transit rails, standard round rings will not fit. We manufacture custom D-shape and irregular radius risers to exact jobsite blueprints.",
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/custom_riser/d_shape_custom_riser_animation.mp4`,
+    features: [
+      { icon: "Layers", title: "Custom Blueprint Geometry", desc: "Manufactured to exact radius, flat-back, and offset dimensions." },
+      { icon: "ShieldCheck", title: "Zero Field Modifications", desc: "Drop-in factory tolerance guarantees immediate paving fit." }
+    ],
+    meta: [
+      { label: "Shapes", value: "D-Shape, Offset Flange, Non-Standard" },
+      { label: "Lead Time", value: "Rapid Custom Production" }
+    ],
+    buttonText: "Request Custom Geometry",
+    buttonLink: "/products/d-shape-risers"
   },
   {
     id: "detectable-warning",
-    theme: "light",
-    overline: "ADA Compliance & Safety",
+    theme: "dark",
+    overline: "ADA Compliance & Public Safety",
     title: "Detectable",
     highlightText: "Warning Plates",
     description: "Ensure full ADA compliance and pedestrian safety with our high-durability tactile warning surfaces. Designed for seamless integration into municipal curb ramps, street crossings, and transit platforms.",
     isCustomSlider: true,
+    sliderType: "detectable",
     features: [
-      { icon: "ShieldCheck", title: "ADA Compliant", desc: "Meets federal and state tactile paving requirements." },
-      { icon: "Layers", title: "High Durability", desc: "Engineered to withstand heavy foot traffic and snowplows." }
+      { icon: "ShieldCheck", title: "Full ADA Compliance", desc: "Meets federal and state tactile paving specifications." },
+      { icon: "Layers", title: "Severe Snowplow Defense", desc: "Engineered to withstand heavy foot traffic and steel plow blades." }
     ],
     meta: [
       { label: "Application", value: "Curb ramps, sidewalks, and transit edges" },
       { label: "Materials", value: "Tactile Cast Iron, Ductile Iron, Surface Castings" }
     ],
     buttonText: "View ADA Specs",
-    buttonLink: "#detectable"
+    buttonLink: "/products"
   },
   {
     id: "gas-utility",
-    theme: "dark",
-    overline: "Utility Infrastructure",
-    title: "Gas Valve",
-    highlightText: "Risers",
-    description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
-    image: `/images/valve_box_riser/gas_valve_box_riser_2.png`,
+    theme: "light",
+    overline: "Critical Utility Infrastructure",
+    title: "Gas & Water Valve",
+    highlightText: "Box Risers",
+    description: "Provide safe, reliable access to critical gas and water utility lines. Our valve box risers are built to exact municipal specifications in 1\" to 6\" increments to withstand heavy traffic and protect buried assets.",
+    video: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/valve_box_riser/full_valve_box_riser_design_1.mp4`,
     features: [
-      { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
-      { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
+      { icon: "Wrench", title: "Rapid Drop-In Fit", desc: "Maintains immediate valve access while keeping out debris." },
+      { icon: "ShieldCheck", title: "Heavy Commercial Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
     ],
     meta: [
-      { label: "Material", value: "High-Tensile Cast Iron" }
+      { label: "Material", value: "High-Tensile Cast Iron" },
+      { label: "Heights", value: "1\", 1.5\", 2\", 3\", 4\", 5\", 6\"" }
     ],
-    buttonText: "View Gas Risers",
-    buttonLink: "#gas-risers"
+    buttonText: "View Valve Risers",
+    buttonLink: "/products/valve-box-risers"
   },
   {
     id: "trash-racks",
-    theme: "light",
-    overline: "Environmental & Drainage",
+    theme: "dark",
+    overline: "Environmental & Stormwater Protection",
     title: "Trash Racks &",
     highlightText: "Debris Barriers",
-    description: "Heavy-gauge steel trash racks engineered to protect culverts, retention basins, and stormwater intake pipes from floating debris and blockages.",
+    description: "Heavy-gauge steel trash racks engineered to protect culverts, retention basins, and stormwater intake pipes from floating logs, rocks, and debris blockages.",
     isCustomSlider: true,
+    sliderType: "trash-racks",
     features: [
-      { icon: "Grid", title: "Debris Protection", desc: "Prevents large logs, rocks, and urban debris from clogging outflow pipes." },
-      { icon: "ShieldCheck", title: "Corrosion Resistant", desc: "Heavy galvanized and coated steel for prolonged water immersion." }
+      { icon: "Grid", title: "Hydraulic Debris Protection", desc: "Prevents large logs, rocks, and urban debris from clogging outflow pipes." },
+      { icon: "ShieldCheck", title: "Corrosion Resistant Steel", desc: "Heavy galvanized and coated steel for prolonged water immersion." }
     ],
     meta: [
       { label: "Applications", value: "Culvert inlets, retention ponds, stormwater spillways" },
       { label: "Profiles", value: "Flat, sloped, and custom welded bar matrices" }
     ],
     buttonText: "View Trash Racks",
-    buttonLink: "/products"
+    buttonLink: "/products/trash-racks"
   },
-  // {
-  //   id: "tools-accessories",
-  //   theme: "dark",
-  //   overline: "Field Installation Equipment",
-  //   title: "Lid Lifters &",
-  //   highlightText: "Paving Tools",
-  //   description: "Industrial-grade field tools engineered for safety and efficiency. Includes heavy-duty valve box lifters, manhole cover hooks, and specialized installation equipment.",
-  //   image: `/images/tools/valve_box_lifter.png`,
-  //   features: [
-  //     { icon: "Wrench", title: "Jobsite Ergonomics", desc: "Reduces back strain and accelerates daily paving production." },
-  //     { icon: "HardHat", title: "Safety Engineered", desc: "Drop-forged steel tools rated for heavy municipal castings." }
-  //   ],
-  //   meta: [
-  //     { label: "Tool Types", value: "Valve Keys, Lid Lifters, Hooks, Plug Pullers" },
-  //     { label: "Durability", value: "Drop-forged alloy steel" }
-  //   ],
-  //   buttonText: "View Tool Catalog",
-  //   buttonLink: "/products"
-  // }
+  {
+    id: "tools-accessories",
+    theme: "light",
+    overline: "Field Installation Equipment",
+    title: "Lid Lifters &",
+    highlightText: "Paving Tools",
+    description: "Industrial-grade field tools engineered for safety and jobsite productivity. Includes heavy-duty valve box lifters, manhole cover hooks, and specialized extraction equipment.",
+    isCustomSlider: true,
+    sliderType: "tools",
+    features: [
+      { icon: "Wrench", title: "Jobsite Ergonomics", desc: "Reduces back strain and accelerates daily paving production." },
+      { icon: "HardHat", title: "Drop-Forged Steel Safety", desc: "Drop-forged alloy steel tools rated for heavy municipal castings." }
+    ],
+    meta: [
+      { label: "Tool Types", value: "Valve Keys, Lid Lifters, Hooks, Plug Pullers" },
+      { label: "Durability", value: "Drop-forged hardened alloy steel" }
+    ],
+    buttonText: "View Tool Catalog",
+    buttonLink: "/products/installation-tools"
+  }
 ];
-
 
 const ADVANTAGES = [
   { icon: "Timer", title: "Quick Installation", desc: "Drop in, adjust, and pave. Minimize road closure times on every utility hole." },
   { icon: "Layers", title: "Stackable Design", desc: "Need 3 inches? Stack a 2\" and a 1\" riser securely for exact elevation matching." },
   { icon: "Wrench", title: "No Digging", desc: "Keep jackhammers off the jobsite. Avoid digging out the concrete base structure." },
-  { icon: "HardHat", title: "Designed to meet applicable DOT requirements", desc: "Materials and load ratings are engineered to support applicable municipal and DOT requirements." }
+  { icon: "HardHat", title: "Engineered to DOT Standards", desc: "Materials and load ratings are engineered to support applicable municipal and DOT requirements." }
 ];
 
 const renderIcon = (iconName: string, className: string) => {
@@ -645,9 +847,9 @@ const renderIcon = (iconName: string, className: string) => {
 
 export default function ComprehensivePavingRisersMapped() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full font-sans bg-black">
 
-      {/* --- SHOWCASE SECTIONS (MAPPED) --- */}
+      {/* --- SHOWCASE SECTIONS (MAPPED IN PURE BLACK & WHITE) --- */}
       {RISER_SECTIONS.map((section, index) => {
         const isDark = section.theme === 'dark';
         const isImageLeft = index % 2 === 0;
@@ -655,52 +857,76 @@ export default function ComprehensivePavingRisersMapped() {
         return (
           <section
             key={section.id}
-            className={`py-20 relative overflow-hidden ${isDark ? 'bg-[#0A0A0A] text-white border-b border-white/5' : 'bg-zinc-50 text-slate-900 border-b border-gray-200'}`}
+            className={`py-20 relative overflow-hidden border-b ${
+              isDark
+                ? 'bg-[#09090B] text-white border-white/10'
+                : 'bg-white text-black border-black/10'
+            }`}
           >
-            {/* Premium Grid Pattern Background */}
-            <div className={`absolute inset-0 z-0 opacity-[0.15] pointer-events-none`} style={{ backgroundImage: `radial-gradient(${isDark ? '#ffffff' : '#000000'} 1px, transparent 1px)`, backgroundSize: '40px 40px' }}></div>
+            {/* Subtle Monochrome Blueprint Pattern */}
+            <div
+              className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none"
+              style={{
+                backgroundImage: `radial-gradient(${isDark ? '#ffffff' : '#000000'} 1px, transparent 1px)`,
+                backgroundSize: '36px 36px'
+              }}
+            />
             
-            {/* Dynamic Red Glow */}
-            <div className={`absolute top-[10%] ${isImageLeft ? 'left-[-10%]' : 'right-[-10%]'} w-[600px] h-[600px] bg-[#CC0000]/${isDark ? '20' : '10'} rounded-full blur-[120px] pointer-events-none z-0`}></div>
+            {/* Ambient White/Silver Radial Glow */}
+            <div
+              className={`absolute top-[10%] ${
+                isImageLeft ? 'left-[-10%]' : 'right-[-10%]'
+              } w-[500px] h-[500px] ${
+                isDark ? 'bg-white/5' : 'bg-black/5'
+              } rounded-full blur-[140px] pointer-events-none z-0`}
+            />
 
-            <div className="w-full px-10 md:px-20 relative z-10">
+            <div className="w-full px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-                {/* --- IMAGE / SLIDER COLUMN --- */}
+                {/* --- VISUAL COLUMN (VIDEO / SLIDER / IMAGE) --- */}
                 <div className={`relative ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
                   {section.isCustomSlider ? (
-                    section.id === 'trash-racks' ? (
+                    section.sliderType === 'trash-racks' ? (
                       <TrashRacksSlider />
+                    ) : section.sliderType === 'tools' ? (
+                      <ToolsCatalogSlider />
                     ) : (
                       <DetectablePlatesSlider />
                     )
                   ) : (
-                    <div className={`relative z-10 w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 shadow-2xl' : 'border-gray-200 shadow-xl'} ${section.image?.endsWith('.mp4') ? 'aspect-[4/3] bg-[#CC0000]' : isDark ? 'aspect-square bg-[#111]' : 'aspect-square bg-white'}`}>
-                      {section.image?.endsWith('.mp4') ? (
-                        <video
-                          key={section.id}
-                          src={section.image}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          suppressHydrationWarning
-                          className="object-cover w-full h-full pointer-events-none"
-                        />
+                    <div
+                      className={`relative z-10 w-full rounded-2xl overflow-hidden border shadow-2xl ${
+                        isDark ? 'border-white/15 bg-black' : 'border-black/15 bg-zinc-950'
+                      } ${section.video ? 'aspect-[4/3]' : 'aspect-square'}`}
+                    >
+                      {section.video ? (
+                        <div className="relative w-full h-full bg-black flex items-center justify-center group">
+                          <video
+                            key={section.id}
+                            src={section.video}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            suppressHydrationWarning
+                            className="object-cover w-full h-full pointer-events-none"
+                          />
+                          {/* Live Video Indicator Badge */}
+                          <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/80 text-white border border-white/20 text-[10px] font-mono uppercase tracking-widest backdrop-blur-md">
+                            <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                            Live HD Video
+                          </div>
+                        </div>
                       ) : (
-                        <Image
-                          src={section.image || ''}
-                          alt={section.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          className={`object-contain p-8 ${isDark ? 'drop-shadow-[0_0_30px_rgba(201,37,38,0.15)]' : ''}`}
-                        />
-                      )}
-
-                      {/* --- COMING SOON OVERLAY --- */}
-                      {section.isComingSoon && (
-                        <div className="absolute bottom-0 left-0 right-0 bg-[#CC0000] text-white text-center py-4 font-black uppercase tracking-[0.25em] text-sm shadow-[0_-10px_20px_rgba(204,0,0,0.2)] z-20">
-                          Coming Soon
+                        <div className="relative w-full h-full bg-zinc-950 flex items-center justify-center p-8">
+                          <Image
+                            src={section.image || ''}
+                            alt={section.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="object-contain p-8 drop-shadow-[0_10px_25px_rgba(0,0,0,0.8)]"
+                          />
                         </div>
                       )}
                     </div>
@@ -712,28 +938,42 @@ export default function ComprehensivePavingRisersMapped() {
 
                   {/* Header Text */}
                   <div className="space-y-4">
-                    <h4 className={`font-bold text-sm uppercase tracking-[0.2em] ${isDark ? 'text-zinc-400' : 'text-[#CC0000]'}`}>
-                      {section.overline}
-                    </h4>
-                    <h2 className="text-4xl md:text-5xl font-black leading-tight">
-                      {section.title} <br /> <span className="text-[#CC0000]">{section.highlightText}</span>
+                    <div className="inline-flex items-center gap-2">
+                      <span className={`w-2 h-2 rounded-full ${isDark ? 'bg-white' : 'bg-black'}`} />
+                      <h4 className={`font-mono font-bold text-xs uppercase tracking-[0.2em] ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                        {section.overline}
+                      </h4>
+                    </div>
+
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight uppercase">
+                      {section.title} <br />
+                      <span className={isDark ? 'text-zinc-300' : 'text-zinc-700'}>
+                        {section.highlightText}
+                      </span>
                     </h2>
-                    <p className={`text-lg leading-relaxed max-w-xl ${isDark ? 'text-zinc-400' : 'text-slate-600'}`}>
+
+                    <p className={`text-base sm:text-lg leading-relaxed ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
                       {section.description}
                     </p>
                   </div>
 
                   {/* Features Grid */}
                   {section.features && section.features.length > 0 && (
-                    <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
+                    <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t ${isDark ? 'border-white/10' : 'border-black/10'}`}>
                       {section.features.map((feat, i) => (
-                        <div key={i} className="flex items-start gap-4">
-                          <div className={`h-10 w-10 shrink-0 rounded-lg flex items-center justify-center bg-transparent`}>
-                            {renderIcon(feat.icon, `w-6 h-6 text-[#CC0000]`)}
+                        <div key={i} className="flex items-start gap-3.5">
+                          <div className={`h-9 w-9 shrink-0 rounded-lg flex items-center justify-center border ${
+                            isDark ? 'bg-zinc-900 border-white/10 text-white' : 'bg-zinc-100 border-black/10 text-black'
+                          }`}>
+                            {renderIcon(feat.icon, "w-4 h-4")}
                           </div>
                           <div>
-                            <h5 className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{feat.title}</h5>
-                            <p className={`text-sm ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>{feat.desc}</p>
+                            <h5 className={`font-bold text-sm ${isDark ? 'text-white' : 'text-black'}`}>
+                              {feat.title}
+                            </h5>
+                            <p className={`text-xs leading-relaxed mt-0.5 ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                              {feat.desc}
+                            </p>
                           </div>
                         </div>
                       ))}
@@ -742,25 +982,35 @@ export default function ComprehensivePavingRisersMapped() {
 
                   {/* Meta Information Table */}
                   {section.meta && section.meta.length > 0 && (
-                    <div className={`p-6 rounded-xl space-y-3 border ${isDark ? 'bg-[#111] border-white/10' : 'bg-white border-gray-200'}`}>
-                      <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
-                        <span className={`font-medium italic text-sm ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>Our Pledge:</span>
-                        <span className={`font-bold text-sm text-right italic ${isDark ? 'text-white' : 'text-slate-900'}`}>"Custom manufacturing available to meet project specifications."</span>
+                    <div className={`p-5 rounded-xl space-y-2.5 border ${
+                      isDark ? 'bg-zinc-950 border-white/10' : 'bg-zinc-50 border-black/10'
+                    }`}>
+                      <div className={`flex justify-between border-b pb-2 ${isDark ? 'border-white/10' : 'border-black/10'}`}>
+                        <span className={`font-mono text-xs ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                          Standard:
+                        </span>
+                        <span className={`font-bold text-xs text-right ${isDark ? 'text-zinc-200' : 'text-zinc-800'}`}>
+                          Custom manufacturing to project specs
+                        </span>
                       </div>
                       {section.meta.map((metaItem, i) => (
-                        <div key={i} className="flex justify-between text-sm">
-                          <span className={isDark ? 'text-zinc-500' : 'text-slate-500'}>{metaItem.label}</span>
-                          <span className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{metaItem.value}</span>
+                        <div key={i} className="flex justify-between text-xs font-mono">
+                          <span className={isDark ? 'text-zinc-400' : 'text-zinc-600'}>{metaItem.label}</span>
+                          <span className={`font-bold ${isDark ? 'text-white' : 'text-black'}`}>{metaItem.value}</span>
                         </div>
                       ))}
                     </div>
                   )}
 
-                  {/* Button */}
-                  <div className="pt-4">
+                  {/* Primary High-Contrast Button */}
+                  <div className="pt-2">
                     <Link href={section.buttonLink}>
-                      <Button className={`font-bold h-14 px-8 rounded-lg transition-transform hover:scale-105 w-full sm:w-auto ${isDark ? 'bg-[#CC0000] hover:bg-white hover:text-black text-white' : 'bg-[#CC0000] hover:bg-[#0F0F0F] text-white'}`}>
-                        {section.buttonText} <ArrowUpRight className="ml-2 w-5 h-5" />
+                      <Button className={`font-black uppercase text-xs tracking-wider h-14 px-8 rounded-lg transition-all duration-300 shadow-xl w-full sm:w-auto ${
+                        isDark
+                          ? 'bg-white text-black hover:bg-zinc-200 border border-white'
+                          : 'bg-black text-white hover:bg-zinc-800 border border-black'
+                      }`}>
+                        {section.buttonText} <ArrowUpRight className="ml-2 w-4 h-4" />
                       </Button>
                     </Link>
                   </div>
@@ -773,33 +1023,47 @@ export default function ComprehensivePavingRisersMapped() {
         );
       })}
 
-      {/* --- ADVANTAGES SECTION --- */}
-      <section className="py-20 relative bg-[#CC0000] text-white overflow-hidden">
-        <div className="w-full px-10 md:px-20 mx-auto relative z-10">
+      {/* --- MONOCHROME ADVANTAGES SECTION --- */}
+      <section className="py-24 relative bg-black text-white overflow-hidden border-t border-white/10">
+        <div className="w-full px-6 sm:px-10 md:px-16 lg:px-20 mx-auto relative z-10 max-w-7xl">
 
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Why Paving Crews Choose Us</h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto font-medium">
+          <div className="text-center mb-16 space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-400">
+              Field Proven Reliability
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white">
+              Why Paving Crews Choose Us
+            </h2>
+            <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto font-medium">
               We design our risers to minimize road closure times and maximize daily paving footprints.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {ADVANTAGES.map((adv, i) => (
-              <div key={i} className="bg-white p-8 rounded-xl text-center shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
-                <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
-                  {renderIcon(adv.icon, "w-12 h-12 text-[#CC0000]")}
+              <div
+                key={i}
+                className="bg-zinc-950 p-8 rounded-2xl border border-white/10 text-center shadow-xl hover:border-white/30 transition-all duration-300 group hover:-translate-y-1 flex flex-col items-center justify-between"
+              >
+                <div className="w-14 h-14 rounded-xl bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 text-white">
+                  {renderIcon(adv.icon, "w-6 h-6")}
                 </div>
-                <h4 className="text-xl font-bold mb-2 uppercase tracking-wide text-black">{adv.title}</h4>
-                <p className="text-sm text-slate-600 leading-relaxed">{adv.desc}</p>
+                <div>
+                  <h4 className="text-base font-black mb-2 uppercase tracking-wide text-white">
+                    {adv.title}
+                  </h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed font-normal">
+                    {adv.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
 
           <div className="mt-16 text-center">
-            <Link href="#contact">
-              <Button className="bg-[#0F0F0F] text-white hover:bg-white hover:text-[#CC0000] px-10 h-16 text-lg font-black uppercase tracking-wider transition-all shadow-xl hover:shadow-2xl rounded-lg">
-                Equip Your Next Jobsite <ArrowRight className="ml-3 h-6 w-6" />
+            <Link href="/contact/quote">
+              <Button className="bg-white text-black hover:bg-zinc-200 px-10 h-16 text-sm font-black uppercase tracking-wider transition-all shadow-2xl rounded-xl border border-white">
+                Equip Your Next Jobsite <ArrowRight className="ml-3 h-5 w-5" />
               </Button>
             </Link>
           </div>
