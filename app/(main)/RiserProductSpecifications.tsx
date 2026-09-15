@@ -26,7 +26,7 @@ const SOLID_IRON_FEATURES = [
 const ADJUSTABLE_STEEL_FEATURES = [
   { title: "Diameter Variance Adjust", desc: "Adjusts in or out up to 1/2 inch to clear the frame." },
   { title: "Pivoted Expansion System", desc: "Built-in mechanical linkage delivering positive, high-grip mechanical locking to the base." },
-  { title: "Installs in Minutes", desc: "Accelerates on-site field assembly timelines to match fast-paced asphalt crews." },
+  { title: "Rapid Field Assembly", desc: "Accelerates on-site field assembly timelines to match fast-paced asphalt crews." },
   { title: "Ultra-Low Minimum Rise", desc: "Provides as little as 3/4\" vertical rise—essential for modern micro-surfacing paving overlays." }
 ];
 

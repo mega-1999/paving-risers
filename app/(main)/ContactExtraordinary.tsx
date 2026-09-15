@@ -59,7 +59,7 @@ export default function ContactExtraordinary() {
             LET'S BUILD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-red-500">TOGETHER.</span>
           </h3>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">
-            Skip the middleman. Send us your project specs, blueprints, or custom fabrication needs, and our engineering team will deliver a quote within 24 hours.
+            Skip the middleman. Send us your project specs, blueprints, or custom fabrication needs, and our engineering team will deliver a prompt, customized quote and submittal package.
           </p>
         </div>
 

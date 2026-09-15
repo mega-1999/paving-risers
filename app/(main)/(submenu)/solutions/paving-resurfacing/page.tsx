@@ -92,7 +92,7 @@ export default function PavingResurfacingPage() {
               <Target className="w-12 h-12 text-white group-hover:text-black mb-8 transition-colors" />
               <h3 className="text-3xl font-black uppercase tracking-wide text-white group-hover:text-black mb-4 transition-colors">Perfect Grade</h3>
               <p className="text-white/90 group-hover:text-black/80 font-bold leading-relaxed relative z-10 transition-colors">
-                The original heavy lid is placed on top of the newly installed riser. The structure is now precision flush with the new asphalt, achieving safety compliance in minutes rather than hours.
+                The original heavy lid is placed on top of the newly installed riser. The structure is now precision flush with the new asphalt, achieving immediate safety compliance.
               </p>
             </div>
 

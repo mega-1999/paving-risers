@@ -119,7 +119,7 @@ const SOLUTIONS_DB = [
     title: 'Paving & Resurfacing',
     subtitle: 'Risers and frames designed to integrate seamlessly with paving projects.',
     heroImage: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/assets/industries/image20.jpg`,
-    overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Paving-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations in minutes, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
+    overview: 'Time is the most expensive variable in road resurfacing. We engineer our adjustment risers specifically for paving contractors. By utilizing our Paving-Adjust™ mechanical risers or our stackable solid iron rings, paving crews can adjust utility elevations directly, allowing asphalt layers to be laid immediately without waiting for concrete to cure.',
     benefits: [
       { title: 'Zero Cure Time', desc: 'Pave immediately after dropping the riser into place.' },
       { title: 'Micro-Adjustments', desc: 'Stackable heights from 3/4" up to 6" for perfect grade matching.' },

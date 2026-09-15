@@ -56,13 +56,13 @@ const ICONIC_CITIES: CitySpec[] = [
     challenges: 'Heavy axle bus corridors, dense subway grating proximity, sub-zero freeze-thaw cycles, aggressive road salting.',
     keyFeatures: [
       { title: 'Heavy-Duty Proof-Load Tested', desc: 'Tested to exceed 40,000 lbs proof-load for nonstop city bus and freight traffic.' },
-      { title: 'Zero Excavation Quick-Seat', desc: 'Completes grade elevation in under 10 minutes to minimize lane closures on Broadway & 5th Ave.' },
+      { title: 'Zero Excavation Quick-Seat', desc: 'Engineered for rapid grade elevation to minimize lane closures on Broadway & 5th Ave.' },
       { title: 'Anti-Shear Lock Geometry', desc: 'Patented exterior mechanical expansion locks the ring against the existing cast iron frame.' }
     ],
     stats: [
       { label: 'Standard Diameters', value: '24", 27", 30", 36"' },
       { label: 'Elevation Range', value: '3/4" to 6"' },
-      { label: 'Installation Speed', value: '< 10 Mins' }
+      { label: 'Seating Method', value: 'Direct Drop-In' }
     ]
   },
   {
@@ -112,7 +112,7 @@ const ICONIC_CITIES: CitySpec[] = [
     stats: [
       { label: 'Proof Load', value: '50,000+ LBS' },
       { label: 'Material Grade', value: 'ASTM A536 65-45-12' },
-      { label: 'Night Pave Window', value: '< 8 Mins / Ring' }
+      { label: 'Paving Cycle', value: 'Optimized Flow' }
     ]
   },
   {
@@ -212,7 +212,7 @@ const ICONIC_CITIES: CitySpec[] = [
     stats: [
       { label: 'Rainfall Rating', value: 'Pacific Coast Spec' },
       { label: 'Standards', value: 'MMCD & BC MoTI' },
-      { label: 'Coating Life', value: '30+ Years Maritime' }
+      { label: 'Coating Life', value: 'Maritime Protection' }
     ]
   },
   {
@@ -227,7 +227,7 @@ const ICONIC_CITIES: CitySpec[] = [
     riserCategory: 'Water Valve & Municipal Risers',
     productImage: '/images/valve_box_riser/valve_box_riser_1_5in.jpeg',
     videoUrl: `${R2}/videos/valve_box_riser/full_valve_box_riser_design_1.mp4`,
-    description: 'Designed for San Diego’s major municipal overlay campaigns, military logistics routes, and coastal marine environments. Enables water district crews and paving contractors to rapidly bring hundreds of valves and manholes to grade per shift.',
+    description: 'Designed for San Diego’s major municipal overlay campaigns, military logistics routes, and coastal marine environments. Enables water district crews and paving contractors to rapidly bring valves and manholes to grade efficiently.',
     challenges: 'Salt air marine corrosion, rapid nighttime construction windows, multi-jurisdictional water authority standards.',
     keyFeatures: [
       { title: 'Drop-In Valve Box Extensions', desc: 'Precision 1", 1.5", 2", 3", 4", and 6" height increments for rapid water meter and gas valve adjustments.' },
@@ -237,7 +237,7 @@ const ICONIC_CITIES: CitySpec[] = [
     stats: [
       { label: 'Valve Riser Sizes', value: '1" to 6" Heights' },
       { label: 'Regional Spec', value: 'SDRSD Approved' },
-      { label: 'Paving Yield', value: 'Up to 60/shift' }
+      { label: 'Paving Yield', value: 'Optimized Seating' }
     ]
   },
   {

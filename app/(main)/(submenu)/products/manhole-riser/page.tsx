@@ -39,7 +39,7 @@ const MANHOLE_RISER_DATA = {
   technicalPoints: [
     {
       title: 'Seamless Grade Adjustment',
-      desc: 'Quickly raise existing utilities to the new paving grade in minutes, saving substantial labor and material costs compared to traditional masonry adjustments.'
+      desc: 'Quickly raise existing utilities to the new paving grade, saving substantial labor and material costs compared to traditional masonry adjustments.'
     },
     {
       title: 'Locking Expanders',
@@ -212,7 +212,7 @@ export default function ManholeRiserPage() {
               <CircleDot className="w-8 h-8 text-[#CC0000] group-hover:scale-110 transition-transform" />
               <div>
                  <h4 className="font-black uppercase mb-3 text-white tracking-widest text-sm">Seamless Grade</h4>
-                 <p className="text-xs text-zinc-400 font-medium leading-relaxed">Save labor by raising utilities to paving grade in minutes without costly digging.</p>
+                 <p className="text-xs text-zinc-400 font-medium leading-relaxed">Save labor by raising utilities directly to paving grade without costly digging.</p>
               </div>
            </div>
 
