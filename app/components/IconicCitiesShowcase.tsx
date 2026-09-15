@@ -7,19 +7,15 @@ import {
   Building2,
   MapPin,
   ShieldCheck,
-  Award,
   ArrowRight,
   ChevronLeft,
   ChevronRight,
-  Sparkles,
   Zap,
-  Layers,
-  Clock,
-  Wrench,
   CheckCircle2,
   FileText,
   Activity,
-  Sliders
+  Film,
+  Eye
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -34,12 +30,14 @@ export interface CitySpec {
   primaryRiser: string;
   riserCategory: string;
   productImage: string;
+  videoUrl: string;
   description: string;
   challenges: string;
   keyFeatures: { title: string; desc: string }[];
   stats: { label: string; value: string }[];
-  accentColor: string;
 }
+
+const R2 = process.env.NEXT_PUBLIC_R2_BUCKET_URL;
 
 const ICONIC_CITIES: CitySpec[] = [
   {
@@ -53,6 +51,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Heavy-Duty Adjustable Manhole Riser (ASTM A48 Class 35B)',
     riserCategory: 'Manhole & Utility Risers',
     productImage: '/images/manhole_riser/adjustable_manhole_riser_coated.png',
+    videoUrl: `${R2}/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4`,
     description: 'Engineered for NYC’s demanding 24/7 arterial traffic and dense subterranean steam, gas, and electrical utility vaults. Designed to seat flush into milled surfaces without frame excavation, surviving severe winter snowplow shearing forces.',
     challenges: 'Heavy axle bus corridors, dense subway grating proximity, sub-zero freeze-thaw cycles, aggressive road salting.',
     keyFeatures: [
@@ -64,8 +63,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Standard Diameters', value: '24", 27", 30", 36"' },
       { label: 'Elevation Range', value: '3/4" to 6"' },
       { label: 'Installation Speed', value: '< 10 Mins' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'boston',
@@ -78,6 +76,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Precision Tapered Sloped Riser & Round Cast Iron Rings',
     riserCategory: 'Tapered & Crown Matching Risers',
     productImage: '/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png',
+    videoUrl: `${R2}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
     description: 'Tailored for Boston’s variable street geometry, tight historic road crowns, and demanding New England winters. Custom sloped angle risers ensure manholes stay flush with high crown crowns and curved granite curb lines.',
     challenges: 'Historic cobblestone substructures, extreme winter freeze-thaw cycles, corrosive ocean salt spray, tight historic easements.',
     keyFeatures: [
@@ -89,8 +88,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Taper Angle Range', value: '0.5° – 4.0°' },
       { label: 'Material Standard', value: 'ASTM A48 / Gray Iron' },
       { label: 'Corrosion Shield', value: 'Class 30 Bituminous' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'los-angeles',
@@ -103,6 +101,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Ductile Iron & Fabricated Steel Heavy-Duty Riser',
     riserCategory: 'Heavy Freeway & Boulevard Grade',
     productImage: '/images/manhole_riser/fixed_round_manhole_riser_coated.png',
+    videoUrl: `${R2}/videos/manhole_riser/fixed_manhole_riser_steel.mp4`,
     description: 'Engineered for Southern California’s intense surface pavement temperatures and continuous heavy multi-axle freight routes. Built with high ductility iron to absorb continuous seismic vibrations and thermal pavement expansion without cracking.',
     challenges: 'Pavement surface temps exceeding 140°F, high-volume container freight corridors, strict Caltrans nighttime resurfacing windows.',
     keyFeatures: [
@@ -114,8 +113,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Proof Load', value: '50,000+ LBS' },
       { label: 'Material Grade', value: 'ASTM A536 65-45-12' },
       { label: 'Night Pave Window', value: '< 8 Mins / Ring' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'chicago',
@@ -128,6 +126,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Bituminous Coated Square Catch Basin & Heavy Manhole Risers',
     riserCategory: 'Catch Basin & Utility Risers',
     productImage: '/images/catch_basin_riser/square_catch_basin_riser_coated.png',
+    videoUrl: `${R2}/videos/catch_basin_riser/catch_basin_riser_animation.mp4`,
     description: 'Built to withstand the Windy City’s multi-level viaduct configurations, intense freeze-thaw cycles, and heavy industrial snow clearing. Provides watertight seated alignment for both circular manholes and large square catch basin frames.',
     challenges: 'Sub-zero polar vortex temps, multi-tiered road drainage (Wacker Dr networks), continuous snowplow scraping.',
     keyFeatures: [
@@ -136,11 +135,10 @@ const ICONIC_CITIES: CitySpec[] = [
       { title: 'MWRD Sanitary Sewer Inflow Seal', desc: 'Precision machined tolerance prevents surface rainwater inflow into municipal sanitary mains.' }
     ],
     stats: [
-      { label: 'Catch Basin Sizes', value: '2' + 'x2' + ' to 3' + 'x3' + '' },
+      { label: 'Catch Basin Sizes', value: '24" to 36" Square' },
       { label: 'Salt Defense', value: 'Bituminous Barrier' },
       { label: 'Load Rating', value: 'AASHTO H-20/HS-25' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'toronto',
@@ -153,6 +151,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Heavy Cast Iron OPSD 401/402 Compatible Risers',
     riserCategory: 'OPSD Standard Municipal Risers',
     productImage: '/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png',
+    videoUrl: `${R2}/videos/manhole_riser/adjustable_manhole_riser_steel.mp4`,
     description: 'Engineered to Canadian OPSD specifications to endure Ontario’s dramatic seasonal temperature swings (-30°C to +35°C). Tested on heavy TTC transit routes with continuous bus and streetcar adjacent wheel loads.',
     challenges: 'Rapid seasonal freeze-thaw cycles, high-frequency TTC bus routes, heavy provincial highway salt treatment.',
     keyFeatures: [
@@ -164,8 +163,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Cold Rating', value: 'Down to -40°C' },
       { label: 'Spec Standards', value: 'OPSD & CSA B70' },
       { label: 'Target Transit', value: 'TTC & City Routes' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'houston',
@@ -178,6 +176,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Fabricated Steel Grates & High-Inflow Catch Basin Risers',
     riserCategory: 'Stormwater Inflow & Drainage',
     productImage: '/images/curb_inlet_riser/curb_inlet_riser_coated_2.png',
+    videoUrl: `${R2}/videos/curb_inlet_riser/curb_inlet_overview.mp4`,
     description: 'Designed for the Gulf Coast’s intense rainfall events, hurricane drainage demands, and expansive clay subsoils. Delivers maximum stormwater hydraulic intake while supporting heavy oilfield and port freight trucking.',
     challenges: 'Sudden high-velocity tropical downpours, subsidence and soil shifts, petrochemical corridor axle loads.',
     keyFeatures: [
@@ -189,8 +188,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Hydraulic Inflow', value: 'High-Flow Openings' },
       { label: 'Max Freight Load', value: '60,000+ LBS Proof' },
       { label: 'Soil Shift Buffer', value: 'Flexible Seating' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'vancouver',
@@ -203,6 +201,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'High-Tensile Curb Inlet & Round Manhole Paving Extensions',
     riserCategory: 'Pacific Maritime Inflow Systems',
     productImage: '/images/trash_racks/trash_rack_type_1.png',
+    videoUrl: `${R2}/videos/custom_riser/d_shape_custom_riser_animation.mp4`,
     description: 'Engineered for coastal British Columbia’s continuous rainfall, mountain runoff, and stringent environmental drainage codes. Incorporates heavy galvanization and debris rack compatibility for retention culverts and roadway catch basins.',
     challenges: 'Continuous precipitation, steep coastal hillside grade angles, seismic zone 4 building tolerances.',
     keyFeatures: [
@@ -214,8 +213,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Rainfall Rating', value: 'Pacific Coast Spec' },
       { label: 'Standards', value: 'MMCD & BC MoTI' },
       { label: 'Coating Life', value: '30+ Years Maritime' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'san-diego',
@@ -228,6 +226,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Precision Mechanical Adjustable Round & Water Valve Risers',
     riserCategory: 'Water Valve & Municipal Risers',
     productImage: '/images/valve_box_riser/valve_box_riser_1_5in.jpeg',
+    videoUrl: `${R2}/videos/valve_box_riser/full_valve_box_riser_design_1.mp4`,
     description: 'Designed for San Diego’s major municipal overlay campaigns, military logistics routes, and coastal marine environments. Enables water district crews and paving contractors to rapidly bring hundreds of valves and manholes to grade per shift.',
     challenges: 'Salt air marine corrosion, rapid nighttime construction windows, multi-jurisdictional water authority standards.',
     keyFeatures: [
@@ -239,8 +238,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Valve Riser Sizes', value: '1" to 6" Heights' },
       { label: 'Regional Spec', value: 'SDRSD Approved' },
       { label: 'Paving Yield', value: 'Up to 60/shift' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'san-francisco',
@@ -253,6 +251,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Custom Tapered Sloped Riser Ring & D-Shape Utility Risers',
     riserCategory: 'High-Slope & Specialty Utility Risers',
     productImage: '/images/custom_riser/d_shape_paving_riser.png',
+    videoUrl: `${R2}/videos/animations/paving_riser_with_frame_anim_1.mp4`,
     description: 'Built specifically to overcome San Francisco’s iconic steep street grades (up to 31.5% slope), cable car track utility clearances, and active seismic fault zones. Custom sloped risers keep lids horizontal with roadway crowns.',
     challenges: 'Extreme street inclines (Nob Hill, Russian Hill, Pacific Heights), cable car trackway utility clearance, seismic soil liquefaction.',
     keyFeatures: [
@@ -264,8 +263,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Max Slope Pitch', value: 'Custom to 15°+' },
       { label: 'Geometry Types', value: 'Round, D-Shape, Custom' },
       { label: 'Agency Code', value: 'SFPW & SFMTA' }
-    ],
-    accentColor: '#CC0000'
+    ]
   },
   {
     id: 'miami',
@@ -278,6 +276,7 @@ const ICONIC_CITIES: CitySpec[] = [
     primaryRiser: 'Heavy Bituminous Coated Catch Basin & Inflow Preventer Risers',
     riserCategory: 'Coastal Drainage & Valve Box Risers',
     productImage: '/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png',
+    videoUrl: `${R2}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`,
     description: 'Engineered for South Florida’s high water table, tidal king-tide flooding, and intense subtropical sunshine. Features multi-layer asphaltic coatings to resist brackish groundwater intrusion and keep street runoff flowing smoothly.',
     challenges: 'Porous limestone sub-base, shallow groundwater table, salt water tidal backflow, hurricane wind-driven rain.',
     keyFeatures: [
@@ -289,8 +288,7 @@ const ICONIC_CITIES: CitySpec[] = [
       { label: 'Water Table Spec', value: 'Groundwater Barrier' },
       { label: 'State DOT Index', value: 'FDOT 425 Series' },
       { label: 'Storm Resistance', value: 'Hurricane Grade' }
-    ],
-    accentColor: '#CC0000'
+    ]
   }
 ];
 
@@ -300,6 +298,7 @@ export default function IconicCitiesShowcase() {
   const [selectedCityId, setSelectedCityId] = useState<string>('new-york');
   const [activeRegion, setActiveRegion] = useState<string>('All Cities');
   const [isAutoPlay, setIsAutoPlay] = useState<boolean>(true);
+  const [mediaMode, setMediaMode] = useState<'video' | 'image'>('video');
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
 
   const filteredCities = activeRegion === 'All Cities'
@@ -329,7 +328,6 @@ export default function IconicCitiesShowcase() {
     };
   }, [isAutoPlay, filteredCities]);
 
-  // If filter changes and current city is no longer in view, select first in filtered list
   const handleRegionChange = (region: string) => {
     setActiveRegion(region);
     const newFiltered = region === 'All Cities'
@@ -353,37 +351,37 @@ export default function IconicCitiesShowcase() {
   return (
     <section
       id="iconic-cities"
-      className="py-24 relative bg-[#09090B] text-white overflow-hidden border-t border-b border-white/10"
+      className="py-24 relative bg-black text-white overflow-hidden border-t border-b border-white/10"
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >
       {/* Background Ambience & City Grid Blueprint Pattern */}
       <div
-        className="absolute inset-0 z-0 opacity-[0.08] pointer-events-none"
+        className="absolute inset-0 z-0 opacity-[0.06] pointer-events-none"
         style={{
           backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)`,
           backgroundSize: '32px 32px, 64px 64px, 64px 64px'
         }}
       />
       
-      {/* Red Ambient Radial Lighting */}
-      <div className="absolute top-0 left-1/4 w-[700px] h-[500px] bg-[#CC0000]/15 rounded-full blur-[140px] pointer-events-none z-0" />
-      <div className="absolute bottom-0 right-10 w-[600px] h-[400px] bg-[#CC0000]/10 rounded-full blur-[130px] pointer-events-none z-0" />
+      {/* Subtle White Ambient Radial Lighting */}
+      <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-white/5 rounded-full blur-[140px] pointer-events-none z-0" />
+      <div className="absolute bottom-0 right-10 w-[500px] h-[350px] bg-white/5 rounded-full blur-[130px] pointer-events-none z-0" />
 
       <div className="w-full px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 max-w-7xl mx-auto">
 
-        {/* --- HEADER SECTION --- */}
+        {/* --- HEADER SECTION (PURE BLACK & WHITE) --- */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md shadow-inner">
-            <Building2 className="w-4 h-4 text-[#CC0000]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-white/10 backdrop-blur-md shadow-inner">
+            <Building2 className="w-4 h-4 text-white" />
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-300">
               Metropolitan & Municipal Specifications
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight text-white">
             Paving Risers For <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-[#CC0000]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
               North America's Iconic Cities
             </span>
           </h2>
@@ -403,8 +401,8 @@ export default function IconicCitiesShowcase() {
                 onClick={() => handleRegionChange(region)}
                 className={`px-4 py-2 rounded-lg text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? 'bg-[#CC0000] text-white shadow-[0_0_15px_rgba(204,0,0,0.4)] border border-red-500'
-                    : 'bg-zinc-900/90 text-zinc-400 hover:text-white hover:bg-zinc-800 border border-white/5'
+                    ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)] border border-white font-black'
+                    : 'bg-zinc-950 text-zinc-400 hover:text-white hover:bg-zinc-900 border border-white/10'
                 }`}
               >
                 {region}
@@ -416,7 +414,7 @@ export default function IconicCitiesShowcase() {
         {/* --- CITY PILLS CAROUSEL SELECTOR --- */}
         <div className="relative mb-10">
           <div className="flex items-center gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-thin scrollbar-thumb-zinc-700 no-scrollbar snap-x">
-            {filteredCities.map((city, idx) => {
+            {filteredCities.map((city) => {
               const isSelected = city.id === currentCity.id;
               return (
                 <button
@@ -424,11 +422,11 @@ export default function IconicCitiesShowcase() {
                   onClick={() => setSelectedCityId(city.id)}
                   className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-300 border cursor-pointer snap-start ${
                     isSelected
-                      ? 'bg-gradient-to-r from-zinc-900 to-zinc-950 text-white border-[#CC0000] shadow-[0_0_20px_rgba(204,0,0,0.35)] scale-105 ring-1 ring-[#CC0000]/60'
-                      : 'bg-zinc-900/70 text-zinc-400 hover:text-white hover:bg-zinc-800/80 border-white/10'
+                      ? 'bg-zinc-900 text-white border-white shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-105 ring-1 ring-white'
+                      : 'bg-zinc-950 text-zinc-400 hover:text-white hover:bg-zinc-900 border-white/10'
                   }`}
                 >
-                  <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.8)]' : 'bg-zinc-600'}`} />
+                  <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.8)]' : 'bg-zinc-600'}`} />
                   <span className="font-sans font-black tracking-wide text-sm">{city.name}</span>
                   <span className="text-[10px] font-mono text-zinc-500">{city.state}</span>
                 </button>
@@ -437,21 +435,21 @@ export default function IconicCitiesShowcase() {
           </div>
         </div>
 
-        {/* --- MAIN CITY SPOTLIGHT SLIDE CARD --- */}
-        <div className="relative rounded-3xl bg-gradient-to-b from-zinc-900/95 via-zinc-900/90 to-zinc-950 border border-white/10 shadow-2xl overflow-hidden backdrop-blur-xl">
+        {/* --- MAIN CITY SPOTLIGHT SLIDE CARD (MONOCHROME WITH MAX VIDEO & IMAGES) --- */}
+        <div className="relative rounded-3xl bg-zinc-950 border border-white/10 shadow-2xl overflow-hidden backdrop-blur-xl">
           
           {/* Top City Status Header */}
-          <div className="px-6 sm:px-8 py-4 bg-zinc-950/80 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <div className="px-6 sm:px-8 py-4 bg-zinc-900/90 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-[#CC0000]/20 border border-[#CC0000]/40 flex items-center justify-center">
-                <MapPin className="w-4 h-4 text-[#CC0000]" />
+              <div className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-white">
+                <MapPin className="w-4 h-4" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
                   <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-white">
                     {currentCity.name}
                   </h3>
-                  <span className="text-xs font-mono font-bold text-zinc-400 px-2 py-0.5 rounded bg-zinc-800 border border-white/10">
+                  <span className="text-xs font-mono font-bold text-zinc-300 px-2 py-0.5 rounded bg-zinc-800 border border-white/10">
                     {currentCity.state}
                   </span>
                 </div>
@@ -460,8 +458,8 @@ export default function IconicCitiesShowcase() {
 
             {/* DOT & Standard Compliance Badge */}
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold px-3 py-1 rounded-full bg-emerald-950/60 text-emerald-400 border border-emerald-500/30">
-                <ShieldCheck className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold px-3 py-1 rounded-full bg-zinc-800 text-white border border-white/20">
+                <ShieldCheck className="w-3.5 h-3.5 text-zinc-200" />
                 {currentCity.dotSpec}
               </span>
 
@@ -469,14 +467,14 @@ export default function IconicCitiesShowcase() {
               <div className="flex items-center gap-1.5 ml-2">
                 <button
                   onClick={handlePrev}
-                  className="p-2 rounded-lg bg-zinc-800/90 hover:bg-[#CC0000] text-zinc-300 hover:text-white transition-colors border border-white/10 cursor-pointer"
+                  className="p-2 rounded-lg bg-zinc-800 hover:bg-white hover:text-black text-white transition-colors border border-white/15 cursor-pointer"
                   aria-label="Previous city"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="p-2 rounded-lg bg-zinc-800/90 hover:bg-[#CC0000] text-zinc-300 hover:text-white transition-colors border border-white/10 cursor-pointer"
+                  className="p-2 rounded-lg bg-zinc-800 hover:bg-white hover:text-black text-white transition-colors border border-white/15 cursor-pointer"
                   aria-label="Next city"
                 >
                   <ChevronRight className="w-4 h-4" />
@@ -485,7 +483,7 @@ export default function IconicCitiesShowcase() {
             </div>
           </div>
 
-          {/* Slide Content Grid: Details Left, Visual Card Right */}
+          {/* Slide Content Grid: Details Left, Visual Stage Right */}
           <div className="p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             {/* LEFT: Engineering Specifications & Story (7 Columns) */}
@@ -493,22 +491,22 @@ export default function IconicCitiesShowcase() {
               
               {/* Tagline & Description */}
               <div className="space-y-3">
-                <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#CC0000] uppercase tracking-wider">
-                  <Zap className="w-3.5 h-3.5" />
+                <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider">
+                  <Zap className="w-3.5 h-3.5 text-white" />
                   {currentCity.tagline}
                 </div>
-                <h4 className="text-2xl sm:text-3xl font-black text-white leading-tight">
+                <h4 className="text-2xl sm:text-3xl font-black text-white leading-tight uppercase">
                   {currentCity.primaryRiser}
                 </h4>
-                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
                   {currentCity.description}
                 </p>
               </div>
 
               {/* Local Municipality Challenges */}
-              <div className="p-4 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1.5">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#CC0000] flex items-center gap-1.5">
-                  <Activity className="w-3.5 h-3.5" />
+              <div className="p-4 rounded-xl bg-zinc-900 border border-white/10 space-y-1.5">
+                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-zinc-300 flex items-center gap-1.5">
+                  <Activity className="w-3.5 h-3.5 text-white" />
                   Key Municipal Field Challenges:
                 </span>
                 <p className="text-xs text-zinc-400 font-medium">
@@ -520,7 +518,7 @@ export default function IconicCitiesShowcase() {
               <div className="space-y-3 pt-2">
                 {currentCity.keyFeatures.map((feat, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 w-5 h-5 rounded-md bg-[#CC0000]/20 text-[#CC0000] flex items-center justify-center shrink-0 border border-[#CC0000]/40">
+                    <div className="mt-0.5 w-5 h-5 rounded-md bg-zinc-800 text-white flex items-center justify-center shrink-0 border border-white/20">
                       <CheckCircle2 className="w-3.5 h-3.5" />
                     </div>
                     <div>
@@ -538,7 +536,7 @@ export default function IconicCitiesShowcase() {
               {/* 3 City Quick Metric Badges */}
               <div className="grid grid-cols-3 gap-3 pt-2 border-t border-white/10">
                 {currentCity.stats.map((stat, i) => (
-                  <div key={i} className="p-3 rounded-xl bg-zinc-950/80 border border-white/5 text-center">
+                  <div key={i} className="p-3 rounded-xl bg-zinc-900 border border-white/10 text-center">
                     <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-tight block">
                       {stat.label}
                     </span>
@@ -552,7 +550,7 @@ export default function IconicCitiesShowcase() {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <Link href={`/contact/specifications?city=${encodeURIComponent(currentCity.name)}`}>
-                  <Button className="h-12 px-6 bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase text-xs tracking-wider transition-all duration-300 shadow-[0_0_20px_rgba(204,0,0,0.3)] rounded-lg">
+                  <Button className="h-12 px-6 bg-white hover:bg-zinc-200 text-black font-black uppercase text-xs tracking-wider transition-all duration-300 shadow-xl rounded-lg border border-white">
                     Request {currentCity.name} Submittal Sheet
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -560,58 +558,96 @@ export default function IconicCitiesShowcase() {
 
                 <Link href="/products">
                   <Button variant="outline" className="h-12 px-5 border-white/15 text-zinc-300 hover:text-white hover:bg-zinc-800 text-xs font-mono font-bold uppercase tracking-wider rounded-lg">
-                    <FileText className="w-3.5 h-3.5 mr-2 text-[#CC0000]" />
-                    View Technical CAD Drawings
+                    <FileText className="w-3.5 h-3.5 mr-2 text-white" />
+                    View Technical Drawings
                   </Button>
                 </Link>
               </div>
 
             </div>
 
-            {/* RIGHT: High-Res Product & Specification Preview Card (5 Columns) */}
+            {/* RIGHT: Video & Image Showcase Stage (5 Columns) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-2xl bg-gradient-to-b from-zinc-950 to-[#121214] border border-white/10 p-6 sm:p-8 flex flex-col justify-between overflow-hidden group shadow-2xl">
+              <div className="relative rounded-2xl bg-zinc-900 border border-white/15 p-6 flex flex-col justify-between overflow-hidden group shadow-2xl">
                 
-                {/* Visual Glow Spotlight */}
-                <div className="absolute top-0 right-0 w-48 h-48 bg-[#CC0000]/20 rounded-full blur-[80px] pointer-events-none" />
-
-                {/* Card Top Label */}
+                {/* Media Selector Top Bar: Video / Photo Toggle */}
                 <div className="flex items-center justify-between mb-4 z-10">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#CC0000] animate-ping" />
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400">
-                      Standard Issue Specification
-                    </span>
-                  </div>
-                  <span className="text-[10px] font-mono font-black uppercase px-2.5 py-1 rounded bg-[#CC0000]/15 text-[#CC0000] border border-[#CC0000]/30">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400">
                     {currentCity.riserCategory}
                   </span>
+
+                  {/* Mode Switch Pills */}
+                  <div className="flex items-center gap-1 bg-zinc-950 p-1 rounded-lg border border-white/10">
+                    <button
+                      onClick={() => setMediaMode('video')}
+                      className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase tracking-wider transition-all cursor-pointer ${
+                        mediaMode === 'video'
+                          ? 'bg-white text-black font-black shadow-md'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      <Film className="w-3 h-3" />
+                      HD Video
+                    </button>
+                    <button
+                      onClick={() => setMediaMode('image')}
+                      className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase tracking-wider transition-all cursor-pointer ${
+                        mediaMode === 'image'
+                          ? 'bg-white text-black font-black shadow-md'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      <Eye className="w-3 h-3" />
+                      Photo
+                    </button>
+                  </div>
                 </div>
 
-                {/* Product Image Stage */}
-                <div className="relative w-full aspect-square flex items-center justify-center my-4 overflow-hidden z-10">
-                  <Image
-                    key={currentCity.id}
-                    src={currentCity.productImage}
-                    alt={`${currentCity.name} - ${currentCity.primaryRiser}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 400px"
-                    className="object-contain p-4 transition-transform duration-700 group-hover:scale-110 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]"
-                  />
+                {/* Display Screen: Video or Image */}
+                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-black border border-white/10 my-2 flex items-center justify-center">
+                  {mediaMode === 'video' ? (
+                    <div className="relative w-full h-full">
+                      <video
+                        key={`${currentCity.id}-video`}
+                        src={currentCity.videoUrl}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        suppressHydrationWarning
+                        className="object-cover w-full h-full"
+                      />
+                      <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/80 text-white border border-white/20 text-[9px] font-mono uppercase tracking-widest backdrop-blur-md">
+                        <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                        {currentCity.name} Municipal Spec
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="relative w-full h-full flex items-center justify-center p-6 bg-gradient-to-b from-zinc-950 to-black">
+                      <Image
+                        key={`${currentCity.id}-img`}
+                        src={currentCity.productImage}
+                        alt={`${currentCity.name} - ${currentCity.primaryRiser}`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
+                        className="object-contain p-4 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 {/* Bottom Spec Footer Summary */}
-                <div className="p-4 rounded-xl bg-zinc-900/90 border border-white/10 space-y-2 z-10">
+                <div className="p-3.5 rounded-xl bg-zinc-950 border border-white/10 space-y-1.5 z-10 mt-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-white uppercase tracking-wide">
-                      {currentCity.name} Municipal Match
+                      {currentCity.name} Standard
                     </span>
-                    <span className="text-[11px] font-mono font-bold text-emerald-400">
+                    <span className="text-[10px] font-mono font-bold text-zinc-300 bg-zinc-900 px-2 py-0.5 rounded border border-white/10">
                       Pre-Approved
                     </span>
                   </div>
-                  <p className="text-[11px] text-zinc-400 font-mono">
-                    DOT Standard: <span className="text-zinc-200">{currentCity.dotSpec}</span>
+                  <p className="text-[10px] text-zinc-400 font-mono">
+                    DOT Standard: <span className="text-white font-bold">{currentCity.dotSpec}</span>
                   </p>
                 </div>
 
@@ -621,21 +657,21 @@ export default function IconicCitiesShowcase() {
           </div>
 
           {/* Bottom Loop Step Progress Bar */}
-          <div className="px-6 sm:px-8 py-3 bg-zinc-950/90 border-t border-white/5 flex items-center justify-between">
-            <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
+          <div className="px-6 sm:px-8 py-3 bg-zinc-900/90 border-t border-white/10 flex items-center justify-between">
+            <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider">
               City {currentIndex + 1} of {filteredCities.length} • Auto-rotating ({isAutoPlay ? 'Active' : 'Paused on Hover'})
             </span>
 
             {/* Micro Dot Progress */}
             <div className="flex items-center gap-1.5">
-              {filteredCities.map((city, idx) => (
+              {filteredCities.map((city) => (
                 <button
                   key={city.id}
                   onClick={() => setSelectedCityId(city.id)}
                   aria-label={`Jump to ${city.name}`}
                   className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                     city.id === currentCity.id
-                      ? 'w-6 bg-[#CC0000]'
+                      ? 'w-6 bg-white'
                       : 'w-1.5 bg-zinc-700 hover:bg-zinc-500'
                   }`}
                 />
@@ -645,11 +681,11 @@ export default function IconicCitiesShowcase() {
 
         </div>
 
-        {/* --- ALL 10 CITIES GRID OVERVIEW CARDS --- */}
+        {/* --- ALL 10 CITIES GRID OVERVIEW CARDS (MONOCHROME) --- */}
         <div className="mt-14 space-y-4">
           <div className="flex items-center justify-between">
             <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-400 flex items-center gap-2">
-              <Building2 className="w-3.5 h-3.5 text-[#CC0000]" />
+              <Building2 className="w-3.5 h-3.5 text-white" />
               Quick Select Any Metropolitan Market
             </h4>
             <span className="text-[11px] font-mono text-zinc-500">
@@ -666,12 +702,12 @@ export default function IconicCitiesShowcase() {
                   onClick={() => setSelectedCityId(city.id)}
                   className={`p-3.5 rounded-xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between gap-2 group ${
                     isSelected
-                      ? 'bg-zinc-900 border-[#CC0000] shadow-[0_0_15px_rgba(204,0,0,0.25)] ring-1 ring-[#CC0000]/50'
-                      : 'bg-zinc-950/70 border-white/5 hover:border-white/20 hover:bg-zinc-900/60'
+                      ? 'bg-zinc-900 border-white shadow-[0_0_15px_rgba(255,255,255,0.2)] ring-1 ring-white'
+                      : 'bg-zinc-950 border-white/10 hover:border-white/25 hover:bg-zinc-900/60'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-black text-white group-hover:text-[#CC0000] transition-colors">
+                    <span className="text-sm font-black text-white group-hover:text-zinc-200 transition-colors">
                       {city.name}
                     </span>
                     <span className="text-[10px] font-mono text-zinc-500">
