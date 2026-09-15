@@ -139,7 +139,7 @@ export const PRODUCT_DATA: Product[] = [
         description: 'Heavy duty riser systems featuring secure locking set screws for high traffic roadways and highways.',
         specs: {
             material: 'Heavy Duty Ductile Iron or Fabricated Steel',
-            loadRating: 'Paving Standard HS-25 Traffic Rated',
+            loadRating: 'Heavy Duty Municipal Traffic Rated',
             standardSizes: '24", 30", 36"',
             heights: '1.5" to 8"',
             coating: 'Anti-corrosion coated / painted'

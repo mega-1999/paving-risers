@@ -188,7 +188,7 @@ export default function ManholeRiserPage() {
               <ShieldCheck className="w-12 h-12 text-white/50 group-hover:text-white transition-colors" />
               <div>
                 <h3 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-2">Load Rating: See individual product specification</h3>
-                <p className="font-bold uppercase tracking-widest text-xs opacity-80">Paving Standard M306 Load Rating</p>
+                <p className="font-bold uppercase tracking-widest text-xs opacity-80">Heavy Duty Municipal Traffic Specification</p>
               </div>
            </div>
 

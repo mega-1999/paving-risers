@@ -55,7 +55,7 @@ const ICONIC_CITIES: CitySpec[] = [
     description: 'Engineered for NYC’s demanding 24/7 arterial traffic and dense subterranean steam, gas, and electrical utility vaults. Designed to seat flush into milled surfaces without frame excavation, surviving severe winter snowplow shearing forces.',
     challenges: 'Heavy axle bus corridors, dense subway grating proximity, sub-zero freeze-thaw cycles, aggressive road salting.',
     keyFeatures: [
-      { title: 'AASHTO M306 / H-20 & HS-25 Rated', desc: 'Tested to exceed 40,000 lbs proof-load for nonstop city bus and freight traffic.' },
+      { title: 'Heavy-Duty Proof-Load Tested', desc: 'Tested to exceed 40,000 lbs proof-load for nonstop city bus and freight traffic.' },
       { title: 'Zero Excavation Quick-Seat', desc: 'Completes grade elevation in under 10 minutes to minimize lane closures on Broadway & 5th Ave.' },
       { title: 'Anti-Shear Lock Geometry', desc: 'Patented exterior mechanical expansion locks the ring against the existing cast iron frame.' }
     ],
@@ -137,7 +137,7 @@ const ICONIC_CITIES: CitySpec[] = [
     stats: [
       { label: 'Catch Basin Sizes', value: '24" to 36" Square' },
       { label: 'Salt Defense', value: 'Bituminous Barrier' },
-      { label: 'Load Rating', value: 'AASHTO H-20/HS-25' }
+      { label: 'Load Rating', value: 'Heavy Duty 40,000+ LBS' }
     ]
   },
   {

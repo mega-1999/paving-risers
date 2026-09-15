@@ -93,7 +93,7 @@ export default function PavingRisersAppShowcase() {
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <h4 className="text-base font-black uppercase tracking-tight text-slate-900">
-                      DOT & AASHTO Spec Validator
+                      DOT & Municipal Spec Validator
                     </h4>
                     <span className="text-[10px] font-mono font-bold text-[#CC0000] bg-[#CC0000]/10 px-2 py-0.5 border border-[#CC0000]/20 uppercase">
                       Coming Soon
