@@ -33,6 +33,7 @@ import StandardsMarquee from './StandardsMarquee';
 import Preloader from '../components/Preloader';
 import ProductLineMarquee from '../components/ProductLineMarquee';
 import StopSignDivider from '../components/StopSignDivider';
+import IconicCitiesShowcase from '../components/IconicCitiesShowcase';
 
 const HeroCarousel = dynamic(() => import('@/components/ui/sections/HeroCarousel'))
 const PavingRisersCatalog = dynamic(() => import('../components/PavingRisersCatalog'))
@@ -62,6 +63,7 @@ const Home = () => {
       <UltimateResultsPattern />
       <StandardsMarquee />
       <SaferRoadsCTA />
+      <IconicCitiesShowcase />
       <CombinedRiserSolutions />
       <ProductInteractiveImage />
       <GratesRacksAndTools />
