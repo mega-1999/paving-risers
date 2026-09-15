@@ -351,29 +351,29 @@ export default function IconicCitiesShowcase() {
   return (
     <section
       id="iconic-cities"
-      className="py-24 relative bg-black text-white overflow-hidden border-t border-b border-white/10"
+      className="py-24 relative bg-[#09090B] text-white overflow-hidden border-t border-b border-white/10"
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >
       {/* Background Ambience & City Grid Blueprint Pattern */}
       <div
-        className="absolute inset-0 z-0 opacity-[0.06] pointer-events-none"
+        className="absolute inset-0 z-0 opacity-[0.08] pointer-events-none"
         style={{
           backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)`,
           backgroundSize: '32px 32px, 64px 64px, 64px 64px'
         }}
       />
       
-      {/* Subtle White Ambient Radial Lighting */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-white/5 rounded-full blur-[140px] pointer-events-none z-0" />
-      <div className="absolute bottom-0 right-10 w-[500px] h-[350px] bg-white/5 rounded-full blur-[130px] pointer-events-none z-0" />
+      {/* Signature Red Ambient Radial Lighting */}
+      <div className="absolute top-0 left-1/4 w-[650px] h-[450px] bg-[#CC0000]/15 rounded-full blur-[140px] pointer-events-none z-0" />
+      <div className="absolute bottom-0 right-10 w-[550px] h-[380px] bg-[#CC0000]/10 rounded-full blur-[130px] pointer-events-none z-0" />
 
       <div className="w-full px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 max-w-7xl mx-auto">
 
-        {/* --- HEADER SECTION (PURE BLACK & WHITE) --- */}
+        {/* --- HEADER SECTION (BLACK, WHITE & RED) --- */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-white/10 backdrop-blur-md shadow-inner">
-            <Building2 className="w-4 h-4 text-white" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md shadow-inner">
+            <Building2 className="w-4 h-4 text-[#CC0000]" />
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-300">
               Metropolitan & Municipal Specifications
             </span>
@@ -381,7 +381,7 @@ export default function IconicCitiesShowcase() {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight text-white">
             Paving Risers For <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-100 to-[#CC0000]">
               North America's Iconic Cities
             </span>
           </h2>
@@ -401,8 +401,8 @@ export default function IconicCitiesShowcase() {
                 onClick={() => handleRegionChange(region)}
                 className={`px-4 py-2 rounded-lg text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)] border border-white font-black'
-                    : 'bg-zinc-950 text-zinc-400 hover:text-white hover:bg-zinc-900 border border-white/10'
+                    ? 'bg-[#CC0000] text-white shadow-[0_0_15px_rgba(204,0,0,0.4)] border border-red-500 font-black'
+                    : 'bg-zinc-900/90 text-zinc-400 hover:text-white hover:bg-zinc-800 border border-white/5'
                 }`}
               >
                 {region}
@@ -422,11 +422,11 @@ export default function IconicCitiesShowcase() {
                   onClick={() => setSelectedCityId(city.id)}
                   className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-300 border cursor-pointer snap-start ${
                     isSelected
-                      ? 'bg-zinc-900 text-white border-white shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-105 ring-1 ring-white'
-                      : 'bg-zinc-950 text-zinc-400 hover:text-white hover:bg-zinc-900 border-white/10'
+                      ? 'bg-gradient-to-r from-zinc-900 to-zinc-950 text-white border-[#CC0000] shadow-[0_0_20px_rgba(204,0,0,0.35)] scale-105 ring-1 ring-[#CC0000]/60'
+                      : 'bg-zinc-900/70 text-zinc-400 hover:text-white hover:bg-zinc-800/80 border-white/10'
                   }`}
                 >
-                  <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.8)]' : 'bg-zinc-600'}`} />
+                  <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.8)]' : 'bg-zinc-600'}`} />
                   <span className="font-sans font-black tracking-wide text-sm">{city.name}</span>
                   <span className="text-[10px] font-mono text-zinc-500">{city.state}</span>
                 </button>
@@ -435,13 +435,13 @@ export default function IconicCitiesShowcase() {
           </div>
         </div>
 
-        {/* --- MAIN CITY SPOTLIGHT SLIDE CARD (MONOCHROME WITH MAX VIDEO & IMAGES) --- */}
-        <div className="relative rounded-3xl bg-zinc-950 border border-white/10 shadow-2xl overflow-hidden backdrop-blur-xl">
+        {/* --- MAIN CITY SPOTLIGHT SLIDE CARD (WITH HD VIDEO & PHOTO TOGGLES) --- */}
+        <div className="relative rounded-3xl bg-gradient-to-b from-zinc-900/95 via-zinc-900/90 to-zinc-950 border border-white/10 shadow-2xl overflow-hidden backdrop-blur-xl">
           
           {/* Top City Status Header */}
-          <div className="px-6 sm:px-8 py-4 bg-zinc-900/90 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <div className="px-6 sm:px-8 py-4 bg-zinc-950/80 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-white">
+              <div className="w-8 h-8 rounded-lg bg-[#CC0000]/20 border border-[#CC0000]/40 flex items-center justify-center text-[#CC0000]">
                 <MapPin className="w-4 h-4" />
               </div>
               <div>
@@ -449,7 +449,7 @@ export default function IconicCitiesShowcase() {
                   <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-white">
                     {currentCity.name}
                   </h3>
-                  <span className="text-xs font-mono font-bold text-zinc-300 px-2 py-0.5 rounded bg-zinc-800 border border-white/10">
+                  <span className="text-xs font-mono font-bold text-zinc-400 px-2 py-0.5 rounded bg-zinc-800 border border-white/10">
                     {currentCity.state}
                   </span>
                 </div>
@@ -458,8 +458,8 @@ export default function IconicCitiesShowcase() {
 
             {/* DOT & Standard Compliance Badge */}
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold px-3 py-1 rounded-full bg-zinc-800 text-white border border-white/20">
-                <ShieldCheck className="w-3.5 h-3.5 text-zinc-200" />
+              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold px-3 py-1 rounded-full bg-emerald-950/60 text-emerald-400 border border-emerald-500/30">
+                <ShieldCheck className="w-3.5 h-3.5" />
                 {currentCity.dotSpec}
               </span>
 
@@ -467,14 +467,14 @@ export default function IconicCitiesShowcase() {
               <div className="flex items-center gap-1.5 ml-2">
                 <button
                   onClick={handlePrev}
-                  className="p-2 rounded-lg bg-zinc-800 hover:bg-white hover:text-black text-white transition-colors border border-white/15 cursor-pointer"
+                  className="p-2 rounded-lg bg-zinc-800/90 hover:bg-[#CC0000] text-zinc-300 hover:text-white transition-colors border border-white/10 cursor-pointer"
                   aria-label="Previous city"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="p-2 rounded-lg bg-zinc-800 hover:bg-white hover:text-black text-white transition-colors border border-white/15 cursor-pointer"
+                  className="p-2 rounded-lg bg-zinc-800/90 hover:bg-[#CC0000] text-zinc-300 hover:text-white transition-colors border border-white/10 cursor-pointer"
                   aria-label="Next city"
                 >
                   <ChevronRight className="w-4 h-4" />
@@ -491,22 +491,22 @@ export default function IconicCitiesShowcase() {
               
               {/* Tagline & Description */}
               <div className="space-y-3">
-                <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider">
-                  <Zap className="w-3.5 h-3.5 text-white" />
+                <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#CC0000] uppercase tracking-wider">
+                  <Zap className="w-3.5 h-3.5 text-[#CC0000]" />
                   {currentCity.tagline}
                 </div>
                 <h4 className="text-2xl sm:text-3xl font-black text-white leading-tight uppercase">
                   {currentCity.primaryRiser}
                 </h4>
-                <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
                   {currentCity.description}
                 </p>
               </div>
 
               {/* Local Municipality Challenges */}
-              <div className="p-4 rounded-xl bg-zinc-900 border border-white/10 space-y-1.5">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-zinc-300 flex items-center gap-1.5">
-                  <Activity className="w-3.5 h-3.5 text-white" />
+              <div className="p-4 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1.5">
+                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#CC0000] flex items-center gap-1.5">
+                  <Activity className="w-3.5 h-3.5" />
                   Key Municipal Field Challenges:
                 </span>
                 <p className="text-xs text-zinc-400 font-medium">
@@ -518,7 +518,7 @@ export default function IconicCitiesShowcase() {
               <div className="space-y-3 pt-2">
                 {currentCity.keyFeatures.map((feat, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 w-5 h-5 rounded-md bg-zinc-800 text-white flex items-center justify-center shrink-0 border border-white/20">
+                    <div className="mt-0.5 w-5 h-5 rounded-md bg-[#CC0000]/20 text-[#CC0000] flex items-center justify-center shrink-0 border border-[#CC0000]/40">
                       <CheckCircle2 className="w-3.5 h-3.5" />
                     </div>
                     <div>
@@ -536,7 +536,7 @@ export default function IconicCitiesShowcase() {
               {/* 3 City Quick Metric Badges */}
               <div className="grid grid-cols-3 gap-3 pt-2 border-t border-white/10">
                 {currentCity.stats.map((stat, i) => (
-                  <div key={i} className="p-3 rounded-xl bg-zinc-900 border border-white/10 text-center">
+                  <div key={i} className="p-3 rounded-xl bg-zinc-950/80 border border-white/5 text-center">
                     <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-tight block">
                       {stat.label}
                     </span>
@@ -550,7 +550,7 @@ export default function IconicCitiesShowcase() {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <Link href={`/contact/specifications?city=${encodeURIComponent(currentCity.name)}`}>
-                  <Button className="h-12 px-6 bg-white hover:bg-zinc-200 text-black font-black uppercase text-xs tracking-wider transition-all duration-300 shadow-xl rounded-lg border border-white">
+                  <Button className="h-12 px-6 bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase text-xs tracking-wider transition-all duration-300 shadow-[0_0_20px_rgba(204,0,0,0.3)] rounded-lg">
                     Request {currentCity.name} Submittal Sheet
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -558,7 +558,7 @@ export default function IconicCitiesShowcase() {
 
                 <Link href="/products">
                   <Button variant="outline" className="h-12 px-5 border-white/15 text-zinc-300 hover:text-white hover:bg-zinc-800 text-xs font-mono font-bold uppercase tracking-wider rounded-lg">
-                    <FileText className="w-3.5 h-3.5 mr-2 text-white" />
+                    <FileText className="w-3.5 h-3.5 mr-2 text-[#CC0000]" />
                     View Technical Drawings
                   </Button>
                 </Link>
@@ -568,21 +568,24 @@ export default function IconicCitiesShowcase() {
 
             {/* RIGHT: Video & Image Showcase Stage (5 Columns) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-2xl bg-zinc-900 border border-white/15 p-6 flex flex-col justify-between overflow-hidden group shadow-2xl">
+              <div className="relative rounded-2xl bg-gradient-to-b from-zinc-950 to-[#121214] border border-white/10 p-6 flex flex-col justify-between overflow-hidden group shadow-2xl">
                 
+                {/* Visual Glow Spotlight */}
+                <div className="absolute top-0 right-0 w-48 h-48 bg-[#CC0000]/20 rounded-full blur-[80px] pointer-events-none" />
+
                 {/* Media Selector Top Bar: Video / Photo Toggle */}
                 <div className="flex items-center justify-between mb-4 z-10">
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400">
+                  <span className="text-[10px] font-mono font-black uppercase px-2.5 py-1 rounded bg-[#CC0000]/15 text-[#CC0000] border border-[#CC0000]/30">
                     {currentCity.riserCategory}
                   </span>
 
                   {/* Mode Switch Pills */}
-                  <div className="flex items-center gap-1 bg-zinc-950 p-1 rounded-lg border border-white/10">
+                  <div className="flex items-center gap-1 bg-zinc-900 p-1 rounded-lg border border-white/10">
                     <button
                       onClick={() => setMediaMode('video')}
                       className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase tracking-wider transition-all cursor-pointer ${
                         mediaMode === 'video'
-                          ? 'bg-white text-black font-black shadow-md'
+                          ? 'bg-[#CC0000] text-white font-black shadow-md'
                           : 'text-zinc-400 hover:text-white'
                       }`}
                     >
@@ -593,7 +596,7 @@ export default function IconicCitiesShowcase() {
                       onClick={() => setMediaMode('image')}
                       className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase tracking-wider transition-all cursor-pointer ${
                         mediaMode === 'image'
-                          ? 'bg-white text-black font-black shadow-md'
+                          ? 'bg-[#CC0000] text-white font-black shadow-md'
                           : 'text-zinc-400 hover:text-white'
                       }`}
                     >
@@ -618,7 +621,7 @@ export default function IconicCitiesShowcase() {
                         className="object-cover w-full h-full"
                       />
                       <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/80 text-white border border-white/20 text-[9px] font-mono uppercase tracking-widest backdrop-blur-md">
-                        <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                        <span className="w-2 h-2 rounded-full bg-[#CC0000] animate-pulse" />
                         {currentCity.name} Municipal Spec
                       </div>
                     </div>
@@ -637,12 +640,12 @@ export default function IconicCitiesShowcase() {
                 </div>
 
                 {/* Bottom Spec Footer Summary */}
-                <div className="p-3.5 rounded-xl bg-zinc-950 border border-white/10 space-y-1.5 z-10 mt-3">
+                <div className="p-3.5 rounded-xl bg-zinc-900/90 border border-white/10 space-y-1.5 z-10 mt-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-white uppercase tracking-wide">
-                      {currentCity.name} Standard
+                      {currentCity.name} Standard Match
                     </span>
-                    <span className="text-[10px] font-mono font-bold text-zinc-300 bg-zinc-900 px-2 py-0.5 rounded border border-white/10">
+                    <span className="text-[10px] font-mono font-bold text-emerald-400">
                       Pre-Approved
                     </span>
                   </div>
@@ -657,7 +660,7 @@ export default function IconicCitiesShowcase() {
           </div>
 
           {/* Bottom Loop Step Progress Bar */}
-          <div className="px-6 sm:px-8 py-3 bg-zinc-900/90 border-t border-white/10 flex items-center justify-between">
+          <div className="px-6 sm:px-8 py-3 bg-zinc-950/90 border-t border-white/5 flex items-center justify-between">
             <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider">
               City {currentIndex + 1} of {filteredCities.length} • Auto-rotating ({isAutoPlay ? 'Active' : 'Paused on Hover'})
             </span>
@@ -671,7 +674,7 @@ export default function IconicCitiesShowcase() {
                   aria-label={`Jump to ${city.name}`}
                   className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                     city.id === currentCity.id
-                      ? 'w-6 bg-white'
+                      ? 'w-6 bg-[#CC0000]'
                       : 'w-1.5 bg-zinc-700 hover:bg-zinc-500'
                   }`}
                 />
@@ -681,11 +684,11 @@ export default function IconicCitiesShowcase() {
 
         </div>
 
-        {/* --- ALL 10 CITIES GRID OVERVIEW CARDS (MONOCHROME) --- */}
+        {/* --- ALL 10 CITIES GRID OVERVIEW CARDS --- */}
         <div className="mt-14 space-y-4">
           <div className="flex items-center justify-between">
             <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-400 flex items-center gap-2">
-              <Building2 className="w-3.5 h-3.5 text-white" />
+              <Building2 className="w-3.5 h-3.5 text-[#CC0000]" />
               Quick Select Any Metropolitan Market
             </h4>
             <span className="text-[11px] font-mono text-zinc-500">
@@ -702,12 +705,12 @@ export default function IconicCitiesShowcase() {
                   onClick={() => setSelectedCityId(city.id)}
                   className={`p-3.5 rounded-xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between gap-2 group ${
                     isSelected
-                      ? 'bg-zinc-900 border-white shadow-[0_0_15px_rgba(255,255,255,0.2)] ring-1 ring-white'
-                      : 'bg-zinc-950 border-white/10 hover:border-white/25 hover:bg-zinc-900/60'
+                      ? 'bg-zinc-900 border-[#CC0000] shadow-[0_0_15px_rgba(204,0,0,0.25)] ring-1 ring-[#CC0000]/50'
+                      : 'bg-zinc-950/70 border-white/5 hover:border-white/20 hover:bg-zinc-900/60'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-black text-white group-hover:text-zinc-200 transition-colors">
+                    <span className="text-sm font-black text-white group-hover:text-[#CC0000] transition-colors">
                       {city.name}
                     </span>
                     <span className="text-[10px] font-mono text-zinc-500">
