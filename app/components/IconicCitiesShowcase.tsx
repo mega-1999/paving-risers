@@ -368,7 +368,7 @@ export default function IconicCitiesShowcase() {
       <div className="absolute top-0 left-1/4 w-[650px] h-[450px] bg-[#CC0000]/15 rounded-full blur-[140px] pointer-events-none z-0" />
       <div className="absolute bottom-0 right-10 w-[550px] h-[380px] bg-[#CC0000]/10 rounded-full blur-[130px] pointer-events-none z-0" />
 
-      <div className="w-full px-6 sm:px-10 md:px-16 lg:px-20 relative z-10 max-w-7xl mx-auto">
+      <div className="w-full px-10 md:px-20 relative z-10">
 
         {/* --- HEADER SECTION (BLACK, WHITE & RED) --- */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
