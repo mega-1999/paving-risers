@@ -557,8 +557,8 @@ export default function IconicCitiesShowcase() {
                 </Link>
 
                 <Link href="/products">
-                  <Button variant="outline" className="h-12 px-5 border-white/15 text-zinc-300 hover:text-white hover:bg-zinc-800 text-xs font-mono font-bold uppercase tracking-wider rounded-lg">
-                    <FileText className="w-3.5 h-3.5 mr-2 text-[#CC0000]" />
+                  <Button variant="outline" className="h-12 px-5 border-[#CC0000]/30 hover:border-[#CC0000] text-[#CC0000] hover:text-white hover:bg-[#CC0000] text-xs font-mono font-bold uppercase tracking-wider rounded-lg transition-all duration-200">
+                    <FileText className="w-3.5 h-3.5 mr-2" />
                     View Technical Drawings
                   </Button>
                 </Link>
