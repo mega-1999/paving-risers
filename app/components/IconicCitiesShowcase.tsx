@@ -504,12 +504,12 @@ export default function IconicCitiesShowcase() {
               </div>
 
               {/* Local Municipality Challenges */}
-              <div className="p-4 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1.5">
+              <div className="p-4 rounded-xl bg-white text-slate-900 border-l-4 border-l-[#CC0000] border border-slate-200 shadow-lg space-y-1.5">
                 <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#CC0000] flex items-center gap-1.5">
                   <Activity className="w-3.5 h-3.5" />
                   Key Municipal Field Challenges:
                 </span>
-                <p className="text-xs text-zinc-400 font-medium">
+                <p className="text-xs text-slate-800 font-semibold leading-relaxed">
                   {currentCity.challenges}
                 </p>
               </div>
@@ -517,7 +517,7 @@ export default function IconicCitiesShowcase() {
               {/* 3 Key Engineering Features */}
               <div className="space-y-3 pt-2">
                 {currentCity.keyFeatures.map((feat, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">
                     <div className="mt-0.5 w-5 h-5 rounded-md bg-[#CC0000]/20 text-[#CC0000] flex items-center justify-center shrink-0 border border-[#CC0000]/40">
                       <CheckCircle2 className="w-3.5 h-3.5" />
                     </div>
@@ -533,14 +533,14 @@ export default function IconicCitiesShowcase() {
                 ))}
               </div>
 
-              {/* 3 City Quick Metric Badges */}
-              <div className="grid grid-cols-3 gap-3 pt-2 border-t border-white/10">
+              {/* 3 City Quick Metric Badges (White BG Cards) */}
+              <div className="grid grid-cols-3 gap-3 pt-2">
                 {currentCity.stats.map((stat, i) => (
-                  <div key={i} className="p-3 rounded-xl bg-zinc-950/80 border border-white/5 text-center">
-                    <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-tight block">
+                  <div key={i} className="p-3.5 rounded-xl bg-white text-slate-900 border border-slate-200 shadow-md text-center hover:border-[#CC0000] transition-colors">
+                    <span className="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-tight block">
                       {stat.label}
                     </span>
-                    <span className="text-xs sm:text-sm font-black text-white tracking-tight mt-0.5 block">
+                    <span className="text-xs sm:text-sm font-black text-slate-950 tracking-tight mt-0.5 block">
                       {stat.value}
                     </span>
                   </div>
@@ -626,31 +626,42 @@ export default function IconicCitiesShowcase() {
                       </div>
                     </div>
                   ) : (
-                    <div className="relative w-full h-full flex items-center justify-center p-6 bg-gradient-to-b from-zinc-950 to-black">
+                    <div className="relative w-full h-full flex items-center justify-center p-6 bg-gradient-to-b from-white via-slate-50 to-slate-100">
+                      <div 
+                        className="absolute inset-0 opacity-20 pointer-events-none"
+                        style={{
+                          backgroundImage: 'radial-gradient(#94a3b8 1px, transparent 1px)',
+                          backgroundSize: '16px 16px'
+                        }}
+                      />
                       <Image
                         key={`${currentCity.id}-img`}
                         src={currentCity.productImage}
                         alt={`${currentCity.name} - ${currentCity.primaryRiser}`}
                         fill
                         sizes="(max-width: 768px) 100vw, 400px"
-                        className="object-contain p-4 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain p-4 drop-shadow-[0_20px_25px_rgba(0,0,0,0.45)] group-hover:scale-105 transition-transform duration-500 relative z-10"
                       />
+                      <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900 text-white text-[9px] font-mono uppercase tracking-widest shadow-md">
+                        <span className="w-2 h-2 rounded-full bg-[#CC0000]" />
+                        {currentCity.name} Product Spec
+                      </div>
                     </div>
                   )}
                 </div>
 
-                {/* Bottom Spec Footer Summary */}
-                <div className="p-3.5 rounded-xl bg-zinc-900/90 border border-white/10 space-y-1.5 z-10 mt-3">
+                {/* Bottom Spec Footer Summary (White BG Card Style) */}
+                <div className="p-3.5 rounded-xl bg-white text-slate-900 border border-slate-200 shadow-md space-y-1 z-10 mt-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-white uppercase tracking-wide">
+                    <span className="text-xs font-black text-slate-900 uppercase tracking-wide">
                       {currentCity.name} Standard Match
                     </span>
-                    <span className="text-[10px] font-mono font-bold text-emerald-400">
+                    <span className="text-[10px] font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                       Pre-Approved
                     </span>
                   </div>
-                  <p className="text-[10px] text-zinc-400 font-mono">
-                    DOT Standard: <span className="text-white font-bold">{currentCity.dotSpec}</span>
+                  <p className="text-[10px] text-slate-600 font-mono">
+                    DOT Standard: <span className="text-slate-950 font-black">{currentCity.dotSpec}</span>
                   </p>
                 </div>
 
@@ -705,19 +716,19 @@ export default function IconicCitiesShowcase() {
                   onClick={() => setSelectedCityId(city.id)}
                   className={`p-3.5 rounded-xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between gap-2 group ${
                     isSelected
-                      ? 'bg-zinc-900 border-[#CC0000] shadow-[0_0_15px_rgba(204,0,0,0.25)] ring-1 ring-[#CC0000]/50'
+                      ? 'bg-white text-slate-950 border-2 border-[#CC0000] shadow-[0_0_20px_rgba(204,0,0,0.35)] scale-[1.02]'
                       : 'bg-zinc-950/70 border-white/5 hover:border-white/20 hover:bg-zinc-900/60'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-black text-white group-hover:text-[#CC0000] transition-colors">
+                    <span className={`text-sm font-black transition-colors ${isSelected ? 'text-slate-950' : 'text-white group-hover:text-[#CC0000]'}`}>
                       {city.name}
                     </span>
-                    <span className="text-[10px] font-mono text-zinc-500">
+                    <span className={`text-[10px] font-mono font-bold ${isSelected ? 'text-[#CC0000] bg-red-50 px-1.5 py-0.5 rounded' : 'text-zinc-500'}`}>
                       {city.state.split(',')[0]}
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono text-zinc-400 line-clamp-1">
+                  <span className={`text-[10px] font-mono line-clamp-1 ${isSelected ? 'text-slate-700 font-semibold' : 'text-zinc-400'}`}>
                     {city.dotSpec}
                   </span>
                 </button>
