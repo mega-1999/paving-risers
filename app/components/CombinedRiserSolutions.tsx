@@ -110,7 +110,7 @@ function DetectablePlatesSlider() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      
+
       {/* Top Header Bar */}
       <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
         <div className="flex items-center gap-2.5">
@@ -124,9 +124,8 @@ function DetectablePlatesSlider() {
             {DETECTABLE_VARIANTS.map((_, i) => (
               <span
                 key={i}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
-                }`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
+                  }`}
               />
             ))}
           </div>
@@ -191,11 +190,10 @@ function DetectablePlatesSlider() {
               <button
                 key={variant.id}
                 onClick={() => setActiveIdx(idx)}
-                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
-                  isActive
+                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${isActive
                     ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
                     : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
-                }`}
+                  }`}
               >
                 <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
                   <Image
@@ -206,9 +204,8 @@ function DetectablePlatesSlider() {
                     className="object-contain p-0.5"
                   />
                 </div>
-                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
-                  isActive ? 'text-[#CC0000]' : 'text-slate-600'
-                }`}>
+                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  }`}>
                   {variant.badge}
                 </span>
                 {isActive && (
@@ -301,9 +298,8 @@ function TrashRacksSlider() {
             {TRASH_RACK_VARIANTS.map((_, i) => (
               <span
                 key={i}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIdx ? 'w-5 bg-[#CC0000]' : 'w-1.5 bg-gray-300'
-                }`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIdx ? 'w-5 bg-[#CC0000]' : 'w-1.5 bg-gray-300'
+                  }`}
               />
             ))}
           </div>
@@ -368,6 +364,204 @@ function TrashRacksSlider() {
               <button
                 key={variant.id}
                 onClick={() => setActiveIdx(idx)}
+                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${isActive
+                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
+                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                  }`}
+              >
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
+                  <Image
+                    src={variant.image}
+                    alt={variant.title}
+                    fill
+                    sizes="120px"
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  }`}>
+                  {variant.badge}
+                </span>
+                {isActive && (
+                  <div className="w-full h-[2px] bg-[#CC0000] mt-1 rounded-full" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const TWO_GRATE_COMBO_VARIANTS = [
+  {
+    id: 'two-grate-combo-1',
+    title: 'Dual Grate Drainage Assembly Frame',
+    spec: 'Dual Opening Structural Steel',
+    description: 'Precision fabricated steel dual-grate combo riser engineered to bring multi-grate catch basin structures to finished roadway grade.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
+    badge: 'Combo 1'
+  },
+  {
+    id: 'two-grate-combo-2',
+    title: 'Twin Storm Inlet Riser Frame',
+    spec: 'High-Inflow Grate Seat',
+    description: 'Heavy structural frame housing two side-by-side drainage grates with center beam support for heavy vehicle traffic resistance.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_2.jpg`,
+    badge: 'Combo 2'
+  },
+  {
+    id: 'two-grate-combo-3',
+    title: 'Commercial Curb-Gutter Dual Riser',
+    spec: 'Municipal Roadway Standard',
+    description: 'Engineered for dual-intake catch basin masonry boxes along arterial roadway gutters and stormwater retention junctions.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_3.jpg`,
+    badge: 'Combo 3'
+  },
+  {
+    id: 'two-grate-combo-4',
+    title: 'Heavy Structural Steel Combo Riser',
+    spec: 'Direct Drop-In Seating',
+    description: 'Welded steel construction with reinforced perimeter flanges designed to distribute wheel loads evenly without cracking sub-bases.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_4.jpg`,
+    badge: 'Combo 4'
+  },
+  {
+    id: 'two-grate-combo-5',
+    title: 'Multi-Grate Catch Basin Elevation Ring',
+    spec: 'Custom Elevation Matching',
+    description: 'Provides exact vertical rise matching for asphalt overlays while maintaining watertight and rattle-free grate seating.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_5.jpg`,
+    badge: 'Combo 5'
+  },
+  {
+    id: 'two-grate-combo-6',
+    title: 'Reinforced Twin Grate Paving Extension',
+    spec: 'Corrosion Shielded Steel',
+    description: 'Bituminous / anti-corrosion coated dual riser engineered to resist deicing salts, road debris, and stormwater hydraulic backpressure.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_6.jpg`,
+    badge: 'Combo 6'
+  },
+  {
+    id: 'two-grate-combo-7',
+    title: 'High-Capacity Gutter Inlet Combo Unit',
+    spec: 'Dual Intake Hydraulic Flow',
+    description: 'Pre-fabricated structural combo assembly engineered for maximum hydraulic inflow capacity during intense storm runoff events.',
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_7.jpg`,
+    badge: 'Combo 7'
+  }
+];
+
+function TwoGrateComboSlider() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const current = TWO_GRATE_COMBO_VARIANTS[activeIdx];
+
+  // Auto-sliding loop (pauses on hover)
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % TWO_GRATE_COMBO_VARIANTS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const handlePrev = () => {
+    setActiveIdx((prev) => (prev - 1 + TWO_GRATE_COMBO_VARIANTS.length) % TWO_GRATE_COMBO_VARIANTS.length);
+  };
+
+  const handleNext = () => {
+    setActiveIdx((prev) => (prev + 1) % TWO_GRATE_COMBO_VARIANTS.length);
+  };
+
+  return (
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Top Header Bar */}
+      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+            {current.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {/* Active indicator bars */}
+          <div className="flex items-center gap-1">
+            {TWO_GRATE_COMBO_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2 py-0.5 rounded border border-gray-300">
+            {activeIdx + 1} / {TWO_GRATE_COMBO_VARIANTS.length}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Visual Display Stage */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+        <Image
+          key={current.id}
+          src={current.image}
+          alt={current.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain p-6 sm:p-8 transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {/* Floating Spec Badge */}
+        <div className="absolute top-4 left-4 z-20">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+            {current.badge}
+          </span>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Previous combo riser"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Next combo riser"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Bottom Industrial Thumbnail Selector */}
+      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+            Two Grate Combo Risers Gallery
+          </span>
+          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+            {current.spec}
+          </span>
+        </div>
+
+        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        <div className="grid grid-cols-4 sm:grid-cols-7 gap-2">
+          {TWO_GRATE_COMBO_VARIANTS.map((variant, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={variant.id}
+                onClick={() => setActiveIdx(idx)}
                 className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
                   isActive
                     ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
@@ -379,13 +573,15 @@ function TrashRacksSlider() {
                     src={variant.image}
                     alt={variant.title}
                     fill
-                    sizes="120px"
+                    sizes="80px"
                     className="object-contain p-0.5"
                   />
                 </div>
-                <span className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
-                  isActive ? 'text-[#CC0000]' : 'text-slate-600'
-                }`}>
+                <span
+                  className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
+                    isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  }`}
+                >
                   {variant.badge}
                 </span>
                 {isActive && (
@@ -488,44 +684,45 @@ const RISER_SECTIONS = [
     buttonText: "Explore Drainage Risers",
     buttonLink: "#drainage"
   },
-  // {
-  //   id: "two-grate-combo",
-  //   theme: "dark",
-  //   overline: "Storm Drainage Solutions",
-  //   title: "Two Grate",
-  //   highlightText: "Combo Risers",
-  //   description: "Engineered for dual-grate catch basins and high-volume stormwater intake structures. Pre-fabricated to elevate multi-grate assemblies seamlessly while matching exact finished pavement elevations.",
-  //   image: `/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
-  //   features: [
-  //     { icon: "Grid", title: "Dual Grate Integration", desc: "Houses two side-by-side grates in a unified rigid frame." },
-  //     { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered to withstand direct vehicle traffic without deflection." }
-  //   ],
-  //   meta: [
-  //     { label: "Configurations", value: "Standard & Custom Dual Openings" },
-  //     { label: "Material", value: "Fabricated Structural Steel / Cast Iron" }
-  //   ],
-  //   buttonText: "View Combo Risers",
-  //   buttonLink: "/products"
-  // },
-  // {
-  //   id: "fabricated-steel",
-  //   theme: "light",
-  //   overline: "Heavy Infrastructure",
-  //   title: "Fabricated",
-  //   highlightText: "Steel Risers",
-  //   description: "Heavy-duty welded structural steel risers custom fabricated to fit non-standard municipal frames, extra deep overlays, and specialized roadway geometry.",
-  //   image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
-  //   features: [
-  //     { icon: "Layers", title: "Custom Dimensions", desc: "Manufactured to exact blueprints and field specifications." },
-  //     { icon: "ShieldCheck", title: "High-Strength Welds", desc: "Precision welded for extreme durability and heavy load absorption." }
-  //   ],
-  //   meta: [
-  //     { label: "Steel Grade", value: "Structural A36 / Galvanized Options" },
-  //     { label: "Lead Time", value: "Rapid custom fabrication available" }
-  //   ],
-  //   buttonText: "Request Custom Steel",
-  //   buttonLink: "/contact/specifications"
-  // },
+  {
+    id: "two-grate-combo",
+    theme: "dark",
+    overline: "Storm Drainage Solutions",
+    title: "Two Grate",
+    highlightText: "Combo Risers",
+    description: "Engineered for dual-grate catch basins and high-volume stormwater intake structures. Pre-fabricated to elevate multi-grate assemblies seamlessly while matching exact finished pavement elevations.",
+    image: `/images/two_grate_combo_riser/two_grate_combo_riser_1.jpg`,
+    isCustomSlider: true,
+    features: [
+      { icon: "Grid", title: "Dual Grate Integration", desc: "Houses two side-by-side grates in a unified rigid frame." },
+      { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered to withstand direct vehicle traffic without deflection." }
+    ],
+    meta: [
+      { label: "Configurations", value: "Standard & Custom Dual Openings" },
+      { label: "Material", value: "Fabricated Structural Steel / Cast Iron" }
+    ],
+    buttonText: "View Combo Risers",
+    buttonLink: "/products"
+  },
+  {
+    id: "fabricated-steel",
+    theme: "light",
+    overline: "Heavy Infrastructure",
+    title: "Fabricated",
+    highlightText: "Steel Risers",
+    description: "Heavy-duty welded structural steel risers custom fabricated to fit non-standard municipal frames, extra deep overlays, and specialized roadway geometry.",
+    image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
+    features: [
+      { icon: "Layers", title: "Custom Dimensions", desc: "Manufactured to exact blueprints and field specifications." },
+      { icon: "ShieldCheck", title: "High-Strength Welds", desc: "Precision welded for extreme durability and heavy load absorption." }
+    ],
+    meta: [
+      { label: "Steel Grade", value: "Structural A36 / Galvanized Options" },
+      { label: "Lead Time", value: "Rapid custom fabrication available" }
+    ],
+    buttonText: "Request Custom Steel",
+    buttonLink: "/contact/specifications"
+  },
   {
     id: "sloped-tapered",
     theme: "dark",
@@ -599,25 +796,25 @@ const RISER_SECTIONS = [
     buttonText: "View Trash Racks",
     buttonLink: "/products"
   },
-  // {
-  //   id: "tools-accessories",
-  //   theme: "dark",
-  //   overline: "Field Installation Equipment",
-  //   title: "Lid Lifters &",
-  //   highlightText: "Paving Tools",
-  //   description: "Industrial-grade field tools engineered for safety and efficiency. Includes heavy-duty valve box lifters, manhole cover hooks, and specialized installation equipment.",
-  //   image: `/images/tools/valve_box_lifter.png`,
-  //   features: [
-  //     { icon: "Wrench", title: "Jobsite Ergonomics", desc: "Reduces back strain and accelerates daily paving production." },
-  //     { icon: "HardHat", title: "Safety Engineered", desc: "Drop-forged steel tools rated for heavy municipal castings." }
-  //   ],
-  //   meta: [
-  //     { label: "Tool Types", value: "Valve Keys, Lid Lifters, Hooks, Plug Pullers" },
-  //     { label: "Durability", value: "Drop-forged alloy steel" }
-  //   ],
-  //   buttonText: "View Tool Catalog",
-  //   buttonLink: "/products"
-  // }
+  {
+    id: "tools-accessories",
+    theme: "dark",
+    overline: "Field Installation Equipment",
+    title: "Lid Lifters &",
+    highlightText: "Paving Tools",
+    description: "Industrial-grade field tools engineered for safety and efficiency. Includes heavy-duty valve box lifters, manhole cover hooks, and specialized installation equipment.",
+    image: `/images/tools/valve_box_lifter.png`,
+    features: [
+      { icon: "Wrench", title: "Jobsite Ergonomics", desc: "Reduces back strain and accelerates daily paving production." },
+      { icon: "HardHat", title: "Safety Engineered", desc: "Drop-forged steel tools rated for heavy municipal castings." }
+    ],
+    meta: [
+      { label: "Tool Types", value: "Valve Keys, Lid Lifters, Hooks, Plug Pullers" },
+      { label: "Durability", value: "Drop-forged alloy steel" }
+    ],
+    buttonText: "View Tool Catalog",
+    buttonLink: "/products"
+  }
 ];
 
 
@@ -659,7 +856,7 @@ export default function ComprehensivePavingRisersMapped() {
           >
             {/* Premium Grid Pattern Background */}
             <div className={`absolute inset-0 z-0 opacity-[0.15] pointer-events-none`} style={{ backgroundImage: `radial-gradient(${isDark ? '#ffffff' : '#000000'} 1px, transparent 1px)`, backgroundSize: '40px 40px' }}></div>
-            
+
             {/* Dynamic Red Glow */}
             <div className={`absolute top-[10%] ${isImageLeft ? 'left-[-10%]' : 'right-[-10%]'} w-[600px] h-[600px] bg-[#CC0000]/${isDark ? '20' : '10'} rounded-full blur-[120px] pointer-events-none z-0`}></div>
 
@@ -671,6 +868,8 @@ export default function ComprehensivePavingRisersMapped() {
                   {section.isCustomSlider ? (
                     section.id === 'trash-racks' ? (
                       <TrashRacksSlider />
+                    ) : section.id === 'two-grate-combo' ? (
+                      <TwoGrateComboSlider />
                     ) : (
                       <DetectablePlatesSlider />
                     )
