@@ -596,6 +596,176 @@ function TwoGrateComboSlider() {
   );
 }
 
+const GAS_VALVE_VARIANTS = [
+  {
+    id: 'gas-valve-1',
+    title: 'Precision Gas Valve Box Riser (Type 1)',
+    spec: 'Municipal Natural Gas Spec',
+    description: 'Heavy-duty cast iron gas valve box extension engineered to provide safe, direct vertical access to underground utility lines during roadway resurfacing.',
+    image: `/images/gas/gas_valve_box_riser_1.png`,
+    badge: 'Gas Riser 1'
+  },
+  {
+    id: 'gas-valve-2',
+    title: 'Machined Gas Valve Box Extension (Type 2)',
+    spec: 'Heavy Traffic Commercial Fit',
+    description: 'Precision machined seating lip designed to lock firmly into existing gas valve boxes, preventing displacement under heavy vehicular traffic.',
+    image: `/images/gas/gas_valve_box_riser_2.png`,
+    badge: 'Gas Riser 2'
+  },
+  {
+    id: 'gas-valve-3',
+    title: 'Cast Iron Gas Utility Box Assembly',
+    spec: 'Direct Drop-In Utility Access',
+    description: 'High-strength self-passivating gray iron gas valve casting featuring anti-skid surface profile and secure lid retention.',
+    image: `/images/gas/gas.jpeg`,
+    badge: 'Gas Box Unit'
+  }
+];
+
+function GasValveBoxSlider() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const current = GAS_VALVE_VARIANTS[activeIdx];
+
+  // Auto-sliding loop (pauses on hover)
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % GAS_VALVE_VARIANTS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const handlePrev = () => {
+    setActiveIdx((prev) => (prev - 1 + GAS_VALVE_VARIANTS.length) % GAS_VALVE_VARIANTS.length);
+  };
+
+  const handleNext = () => {
+    setActiveIdx((prev) => (prev + 1) % GAS_VALVE_VARIANTS.length);
+  };
+
+  return (
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Top Header Bar */}
+      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+            {current.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {/* Active indicator bars */}
+          <div className="flex items-center gap-1">
+            {GAS_VALVE_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-5 bg-[#CC0000]' : 'w-1.5 bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2.5 py-0.5 rounded border border-gray-300">
+            {activeIdx + 1} / {GAS_VALVE_VARIANTS.length}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Visual Display Stage */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+        <Image
+          key={current.id}
+          src={current.image}
+          alt={current.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain p-6 sm:p-8 transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {/* Floating Spec Badge */}
+        <div className="absolute top-4 left-4 z-20">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+            {current.badge}
+          </span>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Previous gas riser"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Next gas riser"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Bottom Industrial Thumbnail Selector */}
+      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+            Gas Valve Risers & Box Gallery
+          </span>
+          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+            {current.spec}
+          </span>
+        </div>
+
+        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        <div className="grid grid-cols-3 gap-2">
+          {GAS_VALVE_VARIANTS.map((variant, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={variant.id}
+                onClick={() => setActiveIdx(idx)}
+                className={`relative p-1.5 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
+                  isActive
+                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
+                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                }`}
+              >
+                <div className="relative w-full aspect-video rounded overflow-hidden mb-1 bg-zinc-100 border border-gray-100">
+                  <Image
+                    src={variant.image}
+                    alt={variant.title}
+                    fill
+                    sizes="120px"
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <span
+                  className={`text-[9px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
+                    isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  }`}
+                >
+                  {variant.badge}
+                </span>
+                {isActive && (
+                  <div className="w-full h-[2px] bg-[#CC0000] mt-1 rounded-full" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 const RISER_SECTIONS = [
   {
@@ -766,16 +936,18 @@ const RISER_SECTIONS = [
     title: "Gas Valve",
     highlightText: "Risers",
     description: "Provide safe, reliable access to critical gas utility lines. Our gas valve box risers are built to exact specifications to withstand heavy traffic and protect essential municipal infrastructure.",
-    image: `/images/valve_box_riser/gas_valve_box_riser_2.png`,
+    image: `/images/gas/gas_valve_box_riser_1.png`,
+    isCustomSlider: true,
     features: [
       { icon: "Wrench", title: "Secure Access", desc: "Maintains rapid valve access while keeping out debris." },
       { icon: "ShieldCheck", title: "Heavy Duty", desc: "Engineered to withstand direct load impacts from heavy vehicles." }
     ],
     meta: [
-      { label: "Material", value: "High-Tensile Cast Iron" }
+      { label: "Material", value: "High-Tensile Cast Iron" },
+      { label: "Application", value: "Natural Gas Mains & Utility Access" }
     ],
     buttonText: "View Gas Risers",
-    buttonLink: "#gas-risers"
+    buttonLink: "/products/valve-box-risers"
   },
   {
     id: "trash-racks",
@@ -870,6 +1042,8 @@ export default function ComprehensivePavingRisersMapped() {
                       <TrashRacksSlider />
                     ) : section.id === 'two-grate-combo' ? (
                       <TwoGrateComboSlider />
+                    ) : section.id === 'gas-utility' ? (
+                      <GasValveBoxSlider />
                     ) : (
                       <DetectablePlatesSlider />
                     )

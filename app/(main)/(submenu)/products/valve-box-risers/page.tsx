@@ -18,6 +18,9 @@ const FINISHES = [
   { name: 'Coated Finish', image: `/images/valve_box_riser/valve_box_riser_1_5in.jpeg` },
   { name: 'Fabricated Steel', image: `/images/valve_box_riser/valve_box_riser_3in.jpeg` },
   { name: 'Cast Iron', image: `/images/valve_box_riser/valve_box_riser_5in.jpeg` },
+  { name: 'Gas Riser Type 1', image: `/images/gas/gas_valve_box_riser_1.png` },
+  { name: 'Gas Riser Type 2', image: `/images/gas/gas_valve_box_riser_2.png` },
+  { name: 'Gas Box Assembly', image: `/images/gas/gas.jpeg` },
 ];
 
 export default function ValveBoxRisersPage() {
