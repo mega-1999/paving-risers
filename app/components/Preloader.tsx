@@ -128,6 +128,14 @@ export default function Preloader() {
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white border-2 border-[#CC0000] rounded-full shadow-[0_0_8px_#CC0000]" />
               </div>
             </div>
+
+            {/* One-time Status Notice (Protected with data-nosnippet so Google SEO is not affected) */}
+            <div data-nosnippet className="flex items-center justify-center gap-2 pt-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-50 border border-slate-200 rounded-full text-[10px] font-mono uppercase tracking-wider text-slate-600">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#CC0000] animate-pulse" />
+                <span>🚧 Website System Updates In Progress • Live Catalog Online</span>
+              </div>
+            </div>
  
           </div>
 
