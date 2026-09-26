@@ -53,15 +53,15 @@ const TopNavbar = () => {
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              ⚡ RAPID FACTORY ESTIMATES & CUSTOM BLUEPRINT FABRICATION
+            RAPID FACTORY ESTIMATES & CUSTOM BLUEPRINT FABRICATION
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              ✓ HEAVY-DUTY MUNICIPAL & STATE SPECIFICATION APPROVED
+            HEAVY-DUTY MUNICIPAL & STATE SPECIFICATION APPROVED
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              🚚 FAST DISPATCH & COMPLETE TRANSIT COVERAGE
+            FAST DISPATCH & COMPLETE TRANSIT COVERAGE
             </span>
             <span className="text-white/40">•</span>
           </div>
@@ -71,15 +71,15 @@ const TopNavbar = () => {
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              ⚡ RAPID FACTORY ESTIMATES & CUSTOM BLUEPRINT FABRICATION
+            RAPID FACTORY ESTIMATES & CUSTOM BLUEPRINT FABRICATION
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              ✓ HEAVY-DUTY MUNICIPAL & STATE SPECIFICATION APPROVED
+            HEAVY-DUTY MUNICIPAL & STATE SPECIFICATION APPROVED
             </span>
             <span className="text-white/40">•</span>
             <span className="mx-6 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-              🚚 FAST DISPATCH & COMPLETE TRANSIT COVERAGE
+              FAST DISPATCH & COMPLETE TRANSIT COVERAGE
             </span>
             <span className="text-white/40">•</span>
           </div>
