@@ -863,14 +863,6 @@ const CATCH_BASIN_GRATE_VARIANTS = [
     image: `/images/catch_basin_riser/sp_catch_basin_plate_1.png`,
     badge: 'SP Plate'
   },
-  {
-    id: 'cb-grate-11',
-    title: 'Fabricated Steel Drainage Grate Assembly',
-    spec: 'Custom Fabricated Steel Matrix',
-    description: 'Fully welded high-tensile carbon steel drainage grate assembly custom fabricated to fit non-standard municipal catch basins.',
-    image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
-    badge: 'Fab Steel Grate'
-  }, 
 ];
 
 function CatchBasinGratesSlider() {

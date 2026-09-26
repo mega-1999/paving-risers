@@ -2,12 +2,12 @@
 
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
-import { 
-  ShieldCheck, 
-  Settings, 
-  Truck, 
-  Construction, 
-  ChevronLeft, 
+import {
+  ShieldCheck,
+  Settings,
+  Truck,
+  Construction,
+  ChevronLeft,
   ChevronRight,
   Target,
   Ruler,
@@ -25,8 +25,6 @@ const FINISHES = [
   { name: 'Steel Fabricated', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` },
   { name: '14"x24" Steel Grate & Riser', image: `/images/catch_basin_riser/14x24x2_grate_with_riser.png` },
   { name: '10"x36" Linear Grate & Riser', image: `/images/catch_basin_riser/10x36x2_grate_with_riser.png` },
-  { name: '10022 Series Basin Assembly', image: `/images/catch_basin_riser/10022_catch_basin_with_riser.png` },
-  { name: '12047 Bell Basin Riser', image: `/images/catch_basin_riser/12047_bell_riser_assembly.png` },
   { name: '36"x19.8" Commercial Riser', image: `/images/catch_basin_riser/36x19_8_catch_basin_riser.png` },
 ];
 
@@ -48,7 +46,7 @@ export default function CatchBasinRisersPage() {
 
   return (
     <div className="min-h-screen bg-[#050505] font-sans text-white overflow-hidden selection:bg-[#CC0000] selection:text-white pb-24">
-      
+
       {/* BACKGROUND EFFECTS */}
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
@@ -56,10 +54,10 @@ export default function CatchBasinRisersPage() {
       </div>
 
       <div className="relative z-10 w-full px-10 md:px-20 pt-24">
-        
+
         {/* --- HERO SECTION --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh]">
-          
+
           {/* TEXT CONTENT (Left) */}
           <div className="lg:col-span-5 space-y-8 relative z-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
@@ -82,9 +80,9 @@ export default function CatchBasinRisersPage() {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href={'/contact/quote'}>
-              <Button size="lg" className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase tracking-widest px-8 h-14 rounded-sm transition-all duration-300 shadow-[0_0_40px_rgba(204,0,0,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
-                Request a Quote
-              </Button>
+                <Button size="lg" className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase tracking-widest px-8 h-14 rounded-sm transition-all duration-300 shadow-[0_0_40px_rgba(204,0,0,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
+                  Request a Quote
+                </Button>
               </Link>
               <Button size="lg" variant="outline" className="border-white/20 text-black hover:bg-white hover:text-black font-black uppercase tracking-widest px-8 h-14 rounded-sm transition-all duration-300 bg-white">
                 View Load Tests
@@ -94,11 +92,11 @@ export default function CatchBasinRisersPage() {
 
           {/* FLOATING IMAGE & DOCK (Right) */}
           <div className="lg:col-span-7 relative h-full flex flex-col items-center justify-center pt-12 lg:pt-0">
-            
+
             <div className="relative w-full aspect-[4/3] max-w-4xl mx-auto flex items-center justify-center animate-in fade-in zoom-in duration-1000">
               {/* Image Glow */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 pointer-events-none" />
-              
+
               <Image
                 key={activeFinish.name}
                 src={activeFinish.image}
@@ -124,7 +122,8 @@ export default function CatchBasinRisersPage() {
                 <ChevronRight className="w-5 h-5" />
               </button>
 
-              <style dangerouslySetInnerHTML={{__html: `
+              <style dangerouslySetInnerHTML={{
+                __html: `
                 .hide-scrollbar::-webkit-scrollbar { display: none; }
                 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
               `}} />
@@ -134,15 +133,13 @@ export default function CatchBasinRisersPage() {
                   <button
                     key={i}
                     onClick={() => setActiveFinish(finish)}
-                    className={`flex-shrink-0 relative h-16 w-32 snap-center rounded-sm overflow-hidden border-2 transition-all duration-300 ${
-                      activeFinish.name === finish.name ? 'border-[#CC0000]' : 'border-transparent hover:border-white/30'
-                    }`}
+                    className={`flex-shrink-0 relative h-16 w-32 snap-center rounded-sm overflow-hidden border-2 transition-all duration-300 ${activeFinish.name === finish.name ? 'border-[#CC0000]' : 'border-transparent hover:border-white/30'
+                      }`}
                   >
                     <Image src={finish.image} alt={finish.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-50 hover:opacity-100 transition-opacity" />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/60">
-                      <span className={`text-[9px] font-black uppercase tracking-widest z-10 transition-colors ${
-                        activeFinish.name === finish.name ? 'text-[#CC0000]' : 'text-white'
-                      }`}>
+                      <span className={`text-[9px] font-black uppercase tracking-widest z-10 transition-colors ${activeFinish.name === finish.name ? 'text-[#CC0000]' : 'text-white'
+                        }`}>
                         {finish.name}
                       </span>
                     </div>
@@ -163,7 +160,7 @@ export default function CatchBasinRisersPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
+
             {/* Box 1 */}
             <div className="bg-gradient-to-br from-[#111] to-black border border-white/5 p-8 rounded-sm hover:border-[#CC0000] transition-colors group">
               <Layers className="w-10 h-10 text-[#CC0000] mb-6 group-hover:scale-110 transition-transform" />
