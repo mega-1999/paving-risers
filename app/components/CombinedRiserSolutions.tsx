@@ -766,6 +766,256 @@ function GasValveBoxSlider() {
   );
 }
 
+const CATCH_BASIN_GRATE_VARIANTS = [
+  {
+    id: 'cb-grate-1',
+    title: '14" x 24" Fabricated Steel Grate with Riser',
+    spec: 'High-Tensile Heavy-Duty Welded Steel',
+    description: 'Precision welded structural steel catch basin grate and riser frame assembly engineered for highway shoulders and municipal curb gutters.',
+    image: `/images/catch_basin_riser/14x24x2_grate_with_riser.png`,
+    badge: 'Steel 14x24'
+  },
+  {
+    id: 'cb-grate-1-detail',
+    title: '14" x 24" Steel Grate & Riser Fitment',
+    spec: 'Structural Steel Lock Seat',
+    description: 'Close-tolerance fabricated steel extension frame engineered for drop-in installation over existing catch basins with zero excavation.',
+    image: `/images/catch_basin_riser/14x24x2_grate_with_riser_detail.png`,
+    badge: 'Steel Seat'
+  },
+  {
+    id: 'cb-grate-2',
+    title: '10" x 36" Heavy Steel Grate & Paving Riser',
+    spec: 'Continuous Curb-Gutter Linear Fit',
+    description: 'Long-format fabricated steel drainage grate and extension frame designed for high-capacity arterial runoff channels and storm inlets.',
+    image: `/images/catch_basin_riser/10x36x2_grate_with_riser.png`,
+    badge: 'Steel 10x36'
+  }, 
+  {
+    id: 'cb-grate-4',
+    title: 'Galvanized Reticuline Grate with Mechanical Lock',
+    spec: 'Anti-Theft Locking Matrix',
+    description: 'Hot-dip galvanized reticuline bar grate featuring tamper-resistant mechanical locking bolts and high-intake hydraulic open matrix.',
+    image: `/images/catch_basin_riser/galvanized_reticuline_grate_with_lock.png`,
+    badge: 'Galvanized Lock'
+  },
+  {
+    id: 'cb-grate-5',
+    title: 'State of NY DOT G2 Catch Basin Grate',
+    spec: 'NY State DOT Approved Spec',
+    description: 'Pre-certified NY State Department of Transportation municipal catch basin grate casting built for heavy urban and highway drainage.',
+    image: `/images/catch_basin_riser/sny_g2_state_ny_grate_1.png`,
+    badge: 'NY DOT G2'
+  },
+  {
+    id: 'cb-grate-5-detail',
+    title: 'State of NY DOT G2 Grate Inflow Matrix',
+    spec: 'Highway Stormwater Capture',
+    description: 'DOT-compliant bar layout engineered to channel torrential water volume directly into storm lines while maintaining structural rigidity.',
+    image: `/images/catch_basin_riser/sny_g2_state_ny_grate_2.png`,
+    badge: 'G2 Matrix'
+  },
+  {
+    id: 'cb-grate-6',
+    title: 'State of NY DOT G3 High-Inflow Grate',
+    spec: 'Vane-Grate Hydraulic Profile',
+    description: 'Engineered curved vane pattern delivering maximum stormwater capture velocity along high-speed highway gutter lanes.',
+    image: `/images/catch_basin_riser/sny_g3_state_ny_grate_1.png`,
+    badge: 'NY DOT G3'
+  },
+  {
+    id: 'cb-grate-6-detail',
+    title: 'NY DOT G3 Diagonal Vane Grate',
+    spec: 'Multi-Directional Hydraulic Vanes',
+    description: 'Directional inflow vane bars accelerate gutter water capture during flash precipitation events.',
+    image: `/images/catch_basin_riser/sny_g3_state_ny_grate_2.png`,
+    badge: 'G3 Vane'
+  },
+  {
+    id: 'cb-grate-7',
+    title: '36" x 19.8" Heavy Commercial Catch Basin Grate',
+    spec: 'Heavy Commercial Load Rating',
+    description: 'Large format industrial cast iron and structural steel storm grate engineered for logistics hubs, bus lanes, and commercial parking basins.',
+    image: `/images/catch_basin_riser/36x19_8_catch_basin_grate.png`,
+    badge: '36x19.8 Grate'
+  },
+  {
+    id: 'cb-grate-8',
+    title: 'D1 Heavy Flow Storm Drainage Grate',
+    spec: 'High Intake Hydraulic Capacity',
+    description: 'Bar grate configuration optimized to prevent pedestrian heel entrapment while allowing massive stormwater inflow volumes.',
+    image: `/images/catch_basin_riser/d1_drainage_grate.png`,
+    badge: 'D1 Grate'
+  },
+  {
+    id: 'cb-grate-9',
+    title: 'G1 Series Catch Basin Grate',
+    spec: 'Heavy Gutter Inflow Matrix',
+    description: 'Municipal grade heavy roadway catch basin grate engineered for severe duty urban drainage zones and heavy axle loads.',
+    image: `/images/catch_basin_riser/g1_catch_basin_grate_1.png`,
+    badge: 'G1 Grate'
+  },
+  {
+    id: 'cb-grate-10',
+    title: 'SP Catch Basin Cover Plate',
+    spec: 'Solid & Slotted Utility Plate',
+    description: 'Heavy ductile iron / steel catch basin replacement plate designed for controlled intake and temporary paving transitions.',
+    image: `/images/catch_basin_riser/sp_catch_basin_plate_1.png`,
+    badge: 'SP Plate'
+  },
+  {
+    id: 'cb-grate-11',
+    title: 'Fabricated Steel Drainage Grate Assembly',
+    spec: 'Custom Fabricated Steel Matrix',
+    description: 'Fully welded high-tensile carbon steel drainage grate assembly custom fabricated to fit non-standard municipal catch basins.',
+    image: `/images/fabricated_steel/fabricated_steel_drainage_grate_assembly_2.png`,
+    badge: 'Fab Steel Grate'
+  }, 
+];
+
+function CatchBasinGratesSlider() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const current = CATCH_BASIN_GRATE_VARIANTS[activeIdx];
+
+  // Auto-sliding loop (pauses on hover)
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % CATCH_BASIN_GRATE_VARIANTS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const handlePrev = () => {
+    setActiveIdx((prev) => (prev - 1 + CATCH_BASIN_GRATE_VARIANTS.length) % CATCH_BASIN_GRATE_VARIANTS.length);
+  };
+
+  const handleNext = () => {
+    setActiveIdx((prev) => (prev + 1) % CATCH_BASIN_GRATE_VARIANTS.length);
+  };
+
+  return (
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-xl bg-white flex flex-col justify-between"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Top Header Bar */}
+      <div className="bg-zinc-50 px-5 py-3.5 border-b border-gray-200 flex items-center justify-between z-20">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#CC0000] animate-pulse shadow-[0_0_8px_rgba(204,0,0,0.6)]" />
+          <span className="text-xs font-mono font-black uppercase tracking-wider text-slate-900">
+            {current.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {/* Active indicator bars */}
+          <div className="flex items-center gap-1">
+            {CATCH_BASIN_GRATE_VARIANTS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === activeIdx ? 'w-4 bg-[#CC0000]' : 'w-1 bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-[10px] font-mono bg-zinc-200/80 text-zinc-700 font-bold px-2.5 py-0.5 rounded border border-gray-300">
+            {activeIdx + 1} / {CATCH_BASIN_GRATE_VARIANTS.length}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Visual Display Stage */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-square bg-gradient-to-b from-white via-zinc-50 to-zinc-100/80 flex items-center justify-center overflow-hidden group">
+        <Image
+          key={current.id}
+          src={current.image}
+          alt={current.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain p-6 sm:p-8 transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {/* Floating Spec Badge */}
+        <div className="absolute top-4 left-4 z-20">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-white/95 text-slate-900 px-3 py-1 rounded border border-gray-200 shadow-md">
+            {current.badge}
+          </span>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Previous catch basin grate"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-[#CC0000] text-slate-800 hover:text-white p-2.5 rounded-full backdrop-blur-md transition-all z-20 shadow-lg cursor-pointer border border-gray-200"
+          aria-label="Next catch basin grate"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Bottom Industrial Thumbnail Selector */}
+      <div className="bg-zinc-50 p-4 border-t border-gray-200 space-y-2.5 z-20">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-slate-600 font-bold flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-sm bg-[#CC0000]" />
+            Catch Basin Steel Grates & Risers Gallery
+          </span>
+          <span className="text-[10px] font-mono text-[#CC0000] font-bold">
+            {current.spec}
+          </span>
+        </div>
+
+        {/* Unified Light Thumbnail Cards with Logo Red accents */}
+        <div className="grid grid-cols-5 sm:grid-cols-9 gap-1.5">
+          {CATCH_BASIN_GRATE_VARIANTS.map((variant, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={variant.id}
+                onClick={() => setActiveIdx(idx)}
+                className={`relative p-1 rounded-lg border transition-all duration-200 cursor-pointer text-left flex flex-col justify-between ${
+                  isActive
+                    ? 'bg-red-50/80 border-[#CC0000] shadow-[0_0_10px_rgba(204,0,0,0.2)]'
+                    : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-zinc-100/60'
+                }`}
+              >
+                <div className="relative w-full aspect-square rounded overflow-hidden mb-0.5 bg-zinc-100 border border-gray-100">
+                  <Image
+                    src={variant.image}
+                    alt={variant.title}
+                    fill
+                    sizes="80px"
+                    className="object-contain p-0.5"
+                  />
+                </div>
+                <span
+                  className={`text-[8px] font-mono line-clamp-1 block text-center font-bold uppercase tracking-tight ${
+                    isActive ? 'text-[#CC0000]' : 'text-slate-600'
+                  }`}
+                >
+                  {variant.badge}
+                </span>
+                {isActive && (
+                  <div className="w-full h-[2px] bg-[#CC0000] mt-0.5 rounded-full" />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 const RISER_SECTIONS = [
   {
@@ -839,20 +1089,21 @@ const RISER_SECTIONS = [
     id: "drainage-catch-basins",
     theme: "light",
     overline: "Drainage Infrastructure",
-    title: "Catch Basin &",
-    highlightText: "Curb Inlets",
-    description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers designed specifically to raise storm grates and curb inlets to final grade.",
-    image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png`,
+    title: "Catch Basin Steel Grates &",
+    highlightText: "Risers",
+    description: "Roadwork requires more than just round manhole adjustments. We fabricate heavy-duty steel and cast iron rectangular risers, reticuline locked grates, and vane profiles designed specifically to raise storm grates and curb inlets to final grade.",
+    image: `/images/catch_basin_riser/14x24x2_grate_with_riser.png`,
+    isCustomSlider: true,
     features: [
-      { icon: "Grid", title: "4-Sided & 3-Sided", desc: "Fully enclosed or D-shape profiles for curb abutments." },
-      { icon: "ShieldCheck", title: "Welded Steel", desc: "Engineered for flat grate elevation in highway shoulders." }
+      { icon: "Grid", title: "Fabricated Steel & Cast Iron", desc: "Available in standard, reticuline locked, and custom linear geometries." },
+      { icon: "ShieldCheck", title: "Heavy Commercial Rated", desc: "Engineered for flat grate elevation in highway shoulders and arterial lanes." }
     ],
     meta: [
-      { label: "Configurations", value: "Square, Rectangular, U-Shape" },
-      { label: "Compatibility", value: "Matches DOT curb profiles" }
+      { label: "Configurations", value: "Square, Rectangular, Linear, U-Shape" },
+      { label: "Compatibility", value: "Matches DOT curb profiles & municipal catch basins" }
     ],
-    buttonText: "Explore Drainage Risers",
-    buttonLink: "#drainage"
+    buttonText: "Explore Catch Basin Grates",
+    buttonLink: "/products/catch-basin-grates"
   },
   {
     id: "two-grate-combo",
@@ -1044,6 +1295,8 @@ export default function ComprehensivePavingRisersMapped() {
                       <TwoGrateComboSlider />
                     ) : section.id === 'gas-utility' ? (
                       <GasValveBoxSlider />
+                    ) : section.id === 'drainage-catch-basins' ? (
+                      <CatchBasinGratesSlider />
                     ) : (
                       <DetectablePlatesSlider />
                     )

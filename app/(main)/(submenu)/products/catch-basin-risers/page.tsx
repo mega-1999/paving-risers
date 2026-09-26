@@ -18,11 +18,16 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const FINISHES = [
-  { name: 'Raw Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
-  { name: 'Coated Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_coated.png` },
-  { name: 'Cast Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png` },
-  { name: 'Ductile Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png` },
+  { name: 'Square Raw Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_iron.png` },
+  { name: 'Square Coated Finish', image: `/images/catch_basin_riser/square_catch_basin_riser_coated.png` },
+  { name: 'Rectangle Cast Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png` },
+  { name: 'Rectangle Ductile Iron', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png` },
   { name: 'Steel Fabricated', image: `/images/catch_basin_riser/rectangle_catch_basin_riser_right.png` },
+  { name: '14"x24" Steel Grate & Riser', image: `/images/catch_basin_riser/14x24x2_grate_with_riser.png` },
+  { name: '10"x36" Linear Grate & Riser', image: `/images/catch_basin_riser/10x36x2_grate_with_riser.png` },
+  { name: '10022 Series Basin Assembly', image: `/images/catch_basin_riser/10022_catch_basin_with_riser.png` },
+  { name: '12047 Bell Basin Riser', image: `/images/catch_basin_riser/12047_bell_riser_assembly.png` },
+  { name: '36"x19.8" Commercial Riser', image: `/images/catch_basin_riser/36x19_8_catch_basin_riser.png` },
 ];
 
 export default function CatchBasinRisersPage() {
