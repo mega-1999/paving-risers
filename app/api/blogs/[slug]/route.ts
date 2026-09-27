@@ -1,0 +1,57 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { supabase } from '@/lib/supabaseClient';
+import { blogs as initialBlogs } from '@/lib/blogData';
+
+export async function GET(
+  req: NextRequest,
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params;
+
+  try {
+    if (supabase) {
+      const { data, error } = await supabase
+        .from('blogs')
+        .select('*')
+        .eq('slug', slug)
+        .single();
+
+      if (!error && data) {
+        return NextResponse.json({ success: true, blog: data });
+      }
+    }
+  } catch (err) {
+    console.warn('Supabase fetch single error:', err);
+  }
+
+  const found = initialBlogs.find(b => b.slug === slug);
+  if (found) {
+    return NextResponse.json({ success: true, blog: found });
+  }
+
+  return NextResponse.json({ success: false, message: 'Blog post not found' }, { status: 404 });
+}
+
+export async function DELETE(
+  req: NextRequest,
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params;
+
+  try {
+    if (supabase) {
+      const { error } = await supabase
+        .from('blogs')
+        .delete()
+        .eq('slug', slug);
+
+      if (error) {
+        return NextResponse.json({ success: false, message: error.message }, { status: 500 });
+      }
+    }
+
+    return NextResponse.json({ success: true, message: 'Blog post deleted' });
+  } catch (err: any) {
+    return NextResponse.json({ success: false, message: err.message }, { status: 500 });
+  }
+}

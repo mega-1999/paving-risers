@@ -1,19 +1,23 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { blogs } from '@/lib/blogData';
+import { blogs as initialBlogs } from '@/lib/blogData';
+import { getAllBlogPosts, getBlogPostBySlug } from '@/lib/blogService';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, User, ChevronRight } from 'lucide-react';
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-  return blogs.map((blog) => ({
+  const allBlogs = await getAllBlogPosts();
+  return allBlogs.map((blog) => ({
     slug: blog.slug,
   }));
 }
 
-export default async function BlogPostPage({ params }: { params: any }) {
-  const resolvedParams = await params;
-  const blog = blogs.find((b) => b.slug === resolvedParams.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const blog = await getBlogPostBySlug(slug);
 
   if (!blog) {
     notFound();
@@ -23,7 +27,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
   const parseContent = (content: string) => {
     return content
       .split('\n')
-      .map((line, i) => {
+      .map((line) => {
         const trimmed = line.trim();
         if (!trimmed) return '<br/>';
         if (trimmed.startsWith('###')) return `<h3 class="text-xl md:text-2xl font-black uppercase tracking-tight text-[#CC0000] mt-8 mb-4">${trimmed.replace('###', '').trim()}</h3>`;
@@ -51,7 +55,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
           backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
           backgroundSize: '40px 40px' 
         }}
-      ></div>
+      />
 
       <div className="relative z-10 w-full px-10 md:px-20">
         
@@ -69,7 +73,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
         {/* ─── HERO HEADER (BLACK CARD) ─── */}
         <article>
           <header className="mb-12 bg-[#0F0F0F] text-white border-2 border-[#0F0F0F] p-8 md:p-12 shadow-xl relative">
-            <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]"></div>
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]" />
             
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-[#CC0000] text-white text-xs font-mono font-bold uppercase tracking-widest">
@@ -93,7 +97,7 @@ export default async function BlogPostPage({ params }: { params: any }) {
             </div>
           </header>
 
-          {/* ─── HERO IMAGE CONTAINER (WHITE BG FOR CLEAR VISIBILITY OF BLACK COATED IMAGES) ─── */}
+          {/* ─── HERO IMAGE CONTAINER ─── */}
           <div className="relative w-full h-[40vh] md:h-[50vh] bg-white border-2 border-slate-200 shadow-xl overflow-hidden mb-12 flex items-center justify-center p-8">
             <Image 
               src={blog.image} 

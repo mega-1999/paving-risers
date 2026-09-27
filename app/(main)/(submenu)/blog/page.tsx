@@ -1,13 +1,33 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Calendar, User, ArrowRight, Rss } from 'lucide-react';
-import { blogs } from '@/lib/blogData';
+import { Calendar, User, ArrowRight, Rss, Layers } from 'lucide-react';
+import { BlogPost, blogs as initialBlogs } from '@/lib/blogData';
+import { getAllBlogPosts } from '@/lib/blogService';
 
 export default function BlogListingPage() {
+  const [blogsList, setBlogsList] = useState<BlogPost[]>(initialBlogs);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const data = await getAllBlogPosts();
+        if (data && data.length > 0) {
+          setBlogsList(data);
+        }
+      } catch (err) {
+        console.warn('Failed to fetch dynamic blogs:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchPosts();
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#CC0000] selection:text-white pb-32">
       
@@ -18,7 +38,7 @@ export default function BlogListingPage() {
           backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', 
           backgroundSize: '40px 40px' 
         }}
-      ></div>
+      />
 
       {/* ─── HERO SECTION ─── */}
       <div className="relative z-10 w-full pt-12 pb-12 px-10 md:px-20 flex flex-col items-center justify-center overflow-hidden border-b border-slate-200">
@@ -30,7 +50,7 @@ export default function BlogListingPage() {
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#0F0F0F] text-white text-[11px] font-mono font-bold uppercase tracking-[0.25em] border-l-4 border-[#CC0000]">
             <Rss className="w-3.5 h-3.5 text-[#CC0000]" />
-            <span>Industry Insights</span>
+            <span>Industry Insights & Tech Notes</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-slate-900 leading-none">
             Paving <span className="text-[#CC0000]">Intelligence</span>
@@ -44,19 +64,19 @@ export default function BlogListingPage() {
       {/* ─── BLOG GRID (BLACK CARDS ON FULL WHITE BG) ─── */}
       <div className="relative z-10 w-full px-10 md:px-20 pt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {blogs.map((blog, index) => (
+          {blogsList.map((blog, index) => (
             <motion.article 
-              key={blog.id}
+              key={blog.id || blog.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group relative flex flex-col bg-[#0F0F0F] text-white border-2 border-[#0F0F0F] shadow-xl hover:border-[#CC0000] transition-all duration-300 overflow-hidden h-full"
             >
               {/* Top Accent Indicator Line */}
-              <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000] z-20"></div>
+              <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000] z-20" />
 
-              {/* Image Container (White background so dark/black coated images stand out) */}
+              {/* Image Container */}
               <Link href={`/blog/${blog.slug}`} className="relative h-72 w-full overflow-hidden bg-white border-b border-slate-200 flex items-center justify-center p-8">
                 <Image 
                   src={blog.image} 
