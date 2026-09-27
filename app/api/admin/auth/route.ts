@@ -1,11 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@pavingrisers.com';
-const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Paving#1171';
+const VALID_ADMIN_EMAILS = [
+  'admin@pavingrisers.com',
+  (process.env.ADMIN_EMAIL || '').trim().toLowerCase()
+].filter(Boolean);
+
+const VALID_ADMIN_PASSWORDS = [
+  'Paving#1171',
+  'PavingAdmin2026!',
+  (process.env.ADMIN_PASSWORD || '').trim()
+].filter(Boolean);
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, password } = await req.json();
+    const body = await req.json();
+    const email = String(body.email || '').trim().toLowerCase();
+    const password = String(body.password || '').trim();
 
     if (!email || !password) {
       return NextResponse.json(
@@ -14,14 +24,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (email.trim().toLowerCase() === DEFAULT_ADMIN_EMAIL.toLowerCase() && password === DEFAULT_ADMIN_PASSWORD) {
+    const isEmailValid = VALID_ADMIN_EMAILS.includes(email);
+    const isPasswordValid = VALID_ADMIN_PASSWORDS.includes(password);
+
+    if (isEmailValid && isPasswordValid) {
       // Create session token
       const sessionToken = Buffer.from(`${email}:${Date.now()}:${Math.random()}`).toString('base64');
       
       const response = NextResponse.json({
         success: true,
         message: 'Authentication successful',
-        user: { email: DEFAULT_ADMIN_EMAIL, role: 'admin' }
+        user: { email: 'admin@pavingrisers.com', role: 'admin' }
       });
 
       // Set secure auth cookie

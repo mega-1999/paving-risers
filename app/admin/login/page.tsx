@@ -23,14 +23,17 @@ export default function AdminLoginPage() {
       const res = await fetch('/api/admin/auth', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ 
+          email: email.trim(), 
+          password: password.trim() 
+        })
       });
 
       const data = await res.json();
 
       if (data.success) {
         localStorage.setItem('paving_admin_authenticated', 'true');
-        localStorage.setItem('paving_admin_email', email);
+        localStorage.setItem('paving_admin_email', email.trim());
         router.push('/admin/dashboard');
       } else {
         setError(data.message || 'Authentication failed. Please check your credentials.');
@@ -48,23 +51,7 @@ export default function AdminLoginPage() {
       {/* Background Aesthetics */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[140px] pointer-events-none" />
-
-      {/* Top Brand Bar */}
-      <header className="w-full px-10 md:px-20 py-6 flex justify-between items-center border-b border-zinc-900 relative z-10">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-sm bg-[#CC0000] flex items-center justify-center font-black text-white text-base shadow-[0_0_15px_rgba(204,0,0,0.5)]">
-            P
-          </div>
-          <span className="font-black tracking-tight text-lg uppercase text-white group-hover:text-[#CC0000] transition-colors">
-            PAVING <span className="text-[#CC0000]">RISERS</span>
-          </span>
-        </Link>
-
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400">
-          <ShieldCheck className="w-3.5 h-3.5 text-[#CC0000]" />
-          <span>Admin Portal</span>
-        </div>
-      </header>
+ 
 
       {/* Main Login Box */}
       <main className="flex-1 flex items-center justify-center p-6 relative z-10 w-full px-10 md:px-20">
@@ -102,7 +89,8 @@ export default function AdminLoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="name@pavingrisers.com"
+                  autoComplete="username"
+                  placeholder="admin@pavingrisers.com"
                   className="w-full bg-[#141414] border border-zinc-800 focus:border-[#CC0000] text-white text-xs pl-10 pr-4 py-3 outline-none font-mono transition-colors"
                 />
               </div>
@@ -121,6 +109,7 @@ export default function AdminLoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  autoComplete="current-password"
                   placeholder="••••••••••••"
                   className="w-full bg-[#141414] border border-zinc-800 focus:border-[#CC0000] text-white text-xs pl-10 pr-4 py-3 outline-none font-mono transition-colors"
                 />
@@ -143,12 +132,7 @@ export default function AdminLoginPage() {
             </Button>
           </form>
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="w-full px-10 md:px-20 py-6 text-center text-[10px] font-mono text-zinc-600 border-t border-zinc-900 relative z-10">
-        Paving Risers USA // Secure Administrative CMS Engine
-      </footer>
+      </main> 
 
     </div>
   );

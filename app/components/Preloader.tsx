@@ -133,7 +133,7 @@ export default function Preloader() {
             <div data-nosnippet className="flex items-center justify-center gap-2 pt-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-50 border border-slate-200 rounded-full text-[10px] font-mono uppercase tracking-wider text-slate-600">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#CC0000] animate-pulse" />
-                <span>🚧 Website System Updates In Progress </span>
+                <span>Website System Updates In Progress </span>
               </div>
             </div>
  
