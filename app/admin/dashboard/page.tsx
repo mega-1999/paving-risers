@@ -206,7 +206,7 @@ export default function AdminDashboardPage() {
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-[#CC0000] selection:text-white">
       
       {/* ─── TOP ADMIN NAVBAR ─── */}
-      <header className="bg-[#0a0a0a] border-b border-zinc-900 sticky top-0 z-40 px-6 md:px-12 py-4 flex justify-between items-center shadow-2xl">
+      <header className="bg-[#0a0a0a] border-b border-zinc-900 sticky top-0 z-40 w-full px-10 md:px-20 py-4 flex justify-between items-center shadow-2xl">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-sm bg-[#CC0000] flex items-center justify-center font-black text-white text-sm shadow-[0_0_15px_rgba(204,0,0,0.4)]">
@@ -244,7 +244,7 @@ export default function AdminDashboardPage() {
       </header>
 
       {/* ─── MAIN CONTENT ─── */}
-      <main className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-8">
+      <main className="w-full px-10 md:px-20 py-10 space-y-8">
         
         {/* Top Header & Stat Cards */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6 border-b border-zinc-900">

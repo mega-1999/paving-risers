@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Lock, Mail, ArrowRight, ShieldCheck, AlertCircle, Sparkles, KeyRound } from 'lucide-react';
+import { Lock, Mail, ArrowRight, ShieldCheck, AlertCircle, KeyRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('admin@pavingrisers.com');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -43,14 +43,14 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white flex flex-col justify-between selection:bg-[#CC0000] selection:text-white relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-[#050505] text-white flex flex-col justify-between selection:bg-[#CC0000] selection:text-white relative overflow-hidden font-sans w-full">
       
       {/* Background Aesthetics */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Top Brand Bar */}
-      <header className="p-6 md:px-12 flex justify-between items-center border-b border-zinc-900 relative z-10">
+      <header className="w-full px-10 md:px-20 py-6 flex justify-between items-center border-b border-zinc-900 relative z-10">
         <Link href="/" className="flex items-center gap-3 group">
           <div className="w-8 h-8 rounded-sm bg-[#CC0000] flex items-center justify-center font-black text-white text-base shadow-[0_0_15px_rgba(204,0,0,0.5)]">
             P
@@ -67,7 +67,7 @@ export default function AdminLoginPage() {
       </header>
 
       {/* Main Login Box */}
-      <main className="flex-1 flex items-center justify-center p-6 relative z-10">
+      <main className="flex-1 flex items-center justify-center p-6 relative z-10 w-full px-10 md:px-20">
         <div className="w-full max-w-md bg-[#0a0a0a] border border-zinc-800 p-8 md:p-10 shadow-2xl relative">
           <div className="absolute top-0 left-0 w-full h-[3px] bg-[#CC0000]" />
 
@@ -102,7 +102,7 @@ export default function AdminLoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="admin@pavingrisers.com"
+                  placeholder="name@pavingrisers.com"
                   className="w-full bg-[#141414] border border-zinc-800 focus:border-[#CC0000] text-white text-xs pl-10 pr-4 py-3 outline-none font-mono transition-colors"
                 />
               </div>
@@ -142,20 +142,11 @@ export default function AdminLoginPage() {
               )}
             </Button>
           </form>
-
-          {/* Quick Default Credential Helper Note */}
-          <div className="mt-8 pt-6 border-t border-zinc-900 text-center">
-            <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-2xs text-[11px] font-mono text-zinc-400 text-left space-y-1">
-              <span className="text-[10px] text-[#CC0000] font-black uppercase tracking-wider block">Admin Credentials</span>
-              <div><strong className="text-zinc-300">Email:</strong> admin@pavingrisers.com</div>
-              <div><strong className="text-zinc-300">Password:</strong> Paving#1171</div>
-            </div>
-          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="p-6 text-center text-[10px] font-mono text-zinc-600 border-t border-zinc-900 relative z-10">
+      <footer className="w-full px-10 md:px-20 py-6 text-center text-[10px] font-mono text-zinc-600 border-t border-zinc-900 relative z-10">
         Paving Risers USA // Secure Administrative CMS Engine
       </footer>
 
