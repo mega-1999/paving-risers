@@ -207,18 +207,9 @@ export default function AdminDashboardPage() {
       
       {/* ─── TOP ADMIN NAVBAR ─── */}
       <header className="bg-[#0a0a0a] border-b border-zinc-900 sticky top-0 z-40 w-full px-10 md:px-20 py-4 flex justify-between items-center shadow-2xl">
-        <div className="flex items-center gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-sm bg-[#CC0000] flex items-center justify-center font-black text-white text-sm shadow-[0_0_15px_rgba(204,0,0,0.4)]">
-              P
-            </div>
-            <span className="font-black text-base uppercase tracking-tight text-white hidden sm:inline">
-              PAVING <span className="text-[#CC0000]">RISERS</span>
-            </span>
-          </Link>
-          <span className="text-zinc-600 hidden sm:inline">|</span>
+        <div className="flex items-center gap-4"> 
           <span className="text-xs font-mono font-bold uppercase tracking-wider text-zinc-400 bg-zinc-900 px-2.5 py-1 border border-zinc-800">
-            Publisher Control Center
+            Publisher Control Center  
           </span>
         </div>
 
