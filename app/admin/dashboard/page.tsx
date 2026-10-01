@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,11 +21,13 @@ import {
   User, 
   Image as ImageIcon,
   ArrowLeft,
-  X
+  UploadCloud,
+  X,
+  Loader2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { BlogPost, blogs as initialBlogs } from '@/lib/blogData';
-import { getAllBlogPosts, createBlogPost, deleteBlogPost } from '@/lib/blogService';
+import { getAllBlogPosts, createBlogPost, updateBlogPost, deleteBlogPost } from '@/lib/blogService';
 
 const PRESET_IMAGES = [
   { name: 'Adjustable Coated Riser', url: '/images/manhole_riser/adjustable_manhole_riser_coated.png' },
@@ -62,6 +64,14 @@ export default function AdminDashboardPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSuccess, setFormSuccess] = useState('');
   const [formError, setFormError] = useState('');
+  
+  // Image Upload State
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState('');
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Track if we are editing an existing article vs creating a new one
+  const [editingPostOriginalSlug, setEditingPostOriginalSlug] = useState<string | null>(null);
 
   // Form Fields
   const [title, setTitle] = useState('');
@@ -106,18 +116,21 @@ export default function AdminDashboardPage() {
     router.replace('/admin/login');
   };
 
-  // Auto-generate slug when typing title
+  // Auto-generate slug when typing title (only in Create mode)
   const handleTitleChange = (val: string) => {
     setTitle(val);
-    const generated = val
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-');
-    setSlug(generated);
+    if (!editingPostOriginalSlug) {
+      const generated = val
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-');
+      setSlug(generated);
+    }
   };
 
   const resetForm = () => {
+    setEditingPostOriginalSlug(null);
     setTitle('');
     setSlug('');
     setCategory('Guides');
@@ -130,10 +143,74 @@ export default function AdminDashboardPage() {
     setContent('');
     setFormError('');
     setFormSuccess('');
+    setUploadError('');
     setIsPreviewMode(false);
   };
 
-  const handlePublishPost = async (e: React.FormEvent) => {
+  // Handle direct file upload from computer
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploading(true);
+    setUploadError('');
+
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await res.json();
+
+      if (data.success && data.url) {
+        setCustomImage(data.url);
+      } else {
+        setUploadError(data.message || 'Image upload failed. Please try again.');
+      }
+    } catch (err: any) {
+      setUploadError(err.message || 'Error uploading image file.');
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
+  // Load existing article into the editor
+  const handleOpenEdit = (post: BlogPost) => {
+    resetForm();
+    setEditingPostOriginalSlug(post.slug);
+    setTitle(post.title);
+    setSlug(post.slug);
+    
+    if (CATEGORIES.includes(post.category)) {
+      setCategory(post.category);
+      setCustomCategory('');
+    } else {
+      setCategory('custom');
+      setCustomCategory(post.category);
+    }
+
+    setAuthor(post.author || 'Paving Risers Engineering Team');
+    setDate(post.date || '');
+    
+    const isPreset = PRESET_IMAGES.some(p => p.url === post.image);
+    if (isPreset) {
+      setImage(post.image);
+      setCustomImage('');
+    } else {
+      setImage(PRESET_IMAGES[0].url);
+      setCustomImage(post.image);
+    }
+
+    setExcerpt(post.excerpt || '');
+    setContent(post.content || '');
+    setIsEditorOpen(true);
+  };
+
+  const handleSavePost = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError('');
     setFormSuccess('');
@@ -155,26 +232,52 @@ export default function AdminDashboardPage() {
     const finalImage = customImage.trim() || image;
 
     try {
-      const result = await createBlogPost({
-        slug: slug.trim().toLowerCase(),
-        title: title.trim(),
-        excerpt: excerpt.trim() || title.trim(),
-        content: content.trim(),
-        category: finalCategory,
-        author: author.trim() || 'Engineering Team',
-        image: finalImage,
-        date: postDate
-      });
+      if (editingPostOriginalSlug) {
+        // Update existing article
+        const result = await updateBlogPost(editingPostOriginalSlug, {
+          slug: slug.trim().toLowerCase(),
+          title: title.trim(),
+          excerpt: excerpt.trim() || title.trim(),
+          content: content.trim(),
+          category: finalCategory,
+          author: author.trim() || 'Engineering Team',
+          image: finalImage,
+          date: postDate
+        });
 
-      if (result.success) {
-        setFormSuccess('Article successfully published and live!');
-        await loadBlogs();
-        setTimeout(() => {
-          setIsEditorOpen(false);
-          resetForm();
-        }, 1200);
+        if (result.success) {
+          setFormSuccess('Article updated and saved successfully!');
+          await loadBlogs();
+          setTimeout(() => {
+            setIsEditorOpen(false);
+            resetForm();
+          }, 1000);
+        } else {
+          setFormError(result.error || 'Failed to update article');
+        }
       } else {
-        setFormError(result.error || 'Failed to publish post');
+        // Create new article
+        const result = await createBlogPost({
+          slug: slug.trim().toLowerCase(),
+          title: title.trim(),
+          excerpt: excerpt.trim() || title.trim(),
+          content: content.trim(),
+          category: finalCategory,
+          author: author.trim() || 'Engineering Team',
+          image: finalImage,
+          date: postDate
+        });
+
+        if (result.success) {
+          setFormSuccess('Article successfully published and live!');
+          await loadBlogs();
+          setTimeout(() => {
+            setIsEditorOpen(false);
+            resetForm();
+          }, 1000);
+        } else {
+          setFormError(result.error || 'Failed to publish post');
+        }
       }
     } catch (err: any) {
       setFormError(err.message || 'Error occurred while saving article');
@@ -201,6 +304,8 @@ export default function AdminDashboardPage() {
     const matchesCategory = selectedCategory === 'all' || b.category.toLowerCase() === selectedCategory.toLowerCase();
     return matchesSearch && matchesCategory;
   });
+
+  const activeCoverDisplay = customImage || image;
 
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-[#CC0000] selection:text-white">
@@ -244,7 +349,7 @@ export default function AdminDashboardPage() {
               Blog Publications Manager
             </h1>
             <p className="text-xs md:text-sm text-zinc-400 font-medium">
-              Create, publish, and manage verified municipal infrastructure articles and case studies.
+              Create, edit, update, and manage verified municipal infrastructure articles and case studies.
             </p>
           </div>
 
@@ -387,15 +492,24 @@ export default function AdminDashboardPage() {
                     </div>
                   </div>
 
-                  {/* Actions */}
+                  {/* Actions (Edit, Preview, Delete) */}
                   <div className="flex items-center gap-2 shrink-0 self-end md:self-center">
+                    <button
+                      onClick={() => handleOpenEdit(post)}
+                      className="px-3 py-2 bg-zinc-900 border border-zinc-800 hover:border-[#CC0000] text-zinc-300 hover:text-[#CC0000] text-xs font-mono uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer"
+                      title="Edit Article"
+                    >
+                      <Edit3 className="w-3.5 h-3.5" />
+                      <span>Edit</span>
+                    </button>
+
                     <Link
                       href={`/blog/${post.slug}`}
                       target="_blank"
                       className="px-3 py-2 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 text-zinc-300 hover:text-white text-xs font-mono uppercase tracking-wider flex items-center gap-1.5 transition-colors"
                     >
                       <Eye className="w-3.5 h-3.5 text-[#CC0000]" />
-                      <span>Preview</span>
+                      <span>View</span>
                     </Link>
 
                     <button
@@ -414,7 +528,7 @@ export default function AdminDashboardPage() {
 
       </main>
 
-      {/* ─── FULL-SCREEN ARTICLE EDITOR MODAL ─── */}
+      {/* ─── FULL-SCREEN ARTICLE EDITOR / UPDATE MODAL ─── */}
       {isEditorOpen && (
         <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 md:p-8 overflow-y-auto">
           <div className="bg-[#0c0c0c] border border-zinc-800 w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl relative overflow-hidden">
@@ -424,10 +538,10 @@ export default function AdminDashboardPage() {
             <div className="p-6 border-b border-zinc-800 flex items-center justify-between bg-[#111]">
               <div className="space-y-1">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#CC0000] font-black block">
-                  Authoring Console
+                  {editingPostOriginalSlug ? 'Edit Publication Mode' : 'Authoring Console'}
                 </span>
                 <h2 className="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
-                  Publish New Blog Article
+                  {editingPostOriginalSlug ? `Edit Article: ${title || 'Post'}` : 'Publish New Blog Article'}
                 </h2>
               </div>
 
@@ -447,7 +561,10 @@ export default function AdminDashboardPage() {
 
                 <button
                   type="button"
-                  onClick={() => setIsEditorOpen(false)}
+                  onClick={() => {
+                    setIsEditorOpen(false);
+                    resetForm();
+                  }}
                   className="p-2 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
                 >
                   <X className="w-5 h-5" />
@@ -491,7 +608,7 @@ export default function AdminDashboardPage() {
 
                   <div className="relative w-full h-60 bg-white border border-zinc-800 flex items-center justify-center p-4">
                     <Image
-                      src={customImage || image}
+                      src={activeCoverDisplay}
                       alt="Cover Preview"
                       fill
                       className="object-contain p-4"
@@ -504,7 +621,7 @@ export default function AdminDashboardPage() {
                 </div>
               ) : (
                 /* ─── FORM EDIT MODE ─── */
-                <form id="blog-form" onSubmit={handlePublishPost} className="space-y-6">
+                <form id="blog-form" onSubmit={handleSavePost} className="space-y-6">
                   
                   {/* Title & Slug */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -585,47 +702,137 @@ export default function AdminDashboardPage() {
                         type="text"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        placeholder="e.g. September 26, 2026"
+                        placeholder="e.g. September 27, 2026"
                         className="w-full bg-[#141414] border border-zinc-800 focus:border-[#CC0000] text-white text-xs px-3.5 py-3 outline-none font-mono"
                       />
                     </div>
                   </div>
 
-                  {/* Cover Image Selector */}
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-mono font-black uppercase tracking-widest text-zinc-400 block">
-                      Select Cover Image
-                    </label>
-                    <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
-                      {PRESET_IMAGES.map((img) => (
-                        <button
-                          key={img.url}
-                          type="button"
-                          onClick={() => {
-                            setImage(img.url);
-                            setCustomImage('');
-                          }}
-                          className={`relative p-1.5 bg-white border text-left cursor-pointer transition-all ${
-                            image === img.url && !customImage
-                              ? 'border-[#CC0000] ring-2 ring-[#CC0000]'
-                              : 'border-zinc-800 hover:border-zinc-500'
-                          }`}
-                        >
-                          <div className="relative w-full aspect-video bg-white overflow-hidden">
-                            <Image src={img.url} alt={img.name} fill className="object-contain" />
+                  {/* Cover Image Selector & Direct Upload */}
+                  <div className="space-y-3 pt-2">
+                    <div className="flex items-center justify-between">
+                      <label className="text-[10px] font-mono font-black uppercase tracking-widest text-zinc-400 block">
+                        Cover Image Selection & Upload
+                      </label>
+                      {customImage && (
+                        <span className="text-[9px] font-mono text-emerald-400 flex items-center gap-1 font-bold">
+                          <CheckCircle2 className="w-3 h-3" /> Custom Image Active
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Direct Upload Dropzone */}
+                    <div className="bg-[#141414] border border-dashed border-zinc-700 hover:border-[#CC0000] p-4 rounded-xs transition-colors">
+                      <input
+                        type="file"
+                        ref={fileInputRef}
+                        onChange={handleFileUpload}
+                        accept="image/jpeg,image/png,image/webp,image/gif"
+                        className="hidden"
+                      />
+
+                      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-sm bg-zinc-900 border border-zinc-800 flex items-center justify-center text-[#CC0000] shrink-0">
+                            {isUploading ? (
+                              <Loader2 className="w-5 h-5 animate-spin" />
+                            ) : (
+                              <UploadCloud className="w-5 h-5" />
+                            )}
                           </div>
-                          <span className="text-[8px] font-mono line-clamp-1 block text-center font-bold text-zinc-800 mt-1 uppercase">
-                            {img.name}
-                          </span>
-                        </button>
-                      ))}
+                          <div>
+                            <span className="text-xs font-bold text-white block">
+                              {isUploading ? 'Uploading Image to Server...' : 'Upload Cover Image From Computer'}
+                            </span>
+                            <span className="text-[10px] font-mono text-zinc-500">
+                              Supports JPG, PNG, WEBP (Max 10MB)
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-2 w-full sm:w-auto">
+                          <Button
+                            type="button"
+                            onClick={() => fileInputRef.current?.click()}
+                            disabled={isUploading}
+                            className="w-full sm:w-auto bg-zinc-800 hover:bg-[#CC0000] hover:text-white text-zinc-200 text-[11px] font-mono font-bold uppercase tracking-wider h-9 px-4 rounded-none transition-all cursor-pointer"
+                          >
+                            {isUploading ? 'Processing...' : 'Browse Image File'}
+                          </Button>
+
+                          {customImage && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setCustomImage('');
+                                setImage(PRESET_IMAGES[0].url);
+                              }}
+                              className="p-2 bg-zinc-900 hover:bg-red-950/60 text-zinc-400 hover:text-red-400 border border-zinc-800 text-xs font-mono transition-colors cursor-pointer"
+                              title="Remove custom image"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          )}
+                        </div>
+                      </div>
+
+                      {uploadError && (
+                        <div className="mt-3 text-[10px] font-mono text-red-400 flex items-center gap-1.5">
+                          <AlertCircle className="w-3.5 h-3.5" />
+                          <span>{uploadError}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Active Image Preview Box if Custom Uploaded */}
+                    {customImage && (
+                      <div className="p-3 bg-zinc-950 border border-zinc-800 flex items-center gap-3">
+                        <div className="relative w-16 h-12 bg-white border border-zinc-800 shrink-0 overflow-hidden">
+                          <Image src={customImage} alt="Uploaded" fill className="object-contain p-1" />
+                        </div>
+                        <div className="text-xs font-mono text-zinc-300 truncate flex-1">
+                          <span className="text-[9px] text-zinc-500 uppercase block">Active Upload Path:</span>
+                          <span className="text-[#CC0000] font-bold">{customImage}</span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Library Preset Selector */}
+                    <div className="pt-2 space-y-1.5">
+                      <span className="text-[10px] font-mono text-zinc-500 block uppercase">
+                        Or Pick from Standard Library:
+                      </span>
+                      <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                        {PRESET_IMAGES.map((img) => (
+                          <button
+                            key={img.url}
+                            type="button"
+                            onClick={() => {
+                              setImage(img.url);
+                              setCustomImage('');
+                            }}
+                            className={`relative p-1.5 bg-white border text-left cursor-pointer transition-all ${
+                              image === img.url && !customImage
+                                ? 'border-[#CC0000] ring-2 ring-[#CC0000]'
+                                : 'border-zinc-800 hover:border-zinc-500'
+                            }`}
+                          >
+                            <div className="relative w-full aspect-video bg-white overflow-hidden">
+                              <Image src={img.url} alt={img.name} fill className="object-contain" />
+                            </div>
+                            <span className="text-[8px] font-mono line-clamp-1 block text-center font-bold text-zinc-800 mt-1 uppercase">
+                              {img.name}
+                            </span>
+                          </button>
+                        ))}
+                      </div>
                     </div>
 
                     <input
                       type="text"
                       value={customImage}
                       onChange={(e) => setCustomImage(e.target.value)}
-                      placeholder="Or enter custom image URL: /images/..."
+                      placeholder="Or enter custom image URL directly: /images/..."
                       className="w-full bg-[#141414] border border-zinc-800 focus:border-[#CC0000] text-white text-xs px-3.5 py-2.5 outline-none font-mono mt-2"
                     />
                   </div>
@@ -674,7 +881,10 @@ export default function AdminDashboardPage() {
             <div className="p-6 border-t border-zinc-800 bg-[#111] flex justify-between items-center">
               <button
                 type="button"
-                onClick={() => setIsEditorOpen(false)}
+                onClick={() => {
+                  setIsEditorOpen(false);
+                  resetForm();
+                }}
                 className="px-5 py-2.5 bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer"
               >
                 Cancel
@@ -683,10 +893,12 @@ export default function AdminDashboardPage() {
               <Button
                 type="submit"
                 form="blog-form"
-                disabled={isSubmitting}
+                disabled={isSubmitting || isUploading}
                 className="bg-[#CC0000] hover:bg-white hover:text-black text-white font-black uppercase tracking-widest text-xs h-11 px-8 rounded-none transition-all shadow-xl cursor-pointer"
               >
-                {isSubmitting ? 'Publishing...' : 'Publish Article Now'}
+                {isSubmitting 
+                  ? 'Saving Changes...' 
+                  : (editingPostOriginalSlug ? 'Update & Save Article' : 'Publish Article Now')}
               </Button>
             </div>
 

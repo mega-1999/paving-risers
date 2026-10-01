@@ -110,6 +110,66 @@ export async function createBlogPost(post: Omit<BlogPost, 'id'>): Promise<{ succ
   return { success: true, post: newPost };
 }
 
+// Update existing blog post (Admin action)
+export async function updateBlogPost(originalSlug: string, post: Partial<BlogPost>): Promise<{ success: boolean; post?: BlogPost; error?: string }> {
+  try {
+    if (supabase) {
+      const { data, error } = await supabase
+        .from('blogs')
+        .update({
+          ...(post.slug && { slug: post.slug }),
+          ...(post.title && { title: post.title }),
+          ...(post.excerpt && { excerpt: post.excerpt }),
+          ...(post.content && { content: post.content }),
+          ...(post.category && { category: post.category }),
+          ...(post.author && { author: post.author }),
+          ...(post.image && { image: post.image }),
+          ...(post.date && { date: post.date })
+        })
+        .eq('slug', originalSlug)
+        .select();
+
+      if (!error && data && data.length > 0) {
+        return { success: true, post: data[0] as BlogPost };
+      }
+    }
+  } catch (err) {
+    console.warn('Supabase update error, applying to local store:', err);
+  }
+
+  // Fallback / local store sync
+  if (typeof window !== 'undefined') {
+    try {
+      const stored = localStorage.getItem(LOCAL_STORAGE_KEY);
+      let currentList: BlogPost[] = stored ? JSON.parse(stored) : [];
+      const existingIdx = currentList.findIndex(b => b.slug === originalSlug);
+
+      if (existingIdx !== -1) {
+        currentList[existingIdx] = {
+          ...currentList[existingIdx],
+          ...post,
+          slug: post.slug || currentList[existingIdx].slug
+        } as BlogPost;
+      } else {
+        // If it was a seed post being edited for the first time, clone and update it
+        const seedPost = initialBlogs.find(b => b.slug === originalSlug);
+        if (seedPost) {
+          currentList.unshift({
+            ...seedPost,
+            ...post
+          } as BlogPost);
+        }
+      }
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(currentList));
+      return { success: true, post: { ...post } as BlogPost };
+    } catch (e: any) {
+      return { success: false, error: e.message || 'Failed to update blog post' };
+    }
+  }
+
+  return { success: true, post: { ...post } as BlogPost };
+}
+
 // Delete blog post (Admin action)
 export async function deleteBlogPost(idOrSlug: string): Promise<{ success: boolean; error?: string }> {
   try {

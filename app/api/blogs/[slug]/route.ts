@@ -32,6 +32,44 @@ export async function GET(
   return NextResponse.json({ success: false, message: 'Blog post not found' }, { status: 404 });
 }
 
+export async function PUT(
+  req: NextRequest,
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params;
+
+  try {
+    const body = await req.json();
+
+    if (supabase) {
+      const { data, error } = await supabase
+        .from('blogs')
+        .update({
+          ...(body.title && { title: body.title.trim() }),
+          ...(body.slug && { slug: body.slug.trim().toLowerCase() }),
+          ...(body.excerpt && { excerpt: body.excerpt.trim() }),
+          ...(body.content && { content: body.content.trim() }),
+          ...(body.category && { category: body.category }),
+          ...(body.author && { author: body.author }),
+          ...(body.image && { image: body.image }),
+          ...(body.date && { date: body.date })
+        })
+        .eq('slug', slug)
+        .select();
+
+      if (error) {
+        return NextResponse.json({ success: false, message: error.message }, { status: 500 });
+      }
+
+      return NextResponse.json({ success: true, blog: data[0] });
+    }
+
+    return NextResponse.json({ success: true, blog: body });
+  } catch (err: any) {
+    return NextResponse.json({ success: false, message: err.message }, { status: 500 });
+  }
+}
+
 export async function DELETE(
   req: NextRequest,
   { params }: { params: Promise<{ slug: string }> }
