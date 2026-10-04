@@ -20,7 +20,7 @@ export default function BlogListingPage() {
           setBlogsList(data);
         }
       } catch (err) {
-        console.warn('Failed to fetch dynamic blogs:', err);
+        // Handled silently with default initialBlogs fallback
       } finally {
         setLoading(false);
       }

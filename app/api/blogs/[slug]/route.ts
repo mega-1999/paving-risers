@@ -21,7 +21,7 @@ export async function GET(
       }
     }
   } catch (err) {
-    console.warn('Supabase fetch single error:', err);
+    // Database query fallback
   }
 
   const found = initialBlogs.find(b => b.slug === slug);

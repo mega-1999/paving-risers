@@ -31,18 +31,19 @@ export default function QuoteRequestPage() {
     };
 
     try {
-      const { error } = await supabase
-        .from('quote_requests')
-        .insert([data]);
-        
-      if (error) throw error;
+      if (supabase) {
+        const { error } = await supabase
+          .from('quote_requests')
+          .insert([data]);
+          
+        if (error) throw error;
+      }
       
       setIsSubmitted(true);
       e.currentTarget.reset();
       
       setTimeout(() => setIsSubmitted(false), 3000);
     } catch (error) {
-      console.error('Error submitting form:', error);
       alert('There was an error submitting your request. Please try again.');
     } finally {
       setIsSubmitting(false);

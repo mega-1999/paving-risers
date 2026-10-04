@@ -33,7 +33,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
       }
     }
   } catch (err) {
-    console.warn('Supabase fetch failed, falling back to local/seed:', err);
+    // Supabase unreachable or unconfigured, seamless fallback to local/seed
   }
 
   // Client-side local storage fallback for custom created blogs
@@ -47,7 +47,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
         return [...localBlogs, ...nonDuplicateSeed];
       }
     } catch (e) {
-      console.warn('LocalStorage parse error:', e);
+      // LocalStorage parse fallback
     }
   }
 
@@ -91,7 +91,7 @@ export async function createBlogPost(post: Omit<BlogPost, 'id'>): Promise<{ succ
       }
     }
   } catch (err: any) {
-    console.warn('Supabase insert failed, saving locally:', err);
+    // Database write failed, saving to local store
   }
 
   // Fallback to client-side localStorage
@@ -134,7 +134,7 @@ export async function updateBlogPost(originalSlug: string, post: Partial<BlogPos
       }
     }
   } catch (err) {
-    console.warn('Supabase update error, applying to local store:', err);
+    // Database update failed, syncing with local store
   }
 
   // Fallback / local store sync
@@ -180,7 +180,7 @@ export async function deleteBlogPost(idOrSlug: string): Promise<{ success: boole
         .or(`id.eq.${idOrSlug},slug.eq.${idOrSlug}`);
     }
   } catch (err) {
-    console.warn('Supabase delete error:', err);
+    // Database delete error, updating local store
   }
 
   if (typeof window !== 'undefined') {

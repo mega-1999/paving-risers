@@ -79,8 +79,8 @@ export default function Product3DShowcase2() {
     if (videoRef.current) {
       videoRef.current.load();
       if (isPlaying) {
-        videoRef.current.play().catch((err) => {
-          console.log("Autoplay blocked by browser:", err);
+        videoRef.current.play().catch(() => {
+          // Autoplay policy prevented immediate playback
         });
       }
     }

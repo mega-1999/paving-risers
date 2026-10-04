@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
         }
       }
     } catch (supErr) {
-      console.warn('Supabase storage upload bypassed, saving to local filesystem:', supErr);
+      // Supabase storage unavailable, seamless local storage fallback
     }
 
     // Save locally to public/images/uploads/

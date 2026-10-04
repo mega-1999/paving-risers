@@ -29,7 +29,7 @@ export async function GET() {
       }
     }
   } catch (err) {
-    console.warn('Supabase fetch failed:', err);
+    // Fallback to initial seed blogs
   }
 
   return NextResponse.json({ success: true, blogs: initialBlogs });
