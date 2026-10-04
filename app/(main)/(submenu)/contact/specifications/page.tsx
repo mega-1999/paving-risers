@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { UploadCloud, FileCog, FileText, CheckCircle2, ShieldCheck, Lock, ChevronRight, Cpu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import R2Video from '@/app/components/R2Video';
 
 export default function SubmitSpecificationsPage() {
   return (
@@ -31,12 +32,15 @@ export default function SubmitSpecificationsPage() {
 
         {/* Right Media Column */}
         <div className="w-full lg:w-1/2 relative h-[50vh] lg:h-full bg-black group overflow-hidden border-l border-white/10">
-          <video autoPlay loop muted playsInline 
+          <R2Video
+            src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_overview.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
             suppressHydrationWarning
             className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
-          >
-            <source src="/videos/curb_inlet_riser/curb_inlet_overview.mp4" type="video/mp4" />
-          </video>
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent lg:hidden" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] to-transparent hidden lg:block w-1/3" />
 
@@ -65,9 +69,15 @@ export default function SubmitSpecificationsPage() {
             <div className="relative w-full h-[400px] bg-[#0A0A0A] border-2 border-dashed border-white/20 hover:border-[#CC0000] transition-colors duration-500 group cursor-pointer flex flex-col items-center justify-center overflow-hidden">
 
               {/* Background Ghost Video */}
-              <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity">
-                <source src="/videos/animations/paving_riser_solid_ring_utilisation_animation.685.mp4" type="video/mp4" />
-              </video>
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_solid_ring_utilisation_animation.685.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                suppressHydrationWarning
+                className="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity"
+              />
 
               <div className="relative z-10 flex flex-col items-center text-center p-8">
                 <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 group-hover:bg-[#CC0000] transition-all duration-500">
@@ -121,7 +131,7 @@ export default function SubmitSpecificationsPage() {
             {/* Visual Callout Card */}
             <div className="w-full bg-black border border-white/10 overflow-hidden group">
               <div className="relative aspect-video">
-                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} alt="Engineering" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_cast_iron.png`} alt="Engineering" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-4 left-4 flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
@@ -170,13 +180,15 @@ export default function SubmitSpecificationsPage() {
       {/* 3. FULL-WIDTH VIDEO SEPARATOR             */}
       {/* ========================================= */}
       <div className="w-full relative h-[400px] border-t border-white/10 bg-black overflow-hidden mt-16 group">
-        <video autoPlay loop muted playsInline 
+        <R2Video
+          src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           suppressHydrationWarning
-          onEnded={(e) => e.currentTarget.play()}
           className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-70 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
-        >
-          <source src="/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-black/40">
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-4 shadow-black drop-shadow-2xl">
             Precision Built. <span className="text-[#CC0000]">Guaranteed Fit.</span>

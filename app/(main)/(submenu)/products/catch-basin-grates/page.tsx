@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import R2Video from '@/app/components/R2Video';
 
 // Hero Featured Showcase Slides
 const HERO_SECTIONS = [
@@ -317,7 +318,7 @@ export default function CatchBasinGratesPage() {
     sections.forEach((section) => observer.observe(section));
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      observer.disconnect();
     };
   }, []);
 
@@ -428,12 +429,12 @@ export default function CatchBasinGratesPage() {
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
                 
                 {section.isVideo ? (
-                  <video 
+                  <R2Video
+                    src={section.media}
                     autoPlay 
                     loop 
                     muted 
                     playsInline  
-                    src={section.media}
                     className="relative z-10 w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 ease-out"
                   />
                 ) : (

@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronRight, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
+import R2Video from './R2Video';
 
 export default function UltimateResultsPattern() {
   const { scrollYProgress } = useScroll();
@@ -122,13 +123,13 @@ export default function UltimateResultsPattern() {
             className="lg:col-span-7 w-full relative group"
           >
             <div className="relative h-[380px] sm:h-[460px] lg:h-[540px] w-full rounded-2xl overflow-hidden bg-black shadow-2xl">
-              <video
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/ultimate_paving_risers.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
                 suppressHydrationWarning
-                src="/videos/animations/ultimate_paving_risers.mp4"
                 className="w-full h-full object-contain"
                 title="Ultimate Risers Demonstration"
               />

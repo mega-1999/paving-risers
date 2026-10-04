@@ -17,22 +17,32 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/r2/:path*',
+        destination: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/:path*',
+      },
+    ];
+  },
   async headers() {
     return [
       {
-        source: '/videos/:path*',
+        source: '/api/r2/:path*',
         headers: [
           { key: 'Accept-Ranges', value: 'bytes' },
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
           { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, HEAD, OPTIONS' },
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
       {
-        source: '/glbs/:path*',
+        source: '/r2/:path*',
         headers: [
           { key: 'Accept-Ranges', value: 'bytes' },
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
           { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, HEAD, OPTIONS' },
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
       {

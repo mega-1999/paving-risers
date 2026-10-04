@@ -103,6 +103,8 @@ export default function HeroCarousel() {
                             fill
                             className="object-cover opacity-60"
                             sizes="(max-width: 1200px) 100vw, 1200px"
+                            priority={index === 0}
+                            loading={index === 0 ? "eager" : "lazy"}
                         />
 
                         {/* Dark Overlay Gradient - Matches the style of image_e82d04.jpg */}

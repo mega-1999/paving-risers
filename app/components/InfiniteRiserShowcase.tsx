@@ -5,6 +5,7 @@ import { Layers, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import Image from 'next/image';
+import R2Video from './R2Video';
 
 export default function InfiniteRiserShowcase() {
     return (
@@ -34,13 +35,14 @@ export default function InfiniteRiserShowcase() {
 
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <video autoPlay loop muted playsInline 
+                                <R2Video
+                                    src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    preload="auto"
                                     suppressHydrationWarning
-                                    src="/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
-                                    
-                                    
-                                    
-                                    
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -144,13 +146,14 @@ export default function InfiniteRiserShowcase() {
                         {/* LEFT: INFINITE AUTOPLAY VIDEO CONTAINER (7 Columns) */}
                         <div className="lg:col-span-6">
                             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl pointer-events-none select-none">
-                                <video autoPlay loop muted playsInline 
+                                <R2Video
+                                    src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    preload="auto"
                                     suppressHydrationWarning
-                                    src="/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
-                                    
-                                    
-                                    
-                                    
                                     className="w-full h-full object-cover"
                                 />
                             </div>

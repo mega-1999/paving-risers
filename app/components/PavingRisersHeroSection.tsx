@@ -2,27 +2,28 @@
 
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, PlayCircle, Zap, Clock, Target, ChevronLeft, ChevronRight } from 'lucide-react';
+import R2Video from './R2Video';
 
 const FABRICATION_VIDEOS = [
   {
     id: "shop-floor-1",
     title: "Shop Floor Fabrication Feed #1",
-    src: "/videos/manufacturing/PR_Manufacturing_Video.mp4"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manufacturing/PR_Manufacturing_Video.mp4"
   },
   {
     id: "cnc-tooling-2",
     title: "CNC Machining & Tooling #2",
-    src: "/videos/manufacturing/paving-risers_RATAN_TECHNOML.mp4"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manufacturing/paving-risers_RATAN_TECHNOML.mp4"
   },
   {
     id: "manhole-riser-3",
     title: "Adjustable Riser Machining #3",
-    src: "/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4"
   },
   {
     id: "catch-basin-4",
     title: "Catch Basin Assembly #4",
-    src: "/videos/Catch_basin_riser_new_logo.975.mp4"
+    src: "https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/catch_basin_riser_animation.mp4"
   }
 ];
 
@@ -97,15 +98,10 @@ export default function PavingRisersHeroSection() {
           <div className="lg:col-span-6 w-full">
             {FABRICATION_VIDEOS.length > 0 && FABRICATION_VIDEOS[activeIdx]?.src ? (
               <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200 group">
-                <video
+                <R2Video
                   key={FABRICATION_VIDEOS[activeIdx].id}
                   src={FABRICATION_VIDEOS[activeIdx].src}
                   className="absolute inset-0 w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  suppressHydrationWarning
                 />
                 <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 

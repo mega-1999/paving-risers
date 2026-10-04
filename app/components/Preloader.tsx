@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import R2Video from './R2Video';
 
 export default function Preloader() {
   const [show, setShow] = useState(true);
@@ -37,7 +38,7 @@ export default function Preloader() {
 
   if (!show) return null;
 
-  const videoUrl = '/videos/animations/paving_logo_animation.mp4';
+  const videoUrl = 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_logo_animation.mp4';
 
   return (
     <>
@@ -86,12 +87,13 @@ export default function Preloader() {
             {/* RIGHT COLUMN: VIDEO ANIMATION */}
             <div className="md:col-span-6 flex items-center justify-center">
               <div className="relative w-full max-w-lg overflow-hidden flex items-center justify-center p-2">
-                <video
+                <R2Video
                   src={videoUrl}
                   autoPlay
+                  loop={false}
                   muted
                   playsInline
-                  preload="metadata"
+                  preload="auto"
                   suppressHydrationWarning
                   onEnded={handleComplete}
                   className="w-full h-auto object-contain outline-none border-0 shadow-none mix-blend-multiply scale-[1.02]"

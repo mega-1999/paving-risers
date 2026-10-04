@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import R2Video from './R2Video';
 
 // --- STEPS DERIVED DIRECTLY FROM THE VIDEO ASSEMBLY ANIMATION ---
 const ASSEMBLY_STEPS = [
@@ -93,18 +94,19 @@ export default function RiserAnimationShowcase() {
             <div className="relative aspect-[4/3] bg-[#CC0000] rounded-sm overflow-hidden border-2 border-zinc-800 shadow-2xl group">
               
               {/* VIDEO ELEMENT */}
-              <video autoPlay loop muted playsInline 
-                ref={videoRef}
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_with_frame_anim_1.mp4"
+                videoRef={videoRef}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                suppressHydrationWarning
                 className="w-full h-full object-cover"
-                
-                
-                
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
-              >
-                <source src="/videos/GIF_paving_risere_with_frame.982.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              />
 
               {/* OVERLAY PLAY/PAUSE INTERACTION BAR */}
               <div 

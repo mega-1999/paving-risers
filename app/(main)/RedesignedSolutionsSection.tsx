@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import R2Video from '../components/R2Video';
 
 interface SolutionItem {
   id: string;
@@ -43,25 +44,25 @@ const TABS: TabSchema[] = [
     id: 'terraces',
     label: 'Paved Terraces & Decks',
     count: '05',
-    defaultVideoUrl: '/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4'
+    defaultVideoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4'
   },
   {
     id: 'landscaping',
     label: 'Landscaping & Gardens',
     count: '02',
-    defaultVideoUrl: '/videos/catch_basin_riser/catch_basin_riser_overview.mp4'
+    defaultVideoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/catch_basin_riser_overview.mp4'
   },
   {
     id: 'driveways',
     label: 'Driveways & Access Areas',
     count: '02',
-    defaultVideoUrl: '/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4'
+    defaultVideoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4'
   },
   {
     id: 'joinery',
     label: 'Structural & Custom Works',
     count: '02',
-    defaultVideoUrl: '/videos/manhole_riser/adjustable_manhole_riser_steel.mp4'
+    defaultVideoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/adjustable_manhole_riser_steel.mp4'
   },
 ];
 
@@ -75,7 +76,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/adjustable-paving-risers",
       tag: "Top Specified",
       stats: "Max 1200mm",
-      videoUrl: '/videos/manhole_riser/fixed_manhole_riser_installation.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4'
     },
     {
       id: 'terraces-2',
@@ -85,7 +86,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/decking-support-risers",
       tag: "Fast-Fit",
       stats: "Anti-Rot",
-      videoUrl: '/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4'
     },
     {
       id: 'terraces-3',
@@ -95,7 +96,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/self-leveling-pedestals",
       tag: "Slope Cor.",
       stats: "0% - 5% Comp",
-      videoUrl: '/videos/curb_inlet_riser/curb_inlet_overview.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_overview.mp4'
     },
     {
       id: 'terraces-4',
@@ -105,7 +106,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/fixed-height-risers",
       tag: "Low-Clearance",
       stats: "10-15mm Base",
-      videoUrl: '/videos/animations/paving_riser_with_frame_anim_1.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_with_frame_anim_1.mp4'
     },
     {
       id: 'terraces-5',
@@ -115,7 +116,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/heavy-duty-pedestals",
       tag: "High Load",
       stats: "3,000kg+ Limit",
-      videoUrl: '/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4'
     }
   ],
   landscaping: [
@@ -127,7 +128,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/garden-paving-supports",
       tag: "Eco-Poly",
       stats: "Permeable",
-      videoUrl: '/videos/catch_basin_riser/catch_basin_riser_overview.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/catch_basin_riser_overview.mp4'
     },
     {
       id: 'landscaping-2',
@@ -137,7 +138,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/raised-landscape-platforms",
       tag: "Drainage-Safe",
       stats: "Root Protection",
-      videoUrl: '/videos/manhole_riser/fixed_manhole_riser_installation.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4'
     }
   ],
   driveways: [
@@ -149,7 +150,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/vehicular-load-pedestals",
       tag: "Load Rating: See individual product specification Traffic",
       stats: "Class A Rated",
-      videoUrl: '/videos/animations/paving_riser_with_frame_anim_3.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_with_frame_anim_3.mp4'
     },
     {
       id: 'driveways-2',
@@ -159,7 +160,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/service-access-decking",
       tag: "Vault Ready",
       stats: "Fast Access",
-      videoUrl: '/videos/curb_inlet_riser/curb_inlet_overview.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_overview.mp4'
     }
   ],
   joinery: [
@@ -171,7 +172,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/custom-pedestal-solutions",
       tag: "Custom Fab",
       stats: "Built to Spec",
-      videoUrl: '/videos/animations/paving_riser_with_frame_anim_2.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_with_frame_anim_2.mp4'
     },
     {
       id: 'joinery-2',
@@ -181,7 +182,7 @@ const SOLUTIONS_DATA: Record<string, SolutionItem[]> = {
       href: "/solutions/industrial-support-systems",
       tag: "Chemical-Res",
       stats: "FRP Core",
-      videoUrl: '/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4'
+      videoUrl: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4'
     }
   ]
 };
@@ -255,13 +256,15 @@ export default function RedesignedSolutionsSection() {
           {/* BOTTOM LEFT: VIDEO PREVIEW DISPLAY (5 Columns) */}
           <div className="lg:col-span-5 lg:sticky lg:top-24 space-y-3">
             <div className="relative aspect-video lg:aspect-[4/3] w-full rounded-sm overflow-hidden bg-[#0F0F0F] border-2 border-slate-900 shadow-2xl group">
-              <video autoPlay loop muted playsInline 
-                key={activeVideoUrl} // Forces video re-mount on src change
+              <R2Video
+                key={activeVideoUrl}
                 src={activeVideoUrl}
-                
-                
-                
-                
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                suppressHydrationWarning
                 className="w-full h-full object-cover"
               />
 

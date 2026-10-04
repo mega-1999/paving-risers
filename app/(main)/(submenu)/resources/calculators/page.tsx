@@ -12,6 +12,7 @@ import {
   BarChart4
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import R2Video from '@/app/components/R2Video';
 
 export default function CalculatorsPage() {
   const [diameter, setDiameter] = useState<number>(24);
@@ -126,12 +127,15 @@ export default function CalculatorsPage() {
           {/* Telemetry / Output Panel */}
           <div className="lg:col-span-7 bg-[#111] border border-[#CC0000]/30 relative overflow-hidden flex flex-col justify-between">
             {/* Background 3D Model Video */}
-            <video autoPlay loop muted playsInline  
+            <R2Video
+              src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
               suppressHydrationWarning
               className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen pointer-events-none"
-            >
-              <source src="/videos/manhole_riser/fixed_manhole_riser_installation.mp4" type="video/mp4" />
-            </video>
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-[#111] pointer-events-none" />
 
             <div className="absolute top-0 right-0 p-6 flex items-center gap-2 text-[#CC0000] opacity-80 z-10">

@@ -119,8 +119,10 @@ export default function ManholeRiserPage() {
                   src={activeFinish.image}
                   alt={activeFinish.name}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700 ease-out animate-in fade-in zoom-in-90"
                   priority
+                  loading="eager"
                />
             </div>
             

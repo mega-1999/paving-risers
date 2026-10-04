@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import R2Video from './R2Video';
 import {
   ArrowUpRight,
   ShieldCheck,
@@ -1017,7 +1018,7 @@ const RISER_SECTIONS = [
     title: "Mechanical",
     highlightText: "Expansion",
     description: "Designed to minimize full manhole frame excavations during road overlays. The riser fits over the existing frame and expands outward against it using a built-in mechanical mechanism. Expanding the riser holds the ring securely in position while you pave.",
-    image: '/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4',
+    image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4',
     features: [
       { icon: "ShieldCheck", title: "Installs without excavating the frame", desc: "Saves significant time and labor." },
       { icon: "Layers", title: "Custom Heights Available", desc: "Precision fits for any overlay requirement." }
@@ -1033,7 +1034,7 @@ const RISER_SECTIONS = [
     title: "Solid Cast",
     highlightText: "Construction",
     description: "Engineered from a single piece of heavy-duty cast or ductile iron for maximum structural integrity. Unlike adjustable risers, this fixed solid ring has no moving parts, ensuring it will never collapse or shift under extreme localized shock loads.",
-    image: '/videos/manhole_riser/fixed_manhole_riser_installation.mp4',
+    image: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4',
     features: [
       { icon: "ShieldCheck", title: "Maximum strength", desc: "No moving parts for unparalleled durability." },
       { icon: "Layers", title: "Custom Fits Available", desc: "Manufactured precisely to your project's specifications." }
@@ -1295,14 +1296,9 @@ export default function ComprehensivePavingRisersMapped() {
                   ) : (
                     <div className={`relative z-10 w-full rounded-2xl overflow-hidden border ${isDark ? 'border-white/10 shadow-2xl' : 'border-gray-200 shadow-xl'} ${section.image?.endsWith('.mp4') ? 'aspect-[4/3] bg-[#CC0000]' : isDark ? 'aspect-square bg-[#111]' : 'aspect-square bg-white'}`}>
                       {section.image?.endsWith('.mp4') ? (
-                        <video
+                        <R2Video
                           key={section.id}
-                          src={section.image}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          suppressHydrationWarning
+                          src={section.image!}
                           className="object-cover w-full h-full pointer-events-none"
                         />
                       ) : (

@@ -14,6 +14,7 @@ import {
   Download
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import R2Video from '@/app/components/R2Video';
 
 export default function EngineeringBriefsPage() {
   return (
@@ -23,12 +24,15 @@ export default function EngineeringBriefsPage() {
       {/* 1. CINEMATIC LONG-SCROLL HERO             */}
       {/* ========================================= */}
       <div className="relative w-full h-[90vh] min-h-[700px] flex flex-col justify-between overflow-hidden border-b border-white/10">
-        <video autoPlay loop muted playsInline  
+        <R2Video
+          src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           suppressHydrationWarning
           className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen scale-105"
-        >
-          <source src="/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4" type="video/mp4" />
-        </video>
+        />
         
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
 
@@ -63,12 +67,15 @@ export default function EngineeringBriefsPage() {
         <section className="mb-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video autoPlay loop muted playsInline  
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/1.751.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
-              >
-                <source src="/videos/animations/1.751.mp4" type="video/mp4" />
-              </video>
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-8">
                 <p className="text-[#CC0000] text-xs font-black uppercase tracking-[0.3em] mb-2">Simulated Model</p>
@@ -134,12 +141,15 @@ export default function EngineeringBriefsPage() {
             </div>
             
             <div className="relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video autoPlay loop muted playsInline  
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
-              >
-                <source src="/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4" type="video/mp4" />
-              </video>
+              />
               <div className="absolute inset-0 bg-gradient-to-l from-black/80 to-transparent pointer-events-none" />
               <div className="absolute top-8 right-8 text-right">
                 <p className="text-[#CC0000] text-xs font-black uppercase tracking-[0.3em] mb-2">CAD Rendering</p>
@@ -155,12 +165,15 @@ export default function EngineeringBriefsPage() {
         <section className="mb-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
-              <video autoPlay loop muted playsInline  
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/1.711.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
-              >
-                <source src="/videos/animations/1.711.mp4" type="video/mp4" />
-              </video>
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-0 w-full text-center">
                 <p className="text-[#CC0000] text-xs font-black uppercase tracking-[0.3em] mb-2">Assembly Protocol</p>

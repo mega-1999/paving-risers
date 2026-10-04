@@ -81,6 +81,7 @@ export default function AdjustableRiserPage() {
               src={`/images/manhole_riser/adjustable_manhole_riser_low_screw_coated.png`}
               alt="Adjustable Riser Blueprint"
               fill
+              sizes="(max-width: 1024px) 100vw, 800px"
               className="object-contain filter drop-shadow-[0_0_60px_rgba(204,0,0,0.2)]"
               priority
             />

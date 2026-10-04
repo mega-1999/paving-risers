@@ -611,6 +611,7 @@ export default function AdminDashboardPage() {
                       src={activeCoverDisplay}
                       alt="Cover Preview"
                       fill
+                      sizes="(max-width: 1024px) 100vw, 600px"
                       className="object-contain p-4"
                     />
                   </div>
@@ -788,7 +789,7 @@ export default function AdminDashboardPage() {
                     {customImage && (
                       <div className="p-3 bg-zinc-950 border border-zinc-800 flex items-center gap-3">
                         <div className="relative w-16 h-12 bg-white border border-zinc-800 shrink-0 overflow-hidden">
-                          <Image src={customImage} alt="Uploaded" fill className="object-contain p-1" />
+                          <Image src={customImage} alt="Uploaded" fill sizes="64px" className="object-contain p-1" />
                         </div>
                         <div className="text-xs font-mono text-zinc-300 truncate flex-1">
                           <span className="text-[9px] text-zinc-500 uppercase block">Active Upload Path:</span>
@@ -818,7 +819,7 @@ export default function AdminDashboardPage() {
                             }`}
                           >
                             <div className="relative w-full aspect-video bg-white overflow-hidden">
-                              <Image src={img.url} alt={img.name} fill className="object-contain" />
+                              <Image src={img.url} alt={img.name} fill sizes="120px" className="object-contain" />
                             </div>
                             <span className="text-[8px] font-mono line-clamp-1 block text-center font-bold text-zinc-800 mt-1 uppercase">
                               {img.name}

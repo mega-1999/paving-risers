@@ -83,6 +83,7 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
                                 src={productImages[activeIndex].src}
                                 alt={`${product.title} view ${activeIndex + 1}`}
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="object-contain p-10 transition-opacity duration-200 group-hover:opacity-0"
                                 priority
                             />
@@ -129,6 +130,7 @@ export default function ProductSpecsPage({ params }: { params: Promise<{ slug: s
                                                 src={img.src}
                                                 alt={img.label}
                                                 fill
+                                                sizes="80px"
                                                 className="object-contain p-1"
                                             />
                                         </button>

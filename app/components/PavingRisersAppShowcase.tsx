@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Smartphone, ShieldCheck, Ruler, Truck, Clock } from 'lucide-react';
+import R2Video from './R2Video';
 
 export default function PavingRisersAppShowcase() {
   return (
@@ -175,12 +176,13 @@ export default function PavingRisersAppShowcase() {
             className="lg:col-span-6 flex justify-center"
           >
             <div className="w-full max-w-lg overflow-hidden">
-              <video
-                src="/videos/app_showcase/android_ios.mp4"
+              <R2Video
+                src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/app_showcase/android_ios.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
+                preload="auto"
                 suppressHydrationWarning
                 className="w-full"
               />

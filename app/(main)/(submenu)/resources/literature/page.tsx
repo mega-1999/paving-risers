@@ -14,6 +14,7 @@ import {
   Search
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import R2Video from '@/app/components/R2Video';
 
 export default function LiteraturePage() {
   return (
@@ -24,12 +25,15 @@ export default function LiteraturePage() {
       {/* ========================================= */}
       <div className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Video */}
-        <video autoPlay loop muted playsInline 
+        <R2Video
+          src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           suppressHydrationWarning
           className="absolute inset-0 w-full h-full object-cover opacity-40 scale-105"
-        >
-          <source src="/videos/curb_inlet_riser/curb_inlet_riser_anim_2.mp4" type="video/mp4" />
-        </video>
+        />
 
         {/* Heavy Gradients for text legibility and mood */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-transparent" />
@@ -79,12 +83,15 @@ export default function LiteraturePage() {
             {/* Primary Video Feature */}
             <div className="bg-[#0A0A0A] border border-white/10 p-4 group cursor-pointer hover:border-[#CC0000] transition-colors relative overflow-hidden">
               <div className="relative w-full aspect-video bg-black overflow-hidden mb-8 border border-white/5">
-                <video autoPlay loop muted playsInline 
+                <R2Video
+                  src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   suppressHydrationWarning
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                >
-                  <source src="/videos/manhole_riser/fixed_manhole_riser_installation.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-20 h-20 bg-[#CC0000] rounded-full flex items-center justify-center pl-2 opacity-90 group-hover:scale-110 transition-transform">
                     <PlayCircle className="w-10 h-10 text-white" />
@@ -105,12 +112,15 @@ export default function LiteraturePage() {
             {/* Secondary Video Feature */}
             <div className="bg-[#0A0A0A] border border-white/10 p-4 group cursor-pointer hover:border-[#CC0000] transition-colors relative overflow-hidden">
               <div className="relative w-full aspect-video bg-black overflow-hidden mb-8 border border-white/5">
-                <video autoPlay loop muted playsInline 
+                <R2Video
+                  src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/paving_riser_3d_design_1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   suppressHydrationWarning
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                >
-                  <source src="/videos/animations/paving_riser_3d_design_1.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-20 h-20 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center pl-2 opacity-90 group-hover:scale-110 transition-transform">
                     <PlayCircle className="w-10 h-10 text-white" />
@@ -147,7 +157,7 @@ export default function LiteraturePage() {
             {/* Document Card 1 */}
             <div className="bg-[#111] border border-white/5 group hover:border-[#CC0000] transition-all duration-500 flex flex-col h-[500px]">
               <div className="relative h-64 bg-[#0A0A0A] overflow-hidden flex items-center justify-center border-b border-white/5">
-                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png`} alt="Master Catalog" fill className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
+                <Image src={`/images/catch_basin_riser/rectangle_catch_basin_riser_iron.png`} alt="Master Catalog" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-40 group-hover:opacity-60 transition-opacity" />
                 <BookOpen className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">
@@ -168,9 +178,15 @@ export default function LiteraturePage() {
               <div className="relative h-64 bg-[#0A0A0A] overflow-hidden flex items-center justify-center border-b border-white/5">
                 {/* Simulated blueprint background */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(204,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,0,0,0.1)_1px,transparent_1px)] bg-[size:10px_10px]" />
-                <video autoPlay loop muted playsInline suppressHydrationWarning className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                  <source src="/videos/animations/1.711.mp4" type="video/mp4" />
-                </video>
+                <R2Video
+                  src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/1.711.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  suppressHydrationWarning
+                  className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity"
+                />
                 <FileCheck2 className="w-16 h-16 text-[#CC0000] relative z-10 group-hover:scale-125 transition-transform duration-700" />
               </div>
               <div className="p-8 flex flex-col flex-1 justify-between">
@@ -189,9 +205,15 @@ export default function LiteraturePage() {
             {/* Document Card 3 */}
             <div className="bg-[#111] border border-white/5 group hover:border-[#CC0000] transition-all duration-500 flex flex-col h-[500px]">
               <div className="relative h-64 bg-black overflow-hidden flex items-center justify-center border-b border-white/5">
-                <video autoPlay loop muted playsInline suppressHydrationWarning className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity">
-                  <source src="/videos/animations/Riser_Animation.mp4" type="video/mp4" />
-                </video>
+                <R2Video
+                  src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/Riser_Animation.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  suppressHydrationWarning
+                  className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity"
+                />
                 <div className="absolute inset-0 bg-black/40 pointer-events-none" />
                 <Box className="w-16 h-16 text-white relative z-10 group-hover:scale-125 group-hover:text-[#CC0000] transition-all duration-700" />
               </div>

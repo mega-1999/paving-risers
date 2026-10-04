@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Activity } from 'lucide-react';
+import R2Video from '@/app/components/R2Video';
 
 export default function IndustrySolutionsBanner() {
   return (
@@ -7,12 +8,15 @@ export default function IndustrySolutionsBanner() {
 
       {/* --- VIDEO BACKGROUND --- */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video autoPlay loop muted playsInline 
+        <R2Video
+          src="https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manufacturing/paving-risers_RATAN_TECHNOML.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           suppressHydrationWarning
           className="absolute min-w-full min-h-full object-cover opacity-30 mix-blend-luminosity grayscale"
-        >
-          <source src="/videos/manufacturing/paving-risers_RATAN_TECHNOML.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Dark cinematic gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-transparent to-[#0A0A0A]/50"></div>

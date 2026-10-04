@@ -15,6 +15,7 @@ import {
   Sparkles,
   ChevronRight
 } from 'lucide-react';
+import R2Video from './R2Video';
 
 interface SituationItem {
   id: string;
@@ -40,7 +41,7 @@ const SITUATIONS: SituationItem[] = [
     subtitle: 'Zero Trenching Drainage Elevation',
     description: 'Engineered for street corner catch basins, storm grates, and curb inlets. Eliminates pavement destruction and masonry reconstruction during resurfacing.',
     mediaType: 'video',
-    src: '/videos/catch_basin_riser/catch_basin_riser_animation.mp4',
+    src: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/catch_basin_riser/catch_basin_riser_animation.mp4',
     loadRating: 'Heavy-Duty Proof Tested',
     material: 'ASTM A48 Class 35B / High-Strength Steel',
     fitType: 'Direct Drop-In Seating',
@@ -55,7 +56,7 @@ const SITUATIONS: SituationItem[] = [
     subtitle: 'Continuous Traffic Ready Paving',
     description: 'Heavy-duty ductile iron and cast rings designed to handle multi-ton interstate truck traffic, snow plows, and extreme thermal freeze-thaw cycles without loosening.',
     mediaType: 'video',
-    src: '/videos/manhole_riser/fixed_manhole_riser_installation.mp4',
+    src: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/manhole_riser/fixed_manhole_riser_installation.mp4',
     loadRating: '100,000+ LBS Load Tested',
     material: 'ASTM A536 Heavy Cast Iron',
     fitType: 'Flush Asphalt Fit',
@@ -70,7 +71,7 @@ const SITUATIONS: SituationItem[] = [
     subtitle: 'Precision Geometry For Non-Standard Frames',
     description: 'Custom CNC laser-fabricated risers configured for asymmetric, rectangular, and D-shape utility vaults. Fits legacy municipal castings without structural alterations.',
     mediaType: 'video',
-    src: '/videos/custom_riser/d_shape_custom_riser_animation.mp4',
+    src: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/custom_riser/d_shape_custom_riser_animation.mp4',
     loadRating: 'Commercial Highway Rated',
     material: 'Precision Laser-Cut A36 Steel',
     fitType: 'Custom CAD Engineered',
@@ -85,7 +86,7 @@ const SITUATIONS: SituationItem[] = [
     subtitle: 'Immediate Traffic Flow Restoration',
     description: 'Expandable mechanical locking risers that seat tightly within existing manhole frames smoothly. Allows paving contractors to complete projects without road closures.',
     mediaType: 'video',
-    src: '/videos/animations/1.924.mp4',
+    src: 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev/videos/animations/1.924.mp4',
     loadRating: 'Continuous Traffic Compliant',
     material: 'Mechanical Expandable Alloy',
     fitType: 'Expandable Lock Ring',
@@ -224,15 +225,16 @@ export default function RisersForEverySituation() {
               {/* LEFT: Video / Interactive Media Stage (7 cols) */}
               <div className="lg:col-span-7 relative min-h-[300px] sm:min-h-[400px] lg:min-h-full bg-black flex items-center justify-center overflow-hidden group">
                 {/* Live Video Feed */}
-                <video
+                <R2Video
                   key={activeItem.src}
+                  src={activeItem.src}
                   autoPlay
                   loop
                   muted
                   playsInline
+                  preload="auto"
                   suppressHydrationWarning
                   className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
-                  src={activeItem.src}
                 />
 
                 {/* Dark Vignette Overlay */}

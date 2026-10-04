@@ -120,6 +120,7 @@ export default function RiserOrderSpecifications() {
                 src={`/images/custom_riser/d_shape_riser_3d.png`}
                 alt="4.png Ordering Data Visual Guide Component Reference"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                 className="object-contain transition-transform duration-500 group-hover:scale-102"
               />
             </div>

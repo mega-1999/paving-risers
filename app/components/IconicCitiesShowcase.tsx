@@ -18,6 +18,7 @@ import {
   Eye
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import R2Video from './R2Video';
 
 export interface CitySpec {
   id: string;
@@ -37,7 +38,7 @@ export interface CitySpec {
   stats: { label: string; value: string }[];
 }
 
-const R2 = '';
+const R2 = 'https://pub-a9b7eff88c5d4cb7b2837afc51696bde.r2.dev';
 
 const ICONIC_CITIES: CitySpec[] = [
   {
@@ -610,14 +611,9 @@ export default function IconicCitiesShowcase() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-black border border-white/10 my-2 flex items-center justify-center">
                   {mediaMode === 'video' ? (
                     <div className="relative w-full h-full">
-                      <video
+                      <R2Video
                         key={`${currentCity.id}-video`}
                         src={currentCity.videoUrl}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        suppressHydrationWarning
                         className="object-cover w-full h-full"
                       />
                       <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/80 text-white border border-white/20 text-[9px] font-mono uppercase tracking-widest backdrop-blur-md">

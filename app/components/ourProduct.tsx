@@ -53,6 +53,7 @@ function ProductCard({ cat }: { cat: Product }) {
                             src={cat.images[currentImage].src}
                             alt={`${cat.title} image`}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-contain p-4 transition-transform duration-500 group-hover/slider:scale-105"
                         />
                         {cat.images.length > 1 && (

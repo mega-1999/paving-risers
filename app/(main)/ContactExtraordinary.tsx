@@ -80,7 +80,9 @@ export default function ContactExtraordinary() {
                   src={`/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`} // Put a high-res, transparent 3D render of a riser here
                   alt="3D Paving Riser Render"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 500px"
                   className="object-contain drop-shadow-[0_20px_50px_rgba(201,32,39,0.5)]"
+                  priority
                 />
               </div>
             </div>
