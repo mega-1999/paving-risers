@@ -128,7 +128,7 @@ export default function UltimateResultsPattern() {
                 muted
                 playsInline
                 suppressHydrationWarning
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/ultimate_paving_risers.mp4`}
+                src="/videos/animations/ultimate_paving_risers.mp4"
                 className="w-full h-full object-contain"
                 title="Ultimate Risers Demonstration"
               />

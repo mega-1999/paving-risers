@@ -33,14 +33,11 @@ export default function AvantGardeVideosPage() {
           <div className="absolute inset-0 bg-[#CC0000] transform rotate-2 translate-x-4 translate-y-4 opacity-50 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-700" />
           <div className="absolute inset-0 bg-[#0A0A0A] overflow-hidden border border-white/20 transform -rotate-2 group-hover:rotate-0 transition-all duration-700">
             <video autoPlay loop muted playsInline  
-               
-               
-               
-              
+              suppressHydrationWarning
               onEnded={(e) => e.currentTarget.play()}
               className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0"
             >
-              <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/Riser_Animation.mp4`} type="video/mp4" />
+              <source src="/videos/animations/Riser_Animation.mp4" type="video/mp4" />
             </video>
             <div className="absolute bottom-8 left-8 flex items-center gap-4">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
@@ -67,8 +64,8 @@ export default function AvantGardeVideosPage() {
           
           {/* Tile 1: Video (Large) */}
           <div className="col-span-1 md:col-span-2 row-span-2 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
-              <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_overview.mp4`} type="video/mp4" />
+            <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+              <source src="/videos/catch_basin_riser/catch_basin_riser_overview.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
@@ -88,8 +85,8 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 3: Video */}
           <div className="col-span-1 row-span-1 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
-              <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`} type="video/mp4" />
+            <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+              <source src="/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <PlayCircle className="w-12 h-12 text-[#CC0000]" />
@@ -105,8 +102,8 @@ export default function AvantGardeVideosPage() {
 
           {/* Tile 5: Video */}
           <div className="col-span-1 md:col-span-1 row-span-1 relative group overflow-hidden bg-black border-[0.5px] border-white/10 cursor-pointer">
-            <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
-              <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_riser_with_frame_anim_2.mp4`} type="video/mp4" />
+            <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+              <source src="/videos/animations/paving_riser_with_frame_anim_2.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <PlayCircle className="w-12 h-12 text-[#CC0000]" />
@@ -139,8 +136,8 @@ export default function AvantGardeVideosPage() {
             
             {/* Split Video 1 */}
             <div className="lg:w-1/2 aspect-video relative bg-black group border border-white/20 hover:border-[#CC0000] transition-colors cursor-pointer">
-              <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_riser_anim_1.mp4`} type="video/mp4" />
+              <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
+                <source src="/videos/curb_inlet_riser/curb_inlet_riser_anim_1.mp4" type="video/mp4" />
               </video>
               <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
                 <p className="text-xl font-black uppercase tracking-widest text-white drop-shadow-md">Expansion Mechanism Expansion</p>
@@ -149,8 +146,8 @@ export default function AvantGardeVideosPage() {
 
             {/* Split Video 2 */}
             <div className="lg:w-1/2 aspect-video relative bg-black group border border-white/20 hover:border-[#CC0000] transition-colors cursor-pointer">
-              <video autoPlay loop muted playsInline      onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_overview.mp4`} type="video/mp4" />
+              <video autoPlay loop muted playsInline suppressHydrationWarning onEnded={(e) => e.currentTarget.play()} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
+                <source src="/videos/catch_basin_riser/catch_basin_riser_overview.mp4" type="video/mp4" />
               </video>
               <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
                 <p className="text-xl font-black uppercase tracking-widest text-white drop-shadow-md">Frame Seating Assembly</p>

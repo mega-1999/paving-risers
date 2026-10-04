@@ -29,7 +29,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser – Coated Finish",
     description: "Factory-applied corrosion-resistant coating protects against moisture, road salt, and chemical exposure in underground installations.",
     type: "ROUND",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
+    glbPath: "/glbs/PR_manhole_round_riser_black_coated_.glb",
     thumbnail: `/images/manhole_riser/adjustable_manhole_riser_coated.png`
   },
   {
@@ -37,7 +37,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser with Screw",
     description: "Built-in heavy-duty set screws allow field crews to fine-tune vertical height and level alignment without shims or wedges.",
     type: "ROUND_WITH_SCREW",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
+    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb",
     thumbnail: `/images/manhole_riser/round_manhole_riser_with_screws_iron_finish.png`
   },
   {
@@ -45,7 +45,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Round Riser Low Screw",
     description: "Low-profile adjustable screw configuration for tight clearances and precise grade matching in shallow utility trenches.",
     type: "ROUND_LOW_SCREW",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
+    glbPath: "/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb",
     thumbnail: `/images/manhole_riser/fixed_round_manhole_riser_coated.png`
   },
   {
@@ -53,7 +53,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Square Riser – Catch Basin",
     description: "Heavy-duty square perimeter framework constructed to lift flat drainage grates and catch basin lids to final highway grade.",
     type: "SQUARE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
+    glbPath: "/glbs/PR_catch_basin_square_riser_black_coated_.glb",
     thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_coated.png`
   },
   {
@@ -61,7 +61,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Rectangle Riser – Catch Basin",
     description: "Elongated rectangular form factor designed specifically for oblong utility vault openings and trench-style drainage inlets.",
     type: "RECTANGLE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
+    glbPath: "/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb",
     thumbnail: `/images/catch_basin_riser/rectangle_catch_basin_riser_coated.png`
   },
   {
@@ -69,7 +69,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "Curb Inlet Riser",
     description: "Engineered specifically for curb-side stormwater inlets, providing a seamless structural transition to adjacent paving.",
     type: "CURB_INLET",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
+    glbPath: "/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb",
     thumbnail: `/images/curb_inlet_riser/curb_inlet_riser_heavy_iron.png`
   },
   {
@@ -77,7 +77,7 @@ const PRODUCT_MODELS: ProductModel[] = [
     title: "D-Shape Paving Riser",
     description: "Straight-back vertical mounting edge optimized to align flush against poured concrete municipal curb lines.",
     type: "D_SHAPE",
-    glbPath: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
+    glbPath: "/glbs/D_shape_paving_riser.glb",
     thumbnail: `/images/custom_riser/d_shape_riser_steel.png`
   }
 ];
@@ -135,7 +135,15 @@ export default function Product3DShowcase() {
 
               {/* 3D Canvas */}
               <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10">
-                <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+                <Canvas 
+                  camera={{ position: [0, 0, 5], fov: 45 }}
+                  gl={{ antialias: true, powerPreference: 'high-performance' }}
+                  onCreated={({ gl }) => {
+                    if (gl && gl.debug) {
+                      gl.debug.checkShaderErrors = false;
+                    }
+                  }}
+                >
                   <ambientLight intensity={0.7} />
                   <Suspense fallback={<CanvasLoader />}>
                     <Stage key={activeModel.glbPath} environment="city" adjustCamera={true}>

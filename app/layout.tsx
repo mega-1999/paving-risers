@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Paving Risers for Grates in NY | Paving Risers",
+    default: "Paving Risers | Manhole, Catch Basin & Valve Box Extensions",
     template: "%s | Paving Risers",
   },
   description: "Paving Risers for Grates in NY offer durable, precision-engineered risers for manholes, catch basins and grates, built for safe, reliable roadwork.",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     apple: `/images/branding/favicon.png`,
   },
   openGraph: {
-    title: 'Paving Risers for Grates in NY',
+    title: 'Paving Risers | Manhole, Catch Basin & Valve Box Extensions',
     description: 'Paving Risers for Grates in NY offer durable, precision-engineered risers for manholes, catch basins and grates, built for safe, reliable roadwork.',
     url: 'https://www.pavingrisers.com',
     siteName: 'Paving Risers',
@@ -69,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <head>
         <meta name="copyright" content="www.pavingrisers.com" />
         <meta name="document-distribution" content="Global" />
@@ -104,11 +104,39 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-YC2WWN2W20');
+
+              // Filter benign WebGL ANGLE Direct3D compiler info notes, Three.js notices & media cache logs
+              (function() {
+                var origWarn = console.warn;
+                console.warn = function() {
+                  var msg = arguments[0] || '';
+                  if (typeof msg === 'string' && (
+                    msg.indexOf('warning X4122') !== -1 || 
+                    msg.indexOf('THREE.WebGLProgram') !== -1 ||
+                    msg.indexOf('THREE.Clock') !== -1
+                  )) {
+                    return;
+                  }
+                  origWarn.apply(console, arguments);
+                };
+
+                var origErr = console.error;
+                console.error = function() {
+                  var msg = arguments[0] || '';
+                  if (typeof msg === 'string' && (
+                    msg.indexOf('ERR_CACHE_OPERATION_NOT_SUPPORTED') !== -1
+                  )) {
+                    return;
+                  }
+                  origErr.apply(console, arguments);
+                };
+              })();
             `
           }}
         />
       </head>
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden w-full relative`}
       >
         <TopNavbar />

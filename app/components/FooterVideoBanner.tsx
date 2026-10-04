@@ -10,8 +10,9 @@ export default function FooterVideoBanner() {
         loop
         muted
         playsInline
+        suppressHydrationWarning
         className="w-full h-auto pointer-events-none"
-        src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL || ''}/videos/app_showcase/footer_all_product.mp4`}
+        src="/videos/app_showcase/footer_all_product.mp4"
       />
       {/* Subtle overlay to ensure the video blends perfectly with the dark aesthetic */}
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />

@@ -23,7 +23,7 @@ const PRODUCT_VIDEOS = [
     description: "Full rotation showing the variable height adjustment ring mechanism.",
     duration: "0:45",
     type: "360_ROTATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/manhole_riser/fixed_manhole_riser_installation.mp4`,
+    src: "/videos/manhole_riser/fixed_manhole_riser_installation.mp4",
     thumbnail: `/images/manhole_riser/round_manhole_riser_iron_finish.png`
   },
   {
@@ -32,7 +32,7 @@ const PRODUCT_VIDEOS = [
     description: "Technical breakdown of the corner interlocking system and frame strength.",
     duration: "1:10",
     type: "EXPLODED_VIEW",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/catch_basin_riser_animation.mp4`,
+    src: "/videos/catch_basin_riser/catch_basin_riser_animation.mp4",
     thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   },
   {
@@ -41,7 +41,7 @@ const PRODUCT_VIDEOS = [
     description: "Step-by-step 3D animation of a standard valve box riser installation.",
     duration: "2:00",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/valve_box_riser/full_valve_box_riser_design_3.mp4`,
+    src: "/videos/valve_box_riser/full_valve_box_riser_design_3.mp4",
     thumbnail: `/images/valve_box_riser/valve_box_riser_1_5in.jpeg`
   },
   {
@@ -50,7 +50,7 @@ const PRODUCT_VIDEOS = [
     description: "Detailed visualization of the curb inlet structure.",
     duration: "1:20",
     type: "ANIMATION",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/curb_inlet_riser/curb_inlet_riser_anim_3.mp4`,
+    src: "/videos/curb_inlet_riser/curb_inlet_riser_anim_3.mp4",
     thumbnail: `/images/curb_inlet_riser/curb_inlet_riser_coated_2.png`
   },
   {
@@ -59,7 +59,7 @@ const PRODUCT_VIDEOS = [
     description: "Demonstration of custom fabricated configurations.",
     duration: "0:55",
     type: "CUSTOM_BUILD",
-    src: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.924.mp4`,
+    src: "/videos/animations/1.924.mp4",
     thumbnail: `/images/catch_basin_riser/square_catch_basin_riser_iron.png`
   }
 ];

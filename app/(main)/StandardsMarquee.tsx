@@ -56,6 +56,7 @@ export default function StandardsMarquee() {
                                         src={logo.src}
                                         alt={logo.alt}
                                         fill
+                                        sizes="(max-width: 768px) 144px, 144px"
                                         className="object-contain"
                                     />
                                 </div>

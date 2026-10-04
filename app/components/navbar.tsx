@@ -119,6 +119,8 @@ const Navbar = () => {
                         alt='Paving Risers'
                         height={80}
                         width={160}
+                        priority
+                        loading="eager"
                         style={{ width: "auto", height: "auto" }}
                         className="object-contain h-12 w-auto sm:h-16 lg:h-20"
                     />

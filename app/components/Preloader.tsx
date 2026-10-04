@@ -37,11 +37,10 @@ export default function Preloader() {
 
   if (!show) return null;
 
-  const videoUrl = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_logo_animation.mp4`;
+  const videoUrl = '/videos/animations/paving_logo_animation.mp4';
 
   return (
     <>
-      <link rel="preload" as="video" type="video/mp4" href={videoUrl} />
       <div 
         className={`fixed inset-0 z-[99999] bg-white flex flex-col items-center justify-center transition-opacity duration-700 ease-in-out px-6 md:px-12 ${
           fade ? 'opacity-0' : 'opacity-100'
@@ -92,7 +91,8 @@ export default function Preloader() {
                   autoPlay
                   muted
                   playsInline
-                  preload="auto"
+                  preload="metadata"
+                  suppressHydrationWarning
                   onEnded={handleComplete}
                   className="w-full h-auto object-contain outline-none border-0 shadow-none mix-blend-multiply scale-[1.02]"
                   style={{ mixBlendMode: 'multiply', clipPath: 'inset(2px 6px 2px 6px)' }}

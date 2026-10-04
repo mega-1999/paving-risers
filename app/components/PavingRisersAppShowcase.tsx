@@ -176,20 +176,12 @@ export default function PavingRisersAppShowcase() {
           >
             <div className="w-full max-w-lg overflow-hidden">
               <video
-                ref={(el) => {
-                  if (el) {
-                    el.play().catch(() => {});
-                    el.onended = () => {
-                      el.currentTime = 0;
-                      el.play().catch(() => {});
-                    };
-                  }
-                }}
-                src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/app_showcase/android_ios.mp4`}
+                src="/videos/app_showcase/android_ios.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
+                suppressHydrationWarning
                 className="w-full"
               />
             </div>

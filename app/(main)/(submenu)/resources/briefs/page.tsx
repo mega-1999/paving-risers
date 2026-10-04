@@ -24,13 +24,10 @@ export default function EngineeringBriefsPage() {
       {/* ========================================= */}
       <div className="relative w-full h-[90vh] min-h-[700px] flex flex-col justify-between overflow-hidden border-b border-white/10">
         <video autoPlay loop muted playsInline  
-           
-           
-           
-          
+          suppressHydrationWarning
           className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen scale-105"
         >
-          <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`} type="video/mp4" />
+          <source src="/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4" type="video/mp4" />
         </video>
         
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
@@ -67,13 +64,10 @@ export default function EngineeringBriefsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
               <video autoPlay loop muted playsInline  
-                 
-                 
-                 
-                
+                suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.751.mp4`} type="video/mp4" />
+                <source src="/videos/animations/1.751.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-8">
@@ -141,13 +135,10 @@ export default function EngineeringBriefsPage() {
             
             <div className="relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
               <video autoPlay loop muted playsInline  
-                 
-                 
-                 
-                
+                suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4`} type="video/mp4" />
+                <source src="/videos/animations/paving_riser_solid_ring_utilisation_animation.686.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-l from-black/80 to-transparent pointer-events-none" />
               <div className="absolute top-8 right-8 text-right">
@@ -165,13 +156,10 @@ export default function EngineeringBriefsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-square bg-[#0A0A0A] overflow-hidden border border-white/5 group">
               <video autoPlay loop muted playsInline  
-                 
-                 
-                 
-                
+                suppressHydrationWarning
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
               >
-                <source src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.711.mp4`} type="video/mp4" />
+                <source src="/videos/animations/1.711.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
               <div className="absolute bottom-8 left-0 w-full text-center">

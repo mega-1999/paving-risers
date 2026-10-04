@@ -44,7 +44,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-coated",
         name: "Round Riser – Coated Finish",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_riser_black_coated_.glb`,
+        path: "/glbs/PR_manhole_round_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "rr-p1",
@@ -67,7 +67,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-with-screw",
         name: "Round Riser with Screw",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb`,
+        path: "/glbs/PR_manhole_round_adjustbable_riser_screw_black_coated_.glb",
         hotspots: [
             {
                 id: "rs-p1",
@@ -90,7 +90,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "round-riser-low-screw",
         name: "Round Riser Low Screw",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb`,
+        path: "/glbs/PR_manhole_round_adjustbable_riser_low_screw_black_coated_.glb",
         hotspots: [
             {
                 id: "rl-p1",
@@ -113,7 +113,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "square-riser-coated",
         name: "Square Riser – Catch Basin",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_square_riser_black_coated_.glb`,
+        path: "/glbs/PR_catch_basin_square_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "sq-p1",
@@ -136,7 +136,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "rectangle-riser-coated",
         name: "Rectangle Riser – Catch Basin",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb`,
+        path: "/glbs/PR_catch_basin_rectangle_riser_black_coated_.glb",
         hotspots: [
             {
                 id: "re-p1",
@@ -159,7 +159,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "curb-inlet-riser",
         name: "Curb Inlet Riser",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb`,
+        path: "/glbs/PR_Curb_inlet_rectangle_riser_black_coated.glb",
         hotspots: [
             {
                 id: "ci-p1",
@@ -182,7 +182,7 @@ const GLB_MODELS: GlbModel[] = [
     {
         id: "d-shape-paving-riser",
         name: "D-Shape Paving Riser",
-        path: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/glbs/D_shape_paving_riser.glb`,
+        path: "/glbs/D_shape_paving_riser.glb",
         hotspots: [
             {
                 id: "ds-p1",
@@ -355,6 +355,7 @@ function SceneContent({
 // 6. MAIN EXPORTED COMPONENT
 // ────────────────────────────────────────────────────
 export default function Interactive3DShowcase() {
+    const canvasContainerRef = useRef<HTMLDivElement>(null);
     const [activeModel, setActiveModel] = useState<GlbModel>(GLB_MODELS[0]);
     const [activeSpot, setActiveSpot] = useState<Hotspot | null>(GLB_MODELS[0].hotspots[0] ?? null);
     const [hoveredSpotId, setHoveredSpotId] = useState<string | null>(null);
@@ -425,8 +426,17 @@ export default function Interactive3DShowcase() {
                         </div>
 
                         {/* ── The single Canvas — hotspots are INSIDE here ── */}
-                        <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10">
-                            <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+                        <div ref={canvasContainerRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10">
+                            <Canvas 
+                                eventSource={canvasContainerRef as React.RefObject<HTMLElement>}
+                                camera={{ position: [0, 0, 5], fov: 45 }}
+                                gl={{ antialias: true, powerPreference: 'high-performance' }}
+                                onCreated={({ gl }) => {
+                                    if (gl && gl.debug) {
+                                        gl.debug.checkShaderErrors = false;
+                                    }
+                                }}
+                            >
                                 <ambientLight intensity={0.7} />
                                 <SceneContent
                                     model={activeModel}

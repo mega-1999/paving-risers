@@ -3,26 +3,26 @@
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, PlayCircle, Zap, Clock, Target, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const VIMEO_VIDEOS = [
+const FABRICATION_VIDEOS = [
   {
-    id: "1226340886",
-    title: "Shop Floor Feed #1",
-    url: "https://player.vimeo.com/video/1226340886?autoplay=1&loop=1&muted=1&background=1&autopause=0"
+    id: "shop-floor-1",
+    title: "Shop Floor Fabrication Feed #1",
+    src: "/videos/manufacturing/PR_Manufacturing_Video.mp4"
   },
   {
-    id: "1226340885",
+    id: "cnc-tooling-2",
     title: "CNC Machining & Tooling #2",
-    url: "https://player.vimeo.com/video/1226340885?autoplay=1&loop=1&muted=1&background=1&autopause=0"
+    src: "/videos/manufacturing/paving-risers_RATAN_TECHNOML.mp4"
   },
   {
-    id: "1226340870",
-    title: "Foundry & Casting #3",
-    url: "https://player.vimeo.com/video/1226340870?autoplay=1&loop=1&muted=1&background=1&autopause=0"
+    id: "manhole-riser-3",
+    title: "Adjustable Riser Machining #3",
+    src: "/videos/manhole_riser/adjustable_manhole_riser_with_frame.mp4"
   },
   {
-    id: "1226340871",
-    title: "Quality Control & Finishing #4",
-    url: "https://player.vimeo.com/video/1226340871?autoplay=1&loop=1&muted=1&background=1&autopause=0"
+    id: "catch-basin-4",
+    title: "Catch Basin Assembly #4",
+    src: "/videos/Catch_basin_riser_new_logo.975.mp4"
   }
 ];
 
@@ -31,17 +31,17 @@ export default function PavingRisersHeroSection() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveIdx((prev) => (prev + 1) % VIMEO_VIDEOS.length);
+      setActiveIdx((prev) => (prev + 1) % FABRICATION_VIDEOS.length);
     }, 12000);
     return () => clearInterval(timer);
   }, []);
 
   const handlePrev = () => {
-    setActiveIdx((prev) => (prev - 1 + VIMEO_VIDEOS.length) % VIMEO_VIDEOS.length);
+    setActiveIdx((prev) => (prev - 1 + FABRICATION_VIDEOS.length) % FABRICATION_VIDEOS.length);
   };
 
   const handleNext = () => {
-    setActiveIdx((prev) => (prev + 1) % VIMEO_VIDEOS.length);
+    setActiveIdx((prev) => (prev + 1) % FABRICATION_VIDEOS.length);
   };
 
   return (
@@ -93,27 +93,30 @@ export default function PavingRisersHeroSection() {
             </div>
           </div>
 
-          {/* RIGHT PANEL: VIMEO LIVE FABRICATION CAROUSEL / FALLBACK */}
+          {/* RIGHT PANEL: LIVE FABRICATION CAROUSEL */}
           <div className="lg:col-span-6 w-full">
-            {VIMEO_VIDEOS.length > 0 && VIMEO_VIDEOS[activeIdx]?.url ? (
+            {FABRICATION_VIDEOS.length > 0 && FABRICATION_VIDEOS[activeIdx]?.src ? (
               <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-black shadow-xl border border-slate-200 group">
-                <iframe
-                  key={VIMEO_VIDEOS[activeIdx].id}
-                  src={VIMEO_VIDEOS[activeIdx].url}
-                  className="absolute inset-0 w-full h-full object-cover border-0 pointer-events-none scale-[1.3]"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  title={VIMEO_VIDEOS[activeIdx].title}
+                <video
+                  key={FABRICATION_VIDEOS[activeIdx].id}
+                  src={FABRICATION_VIDEOS[activeIdx].src}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  suppressHydrationWarning
                 />
-                <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10" />
+                <div className="absolute inset-0 pointer-events-none border border-black/10 rounded-sm z-10 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 
                 {/* TOP LIVE BADGE */}
                 <div className="absolute top-4 left-4 bg-[#0F0F0F]/90 backdrop-blur-sm text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm flex items-center gap-2 z-20">
                   <PlayCircle className="w-3.5 h-3.5 text-[#CC0000] animate-pulse" /> 
-                  <span>{VIMEO_VIDEOS[activeIdx].title} ({activeIdx + 1}/{VIMEO_VIDEOS.length})</span>
+                  <span>{FABRICATION_VIDEOS[activeIdx].title} ({activeIdx + 1}/{FABRICATION_VIDEOS.length})</span>
                 </div>
 
                 {/* NAVIGATION ARROWS */}
-                {VIMEO_VIDEOS.length > 1 && (
+                {FABRICATION_VIDEOS.length > 1 && (
                   <>
                     <button
                       onClick={handlePrev}
@@ -134,9 +137,9 @@ export default function PavingRisersHeroSection() {
                 )}
 
                 {/* BOTTOM INDICATOR DOTS */}
-                {VIMEO_VIDEOS.length > 1 && (
+                {FABRICATION_VIDEOS.length > 1 && (
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full z-20">
-                    {VIMEO_VIDEOS.map((_, idx) => (
+                    {FABRICATION_VIDEOS.map((_, idx) => (
                       <button
                         key={idx}
                         onClick={() => setActiveIdx(idx)}
@@ -150,7 +153,7 @@ export default function PavingRisersHeroSection() {
                 )}
               </div>
             ) : (
-              /* FALLBACK WHEN NO VIMEO VIDEO / STREAM COMING SOON */
+              /* FALLBACK WHEN NO VIDEO / STREAM COMING SOON */
               <div className="relative h-[500px] w-full rounded-sm overflow-hidden bg-[#0F0F0F] shadow-xl border border-slate-200 flex flex-col items-center justify-center p-8 text-center">
                 <div className="absolute inset-0 bg-radial from-[#CC0000]/10 via-transparent to-transparent pointer-events-none" />
                 <div className="relative z-10 space-y-4 max-w-md">
@@ -162,7 +165,7 @@ export default function PavingRisersHeroSection() {
                       Shop Floor Feed
                     </span>
                     <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white pt-2 leading-tight">
-                      Vimeo Live Stream <br /> <span className="text-[#CC0000]">Available Soon</span>
+                      Fabrication Feed <br /> <span className="text-[#CC0000]">Available Soon</span>
                     </h3>
                   </div>
                   <p className="text-xs text-zinc-400 font-medium leading-relaxed">

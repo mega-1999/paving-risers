@@ -97,13 +97,12 @@ export default function HeroCarousel() {
                         {/* Fallback color/gradient if image fails */}
                         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 to-zinc-800" />
 
-                        {/* Actual Image (Uncomment when you have files) */}
                         <Image
                             src={slide.imageSrc}
                             alt={slide.title}
                             fill
                             className="object-cover opacity-60"
-                            priority={index === 0}
+                            sizes="(max-width: 1200px) 100vw, 1200px"
                         />
 
                         {/* Dark Overlay Gradient - Matches the style of image_e82d04.jpg */}

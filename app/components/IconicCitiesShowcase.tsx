@@ -37,7 +37,7 @@ export interface CitySpec {
   stats: { label: string; value: string }[];
 }
 
-const R2 = process.env.NEXT_PUBLIC_R2_BUCKET_URL;
+const R2 = '';
 
 const ICONIC_CITIES: CitySpec[] = [
   {

@@ -32,7 +32,7 @@ const HERO_SECTIONS = [
     subtitle: 'Fabricated Steel Grates with Risers',
     description: 'Engineered for extreme structural shock loads. Our heavy-duty fabricated steel grates and matching paving risers are designed for high-traffic industrial corridors, airport ramps, and municipal arterial roadways.',
     icon: ShieldAlert,
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4`,
+    media: '/videos/catch_basin_riser/two_grate_catch_basin_riser_animation.mp4',
     isVideo: true,
     tag: 'Fabricated Steel'
   },
@@ -52,7 +52,7 @@ const HERO_SECTIONS = [
     subtitle: 'Built to Any Municipal Blueprint',
     description: 'Non-standard dimensions? Sloped curb gutters? No problem. Our domestic fabrication facilities weld custom catch basin grates and multi-tier risers to match your exact jobsite dimensions with zero frame excavation.',
     icon: Wrench,
-    media: `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/videos/animations/1.719.mp4`,
+    media: '/videos/animations/1.719.mp4',
     isVideo: true,
     tag: 'Custom Blueprint'
   }

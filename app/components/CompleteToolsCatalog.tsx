@@ -331,8 +331,7 @@ export default function CompleteToolsCatalog() {
                   alt={product.title}
                   fill
                   className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
-                  priority={idx < 3}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 
